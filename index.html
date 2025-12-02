@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8777S9SP9X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8777S9SP9X');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Ramon Logan Jr.">
+    <meta name="keywords" content="BetterSolano, Solano Nueva Vizcaya, LGU Solano, municipal services, government transparency, public funds, Solano Philippines, local government unit, birth certificate, business permit, tax payments">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://bettersolano.org/">
+    
+    <!-- Hreflang for multi-language SEO -->
+    <link rel="alternate" hreflang="en" href="https://bettersolano.org/">
+    <link rel="alternate" hreflang="fil" href="https://bettersolano.org/?lang=fil">
+    <link rel="alternate" hreflang="ilo" href="https://bettersolano.org/?lang=ilo">
+    <link rel="alternate" hreflang="x-default" href="https://bettersolano.org/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bettersolano.org/">
+    <meta property="og:title" content="BetterSolano.org | Official Portal">
+    <meta property="og:description" content="Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.">
+    <meta property="og:image" content="https://bettersolano.org/assets/images/banners/opengraph.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:locale" content="en_PH">
+    <meta property="og:site_name" content="BetterSolano.org">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://bettersolano.org/">
+    <meta name="twitter:title" content="BetterSolano.org | Official Portal">
+    <meta name="twitter:description" content="Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.">
+    <meta name="twitter:image" content="https://bettersolano.org/assets/images/banners/opengraph.png">
+    
+    <!-- LinkedIn -->
+    <meta property="og:image:secure_url" content="https://bettersolano.org/assets/images/banners/opengraph.png">
+    
+    <!-- Additional SEO -->
+    <meta name="geo.region" content="PH-NUV">
+    <meta name="geo.placename" content="Solano, Nueva Vizcaya">
+    <meta name="geo.position" content="16.5167;121.1833">
+    <meta name="ICBM" content="16.5167, 121.1833">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1a5f2a">
+    <meta name="msapplication-TileColor" content="#1a5f2a">
+    
+    <title>BetterSolano.org | Official Portal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GovernmentOrganization",
+        "name": "Municipality of Solano",
+        "alternateName": "Better Solano",
+        "url": "https://bettersolano.org",
+        "logo": "https://bettersolano.org/assets/images/logo/better-solano-logo.svg",
+        "description": "Official portal of the Municipality of Solano, Nueva Vizcaya. Access municipal services, government information, and community updates.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Municipal Hall",
+            "addressLocality": "Solano",
+            "addressRegion": "Nueva Vizcaya",
+            "postalCode": "3708",
+            "addressCountry": "PH"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "16.5167",
+            "longitude": "121.1833"
+        },
+        "telephone": "(078) 326-5000",
+        "email": "services@solano.gov.ph",
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Solano, Nueva Vizcaya"
+        },
+        "sameAs": [
+            "https://www.facebook.com/OfficialLguSolanoFanpage/",
+            "https://solano.gov.ph"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Better Solano",
+        "url": "https://bettersolano.org",
+        "author": {
+            "@type": "Person",
+            "name": "Ramon Logan Jr"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://bettersolano.org/services/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/accessibility.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Hotline Bar -->
+    <div class="hotline-bar">
+        <div class="container">
+            <div class="hotline-inner">
+                
+                <div class="hotline-items">
+                    <a href="tel:09274008033" class="hotline-item">
+                        <i class="bi bi-shield-fill"></i>
+                        <span>Police: 0927 400 8033</span>
+                    </a>
+                    <a href="tel:09162840885" class="hotline-item">
+                        <i class="bi bi-heart-fill"></i>
+                        <span>MSWDO: 0916 284 0885</span>
+                    </a>
+                    <a href="tel:09360620305" class="hotline-item">
+                        <i class="bi bi-fire"></i>
+                        <span>Fire: 0936 062 0305</span>
+                    </a>
+                    <a href="tel:0906188086" class="hotline-item">
+                        <i class="bi bi-building"></i>
+                        <span>DILG: 0906 188 086</span>
+                    </a>
+                    <a href="tel:09263833744" class="hotline-item">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <span>MDRRMO: 0926 383 3744</span>
+                    </a>
+                    <a href="tel:09068195569" class="hotline-item">
+                        <i class="bi bi-truck"></i>
+                        <span>R2TMC: 0906 819 5569</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/images/logo/better-solano-logo.svg" alt="Better Solano Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" class="active" data-i18n="nav-home">Home</a></li>
+                    <li><a href="services/index.html" data-i18n="nav-services">Services</a></li>
+                    <li><a href="government/index.html" data-i18n="nav-government">Government</a></li>
+                    <li><a href="statistics/index.html" data-i18n="nav-statistics">Statistics</a></li>
+                    <li class="has-dropdown">
+                        <a href="legislative/index.html" data-i18n="nav-legislative">Legislative</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="legislative/ordinance-framework.html">Ordinance Framework</a></li>
+                            <li><a href="legislative/resolution-framework.html">Resolution Framework</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="budget/index.html" data-i18n="nav-transparency">Transparency</a></li>
+                    <li><a href="contact/index.html" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-selector">
+                    <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+                    <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="fil" aria-label="Switch to Filipino">FIL</button>
+                    <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="ilo" aria-label="Switch to Ilocano">ILO</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Real-Time Info Bar -->
+    <div class="info-bar" role="complementary" aria-label="Real-time information">
+        <div class="container">
+            <div class="info-bar-inner">
+                <div class="info-bar-item info-bar-rates" aria-label="Exchange rates">
+                    <i class="bi bi-currency-exchange"></i>
+                    <span class="rate-rotator">
+                        <span class="rate-display">1 USD = ₱ --</span>
+                    </span>
+                </div>
+                <div class="info-bar-item info-bar-weather" aria-label="Current weather in Solano">
+                    <i class="bi bi-thermometer-half"></i>
+                    <span class="weather-location">Solano</span>
+                    <span class="weather-temp">--°C</span>
+                </div>
+                <div class="info-bar-item info-bar-datetime" aria-label="Philippine Date and Time">
+                    <i class="bi bi-calendar3"></i>
+                    <span class="date-value">--- --, ----</span>
+                    <span class="datetime-separator">•</span>
+                    <i class="bi bi-clock"></i>
+                    <span class="time-value">--:-- --</span>
+                    <span class="time-label">PHT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="home-hero-v2">
+            <div class="container">
+                <div class="home-hero-v2-inner">
+                    <div class="home-hero-v2-text">
+                        <h1 data-i18n="hero-welcome">Welcome to BetterSolano.org</h1>
+                        <p data-i18n="hero-subtitle">Access government services, information, and resources for the people of Solano, Nueva Vizcaya.</p>
+                        <div class="home-hero-v2-actions">
+                            <a href="services/index.html" class="btn btn-primary">Browse Services <i class="bi bi-arrow-right"></i></a>
+                            <a href="contact/index.html" class="btn btn-outline">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="home-hero-v2-search">
+                        <div class="home-search-box">
+                            <h2><i class="bi bi-search"></i> Find a Service</h2>
+                            <form class="search-form" role="search">
+                                <div class="search-input-wrapper">
+                                    <input type="search" id="hero-search" class="service-search-input" placeholder="e.g., birth certificate, business permit" aria-label="Search services" autocomplete="off">
+                                    <button type="submit" class="search-submit-btn" aria-label="Search"><i class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </form>
+                            <div class="home-search-tags">
+                                <span>Popular:</span>
+                                <a href="services/certificates.html">Birth Certificate</a>
+                                <a href="services/business.html">Business Permit</a>
+                                <a href="services/tax-payments.html">Real Property Tax</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Services -->
+        <section class="section">
+            <div class="container">
+                <div class="home-section-header">
+                    <h2 data-i18n="section-popular">Popular Services</h2>
+                    <p>Quick access to frequently requested municipal services</p>
+                </div>
+                <div class="home-services-grid">
+                    <a href="services/certificates.html" class="home-service-card">
+                        <div class="home-service-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+                        <div class="home-service-content">
+                            <h3 data-i18n="service-certificates">Certificates</h3>
+                            <p data-i18n="service-certificates-desc">Birth, marriage, death certificates</p>
+                        </div>
+                        <i class="bi bi-arrow-right home-service-arrow"></i>
+                    </a>
+                    <a href="services/business.html" class="home-service-card">
+                        <div class="home-service-icon"><i class="bi bi-shop"></i></div>
+                        <div class="home-service-content">
+                            <h3 data-i18n="service-business">Business Permits</h3>
+                            <p data-i18n="service-business-desc">New permits and renewals</p>
+                        </div>
+                        <i class="bi bi-arrow-right home-service-arrow"></i>
+                    </a>
+                    <a href="services/tax-payments.html" class="home-service-card">
+                        <div class="home-service-icon"><i class="bi bi-cash-coin"></i></div>
+                        <div class="home-service-content">
+                            <h3 data-i18n="service-tax">Tax Payments</h3>
+                            <p data-i18n="service-tax-desc">Property and business taxes</p>
+                        </div>
+                        <i class="bi bi-arrow-right home-service-arrow"></i>
+                    </a>
+                    <a href="services/social-services.html" class="home-service-card">
+                        <div class="home-service-icon"><i class="bi bi-people-fill"></i></div>
+                        <div class="home-service-content">
+                            <h3 data-i18n="service-social">Social Services</h3>
+                            <p data-i18n="service-social-desc">Senior citizen & PWD services</p>
+                        </div>
+                        <i class="bi bi-arrow-right home-service-arrow"></i>
+                    </a>
+                    <a href="services/health.html" class="home-service-card">
+                        <div class="home-service-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+                        <div class="home-service-content">
+                            <h3 data-i18n="service-health">Health Services</h3>
+                            <p data-i18n="service-health-desc">Medical assistance & programs</p>
+                        </div>
+                        <i class="bi bi-arrow-right home-service-arrow"></i>
+                    </a>
+                    <a href="services/index.html" class="home-service-card home-service-card--all">
+                        <div class="home-service-icon"><i class="bi bi-grid-fill"></i></div>
+                        <div class="home-service-content">
+                            <h3 data-i18n="btn-view-all-services">View All Services</h3>
+                            <p>Browse complete directory</p>
+                        </div>
+                        <i class="bi bi-arrow-right home-service-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="home-stats-v2">
+            <div class="container">
+                <div class="home-stats-v2-header">
+                    <h2>Solano at a Glance</h2>
+                    <a href="statistics/index.html" class="home-section-link">View Statistics <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="home-stats-v2-grid">
+                    <a href="statistics/index.html" class="home-stat-card">
+                        <div class="home-stat-card-icon"><i class="bi bi-people-fill"></i></div>
+                        <div class="home-stat-card-content">
+                            <span class="home-stat-card-value" data-count="69296">69,296</span>
+                            <span class="home-stat-card-label">Population</span>
+                            <span class="home-stat-card-source">2024 Census</span>
+                        </div>
+                    </a>
+                    <a href="government/index.html" class="home-stat-card">
+                        <div class="home-stat-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div class="home-stat-card-content">
+                            <span class="home-stat-card-value">22</span>
+                            <span class="home-stat-card-label">Barangays</span>
+                            <span class="home-stat-card-source">Administrative Units</span>
+                        </div>
+                    </a>
+                    <a href="budget/index.html" class="home-stat-card">
+                        <div class="home-stat-card-icon"><i class="bi bi-award-fill"></i></div>
+                        <div class="home-stat-card-content">
+                            <span class="home-stat-card-value">1st Class</span>
+                            <span class="home-stat-card-label">Municipality</span>
+                            <span class="home-stat-card-source">Income Classification</span>
+                        </div>
+                    </a>
+                    <a href="statistics/index.html" class="home-stat-card">
+                        <div class="home-stat-card-icon"><i class="bi bi-rulers"></i></div>
+                        <div class="home-stat-card-content">
+                            <span class="home-stat-card-value">162.70 km²</span>
+                            <span class="home-stat-card-label">Land Area</span>
+                            <span class="home-stat-card-source">Total Municipal Area</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather & Location Section -->
+        <section class="section weather-map-section">
+            <div class="container">
+                <div class="home-stats-v2-header">
+                    <h2>Weather and Map of Solano</h2>
+                </div>
+                <div class="weather-map-grid">
+                    <div class="weather-column">
+                        <div id="weather-container" aria-live="polite">
+                            <!-- Weather content loaded dynamically -->
+                        </div>
+                    </div>
+                    <div class="map-column">
+                        <div class="map-card">
+                            <div id="map-container" role="application" aria-label="Interactive map of Solano, Nueva Vizcaya">
+                                <noscript>
+                                    <div class="map-fallback">
+                                        <p>JavaScript is required to view the interactive map.</p>
+                                        <a href="https://www.openstreetmap.org/?mlat=16.5167&mlon=121.1833#map=13/16.5167/121.1833" target="_blank" rel="noopener noreferrer">
+                                            View Solano on OpenStreetMap
+                                        </a>
+                                    </div>
+                                </noscript>
+                            </div>
+                            <p class="map-attribution">
+                                <i class="bi bi-geo-alt" aria-hidden="true"></i> Solano Municipal Hall, Nueva Vizcaya 3708
+                            </p>
+                            <p class="sr-only">Interactive map showing the location of Solano Municipal Hall in Nueva Vizcaya, Philippines. The map is centered at coordinates 16.5167°N, 121.1833°E. Use the plus and minus buttons or keyboard arrows to navigate the map.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Updates -->
+        <section class="section">
+            <div class="container">
+                <div class="home-section-header">
+                    <h2 data-i18n="section-updates">Latest Updates</h2>
+                    <a href="news/index.html" class="home-section-link"><span data-i18n="btn-view-all">View All</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="home-news-grid">
+                    <article class="home-news-card">
+                        <div class="home-news-meta">
+                            <span class="home-news-badge home-news-badge--info">Announcement</span>
+                            <span class="home-news-date">Nov 28, 2025</span>
+                        </div>
+                        <h3><a href="news/index.html">Business Permit Renewal 2025</a></h3>
+                        <p>Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged.</p>
+                    </article>
+                    <article class="home-news-card">
+                        <div class="home-news-meta">
+                            <span class="home-news-badge home-news-badge--success">Project</span>
+                            <span class="home-news-date">Nov 15, 2025</span>
+                        </div>
+                        <h3><a href="news/index.html">New Public Market Wing Opens</a></h3>
+                        <p>The renovated wing of the Solano Public Market is now open to vendors and the public.</p>
+                    </article>
+                    <article class="home-news-card">
+                        <div class="home-news-meta">
+                            <span class="home-news-badge home-news-badge--warning">Advisory</span>
+                            <span class="home-news-date">Nov 10, 2025</span>
+                        </div>
+                        <h3><a href="news/index.html">Scheduled Power Interruption</a></h3>
+                        <p>Maintenance scheduled for Barangay Osmeña on Dec 1, 8:00 AM - 5:00 PM.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Municipal Leadership -->
+        <section class="section home-leadership-section">
+            <div class="container">
+                <div class="home-section-header">
+                    <h2 data-i18n="section-leadership">Municipal Leadership</h2>
+                    <a href="government/index.html" class="home-section-link"><span data-i18n="btn-view-officials">View All Officials</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="home-leadership-grid">
+                    <div class="home-leader-card">
+                        <div class="home-leader-badge" data-i18n="title-mayor">Municipal Mayor</div>
+                        <h3>Hon. Philip A. Dacayo</h3>
+                        <div class="home-leader-contacts">
+                            <a href="mailto:mayor@solano.gov.ph"><i class="bi bi-envelope"></i> mayor@solano.gov.ph</a>
+                            <a href="tel:0783265002"><i class="bi bi-telephone"></i> (078) 326-5002</a>
+                        </div>
+                    </div>
+                    <div class="home-leader-card">
+                        <div class="home-leader-badge" data-i18n="title-vice-mayor">Municipal Vice Mayor</div>
+                        <h3>Hon. Eduardo D. Tiongson</h3>
+                        <div class="home-leader-contacts">
+                            <a href="mailto:vicemayor@solano.gov.ph"><i class="bi bi-envelope"></i> vicemayor@solano.gov.ph</a>
+                            <a href="tel:0783265003"><i class="bi bi-telephone"></i> (078) 326-5003</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="home-section-header">
+                    <h2 data-i18n="section-contact">Contact Information</h2>
+                    <a href="contact/index.html" class="home-section-link">View All <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="home-contact-v2-grid">
+                    <a href="tel:0783265000" class="home-contact-v2-card">
+                        <div class="home-contact-v2-icon"><i class="bi bi-telephone-fill"></i></div>
+                        <div class="home-contact-v2-content">
+                            <h3 data-i18n="contact-phone">Phone</h3>
+                            <p class="home-contact-v2-value">(078) 326-5000</p>
+                            <span class="home-contact-v2-note" data-i18n="contact-hours">Mon-Fri: 8:00 AM - 5:00 PM</span>
+                        </div>
+                    </a>
+                    <a href="mailto:services@solano.gov.ph" class="home-contact-v2-card">
+                        <div class="home-contact-v2-icon"><i class="bi bi-envelope-fill"></i></div>
+                        <div class="home-contact-v2-content">
+                            <h3 data-i18n="contact-email">Email</h3>
+                            <p class="home-contact-v2-value">services@solano.gov.ph</p>
+                            <span class="home-contact-v2-note" data-i18n="contact-response">We'll respond within 24 hours</span>
+                        </div>
+                    </a>
+                    <div class="home-contact-v2-card">
+                        <div class="home-contact-v2-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div class="home-contact-v2-content">
+                            <h3 data-i18n="contact-address">Address</h3>
+                            <p class="home-contact-v2-value" data-i18n="contact-municipal-hall">Municipal Hall</p>
+                            <span class="home-contact-v2-note">Solano, Nueva Vizcaya 3708</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main-new">
+                <div class="footer-brand">
+                    <img src="assets/images/logo/better-solano-logo-white.svg" alt="Better Solano logo" class="footer-logo">
+                    <p class="footer-tagline">Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.</p>
+                    <div class="footer-social-new">
+                        <a href="https://www.facebook.com/OfficialLguSolanoFanpage/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://solano.gov.ph" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Official Website"><i class="bi bi-globe"></i></a>
+                        <a href="https://sangguniangbayan.solano.gov.ph/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Sangguniang Bayan"><i class="bi bi-bank"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-new">
+                        <li><a href="sitemap/index.html"><i class="bi bi-chevron-right"></i> Sitemap</a></li>
+                        <li><a href="terms/index.html"><i class="bi bi-chevron-right"></i> Terms of Use</a></li>
+                        <li><a href="privacy/index.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="accessibility/index.html"><i class="bi bi-chevron-right"></i> Accessibility</a></li>
+                        <li><a href="faq/index.html"><i class="bi bi-chevron-right"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links-new">
+                        <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
+                        <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
+                        <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-cost" role="status" aria-label="Cost to the People of Solano: Zero Pesos">
+                        Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
+                    </div>
+                    <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute with us</a>
+                </div>
+            </div>
+            <div class="footer-bottom-new">
+                <div class="footer-copyright">
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. All rights reserved. All public information sourced from official government portals.</span>
+                    <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/info-bar.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/weather-map.js?v=1.6.3"></script>
+    
+    <!-- Failsafe: Ensure weather section renders even if scripts hang -->
+    <script>
+    (function() {
+        // Extended failsafe timeout - give API 15 seconds to respond before showing fallback
+        setTimeout(function() {
+            var weatherContainer = document.getElementById('weather-container');
+            if (weatherContainer && !weatherContainer.getAttribute('data-weather-loaded')) {
+                console.warn('Weather failsafe: API timeout, using fallback data');
+                // Only trigger failsafe if weather-map.js completely failed to load
+                if (typeof window.WeatherMapInit === 'function') {
+                    console.log('Weather failsafe: Attempting manual initialization');
+                    window.WeatherMapInit();
+                } else {
+                    console.warn('Weather failsafe: Scripts not loaded, showing static fallback');
+                    weatherContainer.innerHTML = '<div class="weather-widget" role="region" aria-label="Current weather in Solano"><div class="weather-current"><div class="weather-current-icon"><i class="bi bi-cloud-sun-fill"></i></div><div class="weather-current-info"><div class="weather-current-temp">29°C</div><div class="weather-current-condition">Mainly clear</div><div class="weather-current-location"><i class="bi bi-geo-alt"></i> Solano, Nueva Vizcaya</div></div></div><div class="weather-stats"><div class="weather-stat"><i class="bi bi-droplet"></i><span>65%</span></div><div class="weather-stat"><i class="bi bi-wind"></i><span>12 km/h</span></div></div><div class="weather-hourly"><div class="weather-hour"><span class="weather-hour-time">1 PM</span><i class="bi bi-cloud-sun-fill"></i><span class="weather-hour-temp">26°</span></div><div class="weather-hour"><span class="weather-hour-time">2 PM</span><i class="bi bi-cloud-sun-fill"></i><span class="weather-hour-temp">27°</span></div><div class="weather-hour"><span class="weather-hour-time">3 PM</span><i class="bi bi-sun-fill"></i><span class="weather-hour-temp">28°</span></div><div class="weather-hour"><span class="weather-hour-time">4 PM</span><i class="bi bi-sun-fill"></i><span class="weather-hour-temp">29°</span></div></div></div>';
+                    weatherContainer.setAttribute('data-weather-loaded', 'failsafe');
+                }
+            }
+            
+            var mapContainer = document.getElementById('map-container');
+            if (mapContainer && !mapContainer.getAttribute('data-map-loaded')) {
+                console.warn('Map failsafe: Forcing iframe fallback after timeout');
+                mapContainer.innerHTML = '<iframe width="100%" height="300" frameborder="0" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=121.1633%2C16.5017%2C121.2033%2C16.5317&layer=mapnik&marker=16.5167%2C121.1833" style="border:0;display:block;" title="Map of Solano" loading="lazy"></iframe>';
+                mapContainer.setAttribute('data-map-loaded', 'failsafe');
+            }
+        }, 15000);
+    })();
+    </script>
+</body>
+
+</html>
