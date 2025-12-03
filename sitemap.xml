@@ -24,7 +24,7 @@
   </url>
   
   <url>
-    <loc>https://bettersolano.org/government/officials.html</loc>
+    <loc>https://bettersolano.org/government/officials</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -102,70 +102,70 @@
   
   <!-- Service Categories -->
   <url>
-    <loc>https://bettersolano.org/services/certificates.html</loc>
+    <loc>https://bettersolano.org/services/certificates</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/business.html</loc>
+    <loc>https://bettersolano.org/services/business</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/tax-payments.html</loc>
+    <loc>https://bettersolano.org/services/tax-payments</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/social-services.html</loc>
+    <loc>https://bettersolano.org/services/social-services</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/health.html</loc>
+    <loc>https://bettersolano.org/services/health</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/agriculture.html</loc>
+    <loc>https://bettersolano.org/services/agriculture</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/infrastructure.html</loc>
+    <loc>https://bettersolano.org/services/infrastructure</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/education.html</loc>
+    <loc>https://bettersolano.org/services/education</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/environment.html</loc>
+    <loc>https://bettersolano.org/services/environment</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/services/public-safety.html</loc>
+    <loc>https://bettersolano.org/services/public-safety</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -173,7 +173,7 @@
   
   <!-- Service Details -->
   <url>
-    <loc>https://bettersolano.org/service-details/birth-certificate.html</loc>
+    <loc>https://bettersolano.org/service-details/birth-certificate</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -181,14 +181,14 @@
   
   <!-- Legislative -->
   <url>
-    <loc>https://bettersolano.org/legislative/ordinance-framework.html</loc>
+    <loc>https://bettersolano.org/legislative/ordinance-framework</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://bettersolano.org/legislative/resolution-framework.html</loc>
+    <loc>https://bettersolano.org/legislative/resolution-framework</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
