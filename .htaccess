@@ -12,10 +12,11 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
 RewriteRule ^ %1 [R=301,L]
 
-# Serve .html files for clean URLs
+# Serve .html files for clean URLs (LiteSpeed compatible)
+# Use DOCUMENT_ROOT for proper path resolution
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^(.+)$ $1.html [L,QSA]
 
 # Add trailing slash to directories (for consistency)
