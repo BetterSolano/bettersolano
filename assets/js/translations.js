@@ -1,6 +1,7 @@
 /**
- * Better Solano - Translation System
+ * Better Solano - Enhanced Translation System
  * Supports: English (en), Filipino (fil), Ilocano (ilo)
+ * Updated: 2025-12-05
  */
 
 const translations = {
@@ -13,6 +14,9 @@ const translations = {
         "nav-legislative": "Legislative",
         "nav-transparency": "Transparency",
         "nav-contact": "Contact",
+        "nav-budget": "Budget",
+        "nav-news": "News",
+        "nav-faq": "FAQ",
         
         // Statistics Page
         "stats-title": "Municipal Statistics",
@@ -29,13 +33,17 @@ const translations = {
         "breadcrumb-contact": "Contact",
         "breadcrumb-faq": "FAQ",
         "breadcrumb-accessibility": "Accessibility",
+        "breadcrumb-statistics": "Statistics",
+        "breadcrumb-legislative": "Legislative",
+        "breadcrumb-news": "News",
         
         // Hero Section
         "hero-welcome": "Welcome to BetterSolano.org",
         "hero-subtitle": "Access government services, information, and resources for the people of Solano, Nueva Vizcaya.",
         "hero-browse": "Browse Services",
         "hero-contact": "Contact Us",
-        
+        "hero-search-placeholder": "Search for services...",
+
         // Popular Services
         "section-popular": "Popular Services",
         "service-certificates": "Certificates",
@@ -50,6 +58,9 @@ const translations = {
         "service-health-desc": "Medical assistance & programs",
         "btn-view-all-services": "View All Services",
         "btn-view-services": "View Services",
+        "btn-learn-more": "Learn More",
+        "btn-apply-now": "Apply Now",
+        "btn-download": "Download",
         
         // Latest Updates
         "section-updates": "Latest Updates",
@@ -83,11 +94,15 @@ const translations = {
         "footer-contact": "Contact",
         "footer-copyright": "Better Solano. All rights reserved.",
         "accessibility-statement": "Accessibility Statement",
-        
+        "footer-privacy": "Privacy Policy",
+        "footer-terms": "Terms of Use",
+
         // Services Page
         "services-title": "Municipal Services Directory",
         "services-subtitle": "Browse all services offered by the Municipality of Solano",
         "search-placeholder": "Search services...",
+        "search-no-results": "No services found",
+        "search-try-different": "Try different keywords or browse categories below",
         "life-events-title": "Browse by Life Event",
         "life-events-subtitle": "Find services based on what's happening in your life",
         "life-starting-business": "Starting a Business",
@@ -98,6 +113,8 @@ const translations = {
         "life-pwd": "Person with Disability",
         "life-building": "Building/Home Improvement",
         "life-trouble": "Got in Trouble",
+        "life-death": "Death in Family",
+        "life-education": "Education & Scholarship",
         
         // Service Categories
         "cat-certificates": "Certificates & Vital Records",
@@ -120,6 +137,19 @@ const translations = {
         "cat-safety-desc": "Emergency services, disaster preparedness, and community safety programs.",
         "cat-environment": "Environment & Natural Resources",
         "cat-environment-desc": "Environmental permits, waste management, and conservation programs.",
+        "cat-online": "Online Services",
+        "cat-online-desc": "Digital services available through Filipizen and other online platforms.",
+
+        // Service Details
+        "service-requirements": "Requirements",
+        "service-steps": "Steps",
+        "service-fees": "Fees",
+        "service-processing-time": "Processing Time",
+        "service-office": "Office",
+        "service-schedule": "Schedule",
+        "service-contact": "Contact",
+        "service-notes": "Important Notes",
+        "service-related": "Related Services",
         
         // Government Page
         "gov-title": "Government Structure & Officials",
@@ -159,7 +189,7 @@ const translations = {
         "faq-technical": "Technical Questions",
         "faq-still-questions": "Still have questions?",
         "faq-contact-help": "If you didn't find the answer you were looking for, please don't hesitate to contact us. We're here to help!",
-        
+
         // Contact Page
         "contact-title": "Contact Us",
         "contact-subtitle": "We're here to help. Reach out to us through any of these channels.",
@@ -187,6 +217,12 @@ const translations = {
         "form-general": "General Question",
         "form-website-issue": "Website Issue",
         "form-request-response": "I would like to receive a response",
+        "form-required": "Required",
+        "form-optional": "Optional",
+        "form-submit": "Submit",
+        "form-cancel": "Cancel",
+        "form-success": "Your message has been sent successfully!",
+        "form-error": "There was an error sending your message. Please try again.",
         
         // Accessibility Page
         "access-title": "Accessibility Statement",
@@ -199,8 +235,36 @@ const translations = {
         "access-feedback": "Feedback",
         "access-technical": "Technical Specifications",
         "access-assessment": "Assessment Approach",
-        "access-promise": "Our Promise"
+        "access-promise": "Our Promise",
+        
+        // Common UI Elements
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "warning": "Warning",
+        "info": "Information",
+        "close": "Close",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "view": "View",
+        "print": "Print",
+        "share": "Share",
+        "copy": "Copy",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "all": "All",
+        "none": "None",
+        "yes": "Yes",
+        "no": "No",
+        "or": "or",
+        "and": "and"
     },
+
 
     fil: {
         // Navigation - Filipino (Tagalog)
@@ -211,6 +275,9 @@ const translations = {
         "nav-legislative": "Lehislatura",
         "nav-transparency": "Transparensiya",
         "nav-contact": "Makipag-ugnayan",
+        "nav-budget": "Badyet",
+        "nav-news": "Balita",
+        "nav-faq": "Mga Tanong",
         
         // Statistics Page
         "stats-title": "Estadistika ng Munisipalidad",
@@ -227,13 +294,17 @@ const translations = {
         "breadcrumb-contact": "Makipag-ugnayan",
         "breadcrumb-faq": "Mga Madalas Itanong",
         "breadcrumb-accessibility": "Aksesibilidad",
+        "breadcrumb-statistics": "Estadistika",
+        "breadcrumb-legislative": "Lehislatura",
+        "breadcrumb-news": "Balita",
         
         // Hero Section
         "hero-welcome": "Maligayang Pagdating sa BetterSolano.org",
         "hero-subtitle": "I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Solano, Nueva Vizcaya.",
         "hero-browse": "Tingnan ang mga Serbisyo",
         "hero-contact": "Makipag-ugnayan sa Amin",
-        
+        "hero-search-placeholder": "Maghanap ng serbisyo...",
+
         // Popular Services
         "section-popular": "Mga Sikat na Serbisyo",
         "service-certificates": "Mga Sertipiko",
@@ -248,6 +319,9 @@ const translations = {
         "service-health-desc": "Tulong medikal at mga programa",
         "btn-view-all-services": "Tingnan Lahat ng Serbisyo",
         "btn-view-services": "Tingnan ang mga Serbisyo",
+        "btn-learn-more": "Alamin Pa",
+        "btn-apply-now": "Mag-apply Ngayon",
+        "btn-download": "I-download",
         
         // Latest Updates
         "section-updates": "Pinakabagong Balita",
@@ -281,11 +355,15 @@ const translations = {
         "footer-contact": "Makipag-ugnayan",
         "footer-copyright": "Better Solano. Nakalaan ang lahat ng karapatan.",
         "accessibility-statement": "Pahayag ng Aksesibilidad",
-        
+        "footer-privacy": "Patakaran sa Privacy",
+        "footer-terms": "Mga Tuntunin ng Paggamit",
+
         // Services Page
         "services-title": "Direktoryo ng Serbisyong Munisipal",
         "services-subtitle": "Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Solano",
         "search-placeholder": "Maghanap ng serbisyo...",
+        "search-no-results": "Walang nahanap na serbisyo",
+        "search-try-different": "Subukan ang ibang mga keyword o tingnan ang mga kategorya sa ibaba",
         "life-events-title": "Maghanap Ayon sa Pangyayari sa Buhay",
         "life-events-subtitle": "Hanapin ang mga serbisyo batay sa nangyayari sa iyong buhay",
         "life-starting-business": "Magsimula ng Negosyo",
@@ -296,6 +374,8 @@ const translations = {
         "life-pwd": "Taong may Kapansanan",
         "life-building": "Pagtatayo/Pagpapabuti ng Bahay",
         "life-trouble": "May Problema",
+        "life-death": "Pagkamatay sa Pamilya",
+        "life-education": "Edukasyon at Iskolarship",
         
         // Service Categories
         "cat-certificates": "Mga Sertipiko at Vital Records",
@@ -318,6 +398,19 @@ const translations = {
         "cat-safety-desc": "Mga serbisyong pang-emergency, paghahanda sa sakuna, at mga programa sa kaligtasan ng komunidad.",
         "cat-environment": "Kapaligiran at Likas na Yaman",
         "cat-environment-desc": "Mga permit sa kapaligiran, pamamahala ng basura, at mga programa sa konserbasyon.",
+        "cat-online": "Mga Online na Serbisyo",
+        "cat-online-desc": "Mga digital na serbisyo na makukuha sa Filipizen at iba pang online platform.",
+
+        // Service Details
+        "service-requirements": "Mga Kinakailangan",
+        "service-steps": "Mga Hakbang",
+        "service-fees": "Mga Bayarin",
+        "service-processing-time": "Oras ng Pagproseso",
+        "service-office": "Opisina",
+        "service-schedule": "Iskedyul",
+        "service-contact": "Makipag-ugnayan",
+        "service-notes": "Mahahalagang Paalala",
+        "service-related": "Mga Kaugnay na Serbisyo",
         
         // Government Page
         "gov-title": "Istruktura at Opisyal ng Pamahalaan",
@@ -357,7 +450,7 @@ const translations = {
         "faq-technical": "Mga Teknikal na Tanong",
         "faq-still-questions": "May tanong pa ba?",
         "faq-contact-help": "Kung hindi mo nahanap ang sagot na hinahanap mo, huwag mag-atubiling makipag-ugnayan sa amin. Nandito kami para tumulong!",
-        
+
         // Contact Page
         "contact-title": "Makipag-ugnayan sa Amin",
         "contact-subtitle": "Nandito kami para tumulong. Makipag-ugnayan sa amin sa alinman sa mga channel na ito.",
@@ -385,6 +478,12 @@ const translations = {
         "form-general": "Pangkalahatang Tanong",
         "form-website-issue": "Problema sa Website",
         "form-request-response": "Nais kong makatanggap ng tugon",
+        "form-required": "Kinakailangan",
+        "form-optional": "Opsyonal",
+        "form-submit": "Isumite",
+        "form-cancel": "Kanselahin",
+        "form-success": "Matagumpay na naipadala ang iyong mensahe!",
+        "form-error": "May error sa pagpapadala ng iyong mensahe. Pakisubukan muli.",
         
         // Accessibility Page
         "access-title": "Pahayag ng Aksesibilidad",
@@ -397,8 +496,36 @@ const translations = {
         "access-feedback": "Feedback",
         "access-technical": "Mga Teknikal na Detalye",
         "access-assessment": "Paraan ng Pagsusuri",
-        "access-promise": "Ang Aming Pangako"
+        "access-promise": "Ang Aming Pangako",
+        
+        // Common UI Elements
+        "loading": "Naglo-load...",
+        "error": "Error",
+        "success": "Tagumpay",
+        "warning": "Babala",
+        "info": "Impormasyon",
+        "close": "Isara",
+        "back": "Bumalik",
+        "next": "Susunod",
+        "previous": "Nakaraan",
+        "save": "I-save",
+        "delete": "Burahin",
+        "edit": "I-edit",
+        "view": "Tingnan",
+        "print": "I-print",
+        "share": "Ibahagi",
+        "copy": "Kopyahin",
+        "search": "Maghanap",
+        "filter": "Salain",
+        "sort": "Ayusin",
+        "all": "Lahat",
+        "none": "Wala",
+        "yes": "Oo",
+        "no": "Hindi",
+        "or": "o",
+        "and": "at"
     },
+
 
     ilo: {
         // Navigation - Ilocano (Iloko)
@@ -409,6 +536,9 @@ const translations = {
         "nav-legislative": "Lehislatura",
         "nav-transparency": "Kinasiluag",
         "nav-contact": "Kontaken",
+        "nav-budget": "Badyet",
+        "nav-news": "Damag",
+        "nav-faq": "Saludsod",
         
         // Statistics Page
         "stats-title": "Estadistika ti Munisipalidad",
@@ -425,13 +555,17 @@ const translations = {
         "breadcrumb-contact": "Kontaken",
         "breadcrumb-faq": "Masansan a Maisaludsod",
         "breadcrumb-accessibility": "Aksesibilidad",
+        "breadcrumb-statistics": "Estadistika",
+        "breadcrumb-legislative": "Lehislatura",
+        "breadcrumb-news": "Damag",
         
         // Hero Section
         "hero-welcome": "Naragsak a Panangyawat iti BetterSolano.org",
         "hero-subtitle": "Aksesen dagiti serbisio ti gobierno, impormasion, ken dagiti rekurso para kadagiti umili ti Solano, Nueva Vizcaya.",
         "hero-browse": "Kitaen dagiti Serbisio",
         "hero-contact": "Kontaken Dakami",
-        
+        "hero-search-placeholder": "Agsapul ti serbisio...",
+
         // Popular Services
         "section-popular": "Dagiti Pagpilian a Serbisio",
         "service-certificates": "Dagiti Sertipiko",
@@ -446,6 +580,9 @@ const translations = {
         "service-health-desc": "Tulong medikal ken dagiti programa",
         "btn-view-all-services": "Kitaen Amin a Serbisio",
         "btn-view-services": "Kitaen dagiti Serbisio",
+        "btn-learn-more": "Ammuem Pay",
+        "btn-apply-now": "Ag-apply Itan",
+        "btn-download": "I-download",
         
         // Latest Updates
         "section-updates": "Kabarbaro a Damag",
@@ -479,11 +616,15 @@ const translations = {
         "footer-contact": "Kontak",
         "footer-copyright": "Better Solano. Amin a karbengan ket naireserbado.",
         "accessibility-statement": "Pahayag ti Aksesibilidad",
-        
+        "footer-privacy": "Pagannurotan ti Pribado",
+        "footer-terms": "Dagiti Kondision ti Panagusar",
+
         // Services Page
         "services-title": "Direktorio ti Serbisio ti Munisipalidad",
         "services-subtitle": "Kitaen amin a serbisio nga i-alok ti Munisipalidad ti Solano",
         "search-placeholder": "Agsapul ti serbisio...",
+        "search-no-results": "Awan ti nasarakan a serbisio",
+        "search-try-different": "Padasem ti sabali a keyword wenno kitaem dagiti kategorya iti baba",
         "life-events-title": "Agsapul Sigun iti Pasamak iti Biag",
         "life-events-subtitle": "Biroken dagiti serbisio a naibatay iti mapasamak iti biagmo",
         "life-starting-business": "Mangrugi ti Negosio",
@@ -494,6 +635,8 @@ const translations = {
         "life-pwd": "Tao nga Addaan Kapansanan",
         "life-building": "Panagpatakder/Panagpasayaat ti Balay",
         "life-trouble": "Adda Problema",
+        "life-death": "Ipapatay iti Pamilia",
+        "life-education": "Edukasion ken Iskolarship",
         
         // Service Categories
         "cat-certificates": "Dagiti Sertipiko ken Vital Records",
@@ -516,6 +659,19 @@ const translations = {
         "cat-safety-desc": "Dagiti serbisio ti emergency, panagisagana iti didigra, ken dagiti programa ti kinatalged ti komunidad.",
         "cat-environment": "Aglawlaw ken Dagiti Natural a Rekurso",
         "cat-environment-desc": "Dagiti permit ti aglawlaw, panagtaripato ti basura, ken dagiti programa ti konserbasion.",
+        "cat-online": "Dagiti Online a Serbisio",
+        "cat-online-desc": "Dagiti digital a serbisio a magun-od iti Filipizen ken dadduma pay nga online platform.",
+
+        // Service Details
+        "service-requirements": "Dagiti Kasapulan",
+        "service-steps": "Dagiti Addang",
+        "service-fees": "Dagiti Bayadan",
+        "service-processing-time": "Tiempo ti Panagproseso",
+        "service-office": "Opisina",
+        "service-schedule": "Iskedyul",
+        "service-contact": "Kontaken",
+        "service-notes": "Napateg a Paammo",
+        "service-related": "Dagiti Mainaig a Serbisio",
         
         // Government Page
         "gov-title": "Estruktura ken Opisial ti Gobierno",
@@ -555,7 +711,7 @@ const translations = {
         "faq-technical": "Dagiti Teknikal a Saludsod",
         "faq-still-questions": "Adda pay saludsodmo?",
         "faq-contact-help": "No saanmo a nasarakan ti sungbat a birbiroken mo, saan ka nga agduadua a mangkontak kadakami. Adda kami ditoy tapno tumulong!",
-        
+
         // Contact Page
         "contact-title": "Kontaken Dakami",
         "contact-subtitle": "Adda kami ditoy tapno tumulong. Kontaken dakami babaen kadagitoy a pamuspusan.",
@@ -583,6 +739,12 @@ const translations = {
         "form-general": "Sapasap a Saludsod",
         "form-website-issue": "Problema ti Website",
         "form-request-response": "Kayatko a makaawat ti sungbat",
+        "form-required": "Kasapulan",
+        "form-optional": "Opsional",
+        "form-submit": "Iysubmit",
+        "form-cancel": "Ikansela",
+        "form-success": "Balligi a naiypatulod ti mensahem!",
+        "form-error": "Adda error iti panangiypatulod ti mensahem. Pangngaasi a padasem manen.",
         
         // Accessibility Page
         "access-title": "Pahayag ti Aksesibilidad",
@@ -595,52 +757,164 @@ const translations = {
         "access-feedback": "Feedback",
         "access-technical": "Dagiti Teknikal a Detalye",
         "access-assessment": "Pamuspusan ti Panag-assess",
-        "access-promise": "Ti Kari Mi"
+        "access-promise": "Ti Kari Mi",
+        
+        // Common UI Elements
+        "loading": "Agkarkarga...",
+        "error": "Error",
+        "success": "Balligi",
+        "warning": "Pakdaar",
+        "info": "Impormasion",
+        "close": "Iserra",
+        "back": "Agsubli",
+        "next": "Sumaruno",
+        "previous": "Napalabas",
+        "save": "I-save",
+        "delete": "Ikkaten",
+        "edit": "I-edit",
+        "view": "Kitaen",
+        "print": "I-print",
+        "share": "Ibingay",
+        "copy": "Kopiaen",
+        "search": "Agsapul",
+        "filter": "Saguten",
+        "sort": "Urnosen",
+        "all": "Amin",
+        "none": "Awan",
+        "yes": "Wen",
+        "no": "Saan",
+        "or": "wenno",
+        "and": "ken"
     }
 };
 
 
 /**
- * Translation Engine - Reliable language switching with fallback support
+ * Enhanced Translation Engine
+ * Features: Auto-detection, fallback support, dynamic content, pluralization
+ * Updated: 2025-12-05
  */
 const TranslationEngine = {
     currentLang: 'en',
     defaultLang: 'en',
     supportedLangs: ['en', 'fil', 'ilo'],
+    langNames: {
+        'en': 'English',
+        'fil': 'Filipino',
+        'ilo': 'Ilocano'
+    },
+    langCodes: {
+        'en': 'en',
+        'fil': 'tl',
+        'ilo': 'ilo'
+    },
     initialized: false,
+    observers: [],
     
+    /**
+     * Initialize the translation engine
+     */
     init: function() {
         if (this.initialized) return;
         
-        const savedLang = localStorage.getItem('selectedLang');
-        this.currentLang = this.supportedLangs.includes(savedLang) ? savedLang : this.defaultLang;
+        // Try to get saved language, then browser preference
+        let savedLang = localStorage.getItem('selectedLang');
+        if (!savedLang || !this.supportedLangs.includes(savedLang)) {
+            savedLang = this.detectBrowserLanguage();
+        }
         
+        this.currentLang = savedLang;
         this.applyTranslations(this.currentLang);
         this.updateActiveButton(this.currentLang);
         this.setupEventListeners();
+        this.setupMutationObserver();
         this.initialized = true;
+        
+        console.log('[TranslationEngine] Initialized with language:', this.currentLang);
     },
     
-    getTranslation: function(key, lang) {
+    /**
+     * Detect browser language preference
+     */
+    detectBrowserLanguage: function() {
+        const browserLang = navigator.language || navigator.userLanguage;
+        const langCode = browserLang.split('-')[0].toLowerCase();
+        
+        // Map common codes
+        if (langCode === 'tl' || langCode === 'fil') return 'fil';
+        if (langCode === 'ilo') return 'ilo';
+        if (langCode === 'en') return 'en';
+        
+        return this.defaultLang;
+    },
+
+    /**
+     * Get translation with fallback support
+     */
+    getTranslation: function(key, lang, params) {
         lang = lang || this.currentLang;
+        let translation = null;
+        
+        // Try current language
         if (translations[lang] && translations[lang][key]) {
-            return translations[lang][key];
+            translation = translations[lang][key];
         }
-        if (translations[this.defaultLang] && translations[this.defaultLang][key]) {
-            return translations[this.defaultLang][key];
-        }
-        return null;
-    },
-    
-    applyTranslations: function(lang) {
-        if (!translations[lang]) {
-            lang = this.defaultLang;
+        // Fallback to default language
+        else if (translations[this.defaultLang] && translations[this.defaultLang][key]) {
+            translation = translations[this.defaultLang][key];
         }
         
-        // Update text content for data-i18n elements
-        document.querySelectorAll('[data-i18n]').forEach(function(element) {
-            var key = element.getAttribute('data-i18n');
-            var translation = TranslationEngine.getTranslation(key, lang);
+        // Apply parameters if provided
+        if (translation && params) {
+            translation = this.interpolate(translation, params);
+        }
+        
+        return translation;
+    },
+    
+    /**
+     * Interpolate parameters into translation string
+     * Usage: getTranslation('greeting', 'en', { name: 'Juan' })
+     * Translation: "Hello, {{name}}!" -> "Hello, Juan!"
+     */
+    interpolate: function(text, params) {
+        return text.replace(/\{\{(\w+)\}\}/g, function(match, key) {
+            return params.hasOwnProperty(key) ? params[key] : match;
+        });
+    },
+    
+    /**
+     * Get plural form of translation
+     * Usage: getPlural('items', 5, 'en')
+     */
+    getPlural: function(key, count, lang) {
+        lang = lang || this.currentLang;
+        const singularKey = key;
+        const pluralKey = key + '_plural';
+        
+        if (count === 1) {
+            return this.getTranslation(singularKey, lang, { count: count });
+        }
+        
+        // Try plural form first
+        let translation = this.getTranslation(pluralKey, lang, { count: count });
+        if (!translation) {
+            translation = this.getTranslation(singularKey, lang, { count: count });
+        }
+        
+        return translation;
+    },
+    
+    /**
+     * Translate a specific element
+     */
+    translateElement: function(element, lang) {
+        lang = lang || this.currentLang;
+        
+        // Text content
+        const i18nKey = element.getAttribute('data-i18n');
+        if (i18nKey) {
+            const translation = this.getTranslation(i18nKey, lang);
             if (translation) {
                 if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                     if (element.type === 'submit' || element.type === 'button') {
@@ -650,84 +924,258 @@ const TranslationEngine = {
                     element.textContent = translation;
                 }
             }
+        }
+        
+        // Placeholder
+        const placeholderKey = element.getAttribute('data-i18n-placeholder');
+        if (placeholderKey) {
+            const translation = this.getTranslation(placeholderKey, lang);
+            if (translation) element.placeholder = translation;
+        }
+        
+        // Title attribute
+        const titleKey = element.getAttribute('data-i18n-title');
+        if (titleKey) {
+            const translation = this.getTranslation(titleKey, lang);
+            if (translation) element.title = translation;
+        }
+        
+        // Aria-label
+        const ariaKey = element.getAttribute('data-i18n-aria');
+        if (ariaKey) {
+            const translation = this.getTranslation(ariaKey, lang);
+            if (translation) element.setAttribute('aria-label', translation);
+        }
+        
+        // Alt text for images
+        const altKey = element.getAttribute('data-i18n-alt');
+        if (altKey) {
+            const translation = this.getTranslation(altKey, lang);
+            if (translation) element.alt = translation;
+        }
+    },
+
+    /**
+     * Apply translations to all elements
+     */
+    applyTranslations: function(lang) {
+        if (!translations[lang]) {
+            console.warn('[TranslationEngine] Language not found:', lang, '- using default');
+            lang = this.defaultLang;
+        }
+        
+        const self = this;
+        
+        // Translate all data-i18n elements
+        document.querySelectorAll('[data-i18n]').forEach(function(el) {
+            self.translateElement(el, lang);
         });
         
-        // Update placeholders
-        document.querySelectorAll('[data-i18n-placeholder]').forEach(function(element) {
-            var key = element.getAttribute('data-i18n-placeholder');
-            var translation = TranslationEngine.getTranslation(key, lang);
-            if (translation) {
-                element.placeholder = translation;
-            }
+        // Translate placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+            self.translateElement(el, lang);
         });
         
-        // Update title attributes
-        document.querySelectorAll('[data-i18n-title]').forEach(function(element) {
-            var key = element.getAttribute('data-i18n-title');
-            var translation = TranslationEngine.getTranslation(key, lang);
-            if (translation) {
-                element.title = translation;
-            }
+        // Translate titles
+        document.querySelectorAll('[data-i18n-title]').forEach(function(el) {
+            self.translateElement(el, lang);
         });
         
-        // Update aria-label attributes
-        document.querySelectorAll('[data-i18n-aria]').forEach(function(element) {
-            var key = element.getAttribute('data-i18n-aria');
-            var translation = TranslationEngine.getTranslation(key, lang);
-            if (translation) {
-                element.setAttribute('aria-label', translation);
-            }
+        // Translate aria-labels
+        document.querySelectorAll('[data-i18n-aria]').forEach(function(el) {
+            self.translateElement(el, lang);
         });
         
-        // Update document language
-        var langCode = lang === 'fil' ? 'tl' : (lang === 'ilo' ? 'ilo' : 'en');
-        document.documentElement.lang = langCode;
+        // Translate alt texts
+        document.querySelectorAll('[data-i18n-alt]').forEach(function(el) {
+            self.translateElement(el, lang);
+        });
         
+        // Update document language attribute
+        document.documentElement.lang = this.langCodes[lang] || lang;
+        
+        // Save preference
         this.currentLang = lang;
         localStorage.setItem('selectedLang', lang);
         
         // Dispatch event for other scripts
         document.dispatchEvent(new CustomEvent('languageChanged', { 
-            detail: { language: lang, langCode: langCode }
+            detail: { 
+                language: lang, 
+                langCode: this.langCodes[lang],
+                langName: this.langNames[lang]
+            }
         }));
+        
+        // Notify observers
+        this.notifyObservers(lang);
     },
     
+    /**
+     * Update active state on language buttons
+     */
     updateActiveButton: function(lang) {
         document.querySelectorAll('.lang-btn').forEach(function(btn) {
-            btn.classList.remove('active');
-            btn.setAttribute('aria-pressed', 'false');
-            if (btn.dataset.lang === lang) {
-                btn.classList.add('active');
-                btn.setAttribute('aria-pressed', 'true');
-            }
+            const isActive = btn.dataset.lang === lang;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            btn.setAttribute('aria-current', isActive ? 'true' : 'false');
         });
     },
     
+    /**
+     * Setup event listeners for language buttons
+     */
     setupEventListeners: function() {
-        var self = this;
+        const self = this;
+        
         document.querySelectorAll('.lang-btn').forEach(function(btn) {
             btn.addEventListener('click', function(e) {
                 e.preventDefault();
-                var lang = this.dataset.lang;
+                const lang = this.dataset.lang;
                 if (self.supportedLangs.includes(lang)) {
-                    self.applyTranslations(lang);
-                    self.updateActiveButton(lang);
+                    self.switchLanguage(lang);
+                }
+            });
+        });
+        
+        // Also handle select dropdowns
+        document.querySelectorAll('.lang-select').forEach(function(select) {
+            select.addEventListener('change', function(e) {
+                const lang = this.value;
+                if (self.supportedLangs.includes(lang)) {
+                    self.switchLanguage(lang);
                 }
             });
         });
     },
-    
-    switchLanguage: function(lang) {
-        if (this.supportedLangs.includes(lang)) {
-            this.applyTranslations(lang);
-            this.updateActiveButton(lang);
-            return true;
-        }
-        return false;
+
+    /**
+     * Setup mutation observer for dynamically added content
+     */
+    setupMutationObserver: function() {
+        const self = this;
+        
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.nodeType === Node.ELEMENT_NODE) {
+                        // Translate the new element if it has i18n attributes
+                        if (node.hasAttribute && (
+                            node.hasAttribute('data-i18n') ||
+                            node.hasAttribute('data-i18n-placeholder') ||
+                            node.hasAttribute('data-i18n-title') ||
+                            node.hasAttribute('data-i18n-aria') ||
+                            node.hasAttribute('data-i18n-alt')
+                        )) {
+                            self.translateElement(node, self.currentLang);
+                        }
+                        
+                        // Also check children
+                        if (node.querySelectorAll) {
+                            node.querySelectorAll('[data-i18n], [data-i18n-placeholder], [data-i18n-title], [data-i18n-aria], [data-i18n-alt]').forEach(function(el) {
+                                self.translateElement(el, self.currentLang);
+                            });
+                        }
+                    }
+                });
+            });
+        });
+        
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
     },
     
+    /**
+     * Switch to a different language
+     */
+    switchLanguage: function(lang) {
+        if (!this.supportedLangs.includes(lang)) {
+            console.warn('[TranslationEngine] Unsupported language:', lang);
+            return false;
+        }
+        
+        this.applyTranslations(lang);
+        this.updateActiveButton(lang);
+        
+        console.log('[TranslationEngine] Switched to:', lang);
+        return true;
+    },
+    
+    /**
+     * Get current language
+     */
     getCurrentLanguage: function() {
         return this.currentLang;
+    },
+    
+    /**
+     * Get language name
+     */
+    getLanguageName: function(lang) {
+        return this.langNames[lang || this.currentLang] || lang;
+    },
+    
+    /**
+     * Get all supported languages
+     */
+    getSupportedLanguages: function() {
+        return this.supportedLangs.map(function(lang) {
+            return {
+                code: lang,
+                name: this.langNames[lang],
+                htmlCode: this.langCodes[lang]
+            };
+        }, this);
+    },
+    
+    /**
+     * Add observer for language changes
+     */
+    addObserver: function(callback) {
+        if (typeof callback === 'function') {
+            this.observers.push(callback);
+        }
+    },
+    
+    /**
+     * Remove observer
+     */
+    removeObserver: function(callback) {
+        const index = this.observers.indexOf(callback);
+        if (index > -1) {
+            this.observers.splice(index, 1);
+        }
+    },
+    
+    /**
+     * Notify all observers of language change
+     */
+    notifyObservers: function(lang) {
+        this.observers.forEach(function(callback) {
+            try {
+                callback(lang);
+            } catch (e) {
+                console.error('[TranslationEngine] Observer error:', e);
+            }
+        });
+    },
+    
+    /**
+     * Translate text directly (for dynamic content)
+     */
+    t: function(key, params) {
+        return this.getTranslation(key, this.currentLang, params) || key;
+    },
+    
+    /**
+     * Check if a translation key exists
+     */
+    hasTranslation: function(key, lang) {
+        lang = lang || this.currentLang;
+        return !!(translations[lang] && translations[lang][key]);
     }
 };
 
@@ -738,4 +1186,17 @@ if (document.readyState === 'loading') {
     });
 } else {
     TranslationEngine.init();
+}
+
+// Export for module systems
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { TranslationEngine, translations };
+}
+
+// Global access
+if (typeof window !== 'undefined') {
+    window.TranslationEngine = TranslationEngine;
+    window.t = function(key, params) {
+        return TranslationEngine.t(key, params);
+    };
 }

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SEEDO Public Market Services - Market clearance, entrance fees, vendor services, and community tax certificates in Solano, Nueva Vizcaya.">
+    <meta name="author" content="Ramon Logan Jr.">
+    <meta name="keywords" content="SEEDO Solano, public market, market clearance, vendor permit, cash ticket, community tax, Nueva Vizcaya">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bettersolano.org/service-details/seedo-public-market">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bettersolano.org/service-details/seedo-public-market">
+    <meta property="og:title" content="SEEDO Public Market | BetterSolano.org">
+    <meta property="og:description" content="Market clearance, entrance fees, vendor services, and community tax certificates in Solano, Nueva Vizcaya.">
+    <meta property="og:image" content="https://bettersolano.org/assets/images/banners/opengraph.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>SEEDO Public Market | BetterSolano.org</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/accessibility.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <style>
+        .seedo-section { padding: 40px 0; }
+        .seedo-section.alt-bg { background: var(--color-bg-alt); }
+        .section-header { margin-bottom: 20px; }
+        .section-header h2 { font-size: 1.125rem; color: var(--color-text); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+        .section-header h2 i { color: var(--color-primary); font-size: 1rem; }
+        .section-header p { color: var(--color-text-light); font-size: 0.8125rem; margin: 0; }
+        .quick-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+        .stat-card { background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 12px; text-align: center; }
+        .stat-card i { font-size: 1rem; color: var(--color-primary); margin-bottom: 4px; }
+        .stat-card h4 { font-size: 0.625rem; color: var(--color-text-light); margin-bottom: 2px; font-weight: 500; text-transform: uppercase; }
+        .stat-card p { font-size: 0.8125rem; font-weight: 600; color: var(--color-text); margin: 0; }
+        .process-table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; border: 1px solid rgba(0,0,0,0.06); font-size: 0.75rem; }
+        .process-table th { background: var(--color-primary); color: white; padding: 10px 12px; text-align: left; font-weight: 600; font-size: 0.6875rem; text-transform: uppercase; }
+        .process-table td { padding: 10px 12px; border-bottom: 1px solid rgba(0,0,0,0.04); vertical-align: top; }
+        .process-table tr:last-child td { border-bottom: none; }
+        .process-table tr:hover { background: rgba(0,50,160,0.02); }
+        .step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: var(--color-primary); color: white; font-size: 0.625rem; font-weight: 700; border-radius: 4px; margin-right: 6px; }
+        .personnel-tag { display: inline-block; background: rgba(0,50,160,0.08); color: var(--color-primary); padding: 2px 6px; border-radius: 4px; font-size: 0.625rem; font-weight: 500; margin: 1px 0; }
+        .time-tag { color: var(--color-text-light); font-size: 0.6875rem; }
+        .fee-tag { color: var(--color-success); font-size: 0.6875rem; font-weight: 600; }
+        .service-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; justify-content: center; }
+        .service-tab { padding: 8px 16px; background: white; border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; font-size: 0.75rem; font-weight: 600; color: var(--color-text); cursor: pointer; transition: all 0.2s ease; }
+        .service-tab:hover { border-color: var(--color-primary); }
+        .service-tab.active { background: var(--color-primary); border-color: var(--color-primary); color: white; }
+        .service-content { display: none; }
+        .service-content.active { display: block; }
+        .req-box { background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 14px; }
+        .req-box h4 { font-size: 0.8125rem; font-weight: 600; color: var(--color-text); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+        .req-box h4 i { color: var(--color-primary); }
+        .req-list { list-style: none; padding: 0; margin: 0; }
+        .req-list li { font-size: 0.75rem; color: var(--color-text); padding: 4px 0; display: flex; align-items: flex-start; gap: 6px; }
+        .req-list li i { color: var(--color-primary); font-size: 0.625rem; margin-top: 3px; flex-shrink: 0; }
+        .fee-table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; border: 1px solid rgba(0,0,0,0.06); font-size: 0.75rem; margin-top: 14px; }
+        .fee-table th { background: rgba(0,50,160,0.06); color: var(--color-text); padding: 8px 12px; text-align: left; font-weight: 600; font-size: 0.6875rem; }
+        .fee-table td { padding: 8px 12px; border-bottom: 1px solid rgba(0,0,0,0.04); }
+        .fee-table tr:last-child td { border-bottom: none; }
+        .staff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        .staff-card { background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 12px; }
+        .staff-card h4 { font-size: 0.75rem; font-weight: 600; color: var(--color-text); margin-bottom: 2px; }
+        .staff-card p { font-size: 0.6875rem; color: var(--color-text-light); margin: 0; }
+        @media (max-width: 992px) { .staff-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) { .quick-stats { grid-template-columns: repeat(2, 1fr); } .process-table { font-size: 0.6875rem; } }
+        @media (max-width: 575px) { .quick-stats, .staff-grid { grid-template-columns: 1fr; } .service-tabs { flex-direction: column; } .service-tab { text-align: center; } }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="hotline-bar"><div class="container"><div class="hotline-inner"><div class="hotline-items">
+        <a href="tel:09274008033" class="hotline-item"><i class="bi bi-shield-fill"></i><span>Police: 0927 400 8033</span></a>
+        <a href="tel:09162840885" class="hotline-item"><i class="bi bi-heart-fill"></i><span>MSWDO: 0916 284 0885</span></a>
+        <a href="tel:09360620305" class="hotline-item"><i class="bi bi-fire"></i><span>Fire: 0936 062 0305</span></a>
+        <a href="tel:0906188086" class="hotline-item"><i class="bi bi-building"></i><span>DILG: 0906 188 086</span></a>
+        <a href="tel:09263833744" class="hotline-item"><i class="bi bi-exclamation-triangle-fill"></i><span>MDRRMO: 0926 383 3744</span></a>
+        <a href="tel:09068195569" class="hotline-item"><i class="bi bi-truck"></i><span>R2TMC: 0906 819 5569</span></a>
+    </div></div></div></div>
+    <header class="site-header"><div class="container header-inner">
+        <div class="logo-container"><a href="../"><img src="../assets/images/logo/better-solano-logo.svg" alt="Better Solano Logo" class="logo-img"></a></div>
+        <nav class="main-nav" aria-label="Main Navigation"><ul>
+            <li><a href="../">Home</a></li>
+            <li class="has-dropdown">
+                <a href="../services/" class="active">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../services/certificates">Certificates</a></li>
+                    <li><a href="../services/business">Business</a></li>
+                    <li><a href="../services/tax-payments">Tax Payments</a></li>
+                    <li><a href="../services/social-services">Social Services</a></li>
+                    <li><a href="../services/health">Health</a></li>
+                    <li><a href="../services/agriculture">Agriculture</a></li>
+                    <li><a href="../services/infrastructure">Infrastructure</a></li>
+                    <li><a href="../services/education">Education</a></li>
+                    <li><a href="../services/public-safety">Public Safety</a></li>
+                    <li><a href="../services/environment">Environment</a></li>
+                </ul>
+            </li>
+            <li><a href="../government/">Government</a></li>
+            <li><a href="../statistics/">Statistics</a></li>
+            <li class="has-dropdown"><a href="../legislative/">Legislative</a><ul class="dropdown-menu">
+                <li><a href="../legislative/ordinance-framework">Ordinance Framework</a></li>
+                <li><a href="../legislative/resolution-framework">Resolution Framework</a></li>
+            </ul></li>
+            <li><a href="../budget/">Transparency</a></li>
+            <li><a href="../contact/">Contact</a></li>
+        </ul></nav>
+        <div class="header-actions"><div class="lang-selector">
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="en">EN</button>
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="fil">FIL</button>
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="ilo">ILO</button>
+        </div></div>
+    </div></header>
+    <div class="info-bar" role="complementary"><div class="container"><div class="info-bar-inner">
+        <div class="info-bar-item info-bar-rates"><i class="bi bi-currency-exchange"></i><span class="rate-rotator"><span class="rate-display">1 USD = ₱ --</span></span></div>
+        <div class="info-bar-item info-bar-weather"><i class="bi bi-thermometer-half"></i><span class="weather-location">Solano</span><span class="weather-temp">--°C</span></div>
+        <div class="info-bar-item info-bar-datetime"><i class="bi bi-calendar3"></i><span class="date-value">--- --, ----</span><span class="datetime-separator">•</span><i class="bi bi-clock"></i><span class="time-value">--:-- --</span><span class="time-label">PHT</span></div>
+    </div></div></div>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="../">Home</a><span>/</span>
+                <a href="../services/">Services</a><span>/</span>
+                <a href="../services/business">Business</a><span>/</span>
+                <span aria-current="page">SEEDO Public Market</span>
+            </nav>
+        </div>
+
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <span class="page-header-badge"><i class="bi bi-shop-window"></i> SEEDO</span>
+                    <h1>Economic Enterprise & Development Office</h1>
+                    <p class="page-header-desc">Public Market services including clearances, entrance fees, and vendor management</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="seedo-section">
+            <div class="container">
+                <div class="quick-stats">
+                    <div class="stat-card"><i class="bi bi-building"></i><h4>Office</h4><p>SEEDO - Public Market</p></div>
+                    <div class="stat-card"><i class="bi bi-geo-alt"></i><h4>Location</h4><p>Public Market</p></div>
+                    <div class="stat-card"><i class="bi bi-clock"></i><h4>Hours</h4><p>6AM - 6PM</p></div>
+                    <div class="stat-card"><i class="bi bi-file-earmark-text"></i><h4>Services</h4><p>4 Services</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Tabs -->
+        <section class="seedo-section alt-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2 style="justify-content: center;"><i class="bi bi-grid-3x3-gap"></i> Public Market Services</h2>
+                    <p>Select a service to view the detailed process and requirements</p>
+                </div>
+                <div class="service-tabs">
+                    <button type="button" class="service-tab active" data-tab="clearance">Market Clearance</button>
+                    <button type="button" class="service-tab" data-tab="entrance">Entrance Fees</button>
+                    <button type="button" class="service-tab" data-tab="complaints">Complaints</button>
+                    <button type="button" class="service-tab" data-tab="ctc">Community Tax (Cedula)</button>
+                </div>
+
+                <!-- Market Clearance -->
+                <div class="service-content active" id="clearance">
+                    <div class="section-header">
+                        <h2><i class="bi bi-patch-check"></i> Issuance of Market Clearance/Certification</h2>
+                        <p>For vendors and stallholders who need clearance for various transactions</p>
+                    </div>
+                    <div class="req-box" style="margin-bottom: 14px;">
+                        <h4><i class="bi bi-file-earmark-text"></i> Requirements</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Fill out request slip</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Updated Official Receipt of stall rental</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Valid ID</li>
+                        </ul>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="process-table">
+                            <thead>
+                                <tr><th>Step</th><th>Activity</th><th>Fee</th><th>Duration</th><th>Personnel</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="step-badge">1</span></td>
+                                    <td>Fill out request slip and submit Official Receipt of stall rental</td>
+                                    <td>—</td>
+                                    <td><span class="time-tag">2 minutes</span></td>
+                                    <td><span class="personnel-tag">Market Supervisor</span><br><span class="personnel-tag">Market Inspector</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="step-badge">2</span></td>
+                                    <td>Pay clearance fee to the Municipal Treasurer's Office</td>
+                                    <td><span class="fee-tag">Per MTO</span></td>
+                                    <td><span class="time-tag">5 minutes</span></td>
+                                    <td><span class="personnel-tag">Treasurer's Office</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="step-badge">3</span></td>
+                                    <td>Get the market clearance/certification</td>
+                                    <td>—</td>
+                                    <td><span class="time-tag">2 minutes</span></td>
+                                    <td><span class="personnel-tag">Market Supervisor</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="req-box" style="margin-top: 14px;">
+                        <h4><i class="bi bi-info-circle"></i> Processing Information</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-clock"></i> Total processing time: 9 minutes</li>
+                            <li><i class="bi bi-info-circle"></i> Please accomplish Client Feedback Form and drop at the designated suggestion box</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Entrance Fees -->
+                <div class="service-content" id="entrance">
+                    <div class="section-header">
+                        <h2><i class="bi bi-ticket-perforated"></i> Payment of Entrance Fees and Issuance of Cash Ticket</h2>
+                        <p>For vendors, traders, and individuals entering the public market to sell goods</p>
+                    </div>
+                    <div class="req-box" style="margin-bottom: 14px;">
+                        <h4><i class="bi bi-info-circle"></i> Service Description</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Any individual or entity selling goods in the public market must pay entrance fee</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Fee is being assessed by the Market Collector to determine the amount of Cash Ticket</li>
+                        </ul>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="process-table">
+                            <thead>
+                                <tr><th>Step</th><th>Activity</th><th>Fee</th><th>Duration</th><th>Personnel</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="step-badge">1</span></td>
+                                    <td>Bring goods/merchandise/products for inspection/assessment</td>
+                                    <td>—</td>
+                                    <td><span class="time-tag">5 minutes</span></td>
+                                    <td>
+                                        <span class="personnel-tag">Market Collector</span><br>
+                                        <span class="personnel-tag">Market Inspector</span><br>
+                                        <span class="personnel-tag">Market Supervisor</span><br>
+                                        <span class="personnel-tag">Ticket Seller</span><br>
+                                        <span class="personnel-tag">Gate Keeper</span><br>
+                                        <span class="personnel-tag">Utility Worker</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="step-badge">2</span></td>
+                                    <td>Pay entrance fee and get cash ticket at the gate/entrance of the Public Market</td>
+                                    <td><span class="fee-tag">Per Schedule</span></td>
+                                    <td><span class="time-tag">2 minutes</span></td>
+                                    <td>
+                                        <span class="personnel-tag">Market Collector</span><br>
+                                        <span class="personnel-tag">Ticket Seller</span><br>
+                                        <span class="personnel-tag">Gate Keeper</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table class="fee-table">
+                        <thead><tr><th>Item Type</th><th>Fee Range</th></tr></thead>
+                        <tbody>
+                            <tr><td>Vegetables & Fruits</td><td class="fee-tag">Based on volume</td></tr>
+                            <tr><td>Meat & Poultry</td><td class="fee-tag">Based on weight</td></tr>
+                            <tr><td>Fish & Seafood</td><td class="fee-tag">Based on weight</td></tr>
+                            <tr><td>Dry Goods</td><td class="fee-tag">Based on quantity</td></tr>
+                            <tr><td>Other Merchandise</td><td class="fee-tag">As assessed</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="req-box" style="margin-top: 14px;">
+                        <h4><i class="bi bi-info-circle"></i> Processing Information</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-clock"></i> Total processing time: 20 minutes</li>
+                            <li><i class="bi bi-info-circle"></i> Please accomplish Client Feedback Form and drop at the designated suggestion box</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Complaints -->
+                <div class="service-content" id="complaints">
+                    <div class="section-header">
+                        <h2><i class="bi bi-exclamation-triangle"></i> Complaints Against Violations of Public Market Code</h2>
+                        <p>Filing complaints against violations of sanitation, hygiene, and other market rules and regulations</p>
+                    </div>
+                    <div class="req-box" style="margin-bottom: 14px;">
+                        <h4><i class="bi bi-info-circle"></i> Service Description</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Any individual or stallholder may file a formal complaint against violations of the Public Market Code</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Complaints may include sanitation issues, illegal vending, and other violations</li>
+                        </ul>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="process-table">
+                            <thead>
+                                <tr><th>Step</th><th>Activity</th><th>Fee</th><th>Duration</th><th>Personnel</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="step-badge">1</span></td>
+                                    <td>Secure and fill out Public Market complaint form and submit to the Market Supervisor</td>
+                                    <td><span class="fee-tag">Free</span></td>
+                                    <td><span class="time-tag">10 minutes</span></td>
+                                    <td>
+                                        <span class="personnel-tag">Market Supervisor</span><br>
+                                        <span class="personnel-tag">Market Inspector</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="step-badge">2</span></td>
+                                    <td>Verification and investigation of complaint</td>
+                                    <td>—</td>
+                                    <td><span class="time-tag">Varies</span></td>
+                                    <td>
+                                        <span class="personnel-tag">Market Supervisor</span><br>
+                                        <span class="personnel-tag">SEEDO Head</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="req-box" style="margin-top: 14px;">
+                        <h4><i class="bi bi-info-circle"></i> Processing Information</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-clock"></i> Total response time: 6 minutes (initial filing)</li>
+                            <li><i class="bi bi-info-circle"></i> Investigation and resolution time varies depending on the nature of complaint</li>
+                            <li><i class="bi bi-info-circle"></i> Please accomplish Client Feedback Form and drop at the designated suggestion box</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Community Tax Certificate -->
+                <div class="service-content" id="ctc">
+                    <div class="section-header">
+                        <h2><i class="bi bi-card-text"></i> Issuance of Community Tax Certificate (Cedula)</h2>
+                        <p>As deputized by the Municipal Treasurer</p>
+                    </div>
+                    <div class="req-box" style="margin-bottom: 14px;">
+                        <h4><i class="bi bi-file-earmark-text"></i> Requirements</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Fill out CTC application slip</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Valid ID</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Previous year's CTC (if available)</li>
+                        </ul>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="process-table">
+                            <thead>
+                                <tr><th>Step</th><th>Activity</th><th>Fee</th><th>Duration</th><th>Personnel</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="step-badge">1</span></td>
+                                    <td>Fill out CTC application slip</td>
+                                    <td>—</td>
+                                    <td><span class="time-tag">2 minutes</span></td>
+                                    <td><span class="personnel-tag">Market Supervisor</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="step-badge">2</span></td>
+                                    <td>Pay CTC fee</td>
+                                    <td><span class="fee-tag">₱5.00+</span></td>
+                                    <td><span class="time-tag">2 minutes</span></td>
+                                    <td><span class="personnel-tag">Market Supervisor</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table class="fee-table">
+                        <thead><tr><th>Type</th><th>Basic Fee</th><th>Additional</th></tr></thead>
+                        <tbody>
+                            <tr><td>Individual (Basic)</td><td class="fee-tag">₱5.00</td><td>+ ₱1.00 per ₱1,000 income</td></tr>
+                            <tr><td>Corporation/Business</td><td class="fee-tag">₱500.00</td><td>+ additional based on gross receipts</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="req-box" style="margin-top: 14px;">
+                        <h4><i class="bi bi-info-circle"></i> Processing Information</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-clock"></i> Total processing time: 5 minutes</li>
+                            <li><i class="bi bi-info-circle"></i> CTC is valid for one calendar year</li>
+                            <li><i class="bi bi-info-circle"></i> Please accomplish Client Feedback Form and drop at the designated suggestion box</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Staff Section -->
+        <section class="seedo-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="bi bi-people"></i> Office Personnel</h2>
+                    <p>Key personnel handling public market services</p>
+                </div>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <h4>SEEDO Head</h4>
+                        <p>Office Head</p>
+                    </div>
+                    <div class="staff-card">
+                        <h4>Market Supervisor</h4>
+                        <p>Market Operations</p>
+                    </div>
+                    <div class="staff-card">
+                        <h4>Market Inspector</h4>
+                        <p>Inspection & Compliance</p>
+                    </div>
+                    <div class="staff-card">
+                        <h4>Market Collector</h4>
+                        <p>Fee Collection</p>
+                    </div>
+                    <div class="staff-card">
+                        <h4>Ticket Seller</h4>
+                        <p>Cash Ticket Issuance</p>
+                    </div>
+                    <div class="staff-card">
+                        <h4>Gate Keeper</h4>
+                        <p>Entry Management</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="seedo-section alt-bg">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 14px;">
+                    <div class="req-box">
+                        <h4><i class="bi bi-building"></i> Office Information</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-geo-alt"></i> SEEDO Office, Public Market, Solano, Nueva Vizcaya</li>
+                            <li><i class="bi bi-clock"></i> Monday - Sunday: 6:00 AM - 6:00 PM</li>
+                            <li><i class="bi bi-telephone"></i> (078) 326-5001</li>
+                        </ul>
+                    </div>
+                    <div class="req-box">
+                        <h4><i class="bi bi-info-circle"></i> Important Notes</h4>
+                        <ul class="req-list">
+                            <li><i class="bi bi-check-circle"></i> All vendors must have valid stall rental receipts</li>
+                            <li><i class="bi bi-check-circle"></i> Entrance fees are based on goods being sold</li>
+                            <li><i class="bi bi-check-circle"></i> Complaints are handled confidentially</li>
+                            <li><i class="bi bi-check-circle"></i> CTC is available at the market for convenience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main-new">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo/better-solano-logo-white.svg" alt="Better Solano logo" class="footer-logo">
+                    <p class="footer-tagline">Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.</p>
+                    <div class="footer-social-new">
+                        <a href="https://www.facebook.com/OfficialLguSolanoFanpage/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://solano.gov.ph" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Official Website"><i class="bi bi-globe"></i></a>
+                        <a href="https://sangguniangbayan.solano.gov.ph/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Sangguniang Bayan"><i class="bi bi-bank"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-new">
+                        <li><a href="../sitemap/"><i class="bi bi-chevron-right"></i> Sitemap</a></li>
+                        <li><a href="../terms/"><i class="bi bi-chevron-right"></i> Terms of Use</a></li>
+                        <li><a href="../privacy/"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="../accessibility/"><i class="bi bi-chevron-right"></i> Accessibility</a></li>
+                        <li><a href="../faq/"><i class="bi bi-chevron-right"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links-new">
+                        <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
+                        <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
+                        <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> CMCI DTI Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-cost" role="status">Cost to the People of Solano = <span class="footer-cost-value">₱0</span></div>
+                    <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute codes with us</a>
+                </div>
+            </div>
+            <div class="footer-bottom-new">
+                <div class="footer-copyright">
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
+                    <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/translations.js"></script>
+    <script src="../assets/js/info-bar.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.service-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.service-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.service-content').forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

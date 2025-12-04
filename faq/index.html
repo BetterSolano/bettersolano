@@ -104,7 +104,21 @@
             <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="../" data-i18n="nav-home">Home</a></li>
-                    <li><a href="../services/" data-i18n="nav-services">Services</a></li>
+                    <li class="has-dropdown">
+                        <a href="../services/" data-i18n="nav-services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/certificates">Certificates</a></li>
+                            <li><a href="../services/business">Business</a></li>
+                            <li><a href="../services/tax-payments">Tax Payments</a></li>
+                            <li><a href="../services/social-services">Social Services</a></li>
+                            <li><a href="../services/health">Health</a></li>
+                            <li><a href="../services/agriculture">Agriculture</a></li>
+                            <li><a href="../services/infrastructure">Infrastructure</a></li>
+                            <li><a href="../services/education">Education</a></li>
+                            <li><a href="../services/public-safety">Public Safety</a></li>
+                            <li><a href="../services/environment">Environment</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../government/" data-i18n="nav-government">Government</a></li>
                     <li><a href="../statistics/" data-i18n="nav-statistics">Statistics</a></li>
                     <li class="has-dropdown">
@@ -352,8 +366,8 @@
                             <details class="faq-accordion">
                                 <summary>Who developed Better Solano?</summary>
                                 <div class="faq-answer">
-                                    <p><a href="https://ramonloganjr.com/" target="_blank" rel="noopener noreferrer">Ramon Logan Jr.</a> is the developer behind BetterSolano.org. An IT professional and full-stack developer based in the United Arab Emirates, he is recognized for delivering end-to-end digital solutions in web development, design, cloud computing, and cybersecurity. He is also the founder of <a href="https://hellopinas.com" target="_blank" rel="noopener noreferrer">HelloPinas.com</a>.</p>
-                                    <p>Ramon is also a contributing member of <a href="https://bettergov.ph" target="_blank" rel="noopener noreferrer">BetterGov.ph</a>, a community-led, volunteer-driven civic-tech initiative that aims to modernize and simplify access to government services and data in the Philippines.</p>
+                                    <p><a href="https://ramonloganjr.com/" target="_blank" rel="noopener noreferrer">Ramon Logan Jr.</a> is the developer behind BetterSolano.org. Based in the United Arab Emirates, he works in IT and practices full-stack development, helping build practical digital solutions in web development, design, cloud services, and cybersecurity. He also started <a href="https://hellopinas.com" target="_blank" rel="noopener noreferrer">HelloPinas.com</a>, a small cloud-based solutions initiative.</p>
+                                    <p>Ramon contributes to <a href="https://bettergov.ph" target="_blank" rel="noopener noreferrer">BetterGov.ph</a>, a volunteer-driven civic-tech effort focused on improving access to local government information and services in the Philippines. He is also an individual participant of the <a href="https://openjsf.org/" target="_blank" rel="noopener noreferrer">OpenJS Foundation</a>, a nonprofit supporting open-source JavaScript communities worldwide.</p>
                                 </div>
                             </details>
                         </div>
@@ -401,6 +415,7 @@
                         <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
                         <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
                         <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> CMCI DTI Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -408,12 +423,12 @@
                         Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
                     </div>
                     <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute codes with us</a>
                 </div>
             </div>
             <div class="footer-bottom-new">
                 <div class="footer-copyright">
-                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. All rights reserved. All public information sourced from official government portals.</span>
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
                     <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
                 </div>
             </div>

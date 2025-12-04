@@ -95,7 +95,21 @@
             <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="../" data-i18n="nav-home">Home</a></li>
-                    <li><a href="/" class="active" data-i18n="nav-services">Services</a></li>
+                    <li class="has-dropdown">
+                        <a href="/" class="active" data-i18n="nav-services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="certificates">Certificates</a></li>
+                            <li><a href="business">Business</a></li>
+                            <li><a href="tax-payments">Tax Payments</a></li>
+                            <li><a href="social-services">Social Services</a></li>
+                            <li><a href="health">Health</a></li>
+                            <li><a href="agriculture">Agriculture</a></li>
+                            <li><a href="infrastructure">Infrastructure</a></li>
+                            <li><a href="education">Education</a></li>
+                            <li><a href="public-safety">Public Safety</a></li>
+                            <li><a href="environment">Environment</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../government/" data-i18n="nav-government">Government</a></li>
                     <li><a href="../statistics/" data-i18n="nav-statistics">Statistics</a></li>
                     <li class="has-dropdown">
@@ -163,25 +177,156 @@
                 </div>
             </div>
         </section>
+        <!-- Services -->
         <section class="section">
             <div class="container">
+                <div class="hotlines-header">
+                    <div class="hotlines-title">
+                        <span class="hotlines-badge"><i class="bi bi-shield-check"></i> Services</span>
+                        <h2>Public Safety Services</h2>
+                    </div>
+                    <p>Emergency response and disaster preparedness programs.</p>
+                </div>
                 <div class="grid grid-3" style="gap: var(--spacing-md);">
                     <div class="service-item-card">
-                        <h3 class="service-item-title"><i class="bi bi-exclamation-triangle"></i> Emergency Hotline</h3>
-                        <p class="service-item-desc">24/7 emergency response services</p>
+                        <h3 class="service-item-title"><i class="bi bi-exclamation-triangle"></i> Emergency Response</h3>
+                        <p class="service-item-desc">24/7 emergency response and rescue services</p>
                         <div class="service-item-meta">
-                            <span><strong>Hotline:</strong> (078) 911-HELP</span>
+                            <span><strong>Fee:</strong> Free</span>
                             <span><strong>Time:</strong> 24/7</span>
                         </div>
                     </div>
                     <div class="service-item-card">
                         <h3 class="service-item-title"><i class="bi bi-cloud-rain"></i> Disaster Assistance</h3>
-                        <p class="service-item-desc">Relief and evacuation support</p>
+                        <p class="service-item-desc">Relief goods and evacuation support</p>
                         <div class="service-item-meta">
                             <span><strong>Fee:</strong> Free</span>
-                            <span><strong>Time:</strong> During emergencies</span>
+                            <span><strong>Office:</strong> MDRRMO</span>
                         </div>
                     </div>
+                    <div class="service-item-card">
+                        <h3 class="service-item-title"><i class="bi bi-megaphone"></i> Disaster Preparedness</h3>
+                        <p class="service-item-desc">Training and resources for disaster readiness</p>
+                        <div class="service-item-meta">
+                            <span><strong>Fee:</strong> Free</span>
+                            <span><strong>Office:</strong> MDRRMO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Hotlines -->
+        <section class="section bg-alt">
+            <div class="container">
+                <div class="hotlines-header">
+                    <div class="hotlines-title">
+                        <span class="hotlines-badge"><i class="bi bi-exclamation-triangle-fill"></i> Emergency</span>
+                        <h2>Emergency Hotlines</h2>
+                    </div>
+                    <p>For emergencies and inquiries, contact these numbers anytime.</p>
+                </div>
+                <div class="hotlines-grid">
+                    <a href="tel:09263833744" class="hotline-card">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <span class="hotline-card-label">MDRRMO Solano</span>
+                        <span class="hotline-card-number">0926 383 3744</span>
+                    </a>
+                    <a href="tel:09274008033" class="hotline-card">
+                        <i class="bi bi-shield-fill"></i>
+                        <span class="hotline-card-label">PNP Solano</span>
+                        <span class="hotline-card-number">0927 400 8033</span>
+                    </a>
+                    <a href="tel:09162840885" class="hotline-card">
+                        <i class="bi bi-heart-fill"></i>
+                        <span class="hotline-card-label">MSWDO Solano</span>
+                        <span class="hotline-card-number">0916 284 0885</span>
+                    </a>
+                    <a href="tel:09054471061" class="hotline-card">
+                        <i class="bi bi-broadcast"></i>
+                        <span class="hotline-card-label">KABALIKAT Civicom</span>
+                        <span class="hotline-card-number">0905 447 1061</span>
+                    </a>
+                    <a href="tel:09358121081" class="hotline-card">
+                        <i class="bi bi-lightning-fill"></i>
+                        <span class="hotline-card-label">NUVELCO Solano</span>
+                        <span class="hotline-card-number">0935 812 1081</span>
+                    </a>
+                    <a href="tel:09175951931" class="hotline-card">
+                        <i class="bi bi-building-fill"></i>
+                        <span class="hotline-card-label">Mayor's Office</span>
+                        <span class="hotline-card-number">0917 595 1931</span>
+                    </a>
+                    <a href="tel:09061880868" class="hotline-card">
+                        <i class="bi bi-building"></i>
+                        <span class="hotline-card-label">DILG Solano</span>
+                        <span class="hotline-card-number">0906 188 0868</span>
+                    </a>
+                    <a href="tel:09171345511" class="hotline-card">
+                        <i class="bi bi-shop"></i>
+                        <span class="hotline-card-label">SEEDO Public Market</span>
+                        <span class="hotline-card-number">0917 134 5511</span>
+                    </a>
+                    <a href="tel:09161744979" class="hotline-card">
+                        <i class="bi bi-tree-fill"></i>
+                        <span class="hotline-card-label">MAGRO Solano</span>
+                        <span class="hotline-card-number">0916 174 4979</span>
+                    </a>
+                    <a href="tel:09171227150" class="hotline-card">
+                        <i class="bi bi-cone-striped"></i>
+                        <span class="hotline-card-label">PDRRMO N. Vizcaya</span>
+                        <span class="hotline-card-number">0917 122 7150</span>
+                    </a>
+                    <a href="tel:09360620305" class="hotline-card">
+                        <i class="bi bi-fire"></i>
+                        <span class="hotline-card-label">BFP Solano</span>
+                        <span class="hotline-card-number">0936 062 0305</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medical Emergency Hotlines -->
+        <section class="section">
+            <div class="container">
+                <div class="hotlines-header">
+                    <div class="hotlines-title">
+                        <span class="hotlines-badge hotlines-badge--medical"><i class="bi bi-hospital-fill"></i> Medical</span>
+                        <h2>Medical Emergency Hotlines</h2>
+                    </div>
+                    <p>For medical emergencies and hospital inquiries.</p>
+                </div>
+                <div class="hotlines-grid">
+                    <a href="tel:09679103054" class="hotline-card hotline-card--medical">
+                        <i class="bi bi-hospital"></i>
+                        <span class="hotline-card-label">RHU Solano</span>
+                        <span class="hotline-card-number">0967 910 3054</span>
+                    </a>
+                    <a href="tel:09068195569" class="hotline-card hotline-card--medical">
+                        <i class="bi bi-truck"></i>
+                        <span class="hotline-card-label">R2TMC (Former VRH)</span>
+                        <span class="hotline-card-number">0906 819 5569</span>
+                    </a>
+                    <a href="tel:09208335766" class="hotline-card hotline-card--medical">
+                        <i class="bi bi-hospital"></i>
+                        <span class="hotline-card-label">PLT Hospital</span>
+                        <span class="hotline-card-number">0920 833 5766</span>
+                    </a>
+                    <a href="tel:09474981746" class="hotline-card hotline-card--medical">
+                        <i class="bi bi-hospital"></i>
+                        <span class="hotline-card-label">MMG Hospital</span>
+                        <span class="hotline-card-number">0947 498 1746</span>
+                    </a>
+                    <a href="tel:09171080452" class="hotline-card hotline-card--medical">
+                        <i class="bi bi-hospital"></i>
+                        <span class="hotline-card-label">Salubris Hospital</span>
+                        <span class="hotline-card-number">0917 108 0452</span>
+                    </a>
+                    <a href="tel:09175079950" class="hotline-card hotline-card--medical">
+                        <i class="bi bi-plus-circle-fill"></i>
+                        <span class="hotline-card-label">Red Cross</span>
+                        <span class="hotline-card-number">0917 507 9950</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -214,6 +359,7 @@
                         <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
                         <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
                         <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> CMCI DTI Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -221,12 +367,12 @@
                         Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
                     </div>
                     <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute codes with us</a>
                 </div>
             </div>
             <div class="footer-bottom-new">
                 <div class="footer-copyright">
-                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. All rights reserved. All public information sourced from official government portals.</span>
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
                     <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
                 </div>
             </div>

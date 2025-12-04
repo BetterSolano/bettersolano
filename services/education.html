@@ -95,7 +95,21 @@
             <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="../" data-i18n="nav-home">Home</a></li>
-                    <li><a href="/" class="active" data-i18n="nav-services">Services</a></li>
+                    <li class="has-dropdown">
+                        <a href="/" class="active" data-i18n="nav-services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="certificates">Certificates</a></li>
+                            <li><a href="business">Business</a></li>
+                            <li><a href="tax-payments">Tax Payments</a></li>
+                            <li><a href="social-services">Social Services</a></li>
+                            <li><a href="health">Health</a></li>
+                            <li><a href="agriculture">Agriculture</a></li>
+                            <li><a href="infrastructure">Infrastructure</a></li>
+                            <li><a href="education">Education</a></li>
+                            <li><a href="public-safety">Public Safety</a></li>
+                            <li><a href="environment">Environment</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../government/" data-i18n="nav-government">Government</a></li>
                     <li><a href="../statistics/" data-i18n="nav-statistics">Statistics</a></li>
                     <li class="has-dropdown">
@@ -165,7 +179,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <div class="grid grid-3" style="gap: var(--spacing-md);">
+                <div class="grid grid-3">
                     <div class="service-item-card">
                         <h3 class="service-item-title"><i class="bi bi-award"></i> Scholarship Programs</h3>
                         <p class="service-item-desc">Municipal scholarships for students</p>
@@ -180,6 +194,194 @@
                         <div class="service-item-meta">
                             <span><strong>Fee:</strong> Free</span>
                             <span><strong>Time:</strong> Per semester</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Statistics -->
+        <section class="section section-compact bg-alt">
+            <div class="container">
+                <div class="edu-stats-grid">
+                    <div class="edu-stat-card">
+                        <span class="edu-stat-num">16</span>
+                        <span class="edu-stat-label">Day Care Centers</span>
+                    </div>
+                    <div class="edu-stat-card">
+                        <span class="edu-stat-num">27</span>
+                        <span class="edu-stat-label">Public Elementary</span>
+                    </div>
+                    <div class="edu-stat-card">
+                        <span class="edu-stat-num">7</span>
+                        <span class="edu-stat-label">Private Elementary</span>
+                    </div>
+                    <div class="edu-stat-card">
+                        <span class="edu-stat-num">3</span>
+                        <span class="edu-stat-label">Public High Schools</span>
+                    </div>
+                    <div class="edu-stat-card">
+                        <span class="edu-stat-num">2</span>
+                        <span class="edu-stat-label">Private High Schools</span>
+                    </div>
+                    <div class="edu-stat-card">
+                        <span class="edu-stat-num">2</span>
+                        <span class="edu-stat-label">Tertiary Schools</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schools Directory -->
+        <section class="section section-compact">
+            <div class="container">
+                <h2 class="section-title"><i class="bi bi-building"></i> Schools Directory</h2>
+                
+                <!-- Day Care Centers -->
+                <div class="edu-category">
+                    <button type="button" class="edu-category-header" aria-expanded="true">
+                        <span><i class="bi bi-emoji-smile"></i> Pre-School / Day Care Centers</span>
+                        <span class="edu-category-count">16 centers</span>
+                    </button>
+                    <div class="edu-category-content">
+                        <div class="edu-school-grid">
+                            <div class="edu-school-item"><span class="edu-school-name">Maliwanag Day Care Center</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Buenavista Day Care Center</span><span class="edu-school-loc">Barangay Buenavista</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Commando Day Care Center</span><span class="edu-school-loc">Barangay Commando</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Concepcion Day Care Center</span><span class="edu-school-loc">Barangay Concepcion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Calaocan Day Care Center</span><span class="edu-school-loc">Barangay Calaocan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Quezon Day Care Center</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Roxas Day Care Center</span><span class="edu-school-loc">Barangay Roxas</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Uddiawan Day Care Center</span><span class="edu-school-loc">Barangay Uddiawan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Osmeña Day Care Center</span><span class="edu-school-loc">Barangay Osmeña</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Quirino Day Care Center</span><span class="edu-school-loc">Barangay Quirino</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Bagahabag Day Care Center</span><span class="edu-school-loc">Barangay Bagahabag</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Pilar Day Care Center</span><span class="edu-school-loc">Barangay Pilar</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Tucal Day Care Center</span><span class="edu-school-loc">Barangay Tucal</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Ocapon Day Care Center</span><span class="edu-school-loc">Barangay Ocapon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Nangalisan Day Care Center</span><span class="edu-school-loc">Barangay Nangalisan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Paitan Day Care Center</span><span class="edu-school-loc">Barangay Paitan</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Public Elementary Schools -->
+                <div class="edu-category">
+                    <button type="button" class="edu-category-header" aria-expanded="false">
+                        <span><i class="bi bi-book"></i> Public Elementary Schools</span>
+                        <span class="edu-category-count">27 schools</span>
+                    </button>
+                    <div class="edu-category-content" hidden>
+                        <div class="edu-school-grid">
+                            <div class="edu-school-item"><span class="edu-school-name">Solano Central School</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Aggub Primary School</span><span class="edu-school-loc">Barangay Aggub</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Bagahabag Elementary School</span><span class="edu-school-loc">Barangay Bagahabag</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Bangaan Elementary School</span><span class="edu-school-loc">Barangay Bangaan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Bangar Elementary School</span><span class="edu-school-loc">Barangay Bangar</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Buenavista Elementary School</span><span class="edu-school-loc">Barangay Buenavista</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Calaocan Elementary School</span><span class="edu-school-loc">Barangay Calaocan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Commando Elementary School</span><span class="edu-school-loc">Barangay Commando</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Concepcion Elementary School</span><span class="edu-school-loc">Barangay Concepcion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Curifang Elementary School</span><span class="edu-school-loc">Barangay Curifang</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Dadap Elementary School</span><span class="edu-school-loc">Barangay Dadap</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Lactawan Elementary School</span><span class="edu-school-loc">Barangay Lactawan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Nangalisan Elementary School</span><span class="edu-school-loc">Barangay Nangalisan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Ocapon Elementary School</span><span class="edu-school-loc">Barangay Ocapon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Osmeña Elementary School</span><span class="edu-school-loc">Barangay Osmeña</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Paitan Elementary School</span><span class="edu-school-loc">Barangay Paitan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Pilar Elementary School</span><span class="edu-school-loc">Barangay Pilar</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Quezon Elementary School</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Quirino Elementary School</span><span class="edu-school-loc">Barangay Quirino</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Roxas Elementary School</span><span class="edu-school-loc">Barangay Roxas</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">San Juan Elementary School</span><span class="edu-school-loc">Barangay San Juan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Tucal Elementary School</span><span class="edu-school-loc">Barangay Tucal</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Uddiawan Elementary School</span><span class="edu-school-loc">Barangay Uddiawan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Villaros Elementary School</span><span class="edu-school-loc">Barangay Villaros</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Wacal Elementary School</span><span class="edu-school-loc">Barangay Wacal</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Poblacion North Elementary</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Poblacion South Elementary</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Private Elementary Schools -->
+                <div class="edu-category">
+                    <button type="button" class="edu-category-header" aria-expanded="false">
+                        <span><i class="bi bi-mortarboard"></i> Private Elementary Schools</span>
+                        <span class="edu-category-count">7 schools</span>
+                    </button>
+                    <div class="edu-category-content" hidden>
+                        <div class="edu-school-grid">
+                            <div class="edu-school-item"><span class="edu-school-name">Colegio de Solano</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Divine Word College High School</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Solano Christian Academy</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">St. Mary's Academy of Solano</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Nueva Vizcaya Montessori School</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Solano Adventist Academy</span><span class="edu-school-loc">Barangay Roxas</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Holy Cross Academy</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Public High Schools -->
+                <div class="edu-category">
+                    <button type="button" class="edu-category-header" aria-expanded="false">
+                        <span><i class="bi bi-bank"></i> Public High Schools</span>
+                        <span class="edu-category-count">3 schools</span>
+                    </button>
+                    <div class="edu-category-content" hidden>
+                        <div class="edu-school-grid">
+                            <div class="edu-school-item"><span class="edu-school-name">Solano National High School</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Uddiawan National High School</span><span class="edu-school-loc">Barangay Uddiawan</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Quezon National High School</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Private High Schools -->
+                <div class="edu-category">
+                    <button type="button" class="edu-category-header" aria-expanded="false">
+                        <span><i class="bi bi-building"></i> Private High Schools</span>
+                        <span class="edu-category-count">2 schools</span>
+                    </button>
+                    <div class="edu-category-content" hidden>
+                        <div class="edu-school-grid">
+                            <div class="edu-school-item"><span class="edu-school-name">St. Mary's College</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">NV Colleges Foundation</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tertiary Schools -->
+                <div class="edu-category">
+                    <button type="button" class="edu-category-header" aria-expanded="false">
+                        <span><i class="bi bi-mortarboard-fill"></i> Tertiary / Colleges</span>
+                        <span class="edu-category-count">2 schools</span>
+                    </button>
+                    <div class="edu-category-content" hidden>
+                        <div class="edu-school-grid">
+                            <div class="edu-school-item"><span class="edu-school-name">St. Mary's University</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">NV Colleges Foundation Inc.</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical-Vocational Schools -->
+                <div class="edu-category">
+                    <button type="button" class="edu-category-header" aria-expanded="false">
+                        <span><i class="bi bi-tools"></i> Technical-Vocational Schools</span>
+                        <span class="edu-category-count">8 schools</span>
+                    </button>
+                    <div class="edu-category-content" hidden>
+                        <div class="edu-school-grid">
+                            <div class="edu-school-item"><span class="edu-school-name">Micro Asia College of Science and Technology</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Asian Multi-Tech Institute Inc.</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Petron Mega Trade School</span><span class="edu-school-loc">Barangay Buenavista</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Nueva Vizcaya Skills Training Center</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Cagayan Valley Maritime Institute Inc.</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Solano Technical Institute</span><span class="edu-school-loc">Barangay Poblacion</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">TESDA Training Center</span><span class="edu-school-loc">Barangay Quezon</span></div>
+                            <div class="edu-school-item"><span class="edu-school-name">Solano Vocational School</span><span class="edu-school-loc">Barangay Concepcion</span></div>
                         </div>
                     </div>
                 </div>
@@ -214,6 +416,7 @@
                         <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
                         <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
                         <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> CMCI DTI Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -221,12 +424,12 @@
                         Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
                     </div>
                     <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute codes with us</a>
                 </div>
             </div>
             <div class="footer-bottom-new">
                 <div class="footer-copyright">
-                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. All rights reserved. All public information sourced from official government portals.</span>
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
                     <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
                 </div>
             </div>

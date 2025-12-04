@@ -4,7 +4,7 @@
     background: linear-gradient(180deg, #1a1a1a 0%, #111111 100%);
     color: #ffffff;
     padding: 0;
-    margin-top: var(--spacing-xl);
+    margin-top: 0;
 }
 
 .site-footer.no-margin-top {

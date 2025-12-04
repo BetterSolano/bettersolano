@@ -97,7 +97,21 @@
             <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="../" data-i18n="nav-home">Home</a></li>
-                    <li><a href="/" class="active" data-i18n="nav-services">Services</a></li>
+                    <li class="has-dropdown">
+                        <a href="/" class="active" data-i18n="nav-services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="certificates">Certificates</a></li>
+                            <li><a href="business">Business</a></li>
+                            <li><a href="tax-payments">Tax Payments</a></li>
+                            <li><a href="social-services">Social Services</a></li>
+                            <li><a href="health">Health</a></li>
+                            <li><a href="agriculture">Agriculture</a></li>
+                            <li><a href="infrastructure">Infrastructure</a></li>
+                            <li><a href="education">Education</a></li>
+                            <li><a href="public-safety">Public Safety</a></li>
+                            <li><a href="environment">Environment</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../government/" data-i18n="nav-government">Government</a></li>
                     <li><a href="../statistics/" data-i18n="nav-statistics">Statistics</a></li>
                     <li class="has-dropdown">
@@ -168,14 +182,14 @@
         <section class="section">
             <div class="container">
                 <div class="grid grid-3" style="gap: var(--spacing-md);">
-                    <div class="service-item-card">
+                    <a href="../service-details/birth-certificate" class="service-item-card" style="text-decoration: none; color: inherit;">
                         <h3 class="service-item-title"><i class="bi bi-file-earmark-text"></i> Birth Certificate</h3>
                         <p class="service-item-desc">Get a certified copy of birth certificate registered in Solano</p>
                         <div class="service-item-meta">
                             <span><strong>Fee:</strong> ₱150</span>
                             <span><strong>Time:</strong> 15-30 mins</span>
                         </div>
-                    </div>
+                    </a>
                     <div class="service-item-card">
                         <h3 class="service-item-title"><i class="bi bi-heart"></i> Marriage Certificate</h3>
                         <p class="service-item-desc">Request certified true copy of marriage certificate</p>
@@ -216,6 +230,22 @@
                             <span><strong>Time:</strong> 3-5 days</span>
                         </div>
                     </div>
+                    <a href="../service-details/municipal-civil-registrar" class="service-item-card" style="text-decoration: none; color: inherit;">
+                        <h3 class="service-item-title"><i class="bi bi-building"></i> Municipal Civil Registrar</h3>
+                        <p class="service-item-desc">Birth, death, marriage registration, corrections, and certified copies</p>
+                        <div class="service-item-meta">
+                            <span><strong>Services:</strong> Multiple</span>
+                            <span><strong>Time:</strong> Varies</span>
+                        </div>
+                    </a>
+                    <a href="../service-details/human-resource-management" class="service-item-card" style="text-decoration: none; color: inherit;">
+                        <h3 class="service-item-title"><i class="bi bi-people"></i> Human Resource Management</h3>
+                        <p class="service-item-desc">Service records, employment certificates, leave credits for LGU employees</p>
+                        <div class="service-item-meta">
+                            <span><strong>Services:</strong> 5</span>
+                            <span><strong>Office:</strong> Mayor's Office</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -248,6 +278,7 @@
                         <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
                         <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
                         <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> CMCI DTI Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -255,12 +286,12 @@
                         Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
                     </div>
                     <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute codes with us</a>
                 </div>
             </div>
             <div class="footer-bottom-new">
                 <div class="footer-copyright">
-                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. All rights reserved. All public information sourced from official government portals.</span>
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
                     <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
                 </div>
             </div>

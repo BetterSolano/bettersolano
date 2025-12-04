@@ -11,11 +11,11 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Municipal statistics and data for Solano, Nueva Vizcaya. View population demographics, economic indicators, barangay data, and community statistics from LGU Solano.">
+    <meta name="description" content="Solano, Nueva Vizcaya statistics and data. View CMCI Competitive Index rankings, population demographics, economic dynamism, government efficiency, infrastructure, and barangay data visualizations.">
     
     <!-- SEO Meta Tags -->
     <meta name="author" content="Ramon Logan Jr.">
-    <meta name="keywords" content="Solano statistics, population data, demographics, Nueva Vizcaya data, municipal statistics, barangay population, economic indicators, census data, LGU Solano data">
+    <meta name="keywords" content="Solano statistics, CMCI competitive index, population data, demographics, economic dynamism, government efficiency, infrastructure, resiliency, innovation, Nueva Vizcaya data, barangay population, LGU Solano data">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://bettersolano.org/statistics/">
     
@@ -81,7 +81,21 @@
             <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="../" data-i18n="nav-home">Home</a></li>
-                    <li><a href="../services/" data-i18n="nav-services">Services</a></li>
+                    <li class="has-dropdown">
+                        <a href="../services/" data-i18n="nav-services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/certificates">Certificates</a></li>
+                            <li><a href="../services/business">Business</a></li>
+                            <li><a href="../services/tax-payments">Tax Payments</a></li>
+                            <li><a href="../services/social-services">Social Services</a></li>
+                            <li><a href="../services/health">Health</a></li>
+                            <li><a href="../services/agriculture">Agriculture</a></li>
+                            <li><a href="../services/infrastructure">Infrastructure</a></li>
+                            <li><a href="../services/education">Education</a></li>
+                            <li><a href="../services/public-safety">Public Safety</a></li>
+                            <li><a href="../services/environment">Environment</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../government/" data-i18n="nav-government">Government</a></li>
                     <li><a href="/" class="active" data-i18n="nav-statistics">Statistics</a></li>
                     <li class="has-dropdown">
@@ -424,7 +438,258 @@
             </div>
         </section>
         
-<!-- Bar Chart Section -->
+<!-- Competitive Index Section -->
+        <section class="stats-section stats-competitive animate-on-scroll" id="competitive-index">
+            <div class="container">
+                <div class="section-header-minimal">
+                    <span class="section-tag"><i class="bi bi-trophy-fill"></i> Competitiveness</span>
+                    <h2>Solano Competitive Index</h2>
+                    <p>Cities and Municipalities Competitiveness Index (CMCI) Performance 2016-2024</p>
+                </div>
+
+                <!-- Pillar Selection Tabs -->
+                <div class="cmci-tabs">
+                    <button type="button" class="cmci-tab active" data-pillar="overview"><i class="bi bi-grid-3x3-gap"></i> Overview</button>
+                    <button type="button" class="cmci-tab" data-pillar="economic-dynamism"><i class="bi bi-graph-up-arrow"></i> Economic Dynamism</button>
+                    <button type="button" class="cmci-tab" data-pillar="government-efficiency"><i class="bi bi-building-check"></i> Government Efficiency</button>
+                    <button type="button" class="cmci-tab" data-pillar="infrastructure"><i class="bi bi-building-gear"></i> Infrastructure</button>
+                    <button type="button" class="cmci-tab" data-pillar="resiliency"><i class="bi bi-shield-check"></i> Resiliency</button>
+                    <button type="button" class="cmci-tab" data-pillar="innovation"><i class="bi bi-lightbulb"></i> Innovation</button>
+                </div>
+
+                <!-- Overview Panel -->
+                <div class="cmci-panel active" id="panel-overview">
+                    <div class="cmci-overview-grid">
+                        <div class="cmci-pillar-card" data-pillar="economic-dynamism">
+                            <div class="pillar-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <h4>Economic Dynamism</h4>
+                            <div class="pillar-score">0.23</div>
+                            <div class="pillar-trend trend-up"><i class="bi bi-arrow-up"></i> +12%</div>
+                        </div>
+                        <div class="cmci-pillar-card" data-pillar="government-efficiency">
+                            <div class="pillar-icon"><i class="bi bi-building-check"></i></div>
+                            <h4>Government Efficiency</h4>
+                            <div class="pillar-score">1.17</div>
+                            <div class="pillar-trend trend-down"><i class="bi bi-arrow-down"></i> -8%</div>
+                        </div>
+                        <div class="cmci-pillar-card" data-pillar="infrastructure">
+                            <div class="pillar-icon"><i class="bi bi-building-gear"></i></div>
+                            <h4>Infrastructure</h4>
+                            <div class="pillar-score">0.40</div>
+                            <div class="pillar-trend trend-up"><i class="bi bi-arrow-up"></i> +5%</div>
+                        </div>
+                        <div class="cmci-pillar-card" data-pillar="resiliency">
+                            <div class="pillar-icon"><i class="bi bi-shield-check"></i></div>
+                            <h4>Resiliency</h4>
+                            <div class="pillar-score">1.08</div>
+                            <div class="pillar-trend trend-stable"><i class="bi bi-dash"></i> Stable</div>
+                        </div>
+                        <div class="cmci-pillar-card" data-pillar="innovation">
+                            <div class="pillar-icon"><i class="bi bi-lightbulb"></i></div>
+                            <h4>Innovation</h4>
+                            <div class="pillar-score">0.68</div>
+                            <div class="pillar-trend trend-up"><i class="bi bi-arrow-up"></i> +25%</div>
+                        </div>
+                    </div>
+
+                    <div class="cmci-chart-container">
+                        <h4><i class="bi bi-bar-chart-line"></i> Key Indicators Trend (2016-2024)</h4>
+                        <div class="chart-wrapper">
+                            <canvas id="cmciOverviewChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Economic Dynamism Panel -->
+                <div class="cmci-panel" id="panel-economic-dynamism">
+                    <div class="cmci-indicator-grid">
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-currency-exchange"></i> Local Economy Size</div>
+                            <div class="indicator-value">0.0259</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="2.59"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-graph-up"></i> Local Economy Growth</div>
+                            <div class="indicator-value">0.0318</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="3.18"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-shop"></i> Active Establishments</div>
+                            <div class="indicator-value">0.4994</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="49.94"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-shield-check"></i> Safety Compliant Business</div>
+                            <div class="indicator-value">0.2235</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="22.35"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-people"></i> Employment Generation</div>
+                            <div class="indicator-value">0.3835</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="38.35"></div></div>
+                        </div>
+                    </div>
+                    <div class="cmci-chart-container">
+                        <h4><i class="bi bi-graph-up"></i> Economic Dynamism Trend</h4>
+                        <div class="chart-wrapper">
+                            <canvas id="cmciEconomicChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Government Efficiency Panel -->
+                <div class="cmci-panel" id="panel-government-efficiency">
+                    <div class="cmci-indicator-grid">
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-cash-coin"></i> Cost of Living</div>
+                            <div class="indicator-value">1.1919</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="47.68"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-briefcase"></i> Cost of Doing Business</div>
+                            <div class="indicator-value">1.5599</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="62.40"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-bank"></i> Financial Deepening</div>
+                            <div class="indicator-value">0.8288</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="33.15"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-speedometer2"></i> Productivity</div>
+                            <div class="indicator-value">0.3297</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="32.97"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-check2-square"></i> Compliance to Directives</div>
+                            <div class="indicator-value">1.9600</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="78.40"></div></div>
+                        </div>
+                    </div>
+                    <div class="cmci-chart-container">
+                        <h4><i class="bi bi-graph-up"></i> Government Efficiency Trend</h4>
+                        <div class="chart-wrapper">
+                            <canvas id="cmciGovernmentChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure Panel -->
+                <div class="cmci-panel" id="panel-infrastructure">
+                    <div class="cmci-indicator-grid">
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-signpost-2"></i> Road Network</div>
+                            <div class="indicator-value">0.0016</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="0.16"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-geo-alt"></i> Distance to Ports</div>
+                            <div class="indicator-value">1.5281</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="61.12"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-lightning-charge"></i> Basic Utilities</div>
+                            <div class="indicator-value">0.3560</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="14.24"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-truck"></i> Transportation</div>
+                            <div class="indicator-value">0.0959</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="9.59"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-wifi"></i> IT Capacity</div>
+                            <div class="indicator-value">0.0155</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="1.55"></div></div>
+                        </div>
+                    </div>
+                    <div class="cmci-chart-container">
+                        <h4><i class="bi bi-graph-up"></i> Infrastructure Trend</h4>
+                        <div class="chart-wrapper">
+                            <canvas id="cmciInfraChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resiliency Panel -->
+                <div class="cmci-panel" id="panel-resiliency">
+                    <div class="cmci-indicator-grid">
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-file-earmark-text"></i> DRR Plan</div>
+                            <div class="indicator-value">1.9783</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="79.13"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-calendar-event"></i> Annual Disaster Drill</div>
+                            <div class="indicator-value">1.0023</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="40.09"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-bell"></i> Early Warning System</div>
+                            <div class="indicator-value">1.0397</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="41.59"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-piggy-bank"></i> DRRMP Budget</div>
+                            <div class="indicator-value">0.0020</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="0.20"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-clipboard-data"></i> Risk Assessments</div>
+                            <div class="indicator-value">2.0000</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="80.00"></div></div>
+                        </div>
+                    </div>
+                    <div class="cmci-chart-container">
+                        <h4><i class="bi bi-graph-up"></i> Resiliency Trend</h4>
+                        <div class="chart-wrapper">
+                            <canvas id="cmciResiliencyChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Innovation Panel -->
+                <div class="cmci-panel" id="panel-innovation">
+                    <div class="cmci-indicator-grid">
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-file-code"></i> ICT Plan</div>
+                            <div class="indicator-value">2.0001</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="80.00"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-search"></i> R&D Expenditures</div>
+                            <div class="indicator-value">0.0006</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="0.06"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-laptop"></i> E-BPLS Software</div>
+                            <div class="indicator-value">2.0000</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="80.00"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-mortarboard"></i> STEM Graduates</div>
+                            <div class="indicator-value">0.0181</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="1.81"></div></div>
+                        </div>
+                        <div class="cmci-indicator-card">
+                            <div class="indicator-header"><i class="bi bi-rocket-takeoff"></i> Innovation Facilities</div>
+                            <div class="indicator-value">0.0227</div>
+                            <div class="indicator-bar"><div class="indicator-fill" data-value="2.27"></div></div>
+                        </div>
+                    </div>
+                    <div class="cmci-chart-container">
+                        <h4><i class="bi bi-graph-up"></i> Innovation Trend</h4>
+                        <div class="chart-wrapper">
+                            <canvas id="cmciInnovationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="data-source"><i class="bi bi-info-circle"></i> Source: <a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer">DTI Cities and Municipalities Competitiveness Index (CMCI)</a></p>
+            </div>
+        </section>
+
+        <!-- Bar Chart Section -->
         <section class="stats-section stats-barchart animate-on-scroll">
             <div class="container">
                 <div class="section-header-minimal">
@@ -470,6 +735,7 @@
                         <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
                         <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
                         <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> CMCI DTI Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -477,12 +743,12 @@
                         Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
                     </div>
                     <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute codes with us</a>
                 </div>
             </div>
             <div class="footer-bottom-new">
                 <div class="footer-copyright">
-                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. All rights reserved. All public information sourced from official government portals.</span>
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
                     <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
                 </div>
             </div>

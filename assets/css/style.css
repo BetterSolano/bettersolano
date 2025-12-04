@@ -1700,6 +1700,38 @@ p {
     text-decoration: none;
 }
 
+/* Clickable Department Card Wrapper */
+a.dept-card-link-wrap {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a.dept-card-link-wrap:hover {
+    text-decoration: none;
+}
+
+a.dept-card-link-wrap:hover .dept-card-title {
+    color: var(--color-primary);
+}
+
+a.dept-card-link-wrap:hover .dept-card-link {
+    gap: 8px;
+}
+
+a.dept-card-link-wrap .dept-card-contacts span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    color: var(--color-text);
+}
+
+a.dept-card-link-wrap .dept-card-contacts span i {
+    font-size: 0.75rem;
+    color: var(--color-primary);
+}
+
 /* Barangay Cards - Government Page */
 .barangay-card {
     display: flex;
@@ -7272,5 +7304,817 @@ a.a11y-contact-item:hover i {
     #map-container.leaflet-container {
         min-height: 240px;
         height: 240px !important;
+    }
+}
+
+/* Online Services Section - Filipizen Integration */
+.online-services-section {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 100%);
+    padding: var(--spacing-xl) 0;
+}
+
+.online-services-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.online-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.online-services-header h2 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.online-services-header p {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+.online-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.online-service-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    background: var(--color-white);
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.online-service-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 24px rgba(0, 50, 160, 0.12);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.online-service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.online-service-icon i {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.online-service-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.online-service-content h4 {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.online-service-content p {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+}
+
+.online-service-office {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.online-service-office i {
+    font-size: 0.6875rem;
+}
+
+.online-service-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--color-bg-alt);
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.online-service-link i {
+    font-size: 0.875rem;
+    color: var(--color-primary);
+}
+
+.online-service-card:hover .online-service-link {
+    background: var(--color-primary);
+}
+
+.online-service-card:hover .online-service-link i {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .online-services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .online-service-card {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .online-service-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .online-service-icon i {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   Sitemap Page - Modern Revamp
+   ============================================ */
+
+.sitemap-section-new {
+    margin-bottom: var(--spacing-xl);
+}
+
+.sitemap-section-new:last-child {
+    margin-bottom: 0;
+}
+
+.sitemap-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-bg-alt);
+}
+
+.sitemap-section-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.sitemap-section-icon i {
+    font-size: 1rem;
+    color: white;
+}
+
+.sitemap-section-icon--online {
+    background: linear-gradient(135deg, #06a77d 0%, #059669 100%);
+}
+
+.sitemap-section-header h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.sitemap-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #e6f4ea;
+    color: #06a77d;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sitemap-links-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.sitemap-links-grid--4col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sitemap-link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: var(--color-white);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.sitemap-link-item:hover {
+    border-color: var(--color-primary);
+    background: rgba(0, 50, 160, 0.04);
+    color: var(--color-primary);
+    text-decoration: none;
+    transform: translateX(2px);
+}
+
+.sitemap-link-item i {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    transition: color 0.2s ease;
+}
+
+.sitemap-link-item:hover i {
+    color: var(--color-primary);
+}
+
+.sitemap-link-item--external {
+    background: #fafafa;
+}
+
+.sitemap-link-item--external:hover {
+    background: rgba(6, 167, 125, 0.06);
+    border-color: #06a77d;
+    color: #06a77d;
+}
+
+.sitemap-link-item--external:hover i {
+    color: #06a77d;
+}
+
+@media (max-width: 1200px) {
+    .sitemap-links-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .sitemap-links-grid--4col {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .sitemap-links-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .sitemap-links-grid--4col {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .sitemap-links-grid,
+    .sitemap-links-grid--4col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sitemap-section-header h2 {
+        font-size: 1rem;
+    }
+    
+    .sitemap-section-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .sitemap-section-icon i {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sitemap-links-grid,
+    .sitemap-links-grid--4col {
+        grid-template-columns: 1fr;
+    }
+    
+    .sitemap-link-item {
+        padding: 12px 14px;
+    }
+}
+
+/* Medical Hotline Cards */
+.hotlines-badge--medical {
+    background: linear-gradient(135deg, #0077BE 0%, #0066a0 100%);
+    color: white;
+}
+
+.hotlines-badge--medical i {
+    color: white;
+}
+
+.hotline-card--medical {
+    border-color: #bfdbfe;
+}
+
+.hotline-card--medical:hover {
+    border-color: #0077BE;
+    background: #eff6ff;
+}
+
+.hotline-card--medical > i {
+    color: #0077BE;
+}
+
+/* Environmental Initiatives Section */
+.section-compact {
+    padding-top: var(--spacing-md);
+}
+
+.section-title {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-title i {
+    color: var(--color-primary);
+}
+
+.env-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.env-item {
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-primary);
+    padding: 14px 16px;
+    border-radius: 0 6px 6px 0;
+    transition: all 0.2s ease;
+}
+
+.env-item:hover {
+    background: #eef2ff;
+    border-left-color: var(--color-primary-dark);
+}
+
+.env-item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.env-item-num {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background: rgba(0, 50, 160, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.env-item-header h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.env-item p {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+    .env-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .env-item {
+        padding: 12px 14px;
+    }
+    
+    .env-item-header h3 {
+        font-size: 0.8125rem;
+    }
+    
+    .env-item p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Education Page Styles */
+.edu-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.edu-stat-card {
+    background: var(--color-white);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px 12px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.edu-stat-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 8px rgba(0, 50, 160, 0.1);
+}
+
+.edu-stat-num {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.edu-stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    line-height: 1.2;
+}
+
+.edu-category {
+    margin-bottom: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.edu-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--color-white);
+    border: none;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+}
+
+.edu-category-header:hover {
+    background: var(--color-bg-alt);
+}
+
+.edu-category-header span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edu-category-header span:first-child i {
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+.edu-category-count {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+    background: var(--color-bg-alt);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.edu-category-content {
+    padding: 0 16px 16px;
+    background: var(--color-white);
+}
+
+.edu-category-content[hidden] {
+    display: none;
+}
+
+.edu-school-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 8px;
+}
+
+.edu-school-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background: var(--color-bg-alt);
+    border-radius: 6px;
+    border-left: 3px solid var(--color-primary);
+    transition: all 0.15s ease;
+}
+
+.edu-school-item:hover {
+    background: #eef2ff;
+    border-left-color: var(--color-primary-dark);
+}
+
+.edu-school-name {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.edu-school-loc {
+    font-size: 0.6875rem;
+    color: var(--color-text-light);
+    white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+    .edu-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .edu-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .edu-stat-card {
+        padding: 12px 10px;
+    }
+    
+    .edu-stat-num {
+        font-size: 1.5rem;
+    }
+    
+    .edu-school-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .edu-school-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+    
+    .edu-category-header {
+        padding: 12px 14px;
+        font-size: 0.875rem;
+    }
+}
+
+/* Health Page Styles */
+.health-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.health-stat-card {
+    background: var(--color-white);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px 12px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.health-stat-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 8px rgba(0, 50, 160, 0.1);
+}
+
+.health-stat-num {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.health-stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    line-height: 1.2;
+}
+
+.health-facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.health-facility-card {
+    background: var(--color-white);
+    border: 1px solid #e5e7eb;
+    border-left: 3px solid var(--color-primary);
+    border-radius: 0 8px 8px 0;
+    padding: 16px;
+    transition: all 0.2s ease;
+}
+
+.health-facility-card:hover {
+    border-color: var(--color-primary);
+    border-left-color: var(--color-primary-dark);
+    box-shadow: 0 2px 8px rgba(0, 50, 160, 0.08);
+}
+
+.health-facility-badge {
+    display: inline-block;
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    background: rgba(0, 50, 160, 0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.health-facility-card h3 {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 6px 0;
+    line-height: 1.3;
+}
+
+.health-facility-desc {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.health-facility-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.health-facility-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+}
+
+.health-facility-meta i {
+    color: var(--color-primary);
+    font-size: 0.6875rem;
+}
+
+.health-mho-card {
+    background: var(--color-white);
+    border: 1px solid #e5e7eb;
+    border-left: 3px solid var(--color-primary);
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+}
+
+.health-mho-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 8px 0;
+}
+
+.health-mho-content p {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin: 0 0 14px 0;
+    line-height: 1.5;
+}
+
+.health-mho-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.health-mho-services span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    color: var(--color-text);
+    background: var(--color-bg-alt);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.health-mho-services i {
+    color: var(--color-primary);
+    font-size: 0.6875rem;
+}
+
+.section-subtitle {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin: -8px 0 16px 0;
+}
+
+.health-bhs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 8px;
+}
+
+.health-bhs-item {
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-primary);
+    padding: 10px 12px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text);
+    transition: all 0.15s ease;
+}
+
+.health-bhs-item:hover {
+    background: #eef2ff;
+    border-left-color: var(--color-primary-dark);
+}
+
+@media (max-width: 1024px) {
+    .health-stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .health-facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .health-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .health-facilities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .health-stat-card {
+        padding: 12px 10px;
+    }
+    
+    .health-stat-num {
+        font-size: 1.5rem;
+    }
+    
+    .health-bhs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .health-mho-services span {
+        font-size: 0.6875rem;
+        padding: 4px 8px;
     }
 }

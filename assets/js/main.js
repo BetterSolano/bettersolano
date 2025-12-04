@@ -123,4 +123,26 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     initAccordion();
+
+    // Education Category Accordion
+    const initEduAccordion = () => {
+        const categoryHeaders = document.querySelectorAll('.edu-category-header');
+        
+        categoryHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                if (isExpanded) {
+                    content.hidden = true;
+                    this.setAttribute('aria-expanded', 'false');
+                } else {
+                    content.hidden = false;
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    };
+
+    initEduAccordion();
 });

@@ -95,7 +95,21 @@
             <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="../" data-i18n="nav-home">Home</a></li>
-                    <li><a href="/" class="active" data-i18n="nav-services">Services</a></li>
+                    <li class="has-dropdown">
+                        <a href="/" class="active" data-i18n="nav-services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="certificates">Certificates</a></li>
+                            <li><a href="business">Business</a></li>
+                            <li><a href="tax-payments">Tax Payments</a></li>
+                            <li><a href="social-services">Social Services</a></li>
+                            <li><a href="health">Health</a></li>
+                            <li><a href="agriculture">Agriculture</a></li>
+                            <li><a href="infrastructure">Infrastructure</a></li>
+                            <li><a href="education">Education</a></li>
+                            <li><a href="public-safety">Public Safety</a></li>
+                            <li><a href="environment">Environment</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../government/" data-i18n="nav-government">Government</a></li>
                     <li><a href="../statistics/" data-i18n="nav-statistics">Statistics</a></li>
                     <li class="has-dropdown">
@@ -185,6 +199,49 @@
                 </div>
             </div>
         </section>
+
+        <section class="section section-compact">
+            <div class="container">
+                <h2 class="section-title"><i class="bi bi-leaf"></i> Key Environmental Services and Initiatives</h2>
+                <div class="env-grid">
+                    <div class="env-item">
+                        <div class="env-item-header">
+                            <span class="env-item-num">01</span>
+                            <h3>Drainage & Sewerage Management</h3>
+                        </div>
+                        <p>Developing a comprehensive system plan to mitigate flooding and protect public health.</p>
+                    </div>
+                    <div class="env-item">
+                        <div class="env-item-header">
+                            <span class="env-item-num">02</span>
+                            <h3>Solid Waste Management</h3>
+                        </div>
+                        <p>Implementing the 10-Year Plan including waste collection, segregation, and environmental protection.</p>
+                    </div>
+                    <div class="env-item">
+                        <div class="env-item-header">
+                            <span class="env-item-num">03</span>
+                            <h3>Flood Control & Mitigation</h3>
+                        </div>
+                        <p>Declogging drainage, clearing waterways, and rehabilitating canals with MDRRMO collaboration.</p>
+                    </div>
+                    <div class="env-item">
+                        <div class="env-item-header">
+                            <span class="env-item-num">04</span>
+                            <h3>Forest & Land Use Programs</h3>
+                        </div>
+                        <p>Tree planting and reforestation programs to establish forest cover and preserve biodiversity.</p>
+                    </div>
+                    <div class="env-item">
+                        <div class="env-item-header">
+                            <span class="env-item-num">05</span>
+                            <h3>Public Education & Awareness</h3>
+                        </div>
+                        <p>IEC campaigns on RA 9003 (Solid Waste Management) and RA 9275 (Clean Water Act).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
         <footer class="site-footer">
         <div class="container">
@@ -214,6 +271,7 @@
                         <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
                         <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
                         <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> CMCI DTI Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -221,12 +279,12 @@
                         Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
                     </div>
                     <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute codes with us</a>
                 </div>
             </div>
             <div class="footer-bottom-new">
                 <div class="footer-copyright">
-                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. All rights reserved. All public information sourced from official government portals.</span>
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
                     <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
                 </div>
             </div>

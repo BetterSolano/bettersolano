@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+vendor/
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.min.js.map
+*.min.css.map
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Package manager locks (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Audit report (development only)
+AUDIT-REPORT.md

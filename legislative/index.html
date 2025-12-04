@@ -78,7 +78,21 @@
             <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="../">Home</a></li>
-                    <li><a href="../services/">Services</a></li>
+                    <li class="has-dropdown">
+                        <a href="../services/">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/certificates">Certificates</a></li>
+                            <li><a href="../services/business">Business</a></li>
+                            <li><a href="../services/tax-payments">Tax Payments</a></li>
+                            <li><a href="../services/social-services">Social Services</a></li>
+                            <li><a href="../services/health">Health</a></li>
+                            <li><a href="../services/agriculture">Agriculture</a></li>
+                            <li><a href="../services/infrastructure">Infrastructure</a></li>
+                            <li><a href="../services/education">Education</a></li>
+                            <li><a href="../services/public-safety">Public Safety</a></li>
+                            <li><a href="../services/environment">Environment</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../government/">Government</a></li>
                     <li><a href="../statistics/">Statistics</a></li>
                     <li class="has-dropdown">
@@ -174,6 +188,179 @@
             </div>
         </section>
 
+        <!-- Legislative Process Flowchart Section -->
+        <section class="leg-process">
+            <div class="container">
+                <div class="leg-process-header">
+                    <span class="leg-info-tag"><i class="bi bi-diagram-3-fill"></i> Process Flow</span>
+                    <h2>Flowchart for Legislative Proposal</h2>
+                    <p>Step-by-step process for enacting ordinances and resolutions</p>
+                </div>
+
+                <!-- Process Tabs -->
+                <div class="leg-process-tabs">
+                    <button type="button" class="leg-tab-btn active" data-tab="ordinances">
+                        <i class="bi bi-journal-bookmark-fill"></i>
+                        <span>For Ordinances</span>
+                        <small>11 Steps</small>
+                    </button>
+                    <button type="button" class="leg-tab-btn" data-tab="resolutions">
+                        <i class="bi bi-file-earmark-ruled-fill"></i>
+                        <span>For Resolutions</span>
+                        <small>6 Steps</small>
+                    </button>
+                </div>
+
+                <!-- Ordinances Process Flow -->
+                <div class="leg-tab-content active" id="ordinances">
+                    <div class="leg-flow-container">
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">01</div>
+                                <div class="leg-flow-icon"><i class="bi bi-file-earmark-plus"></i></div>
+                                <h4>File Proposed Ordinance</h4>
+                                <p>Submit the proposed ordinance to the Sangguniang Bayan for consideration</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">02</div>
+                                <div class="leg-flow-icon"><i class="bi bi-book"></i></div>
+                                <h4>First Reading / Referral to Committee</h4>
+                                <p>Initial reading and assignment to the relevant committee for review</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">03</div>
+                                <div class="leg-flow-icon"><i class="bi bi-people"></i></div>
+                                <h4>Public Hearing / Committee Action</h4>
+                                <p>Committee conducts public hearing and deliberates on the proposed ordinance</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">04</div>
+                                <div class="leg-flow-icon"><i class="bi bi-file-text"></i></div>
+                                <h4>Committee Report</h4>
+                                <p>Committee submits findings and recommendations to the Sangguniang Bayan</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">05</div>
+                                <div class="leg-flow-icon"><i class="bi bi-journal-text"></i></div>
+                                <h4>Second Reading</h4>
+                                <p>Detailed discussion and debate on the proposed ordinance</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">06</div>
+                                <div class="leg-flow-icon"><i class="bi bi-check2-square"></i></div>
+                                <h4>Third and Final Reading</h4>
+                                <p>Final voting on the proposed ordinance by the Sangguniang Bayan</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">07</div>
+                                <div class="leg-flow-icon"><i class="bi bi-calendar-check"></i></div>
+                                <h4>10-Day Mayor's Approval</h4>
+                                <p>Mayor reviews and approves the enacted ordinance within 10 days</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">08</div>
+                                <div class="leg-flow-icon"><i class="bi bi-send"></i></div>
+                                <h4>3-Day Submission to SP</h4>
+                                <p>Submit approved ordinance to Sangguniang Panlalawigan for review within 3 days</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">09</div>
+                                <div class="leg-flow-icon"><i class="bi bi-hourglass-split"></i></div>
+                                <h4>SP Review Period</h4>
+                                <p>60-day review for appropriation ordinances; 30-day review for others</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">10</div>
+                                <div class="leg-flow-icon"><i class="bi bi-megaphone"></i></div>
+                                <h4>Posting / Publication</h4>
+                                <p>Public posting and publication of the approved ordinance</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step leg-flow-final">
+                            <div class="leg-flow-card leg-flow-card-final">
+                                <div class="leg-flow-number">11</div>
+                                <div class="leg-flow-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                                <h4>Implementation</h4>
+                                <p>Ordinance takes effect and is enforced within the municipality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resolutions Process Flow -->
+                <div class="leg-tab-content" id="resolutions">
+                    <div class="leg-flow-container">
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">01</div>
+                                <div class="leg-flow-icon"><i class="bi bi-file-earmark-plus"></i></div>
+                                <h4>File Proposed Resolution</h4>
+                                <p>Submit the proposed resolution to the Sangguniang Bayan</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">02</div>
+                                <div class="leg-flow-icon"><i class="bi bi-calendar-event"></i></div>
+                                <h4>Inclusion in Session Agenda</h4>
+                                <p>Resolution is scheduled for inclusion in the Sangguniang Bayan session</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">03</div>
+                                <div class="leg-flow-icon"><i class="bi bi-people-fill"></i></div>
+                                <h4>Committee Meeting / Approval</h4>
+                                <p>Committee reviews and approves the proposed resolution</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">04</div>
+                                <div class="leg-flow-icon"><i class="bi bi-printer"></i></div>
+                                <h4>Final Draft Printing</h4>
+                                <p>Legislative staff prepares and prints the final draft of the resolution</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step">
+                            <div class="leg-flow-card">
+                                <div class="leg-flow-number">05</div>
+                                <div class="leg-flow-icon"><i class="bi bi-pen"></i></div>
+                                <h4>Official Signing</h4>
+                                <p>Secretary to the Sanggunian and Presiding Officer sign the resolution</p>
+                            </div>
+                        </div>
+                        <div class="leg-flow-step leg-flow-final">
+                            <div class="leg-flow-card leg-flow-card-final">
+                                <div class="leg-flow-number">06</div>
+                                <div class="leg-flow-icon"><i class="bi bi-send-check"></i></div>
+                                <h4>Posting / Transmittal</h4>
+                                <p>Resolution is posted publicly and transmitted to concerned parties</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Info Section -->
         <section class="leg-info">
             <div class="container">
@@ -238,6 +425,7 @@
                         <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Open Data Philippines</a></li>
                         <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> Freedom of Information</a></li>
                         <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-chevron-right"></i> CMCI DTI Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -245,12 +433,12 @@
                         Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
                     </div>
                     <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute with us</a>
+                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute codes with us</a>
                 </div>
             </div>
             <div class="footer-bottom-new">
                 <div class="footer-copyright">
-                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. All rights reserved. All public information sourced from official government portals.</span>
+                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
                     <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.0.0</span>
                 </div>
             </div>
@@ -260,5 +448,26 @@
     <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/info-bar.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+        // Legislative Process Tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.leg-tab-btn');
+            const tabContents = document.querySelectorAll('.leg-tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active from all buttons and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
