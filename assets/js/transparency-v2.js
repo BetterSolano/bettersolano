@@ -317,3 +317,27 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { FINANCIAL_DATA, formatPeso, calcPercent };
 }
+
+
+// DPWH Table Filter
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.dpwh-filter-btn');
+    const tableRows = document.querySelectorAll('.dpwh-table tbody tr');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const filter = this.dataset.filter;
+            
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            tableRows.forEach(row => {
+                if (filter === 'all' || row.dataset.category === filter) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    });
+});

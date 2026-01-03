@@ -40,6 +40,12 @@ find dist/assets/css -name "*.css" -type f | while read file; do
     npx cleancss -o "$file" "$file"
 done
 
+# Transpile JavaScript (ES6+ to ES5 for older browser support)
+echo "Transpiling JavaScript with Babel..."
+find dist/assets/js -name "*.js" -type f | while read file; do
+    npx babel "$file" --out-file "$file"
+done
+
 # Minify JS files
 echo "Minifying JavaScript..."
 find dist/assets/js -name "*.js" -type f | while read file; do

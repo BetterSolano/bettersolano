@@ -1,0 +1,714 @@
+{
+  "summary": {
+    "totalProjects": 63,
+    "totalCost": 409494730.55,
+    "completedProjects": 60,
+    "ongoingProjects": 3,
+    "implementingAgency": "Nueva Vizcaya District Engineering Office"
+  },
+  "projects": [
+    {
+      "id": "17BI0035",
+      "name": "Rehabilitation/Improvement of Curifang Flood Control (Sta. 0+000 - Sta. 0+948)",
+      "location": "Brgy. Curifang, Solano, Nueva Vizcaya",
+      "category": "Flood Control and Drainage",
+      "contractor": "Jann-Norris Construction and Supplies Inc.",
+      "contractorId": "35880",
+      "cost": 43463616.27,
+      "status": 100,
+      "completionDate": "2018-01-31"
+    },
+    {
+      "id": "17BI0037",
+      "name": "Rehabilitation/Improvement of Bangar Flood Control (Sta. 0+000 - Sta. 0+948)",
+      "location": "Brgy. Bangar, Solano, Nueva Vizcaya",
+      "category": "Flood Control and Drainage",
+      "contractor": "Jann-Norris Construction and Supplies Inc.",
+      "contractorId": "35880",
+      "cost": 43592806.92,
+      "status": 100,
+      "completionDate": "2018-02-15"
+    },
+    {
+      "id": "17BI0036",
+      "name": "Rehabilitation/Improvement of Dadap Flood Control (Sta. 0+000 - Sta. 0+848)",
+      "location": "Brgy. Dadap, Solano, Nueva Vizcaya",
+      "category": "Flood Control and Drainage",
+      "contractor": "Jann-Norris Construction and Supplies Inc.",
+      "contractorId": "35880",
+      "cost": 43374131.72,
+      "status": 100,
+      "completionDate": "2018-01-29"
+    },
+    {
+      "id": "18BI0068",
+      "name": "Organizational Outcome 1: Ensure Safe and Reliable National Road System - Network Development - Road Widening - Primary Roads - Daang Maharlika - K0272+381-K0273+006",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "R.O. Builders & Development Corporation",
+      "contractorId": "22083",
+      "cost": 39750749.86,
+      "status": 100,
+      "completionDate": "2019-03-25"
+    },
+
+    {
+      "id": "18BI0028",
+      "name": "Construction of Multi-Purpose Building (Pasalubong Center-Phase II)",
+      "location": "Brgy. Poblacion, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E S De Guzman Construction",
+      "contractorId": "17494",
+      "cost": 4748316.66,
+      "status": 100,
+      "completionDate": "2018-08-13"
+    },
+    {
+      "id": "19BI0028",
+      "name": "Construction of Multi-Purpose Building (Completion)",
+      "location": "Brgy. Quezon, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E S De Guzman Construction",
+      "contractorId": "17494",
+      "cost": 19800000.00,
+      "status": 100,
+      "completionDate": "2019-11-21"
+    },
+    {
+      "id": "16BI0006",
+      "name": "Bascaran Nat'l High School",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E S De Guzman Construction",
+      "contractorId": "17494",
+      "cost": 15913526.14,
+      "status": 100,
+      "completionDate": "2017-04-23"
+    },
+    {
+      "id": "16BI0007",
+      "name": "Uddiawan Nat'l High School",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "BRG Construction",
+      "contractorId": "21931",
+      "cost": 12808288.53,
+      "status": 100,
+      "completionDate": "2017-01-28"
+    },
+    {
+      "id": "17BI0117",
+      "name": "Solano North ES",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Jovic Construction and Supply",
+      "contractorId": "35703",
+      "cost": 2985000.00,
+      "status": 100,
+      "completionDate": "2018-04-20"
+    },
+    {
+      "id": "17BI0057",
+      "name": "Construction of Multi-Purpose Bldg. (Pasalubong and Training Center)",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E S De Guzman Construction",
+      "contractorId": "17494",
+      "cost": 2849453.46,
+      "status": 100,
+      "completionDate": "2017-12-06"
+    },
+
+    {
+      "id": "17BI0088",
+      "name": "Improvement of Tomas Dacayo Community Center",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E S De Guzman Construction",
+      "contractorId": "17494",
+      "cost": 1898820.00,
+      "status": 100,
+      "completionDate": "2017-12-04"
+    },
+    {
+      "id": "17BI0044",
+      "name": "Construction of Multi-Purpose Building, Curifang",
+      "location": "Brgy. Curifang, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "G.M. Pajarillaga Construction & Supply",
+      "contractorId": "21760",
+      "cost": 1900266.50,
+      "status": 100,
+      "completionDate": "2017-07-11"
+    },
+    {
+      "id": "17BI0010",
+      "name": "Construction of Multi-Purpose Building, San Luis",
+      "location": "San Luis, Lone District, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "G.M. Pajarillaga Construction & Supply",
+      "contractorId": "21760",
+      "cost": 1916633.95,
+      "status": 100,
+      "completionDate": "2017-05-16"
+    },
+    {
+      "id": "17BI0001",
+      "name": "Construction of Multi-Purpose Building PD Galima",
+      "location": "Lone District, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Jovic Construction and Supply",
+      "contractorId": "35703",
+      "cost": 1920620.91,
+      "status": 100,
+      "completionDate": "2017-05-01"
+    },
+    {
+      "id": "16BI0043",
+      "name": "Construction of Multi-Purpose Building Wacal",
+      "location": "Wacal, Lone District, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E.M. Bayatan Construction",
+      "contractorId": "21332",
+      "cost": 1930500.00,
+      "status": 100,
+      "completionDate": "2017-05-02"
+    },
+    {
+      "id": "19BI0032",
+      "name": "Construction (Completion) of Multi-Purpose Building (Pasalubong Center)",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E S De Guzman Construction",
+      "contractorId": "17494",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2019-11-29"
+    },
+
+    {
+      "id": "22BI0076",
+      "name": "Construction of Multi-Purpose Bldg., Poblacion South",
+      "location": "Poblacion South, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Aces Construction Materials Trading",
+      "contractorId": "46890",
+      "cost": 4950000.00,
+      "status": 100,
+      "completionDate": "2023-01-28"
+    },
+    {
+      "id": "18BI0005",
+      "name": "Construction of Multi-Purpose Building, San Juan",
+      "location": "Brgy. San Juan, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "G.M. Pajarillaga Construction & Supply",
+      "contractorId": "21760",
+      "cost": 1807052.22,
+      "status": 100,
+      "completionDate": "2018-05-06"
+    },
+    {
+      "id": "19BI0004",
+      "name": "Construction of Elementary and Secondary School Buildings at Bascaran E/S, 1STY2CL",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Framada Construction and Material Supplies",
+      "contractorId": "45435",
+      "cost": 5220000.00,
+      "status": 100,
+      "completionDate": "2020-01-31"
+    },
+    {
+      "id": "18BI0007",
+      "name": "Construction of Multi-Purpose Building, Solano West Elementary School",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E.M. Bayatan Construction",
+      "contractorId": "21332",
+      "cost": 739394.27,
+      "status": 100,
+      "completionDate": "2018-07-20"
+    },
+    {
+      "id": "20BI0029",
+      "name": "Construction (Completion) of Multi-Purpose Building, Bagahabag",
+      "location": "Brgy. Bagahabag, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "N-J Construction",
+      "contractorId": "43941",
+      "cost": 1078000.00,
+      "status": 100,
+      "completionDate": "2020-12-11"
+    },
+    {
+      "id": "20BI0041",
+      "name": "Construction of Multi-Purpose Building, PD Galima",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Denisse-John Construction and Supplies",
+      "contractorId": "37550",
+      "cost": 1960000.00,
+      "status": 100,
+      "completionDate": "2021-01-24"
+    },
+
+    {
+      "id": "22BI0039",
+      "name": "Completion of Multi-Purpose Bldg., Lactawan",
+      "location": "Brgy. Lactawan, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Mt. Land Construction",
+      "contractorId": "48738",
+      "cost": 2970000.00,
+      "status": 100,
+      "completionDate": "2023-08-17"
+    },
+    {
+      "id": "19BI0017",
+      "name": "Construction of Multi-Purpose Building (Stage)",
+      "location": "Brgy. Quezon, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Virile Construction and Supply",
+      "contractorId": "34081",
+      "cost": 1188000.00,
+      "status": 100,
+      "completionDate": "2019-08-09"
+    },
+    {
+      "id": "19BI0011",
+      "name": "Construction/Completion of Multi-Purpose Building, Uddiawan",
+      "location": "Brgy. Uddiawan, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Mighty Construction & Supply",
+      "contractorId": "34278",
+      "cost": 1979854.55,
+      "status": 100,
+      "completionDate": "2019-08-22"
+    },
+    {
+      "id": "15BI0105",
+      "name": "Const'n, Ubbog-Camanggaan-Pedro Gambol, Purok 5 Rd., Lactawan",
+      "location": "Brgy. Lactawan, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "Eric Van P. Sesbreno Construction",
+      "contractorId": "26243",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2016-03-21"
+    },
+    {
+      "id": "15BI0106",
+      "name": "Const'n, Upper and Lower, Purok 1 Brgy. Rd., Commonal",
+      "location": "Brgy. Commonal, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "Eric Van P. Sesbreno Construction",
+      "contractorId": "26243",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2018-03-30"
+    },
+    {
+      "id": "16BI0016",
+      "name": "Construction of Nampayakan FMR",
+      "location": "Brgy. Quezon, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "G.M. Pajarillaga Construction & Supply",
+      "contractorId": "21760",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2016-07-21"
+    },
+
+    {
+      "id": "16BI0020",
+      "name": "Const'n of Acio FMR",
+      "location": "Brgy. Aggub, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "G.M. Pajarillaga Construction & Supply",
+      "contractorId": "21760",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2016-08-05"
+    },
+    {
+      "id": "16BI0021",
+      "name": "Const'n of Purok 2 Kasantolan FMR",
+      "location": "Brgy. Bascaran, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "Edwin Erwin Sison Construction",
+      "contractorId": "20162",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2016-08-01"
+    },
+    {
+      "id": "15BI0107",
+      "name": "Concreting, Purok 1-Mongkol (Purok 4) Rd.",
+      "location": "Brgy. Bangar, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "Eric Van P. Sesbreno Construction",
+      "contractorId": "26243",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2016-03-22"
+    },
+    {
+      "id": "22BI0078",
+      "name": "Concreting of Brgy. Communal FMR",
+      "location": "Brgy. Communal, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "Dricholiu Construction",
+      "contractorId": "65421",
+      "cost": 11940000.00,
+      "status": 100,
+      "completionDate": "2022-11-13"
+    },
+    {
+      "id": "21BI0004",
+      "name": "Concreting of Wacal-Bangaan Road Along Ortiz Road",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "Framada Construction and Material Supplies",
+      "contractorId": "45435",
+      "cost": 4949771.92,
+      "status": 100,
+      "completionDate": "2021-05-28"
+    },
+    {
+      "id": "21BI0013",
+      "name": "Concreting of Road in Purok 5, Bagahabag",
+      "location": "Barangay Bagahabag, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "Q.C.D. Construction and Supply",
+      "contractorId": "37537",
+      "cost": 4950000.00,
+      "status": 100,
+      "completionDate": "2021-09-11"
+    },
+
+    {
+      "id": "21BI0006",
+      "name": "Concreting of Sadang Road Along Purok 3, Wacal",
+      "location": "Barangay Wacal, Solano, Nueva Vizcaya",
+      "category": "Roads",
+      "contractor": "Q.C.D. Construction and Supply",
+      "contractorId": "37537",
+      "cost": 4948811.50,
+      "status": 100,
+      "completionDate": "2021-04-29"
+    },
+    {
+      "id": "18BI0040",
+      "name": "Construction of Multi-Purpose Building (Phase III), Aggub",
+      "location": "Aggub, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Jovic Construction and Supply",
+      "contractorId": "35703",
+      "cost": 1899500.07,
+      "status": 100,
+      "completionDate": "2018-08-08"
+    },
+    {
+      "id": "18BI0012",
+      "name": "Construction of Multi-Purpose Building, Tucal",
+      "location": "Brgy. Tucal, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Jovic Construction and Supply",
+      "contractorId": "35703",
+      "cost": 1898759.86,
+      "status": 100,
+      "completionDate": "2018-05-11"
+    },
+    {
+      "id": "19BI0003",
+      "name": "Construction of Multi-Purpose Building, Curifang",
+      "location": "Brgy. Curifang, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Triple P Construction",
+      "contractorId": "31616",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2019-09-01"
+    },
+    {
+      "id": "18BI0073",
+      "name": "Construction of Multi-Purpose Building, Commonal",
+      "location": "Brgy. Commonal, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "G.M. Pajarillaga Construction & Supply",
+      "contractorId": "21760",
+      "cost": 1906635.89,
+      "status": 100,
+      "completionDate": "2018-05-17"
+    },
+    {
+      "id": "18BI0008",
+      "name": "Construction of Multi-Purpose Building, Quirino",
+      "location": "Brgy. Quirino, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Jovic Construction and Supply",
+      "contractorId": "35703",
+      "cost": 2381728.64,
+      "status": 100,
+      "completionDate": "2018-05-17"
+    },
+
+    {
+      "id": "19BI0045",
+      "name": "Construction of Multi-Purpose Building (Public Market)",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Mighty Construction & Supply",
+      "contractorId": "34278",
+      "cost": 4950000.00,
+      "status": 100,
+      "completionDate": "2019-11-06"
+    },
+    {
+      "id": "20BI0046",
+      "name": "Construction of Multi-Purpose Building, Concepcion",
+      "location": "Brgy. Concepcion, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Reasons Construction & Supplies",
+      "contractorId": "63034",
+      "cost": 1950000.00,
+      "status": 100,
+      "completionDate": "2020-12-17"
+    },
+    {
+      "id": "23BI0038",
+      "name": "Completion of Multi-Purpose Bldg., Poblacion South",
+      "location": "Brgy. Poblacion South, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Aces Construction Materials Trading",
+      "contractorId": "46890",
+      "cost": 5950000.00,
+      "status": 100,
+      "completionDate": "2023-10-07"
+    },
+    {
+      "id": "19BI0008",
+      "name": "Construction of Multi-Purpose Building, Solano South Central",
+      "location": "Barangay Solano South Central, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "JDTS Const. Corporation",
+      "contractorId": "39430",
+      "cost": 2475000.00,
+      "status": 100,
+      "completionDate": "2019-11-01"
+    },
+    {
+      "id": "23BI0054",
+      "name": "Construction of Multi-Purpose Building, Quezon",
+      "location": "Barangay Quezon, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Mighty Construction & Supply",
+      "contractorId": "34278",
+      "cost": 4950000.00,
+      "status": 100,
+      "completionDate": "2019-11-01"
+    },
+    {
+      "id": "22BI0002",
+      "name": "Construction (Completion) of Multi-Purpose Building, Concepcion",
+      "location": "Barangay Concepcion, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Reasons Construction & Supplies",
+      "contractorId": "63034",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2022-06-14"
+    },
+
+    {
+      "id": "21BI0058",
+      "name": "Construction of Multi-Purpose Building",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "John-Jann Const. and Supplies Corp.",
+      "contractorId": "47191",
+      "cost": 8800000.00,
+      "status": 100,
+      "completionDate": "2022-06-08"
+    },
+    {
+      "id": "21BI0025",
+      "name": "Construction (Completion) of Multi-Purpose Building",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Aces Construction Materials Trading",
+      "contractorId": "46890",
+      "cost": 4950000.00,
+      "status": 100,
+      "completionDate": "2021-09-26"
+    },
+    {
+      "id": "23BI0044",
+      "name": "Construction of Multi-Purpose Building, Uddiawan National High School",
+      "location": "Brgy. Uddiawan, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "BRG Construction",
+      "contractorId": "21931",
+      "cost": 5370984.13,
+      "status": 59.86,
+      "completionDate": null
+    },
+    {
+      "id": "21BI0037",
+      "name": "Construction/Improvement of Multi-Purpose Building, Aggub",
+      "location": "Barangay Aggub, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "4Kids Builders and Construction Supply",
+      "contractorId": "41980",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2021-08-23"
+    },
+    {
+      "id": "20BI0022",
+      "name": "Construction/Improvement of Multi-Purpose Building, Dadap",
+      "location": "Barangay Dadap, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Aces Construction Materials Trading",
+      "contractorId": "46890",
+      "cost": 4950000.00,
+      "status": 100,
+      "completionDate": "2021-04-28"
+    },
+    {
+      "id": "19BI0009",
+      "name": "Construction of Multi-Purpose Building, Bascaran",
+      "location": "Brgy. Bascaran, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Denisse-John Construction and Supplies",
+      "contractorId": "37550",
+      "cost": 1980000.00,
+      "status": 100,
+      "completionDate": "2019-08-25"
+    },
+
+    {
+      "id": "18BI0043",
+      "name": "Construction of Multi-Purpose Building, Bascaran",
+      "location": "Bascaran, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Monte Construction & Supply",
+      "contractorId": "19474",
+      "cost": 2858800.00,
+      "status": 100,
+      "completionDate": "2018-07-18"
+    },
+    {
+      "id": "23BI0006",
+      "name": "Construction/Rehabilitation of Water Supply/Septage and Sewerage/Rain Water Collectors/Other Water Supply System - Construction of Solar Water System",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Water Supply",
+      "contractor": "Mighty Construction & Supply",
+      "contractorId": "34278",
+      "cost": 9800000.00,
+      "status": 100,
+      "completionDate": "2024-03-08"
+    },
+    {
+      "id": "23BI0005",
+      "name": "Construction (Completion) of Multi-Purpose Building, Aggub",
+      "location": "Barangay Aggub, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "E.M. Bayatan Construction",
+      "contractorId": "21332",
+      "cost": 4950000.00,
+      "status": 100,
+      "completionDate": "2022-05-29"
+    },
+    {
+      "id": "16BI0044",
+      "name": "Construction of Multi-Purpose Building, Lactawan",
+      "location": "Lactawan, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "G.M. Pajarillaga Construction & Supply",
+      "contractorId": "21760",
+      "cost": 1930553.23,
+      "status": 100,
+      "completionDate": "2017-04-23"
+    },
+    {
+      "id": "20BI0051",
+      "name": "Construction of Multi-Purpose Building",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Aces Construction Materials Trading",
+      "contractorId": "46890",
+      "cost": 4900000.00,
+      "status": 100,
+      "completionDate": "2021-04-26"
+    },
+    {
+      "id": "23BI0037",
+      "name": "Completion of Multi-Purpose Bldg. (Health Facility), Uddiawan",
+      "location": "Brgy. Uddiawan, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Tamrhey Construction",
+      "contractorId": "53202",
+      "cost": 4948855.38,
+      "status": 100,
+      "completionDate": "2023-09-04"
+    },
+
+    {
+      "id": "23BI0034",
+      "name": "Construction of Multi-Purpose Bldg. and Public Market, Poblacion South",
+      "location": "Poblacion South, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Aces Construction Materials Trading",
+      "contractorId": "46890",
+      "cost": 4950000.00,
+      "status": 100,
+      "completionDate": "2023-11-10"
+    },
+    {
+      "id": "25BI0058",
+      "name": "Construction of Multi-Purpose Building, San Luis",
+      "location": "Brgy. San Luis, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Tamrhey Construction",
+      "contractorId": "53202",
+      "cost": 5376247.97,
+      "status": 50.43,
+      "completionDate": null
+    },
+    {
+      "id": "18BI0001",
+      "name": "Construction of Multi-Purpose Building, Poblacion North",
+      "location": "Brgy. Poblacion North, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Mighty Construction & Supply",
+      "contractorId": "34278",
+      "cost": 1188000.00,
+      "status": 100,
+      "completionDate": "2019-08-08"
+    },
+    {
+      "id": "25BI0071",
+      "name": "Completion of Multi-Purpose Building, Uddiawan",
+      "location": "Brgy. Uddiawan, Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Tamrhey Construction",
+      "contractorId": "53202",
+      "cost": 5361050.00,
+      "status": 84.66,
+      "completionDate": null
+    },
+    {
+      "id": "19BI0070",
+      "name": "Construction (Completion) of Multi-Purpose Building, Solano National High School",
+      "location": "Solano, Nueva Vizcaya",
+      "category": "Buildings and Facilities",
+      "contractor": "Regal Design & Construction",
+      "contractorId": "63400",
+      "cost": 1485000.00,
+      "status": 100,
+      "completionDate": "2019-09-30"
+    }
+  ]
+}
