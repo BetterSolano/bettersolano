@@ -1,0 +1,1107 @@
+/* Transparency Page - Minimal Professional Design */
+
+/* Hero Section */
+.trans-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    padding: 60px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.trans-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.trans-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.trans-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.trans-hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.trans-hero p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+/*
+ Key Metrics Section */
+.trans-metrics {
+    margin-top: 40px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.trans-metrics .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.trans-metrics .metric-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.04);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.trans-metrics .metric-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.trans-metrics .metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,50,160,0.12);
+}
+
+.trans-metrics .metric-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.metric-icon-income { background: linear-gradient(135deg, var(--color-success) 0%, #05c793 100%); }
+.metric-icon-expense { background: linear-gradient(135deg, var(--color-danger) 0%, #e63946 100%); }
+.metric-icon-net { background: linear-gradient(135deg, var(--color-info) 0%, #0099cc 100%); }
+.metric-icon-balance { background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%); }
+
+.trans-metrics .metric-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.trans-metrics .metric-label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+
+.trans-metrics .metric-source {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+}
+
+/* Section Styles */
+.trans-section {
+    padding: 80px 0;
+}
+
+.trans-section:nth-child(even) {
+    background: var(--color-bg-alt);
+}
+
+.section-header-minimal {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0,50,160,0.08);
+    color: var(--color-primary);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.section-header-minimal h2 {
+    font-size: 1.75rem;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.section-header-minimal p {
+    color: var(--color-text-light);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* In
+come Section */
+.income-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.income-chart-wrap {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid rgba(0,0,0,0.06);
+    height: 350px;
+}
+
+.income-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.income-category {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+.income-category-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: var(--color-bg-alt);
+}
+
+.income-category-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.income-icon-local { background: linear-gradient(135deg, var(--color-success) 0%, #05c793 100%); }
+.income-icon-external { background: linear-gradient(135deg, var(--color-info) 0%, #0099cc 100%); }
+
+.income-category-info {
+    flex: 1;
+}
+
+.income-category-name {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.income-category-amount {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.income-category-pct {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    background: rgba(0,50,160,0.08);
+    padding: 4px 10px;
+    border-radius: 50px;
+}
+
+.income-items {
+    padding: 12px 16px;
+}
+
+.income-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 0.875rem;
+    color: var(--color-text);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.income-item:last-child {
+    border-bottom: none;
+}
+
+.income-item.sub {
+    padding-left: 16px;
+    color: var(--color-text-light);
+    font-size: 0.8125rem;
+}
+
+/* Expend
+iture Section */
+.expenditure-grid {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.expenditure-chart-wrap {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid rgba(0,0,0,0.06);
+    height: 350px;
+}
+
+.expenditure-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.expenditure-item {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: all 0.2s ease;
+}
+
+.expenditure-item:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 16px rgba(0,50,160,0.08);
+}
+
+.expenditure-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.expenditure-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.expenditure-info {
+    flex: 1;
+}
+
+.expenditure-name {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.expenditure-amount {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+}
+
+.expenditure-pct {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.expenditure-bar {
+    height: 8px;
+    background: var(--color-bg-alt);
+    border-radius: 4px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.expenditure-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-info) 100%);
+    border-radius: 4px;
+    width: 0;
+    transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.expenditure-sub {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed rgba(0,0,0,0.08);
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+}
+
+/* Proje
+ct Card */
+.project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.project-header {
+    background: linear-gradient(90deg, var(--color-info) 0%, #0099cc 100%);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+.project-badge i {
+    font-size: 1.25rem;
+}
+
+.project-year {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.project-body {
+    padding: 24px;
+}
+
+.project-body h3 {
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.project-location {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    margin-bottom: 24px;
+}
+
+.project-location i {
+    color: var(--color-info);
+    margin-right: 6px;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.project-detail {
+    background: var(--color-bg-alt);
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.detail-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-light);
+    margin-bottom: 6px;
+}
+
+.detail-value {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.project-detail-cost .detail-value {
+    font-size: 1.25rem;
+    color: var(--color-success);
+}
+
+.project-footer {
+    background: var(--color-bg-alt);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0,0,0,0.04);
+}
+
+.project-source {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+}
+
+/* Reports Section */
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.report-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.06);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.report-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 16px rgba(0,50,160,0.1);
+    text-decoration: none;
+}
+
+.report-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.report-content {
+    flex: 1;
+}
+
+.report-content h4 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin: 0 0 4px 0;
+}
+
+.report-content p {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+.report-arrow {
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+/* Data Source */
+.data-source {
+    text-align: center;
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin-top: 24px;
+}
+
+.data-source i {
+    margin-right: 4px;
+}
+
+.data-source a {
+    color: var(--color-primary);
+}
+
+/* Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .trans-metrics .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .income-overview,
+    .expenditure-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .income-chart-wrap,
+    .expenditure-chart-wrap {
+        height: 300px;
+    }
+    
+    .project-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .trans-hero {
+        padding: 40px 0 60px;
+    }
+    
+    .trans-hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .trans-metrics .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .trans-metrics .metric-card {
+        padding: 20px;
+    }
+    
+    .trans-metrics .metric-value {
+        font-size: 1.5rem;
+    }
+    
+    .trans-section {
+        padding: 48px 0;
+    }
+    
+    .section-header-minimal h2 {
+        font-size: 1.5rem;
+    }
+    
+    .project-footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    
+    .expenditure-sub {
+        flex-wrap: wrap;
+    }
+}
+
+/* Q
+uarter Selection Tabs */
+.quarter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.quarter-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 24px;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.quarter-tab:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.4);
+}
+
+.quarter-tab:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.quarter-tab.active {
+    background: white;
+    border-color: white;
+    color: var(--color-primary);
+}
+
+.quarter-tab .quarter-label {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.quarter-tab .quarter-period {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.quarter-tab.active .quarter-period {
+    opacity: 0.7;
+}
+
+/* Value Update Animation */
+.metric-value.value-updating {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+.metric-value {
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+/* Reports Grid - 3 columns for new layout */
+.reports-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsive for Quarter Tabs */
+@media (max-width: 575px) {
+    .quarter-tabs {
+        flex-direction: row;
+        gap: 8px;
+    }
+    
+    .quarter-tab {
+        padding: 10px 16px;
+        min-width: 100px;
+        flex: 1;
+    }
+    
+    .quarter-tab .quarter-label {
+        font-size: 0.875rem;
+    }
+    
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ========================================
+   Statement of Receipts & Expenditures Section
+   ======================================== */
+
+.sre-section {
+    padding: 60px 0 80px;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.sre-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.sre-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.sre-title-wrap h2 {
+    font-size: 2rem;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.sre-title-wrap p {
+    color: var(--color-text-light);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Quarter Comparison Cards */
+.sre-quarters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.sre-quarter-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+
+.sre-quarter-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,50,160,0.12);
+}
+
+.sre-quarter-header {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sre-q1-header {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.sre-q2-header {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+}
+
+.sre-quarter-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.sre-quarter-badge i {
+    font-size: 1.25rem;
+}
+
+.sre-quarter-period {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.sre-quarter-body {
+    padding: 24px;
+}
+
+.sre-metric-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.sre-metric-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+}
+
+.sre-metric-income .sre-metric-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.sre-metric-expense .sre-metric-icon {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.sre-metric-net .sre-metric-icon {
+    background: rgba(14, 165, 233, 0.1);
+    color: #0ea5e9;
+}
+
+.sre-metric-balance .sre-metric-icon {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
+.sre-metric-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sre-metric-label {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+.sre-metric-value {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.sre-metric-value.sre-positive {
+    color: #10b981;
+}
+
+.sre-metric-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0,0,0,0.08), transparent);
+    margin: 8px 0;
+}
+
+.sre-quarter-footer {
+    padding: 16px 24px;
+    background: var(--color-bg-alt);
+    border-top: 1px solid rgba(0,0,0,0.04);
+}
+
+.sre-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.sre-download-btn:hover {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* Breakdown Section */
+.sre-breakdown-section {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.sre-breakdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.sre-breakdown-header h3 {
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.sre-quarter-selector {
+    display: flex;
+    gap: 8px;
+    background: var(--color-bg-alt);
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.sre-tab {
+    padding: 8px 20px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sre-tab:hover {
+    color: var(--color-text);
+}
+
+.sre-tab.active {
+    background: white;
+    color: var(--color-primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.sre-breakdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.sre-breakdown-card {
+    background: var(--color-bg-alt);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.sre-breakdown-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sre-breakdown-card-header i {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+.sre-breakdown-card-header h4 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin: 0;
+    font-weight: 600;
+}
+
+.sre-breakdown-chart {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.sre-breakdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sre-breakdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+}
+
+.sre-item-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.sre-dot-local { background: #10b981; }
+.sre-dot-external { background: #0ea5e9; }
+.sre-dot-gps { background: #3b82f6; }
+.sre-dot-social { background: #8b5cf6; }
+.sre-dot-economic { background: #f59e0b; }
+.sre-dot-debt { background: #ef4444; }
+
+.sre-item-label {
+    flex: 1;
+    color: var(--color-text);
+}
+
+.sre-item-value {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.sre-item-pct {
+    color: var(--color-text-light);
+    min-width: 50px;
+    text-align: right;
+}
+
+/* Reports Grid 2 columns */
+.reports-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .sre-quarters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sre-breakdown-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sre-breakdown-header {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    
+    .reports-grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .sre-section {
+        padding: 40px 0 60px;
+    }
+    
+    .sre-title-wrap h2 {
+        font-size: 1.5rem;
+    }
+    
+    .sre-quarter-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .sre-breakdown-section {
+        padding: 20px;
+    }
+    
+    .sre-breakdown-chart {
+        height: 180px;
+    }
+    
+    .sre-metric-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}

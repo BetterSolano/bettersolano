@@ -2,16 +2,31 @@
 
 Thank you for your interest in contributing to BetterSolano.org! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Solano, your contributions are welcome.
 
+## Choosing a Version
+
+BetterSolano.org has two versions. Choose based on your preference:
+
+| Version | Branch | Best For |
+|---------|--------|----------|
+| Static HTML | `main` | Quick fixes, content updates, contributors new to web development |
+| React + TypeScript | `react-typescript` | New features, complex UI, contributors familiar with React |
+
+Both versions are actively maintained and contributions to either are welcome.
+
+For detailed differences and migration guidance, see [MIGRATION.md](MIGRATION.md).
+
 ## Getting Started
 
-### Prerequisites
+### Static HTML Version
+
+#### Prerequisites
 
 - Node.js v16 or higher
 - npm v8 or higher
 - Python 3 (for local development server)
 - Git
 
-### Setup
+#### Setup
 
 ```bash
 git clone https://github.com/BetterSolano/bettersolano.git
@@ -21,6 +36,27 @@ npm run dev
 ```
 
 Open http://localhost:8000 in your browser.
+
+### React + TypeScript Version
+
+#### Prerequisites
+
+- Node.js v18 or higher
+- npm v9 or higher
+- Git
+
+#### Setup
+
+```bash
+git clone https://github.com/BetterSolano/bettersolano.git
+cd bettersolano
+git checkout react-typescript
+cd react-app
+npm install
+npm run dev
+```
+
+Open http://localhost:3000 in your browser.
 
 ## How to Contribute
 
@@ -143,6 +179,7 @@ Pull requests are reviewed for:
 
 - **Discord:** [Join our community](https://discord.com/invite/qeSu7RJkjQ)
 - **Facebook:** [@bettersolano.org](https://www.facebook.com/bettersolano.org)
+- **LinkedIn:** [Connect with us](https://www.linkedin.com/company/bettersolano)
 - **Email:** volunteer@bettersolano.org
 
 ## Recognition

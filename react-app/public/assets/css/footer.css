@@ -1,0 +1,270 @@
+/* Footer - Minimal Professional Design */
+
+.site-footer {
+    background: linear-gradient(180deg, #1a1a1a 0%, #111111 100%);
+    color: #ffffff;
+    padding: 0;
+    margin-top: 0;
+}
+
+.site-footer.no-margin-top {
+    margin-top: 0;
+}
+
+/* Main Footer Content */
+.footer-main-new {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding: 60px 0 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Brand Column */
+.footer-brand {
+    max-width: 320px;
+}
+
+.footer-logo {
+    height: 48px;
+    width: auto;
+    margin-bottom: 16px;
+}
+
+.footer-tagline {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 24px;
+}
+
+.footer-social-new {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.125rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.footer-social-btn:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* Foo
+ter Columns */
+.footer-column h4 {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+}
+
+.footer-links-new {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-new li {
+    margin-bottom: 8px;
+}
+
+.footer-links-new a {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links-new a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* External Links with Badge */
+.footer-external-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-external-badge {
+    font-size: 0.625rem;
+    background: rgba(255,255,255,0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: rgba(255,255,255,0.5);
+}
+
+/* Cost Badge - Compact */
+.footer-cost {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(6,167,125,0.08);
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.8);
+    white-space: nowrap;
+}
+
+.footer-cost-value {
+    font-weight: 700;
+    color: var(--color-success);
+}
+
+/* Version Badge */
+.footer-version {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.5);
+    white-space: nowrap;
+}
+
+.footer-version i {
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.5);
+}
+
+/* Bottom Bar */
+.footer-bottom-new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.5);
+}
+
+.footer-copyright a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contribute {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.05);
+    padding: 8px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-top: 12px;
+}
+
+.footer-contribute:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contribute i {
+    color: var(--color-accent);
+}
+
+/* Icon colors for contribute buttons */
+.footer-contribute i.bi-envelope-heart,
+.footer-contribute i.bi-github {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .footer-main-new {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .footer-social-new {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-main-new {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 0 32px;
+    }
+    
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .footer-column {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-links-new a {
+        justify-content: center;
+    }
+    
+    .footer-cost {
+        margin: 0 auto;
+    }
+    
+    .footer-copyright {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+    
+    .footer-bottom-new {
+        text-align: center;
+    }
+}

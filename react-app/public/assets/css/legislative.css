@@ -1,0 +1,631 @@
+/* Legislative Page - Minimal Professional Design */
+
+/* Hero Section */
+.leg-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    padding: 48px 0 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.leg-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.leg-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.leg-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.leg-hero h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.leg-hero p {
+    color: rgba(255,255,255,0.85);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Categories Section */
+.leg-categories {
+    padding: 80px 0;
+    background: var(--color-bg-alt);
+}
+
+.leg-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.leg-category-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    text-decoration: none;
+    color: var(--color-text);
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.leg-category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-info) 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.leg-category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0,50,160,0.15);
+    text-decoration: none;
+    border-color: transparent;
+}
+
+.leg-category-card:hover::before {
+    transform: scaleX(1);
+}
+
+.leg-category-icon {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease;
+}
+
+.leg-category-card:hover .leg-category-icon {
+    transform: scale(1.1);
+}
+
+.leg-category-content h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.leg-category-content p {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.leg-category-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: gap 0.3s ease;
+}
+
+.leg-category-card:hover .leg-category-link {
+    gap: 12px;
+}
+
+.leg-category-link i {
+    transition: transform 0.3s ease;
+}
+
+.leg-category-card:hover .leg-category-link i {
+    transform: translateX(4px);
+}
+
+/* Info Section - Compact Professional Design */
+.leg-info {
+    padding: 60px 0;
+}
+
+.leg-info-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.leg-info-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.leg-info-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0,50,160,0.08);
+    color: var(--color-primary);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.leg-info-header h2 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: 6px;
+}
+
+.leg-info-header p {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+.leg-info-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.leg-info-card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid rgba(0,0,0,0.06);
+    text-align: left;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.leg-info-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 12px rgba(0,50,160,0.08);
+}
+
+.leg-info-card-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--color-primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.leg-info-card h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 6px;
+}
+
+.leg-info-card p {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0;
+    flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .leg-info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .leg-hero {
+        padding: 40px 0 48px;
+    }
+    
+    .leg-hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .leg-categories {
+        padding: 48px 0;
+    }
+    
+    .leg-categories-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .leg-category-card {
+        padding: 24px;
+    }
+    
+    .leg-category-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+    
+    .leg-category-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .leg-info {
+        padding: 40px 0;
+    }
+    
+    .leg-info-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .leg-info-header h2 {
+        font-size: 1.25rem;
+    }
+    
+    .leg-info-card {
+        padding: 14px;
+    }
+    
+    .leg-info-card-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.875rem;
+        margin-bottom: 10px;
+    }
+    
+    .leg-info-card h3 {
+        font-size: 0.8125rem;
+    }
+    
+    .leg-info-card p {
+        font-size: 0.6875rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .leg-hero {
+        padding: 36px 0 44px;
+    }
+    
+    .leg-hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .leg-hero p {
+        font-size: 0.9375rem;
+    }
+    
+    .leg-category-card {
+        padding: 20px;
+    }
+    
+    .leg-category-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.25rem;
+        border-radius: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .leg-category-content h2 {
+        font-size: 1.125rem;
+        margin-bottom: 8px;
+    }
+    
+    .leg-category-content p {
+        font-size: 0.875rem;
+        margin-bottom: 16px;
+    }
+    
+    .leg-info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .leg-info-card {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px;
+    }
+    
+    .leg-info-card-icon {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    
+    .leg-info-card h3 {
+        font-size: 0.8125rem;
+    }
+    
+    .leg-info-card p {
+        font-size: 0.75rem;
+    }
+}
+
+
+/* Legislative Process Flowchart Section */
+.leg-process {
+    padding: 60px 0;
+    background: var(--color-bg-alt);
+}
+
+.leg-process-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.leg-process-header h2 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: 6px;
+}
+
+.leg-process-header p {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+/* Process Tabs */
+.leg-process-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.leg-tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.leg-tab-btn i {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+}
+
+.leg-tab-btn span {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.leg-tab-btn small {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    background: rgba(0,0,0,0.04);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.leg-tab-btn:hover {
+    border-color: var(--color-primary);
+}
+
+.leg-tab-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.leg-tab-btn.active i,
+.leg-tab-btn.active span {
+    color: white;
+}
+
+.leg-tab-btn.active small {
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* Tab Content */
+.leg-tab-content {
+    display: none;
+}
+
+.leg-tab-content.active {
+    display: block;
+}
+
+/* Flow Container - Compact Grid */
+.leg-flow-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Flow Step */
+.leg-flow-step {
+    display: flex;
+}
+
+.leg-flow-card {
+    position: relative;
+    flex: 1;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 8px;
+    padding: 16px 14px 14px 14px;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.leg-flow-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 12px rgba(0,50,160,0.08);
+}
+
+.leg-flow-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.leg-flow-icon {
+    display: none;
+}
+
+.leg-flow-card h4 {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.leg-flow-card p {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    line-height: 1.4;
+    margin: 0;
+    flex: 1;
+}
+
+/* Final Step */
+.leg-flow-final .leg-flow-number {
+    background: var(--color-success);
+}
+
+.leg-flow-card-final {
+    border-color: rgba(16,185,129,0.3);
+    background: rgba(16,185,129,0.03);
+}
+
+.leg-flow-card-final:hover {
+    border-color: var(--color-success);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .leg-flow-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .leg-process {
+        padding: 40px 0;
+    }
+    
+    .leg-process-tabs {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .leg-tab-btn {
+        justify-content: center;
+        padding: 10px 20px;
+    }
+    
+    .leg-flow-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .leg-flow-card {
+        padding: 14px 12px 12px;
+    }
+    
+    .leg-flow-card h4 {
+        font-size: 0.75rem;
+    }
+    
+    .leg-flow-card p {
+        font-size: 0.6875rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .leg-process-header h2 {
+        font-size: 1.25rem;
+    }
+    
+    .leg-flow-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .leg-flow-card {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px;
+    }
+    
+    .leg-flow-number {
+        margin-bottom: 0;
+        margin-top: 2px;
+    }
+    
+    .leg-flow-card-content {
+        flex: 1;
+    }
+    
+    .leg-flow-card h4 {
+        font-size: 0.8125rem;
+    }
+    
+    .leg-flow-card p {
+        font-size: 0.75rem;
+    }
+}
