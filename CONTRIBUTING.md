@@ -1,4 +1,4 @@
-# Contributing to BetterSolano.org
+# Contributing to BetterCainta
 
 Thank you for your interest in contributing to BetterSolano.org! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Solano, your contributions are welcome.
 
@@ -29,8 +29,8 @@ For detailed differences and migration guidance, see [MIGRATION.md](MIGRATION.md
 #### Setup
 
 ```bash
-git clone https://github.com/BetterSolano/bettersolano.git
-cd bettersolano
+git clone https://github.com/better-cainta/bettercainta.git
+cd bettercainta
 npm install
 npm run dev
 ```
@@ -48,8 +48,8 @@ Open http://localhost:8000 in your browser.
 #### Setup
 
 ```bash
-git clone https://github.com/BetterSolano/bettersolano.git
-cd bettersolano
+git clone https://github.com/better-cainta/bettercainta.git
+cd bettercainta
 git checkout react-typescript
 cd react-app
 npm install
@@ -62,7 +62,7 @@ Open http://localhost:3000 in your browser.
 
 ### Reporting Bugs
 
-1. Check existing [issues](https://github.com/BetterSolano/bettersolano/issues) to avoid duplicates
+1. Check existing [issues](https://github.com/better-cainta/bettercainta/issues) to avoid duplicates
 2. Create a new issue with:
    - Clear, descriptive title
    - Steps to reproduce
@@ -177,10 +177,8 @@ Pull requests are reviewed for:
 
 ## Community
 
-- **Discord:** [Join our community](https://discord.com/invite/qeSu7RJkjQ)
-- **Facebook:** [@bettersolano.org](https://www.facebook.com/bettersolano.org)
-- **LinkedIn:** [Connect with us](https://www.linkedin.com/company/bettersolano)
-- **Email:** volunteer@bettersolano.org
+~~- **Facebook:** [@bettersolano.org](https://www.facebook.com/bettersolano.org)~~
+- **Email:** bettercainta@proton.me
 
 ## Recognition
 
@@ -188,8 +186,8 @@ All contributors are recognized in our repository. Significant contributions may
 
 ## Questions?
 
-Feel free to open an issue or reach out on Discord. We're happy to help!
+Feel free to open an issue or reach out to [Frank Cayaco](@glamosky)
 
 ---
 
-Thank you for helping make government information accessible to the people of Solano.
+Thank you for helping make government information accessible to the people of Cainta.
