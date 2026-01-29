@@ -1,6 +1,6 @@
-# BetterSolano.org
+# BetterCainta
 
-A civic-tech initiative providing transparent access to municipal services, programs, and public funds of LGU Solano, Nueva Vizcaya, Philippines.
+A civic-tech initiative providing transparent access to municipal services, programs, and public funds of Cainta, Rizal, Philippines.
 
 ![Version](https://img.shields.io/badge/version-1.1.7-green)
 ![License](https://img.shields.io/badge/license-MIT%20%7C%20CC%20BY%204.0-blue)
@@ -37,13 +37,13 @@ To adapt this project for your LGU, fork the repository and customize the conten
 
 ## About
 
-BetterSolano.org is a volunteer-driven, open-source project that empowers the people of Solano with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
+BetterCainta is a volunteer-driven, open-source project that empowers the people of Solano with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
 
-**Cost to the People of Solano = ₱0**
+**Cost to the People of Cainta = ₱0**
 
 ## Live Demo
 
-Visit the live website: [https://bettersolano.org](https://bettersolano.org)
+Visit the live website: *in development*
 
 ## Technology Stack
 
@@ -77,8 +77,6 @@ Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 | **Budget Transparency** | Financial reports, income/expenditure breakdowns, and infrastructure projects |
 | **Legislative Documents** | Searchable database of ordinances and resolutions from Sangguniang Bayan |
 | **Municipal Statistics** | Demographics, economic data, and competitive index rankings |
-| **Real-time Information** | Live weather updates, currency exchange rates, and Philippine time |
-| **Multi-language Support** | Available in English, Filipino, and Ilocano |
 | **Accessibility** | WCAG 2.1 compliant with skip links, ARIA labels, and semantic HTML |
 | **SEO Optimized** | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap |
 | **Performance** | 90% size reduction through minification, GZIP compression, and browser caching |
@@ -87,10 +85,10 @@ Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 
 ```bash
 # Clone the repository
-git clone https://github.com/BetterSolano/bettersolano.git
+git clone https://github.com/better-cainta/bettercainta.git
 
 # Navigate to project directory
-cd bettersolano
+cd better-cainta
 
 # Install dependencies
 npm install
@@ -117,7 +115,7 @@ npm run dev
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/BetterSolano/bettersolano.git
+git clone https://github.com/better-cainta/bettercainta.git
 cd bettersolano
 ```
 
@@ -176,7 +174,7 @@ npm run build
 ## Project Structure
 
 ```
-bettersolano/
+better-cainta/
 ├── assets/
 │   ├── css/              # Stylesheets (9 files)
 │   ├── js/               # JavaScript modules (15 files)
@@ -264,8 +262,7 @@ All public information is sourced from official government portals:
 
 | Source | URL | Data Type |
 |--------|-----|-----------|
-| LGU Solano Official Website | [solano.gov.ph](https://solano.gov.ph/) | Services, Officials |
-| Sangguniang Bayan ng Solano | [sangguniangbayan.solano.gov.ph](https://sangguniangbayan.solano.gov.ph/) | Ordinances, Resolutions |
+| LGU Solano Official Website | [[cainta.gov.ph](https://www.cainta.gov.ph/)] | Services, Officials |
 | Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/) | Budget, Financial Reports |
 | Philippine Statistics Authority | [psa.gov.ph](https://psa.gov.ph/) | Demographics, Census |
 | DTI CMCI Portal | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/) | Competitive Index |
@@ -285,25 +282,30 @@ See [LICENSE](LICENSE) for full details.
 
 | Channel | Link |
 |---------|------|
-| Website | [bettersolano.org](https://bettersolano.org) |
-| Email | volunteer@bettersolano.org |
-| Facebook | [@bettersolano.org](https://www.facebook.com/bettersolano.org) |
-| LinkedIn | [BetterSolano](https://www.linkedin.com/company/bettersolano/) |
-| Discord | [Join Community](https://discord.com/invite/qeSu7RJkjQ) |
-| GitHub | [BetterSolano/bettersolano](https://github.com/BetterSolano/bettersolano) |
+~~| Website | [bettersolano.org](https://bettersolano.org) |~~
+| Email | bettercainta@proton.me |
+~~| Facebook | [@bettersolano.org](https://www.facebook.com/bettersolano.org) |~~
+| GitHub | [better-cainta/bettercainta]([https://github.com/better-cainta]) |
 
 ## Acknowledgments
 
 - [BetterGov.ph](https://bettergov.ph) for the civic-tech initiative in the Philippines
-- LGU Solano for public data availability and transparency
-- All volunteers and contributors who dedicate their time
+- Cainta Municipal Government for public data availability and transparency
 - Open-source community for the tools and libraries used
-- Citizens of Solano for their feedback and support
+- Citizens of Cainta for their feedback and support
 
 ---
 
-Made for the people of Solano, Nueva Vizcaya
+Made for the people of Cainta, Rizal
 
-## Developer
+---
 
-[Ramon Logan Jr.](https://ramonloganjr.com/) is a UAE-based full-stack developer and IT professional specializing in web development, design, cloud services, and cybersecurity. He is the developer behind BetterSolano.org and the founder of the small cloud-based solutions initiative, [HelloPinas.com](https://hellopinas.com). Ramon actively contributes to civic-tech efforts like [BetterGov.ph](https://bettergov.ph) and is an individual participant in the [OpenJS Foundation](https://openjsf.org/).
+## Developers
+
+[Frank Cayaco](https://glamosky.vercel.app/) I love making projects that help my local community. I also make projects for the [trainspotting](https://www.facebook.com/railfansphilippines) community
+
+---
+
+## Special Thanks
+
+[Ramon Logan Jr.](https://ramonloganjr.com/) I would like to commend his extraordinary effort for laying all the groundwork needed. As a rookie programmer, his open-source work enabled me to focus on the fundamental concepts as I struggle building from scratch.
