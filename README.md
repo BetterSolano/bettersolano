@@ -174,7 +174,7 @@ npm run build
 ## Project Structure
 
 ```
-better-cainta/
+bettercainta/
 ├── assets/
 │   ├── css/              # Stylesheets (9 files)
 │   ├── js/               # JavaScript modules (15 files)
