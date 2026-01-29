@@ -13,7 +13,7 @@ A civic-tech initiative providing transparent access to municipal services, prog
 
 ## Version Notice
 
-A **React + TypeScript** version of BetterSolano.org is now available for contributors who prefer modern tooling and component-based architecture.
+A **React + TypeScript** version of this repo is now available for contributors who prefer modern tooling and component-based architecture.
 
 | Version | Branch | Status | Documentation |
 |---------|--------|--------|---------------|
@@ -37,7 +37,7 @@ To adapt this project for your LGU, fork the repository and customize the conten
 
 ## About
 
-BetterCainta is a volunteer-driven, open-source project that empowers the people of Solano with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
+BetterCainta is a volunteer-driven, open-source project that empowers the people of Cainta with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
 
 **Cost to the People of Cainta = ₱0**
 
@@ -116,7 +116,7 @@ npm run dev
 1. **Clone the repository**
 ```bash
 git clone https://github.com/better-cainta/bettercainta.git
-cd bettersolano
+cd better-cainta
 ```
 
 2. **Install dependencies**
@@ -207,7 +207,7 @@ better-cainta/
 
 ## Contributing
 
-We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Solano, your participation helps shape this project for all.
+We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Cainta, your participation helps shape this project for all.
 
 ### How to Contribute
 
@@ -262,7 +262,7 @@ All public information is sourced from official government portals:
 
 | Source | URL | Data Type |
 |--------|-----|-----------|
-| LGU Solano Official Website | [[cainta.gov.ph](https://www.cainta.gov.ph/)] | Services, Officials |
+| Municipal Government of Cainta Official Website | [[cainta.gov.ph](https://www.cainta.gov.ph/)] | Services, Officials |
 | Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/) | Budget, Financial Reports |
 | Philippine Statistics Authority | [psa.gov.ph](https://psa.gov.ph/) | Demographics, Census |
 | DTI CMCI Portal | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/) | Competitive Index |
