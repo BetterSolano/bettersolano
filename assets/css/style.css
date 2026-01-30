@@ -6934,30 +6934,74 @@ a.a11y-contact-item:hover i {
 
 @media (max-width: 767px) {
     .info-bar {
-        padding: 8px 0;
+        padding: 6px 0;
     }
-    
+
     .info-bar-inner {
-        flex-direction: column;
-        gap: var(--spacing-xs);
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+        flex-wrap: nowrap;
     }
-    
+
+    .info-bar-item {
+        font-size: 0.6875rem;
+        gap: 3px;
+        white-space: nowrap;
+    }
+
     .info-bar-weather,
     .info-bar-datetime {
-        padding-left: 0;
-        border-left: none;
+        padding-left: 8px;
+        margin-left: 8px;
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
     }
-    
+
+    .info-bar-rates {
+        padding-right: 0;
+    }
+
+    .rate-rotator {
+        min-width: auto;
+    }
+
     .info-bar-rates-list {
         gap: 8px;
     }
-    
+
     .rate-item {
+        font-size: 0.625rem;
+    }
+
+    .datetime-separator {
+        margin: 0 1px;
+    }
+
+    .time-label {
         font-size: 0.625rem;
     }
 }
 
 @media (max-width: 575px) {
+    .info-bar-inner {
+        gap: 0;
+    }
+
+    .info-bar-item {
+        font-size: 0.625rem;
+        gap: 2px;
+    }
+
+    .info-bar-weather,
+    .info-bar-datetime {
+        padding-left: 6px;
+        margin-left: 6px;
+    }
+
+    .info-bar-item i {
+        font-size: 0.6875rem;
+    }
+
     .info-bar-rates-list {
         max-width: 100%;
         overflow-x: auto;
@@ -6965,14 +7009,17 @@ a.a11y-contact-item:hover i {
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
-    
+
     .info-bar-rates-list::-webkit-scrollbar {
         display: none;
     }
-    
+
     .info-bar-datetime {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .time-label {
+        font-size: 0.5625rem;
     }
 }
 
