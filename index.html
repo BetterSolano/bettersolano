@@ -144,7 +144,7 @@
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link" data-i18n="home-skip-to-main-content">Skip to main content</a>
 
     <!-- Hotline Bar -->
     <div class="hotline-bar">
@@ -196,16 +196,16 @@
                     <li class="has-dropdown">
                         <a href="services/" data-i18n="nav-services" aria-haspopup="true" aria-expanded="false">Services</a>
                         <ul class="dropdown-menu">
-                            <li><a href="services/certificates">Certificates</a></li>
-                            <li><a href="services/business">Business</a></li>
-                            <li><a href="services/tax-payments">Tax Payments</a></li>
-                            <li><a href="services/social-services">Social Services</a></li>
-                            <li><a href="services/health">Health</a></li>
-                            <li><a href="services/agriculture">Agriculture</a></li>
-                            <li><a href="services/infrastructure">Infrastructure</a></li>
-                            <li><a href="services/education">Education</a></li>
-                            <li><a href="services/public-safety">Public Safety</a></li>
-                            <li><a href="services/environment">Environment</a></li>
+                            <li><a href="services/certificates" data-i18n="home-certificates">Certificates</a></li>
+                            <li><a href="services/business" data-i18n="home-business">Business</a></li>
+                            <li><a href="services/tax-payments" data-i18n="home-tax-payments">Tax Payments</a></li>
+                            <li><a href="services/social-services" data-i18n="home-social-services">Social Services</a></li>
+                            <li><a href="services/health" data-i18n="home-health">Health</a></li>
+                            <li><a href="services/agriculture" data-i18n="home-agriculture">Agriculture</a></li>
+                            <li><a href="services/infrastructure" data-i18n="home-infrastructure">Infrastructure</a></li>
+                            <li><a href="services/education" data-i18n="home-education">Education</a></li>
+                            <li><a href="services/public-safety" data-i18n="home-public-safety">Public Safety</a></li>
+                            <li><a href="services/environment" data-i18n="home-environment">Environment</a></li>
                         </ul>
                     </li>
                     <li><a href="government/" data-i18n="nav-government">Government</a></li>
@@ -213,8 +213,8 @@
                     <li class="has-dropdown">
                         <a href="legislative/" data-i18n="nav-legislative" aria-haspopup="true" aria-expanded="false">Legislative</a>
                         <ul class="dropdown-menu">
-                            <li><a href="legislative/ordinance-framework">Ordinance Framework</a></li>
-                            <li><a href="legislative/resolution-framework">Resolution Framework</a></li>
+                            <li><a href="legislative/ordinance-framework" data-i18n="home-ordinance-framework">Ordinance Framework</a></li>
+                            <li><a href="legislative/resolution-framework" data-i18n="home-resolution-framework">Resolution Framework</a></li>
                         </ul>
                     </li>
                     <li><a href="budget/" data-i18n="nav-transparency">Transparency</a></li>
@@ -268,13 +268,13 @@
                         <h1 data-i18n="hero-welcome">Welcome to BetterSolano.org</h1>
                         <p data-i18n="hero-subtitle">Access government services, information, and resources for the people of Solano, Nueva Vizcaya.</p>
                         <div class="home-hero-v2-actions">
-                            <a href="services/" class="btn btn-primary">Browse Services <i class="bi bi-arrow-right"></i></a>
-                            <a href="contact/" class="btn btn-outline">Contact Us</a>
+                            <a href="services/" class="btn btn-primary"><i class="bi bi-arrow-right"></i> <span data-i18n="home-browse-services">Browse Services</span></a>
+                            <a href="contact/" class="btn btn-outline" data-i18n="home-contact-us">Contact Us</a>
                         </div>
                     </div>
                     <div class="home-hero-v2-search">
                         <div class="home-search-box">
-                            <h2><i class="bi bi-search"></i> Find a Service</h2>
+                            <h2><i class="bi bi-search"></i> <span data-i18n="home-find-a-service">Find a Service</span></h2>
                             <form class="search-form" role="search">
                                 <div class="search-input-wrapper">
                                     <input type="search" id="hero-search" class="service-search-input" placeholder="e.g., birth certificate, business permit" aria-label="Search services" autocomplete="off">
@@ -282,10 +282,10 @@
                                 </div>
                             </form>
                             <div class="home-search-tags">
-                                <span>Popular:</span>
-                                <a href="service-details/birth-certificate">Birth Certificate</a>
-                                <a href="service-details/business-permits-licensing">Business Permit</a>
-                                <a href="service-details/municipal-treasurer">Real Property Tax</a>
+                                <span data-i18n="home-popular">Popular:</span>
+                                <a href="service-details/birth-certificate" data-i18n="home-birth-certificate">Birth Certificate</a>
+                                <a href="service-details/business-permits-licensing" data-i18n="home-business-permit">Business Permit</a>
+                                <a href="service-details/municipal-treasurer" data-i18n="home-real-property-tax">Real Property Tax</a>
                             </div>
                         </div>
                     </div>
@@ -304,12 +304,8 @@
                         <h2 class="appointment-cta-heading" data-i18n="appointment-cta-heading">Enhancing Appointment Services of LGU Solano Mayor's Office</h2>
                         <p class="appointment-cta-subtitle" data-i18n="appointment-cta-subtitle">No lines. No back-and-forth. Just efficient appointments.</p>
                         <div class="appointment-cta-actions">
-                            <a href="https://solanomayorsoffice-oasys.com/user/auth/login.php" class="appointment-cta-btn appointment-cta-btn--primary" target="_blank" rel="noopener noreferrer">
-                                <i class="bi bi-calendar-check" aria-hidden="true"></i> <span data-i18n="appointment-schedule-btn">Schedule Appointment</span>
-                            </a>
-                            <a href="https://solanomayorsoffice-oasys.com/user/auth/register.php" class="appointment-cta-btn appointment-cta-btn--outline" target="_blank" rel="noopener noreferrer">
-                                <i class="bi bi-person-plus" aria-hidden="true"></i> <span data-i18n="appointment-create-btn">Create Account</span>
-                            </a>
+                            <a href="https://solanomayorsoffice-oasys.com/user/auth/login.php" class="appointment-cta-btn appointment-cta-btn--primary" target="_blank" rel="noopener noreferrer"><i class="bi bi-calendar-check" aria-hidden="true"></i> <span data-i18n="home-schedule-appointment">Schedule Appointment</span></a>
+                            <a href="https://solanomayorsoffice-oasys.com/user/auth/register.php" class="appointment-cta-btn appointment-cta-btn--outline" target="_blank" rel="noopener noreferrer"><i class="bi bi-person-plus" aria-hidden="true"></i> <span data-i18n="home-create-account">Create Account</span></a>
                         </div>
                     </div>
                 </div>
@@ -321,7 +317,7 @@
             <div class="container">
                 <div class="home-section-header">
                     <h2 data-i18n="section-popular">Popular Services</h2>
-                    <p>Quick access to frequently requested municipal services</p>
+                    <p data-i18n="home-quick-access-to-frequently-requested-municipal">Quick access to frequently requested municipal services</p>
                 </div>
                 <div class="home-services-grid">
                     <a href="services/certificates" class="home-service-card">
@@ -368,7 +364,7 @@
                         <div class="home-service-icon"><i class="bi bi-grid-fill"></i></div>
                         <div class="home-service-content">
                             <h3 data-i18n="btn-view-all-services">View All Services</h3>
-                            <p>Browse complete directory</p>
+                            <p data-i18n="home-browse-complete-directory">Browse complete directory</p>
                         </div>
                         <i class="bi bi-arrow-right home-service-arrow"></i>
                     </a>
@@ -380,40 +376,40 @@
         <section class="home-stats-v2">
             <div class="container">
                 <div class="home-stats-v2-header">
-                    <h2>Solano at a Glance</h2>
-                    <a href="statistics/" class="home-section-link">View Statistics <i class="bi bi-arrow-right"></i></a>
+                    <h2 data-i18n="home-solano-at-a-glance">Solano at a Glance</h2>
+                    <a href="statistics/" class="home-section-link"><i class="bi bi-arrow-right"></i> <span data-i18n="home-view-statistics">View Statistics</span></a>
                 </div>
                 <div class="home-stats-v2-grid">
                     <a href="statistics/" class="home-stat-card">
                         <div class="home-stat-card-icon"><i class="bi bi-people-fill"></i></div>
                         <div class="home-stat-card-content">
                             <span class="home-stat-card-value" data-count="69296">69,296</span>
-                            <span class="home-stat-card-label">Population</span>
-                            <span class="home-stat-card-source">2024 Census</span>
+                            <span class="home-stat-card-label" data-i18n="home-population">Population</span>
+                            <span class="home-stat-card-source" data-i18n="home-2024-census">2024 Census</span>
                         </div>
                     </a>
                     <a href="government/" class="home-stat-card">
                         <div class="home-stat-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
                         <div class="home-stat-card-content">
                             <span class="home-stat-card-value">22</span>
-                            <span class="home-stat-card-label">Barangays</span>
-                            <span class="home-stat-card-source">Administrative Units</span>
+                            <span class="home-stat-card-label" data-i18n="home-barangays">Barangays</span>
+                            <span class="home-stat-card-source" data-i18n="home-administrative-units">Administrative Units</span>
                         </div>
                     </a>
                     <a href="budget/" class="home-stat-card">
                         <div class="home-stat-card-icon"><i class="bi bi-award-fill"></i></div>
                         <div class="home-stat-card-content">
-                            <span class="home-stat-card-value">1st Class</span>
-                            <span class="home-stat-card-label">Municipality</span>
-                            <span class="home-stat-card-source">Income Classification</span>
+                            <span class="home-stat-card-value" data-i18n="home-1st-class">1st Class</span>
+                            <span class="home-stat-card-label" data-i18n="home-municipality">Municipality</span>
+                            <span class="home-stat-card-source" data-i18n="home-income-classification">Income Classification</span>
                         </div>
                     </a>
                     <a href="statistics/" class="home-stat-card">
                         <div class="home-stat-card-icon"><i class="bi bi-rulers"></i></div>
                         <div class="home-stat-card-content">
-                            <span class="home-stat-card-value">162.70 km²</span>
-                            <span class="home-stat-card-label">Land Area</span>
-                            <span class="home-stat-card-source">Total Municipal Area</span>
+                            <span class="home-stat-card-value" data-i18n="home-16270-km">162.70 km²</span>
+                            <span class="home-stat-card-label" data-i18n="home-land-area">Land Area</span>
+                            <span class="home-stat-card-source" data-i18n="home-total-municipal-area">Total Municipal Area</span>
                         </div>
                     </a>
                 </div>
@@ -424,7 +420,7 @@
         <section class="section weather-map-section">
             <div class="container">
                 <div class="home-stats-v2-header">
-                    <h2>Weather and Map of Solano</h2>
+                    <h2 data-i18n="home-weather-and-map-of-solano">Weather and Map of Solano</h2>
                 </div>
                 <div class="weather-map-grid">
                     <div class="weather-column">
@@ -437,17 +433,15 @@
                             <div id="map-container" role="application" aria-label="Interactive map of Solano, Nueva Vizcaya">
                                 <noscript>
                                     <div class="map-fallback">
-                                        <p>JavaScript is required to view the interactive map.</p>
-                                        <a href="https://www.openstreetmap.org/?mlat=16.5167&mlon=121.1833#map=13/16.5167/121.1833" target="_blank" rel="noopener noreferrer">
+                                        <p data-i18n="home-javascript-is-required-to-view-the-interactive-map">JavaScript is required to view the interactive map.</p>
+                                        <a href="https://www.openstreetmap.org/?mlat=16.5167&mlon=121.1833#map=13/16.5167/121.1833" target="_blank" rel="noopener noreferrer" data-i18n="home-view-solano-on-openstreetmap">
                                             View Solano on OpenStreetMap
                                         </a>
                                     </div>
                                 </noscript>
                             </div>
-                            <p class="map-attribution">
-                                <i class="bi bi-geo-alt" aria-hidden="true"></i> Solano Municipal Hall, Nueva Vizcaya 3708
-                            </p>
-                            <p class="sr-only">Interactive map showing the location of Solano Municipal Hall in Nueva Vizcaya, Philippines. The map is centered at coordinates 16.5167°N, 121.1833°E. Use the plus and minus buttons or keyboard arrows to navigate the map.</p>
+                            <p class="map-attribution"><i class="bi bi-geo-alt" aria-hidden="true"></i> <span data-i18n="home-solano-municipal-hall-nueva-vizcaya-3708">Solano Municipal Hall, Nueva Vizcaya 3708</span></p>
+                            <p class="sr-only" data-i18n="home-interactive-map-showing-the-location-of-solano">Interactive map showing the location of Solano Municipal Hall in Nueva Vizcaya, Philippines. The map is centered at coordinates 16.5167°N, 121.1833°E. Use the plus and minus buttons or keyboard arrows to navigate the map.</p>
                         </div>
                     </div>
                 </div>
@@ -458,7 +452,7 @@
         <section class="section history-section">
             <div class="container">
                 <div class="home-stats-v2-header">
-                    <h2><i class="bi bi-book" aria-hidden="true"></i> Brief History of Solano</h2>
+                    <h2><i class="bi bi-book" aria-hidden="true"></i> <span data-i18n="home-brief-history-of-solano">Brief History of Solano</span></h2>
                 </div>
                 <div class="history-content">
                     <div class="history-timeline">
@@ -466,49 +460,49 @@
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <span class="timeline-year">1760</span>
-                                <p>The original name of the town was <strong>Bintauan</strong>, then a Gaddang settlement that is now a barangay of Villaverde.</p>
+                                <p data-i18n="home-history-1760">The original name of the town was <strong>Bintauan</strong>, then a Gaddang settlement that is now a barangay of Villaverde.</p>
                             </div>
                         </div>
                         <div class="timeline-item" data-year="1767">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <span class="timeline-year">1767</span>
-                                <p>The town was formally founded by <strong>Father Alejandro Vidal</strong>, a Dominican priest who led a Spanish mission.</p>
+                                <p data-i18n="home-history-1767">The town was formally founded by <strong>Father Alejandro Vidal</strong>, a Dominican priest who led a Spanish mission.</p>
                             </div>
                         </div>
                         <div class="timeline-item" data-year="1768">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <span class="timeline-year">1768</span>
-                                <p>Named <strong>Lungabang</strong>, from the Gaddang word for cave, <em>lungab</em>. Later changed to Lumabang by the Spaniards.</p>
+                                <p data-i18n="home-history-1768">Named <strong>Lungabang</strong>, from the Gaddang word for cave, <em>lungab</em>. Later changed to Lumabang by the Spaniards.</p>
                             </div>
                         </div>
                         <div class="timeline-item" data-year="1851">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <span class="timeline-year">1851</span>
-                                <p>Governor General Antonio Urbiztondo declared Lumabang a barrio of Bayombong for insufficient inhabitants and revenue.</p>
+                                <p data-i18n="home-governor-general-antonio-urbiztondo-declared">Governor General Antonio Urbiztondo declared Lumabang a barrio of Bayombong for insufficient inhabitants and revenue.</p>
                             </div>
                         </div>
                         <div class="timeline-item" data-year="1853">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <span class="timeline-year">1853</span>
-                                <p>The first <strong>Ilocanos arrived</strong>, brought by Don Diego Lumicao, a former gobernadorcillo.</p>
+                                <p data-i18n="home-history-1853">The first <strong>Ilocanos arrived</strong>, brought by Don Diego Lumicao, a former gobernadorcillo.</p>
                             </div>
                         </div>
                         <div class="timeline-item" data-year="1889">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <span class="timeline-year">1889</span>
-                                <p>Renamed <strong>Solano</strong> in honor of Governor General <strong>Ramon Solano y Llanderal</strong>. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.</p>
+                                <p data-i18n="home-history-1889">Renamed <strong>Solano</strong> in honor of Governor General <strong>Ramon Solano y Llanderal</strong>. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.</p>
                             </div>
                         </div>
                         <div class="timeline-item" data-year="1957">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <span class="timeline-year">1957</span>
-                                <p>The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as <strong>Villaverde</strong>. Solano's land area was reduced to <strong>13,980 hectares</strong>.</p>
+                                <p data-i18n="home-history-1957">The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as <strong>Villaverde</strong>. Solano's land area was reduced to <strong>13,980 hectares</strong>.</p>
                             </div>
                         </div>
                     </div>
@@ -516,15 +510,15 @@
                         <div class="history-card">
                             <div class="history-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
                             <div class="history-card-content">
-                                <h4>Once the Largest</h4>
-                                <p>Solano was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.</p>
+                                <h4 data-i18n="home-once-the-largest">Once the Largest</h4>
+                                <p data-i18n="home-solano-was-the-largest-municipality-in-the">Solano was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.</p>
                             </div>
                         </div>
                         <div class="history-card">
                             <div class="history-card-icon"><i class="bi bi-grid-3x3"></i></div>
                             <div class="history-card-content">
-                                <h4>Urban Planning</h4>
-                                <p>The 1889 redevelopment created a grid of 100 square blocks, each with an aggregate area of one hectare, with streets running north-south and east-west.</p>
+                                <h4 data-i18n="home-urban-planning">Urban Planning</h4>
+                                <p data-i18n="home-the-1889-redevelopment-created-a-grid-of-100">The 1889 redevelopment created a grid of 100 square blocks, each with an aggregate area of one hectare, with streets running north-south and east-west.</p>
                             </div>
                         </div>
                     </div>
@@ -572,17 +566,17 @@
             <div class="container">
                 <div class="home-section-header">
                     <h2 data-i18n="section-updates">Latest Updates</h2>
-                    <a href="news/" class="home-section-link"><span data-i18n="btn-view-all">View All</span> <i class="bi bi-arrow-right"></i></a>
+                    <a href="news/" class="home-section-link"><i class="bi bi-arrow-right"></i> <span data-i18n="home-view-all">View All</span></a>
                 </div>
                 <div class="home-news-grid" id="home-news-grid">
                     <!-- Dynamic content loaded by news.js -->
                     <article class="home-news-card">
                         <div class="home-news-meta">
-                            <span class="home-news-badge home-news-badge--info">Loading</span>
+                            <span class="home-news-badge home-news-badge--info" data-i18n="home-loading">Loading</span>
                             <span class="home-news-date">...</span>
                         </div>
-                        <h3><a href="news/">Loading updates...</a></h3>
-                        <p>Fetching the latest news from Solano.</p>
+                        <h3><a href="news/" data-i18n="home-loading-updates">Loading updates...</a></h3>
+                        <p data-i18n="home-fetching-the-latest-news-from-solano">Fetching the latest news from Solano.</p>
                     </article>
                 </div>
             </div>
@@ -593,22 +587,22 @@
             <div class="container">
                 <div class="home-section-header">
                     <h2 data-i18n="section-leadership">Municipal Leadership</h2>
-                    <a href="government/" class="home-section-link"><span data-i18n="btn-view-officials">View All Officials</span> <i class="bi bi-arrow-right"></i></a>
+                    <a href="government/" class="home-section-link"><i class="bi bi-arrow-right"></i> <span data-i18n="home-view-all-officials">View All Officials</span></a>
                 </div>
                 <div class="home-leadership-grid">
                     <div class="home-leader-card">
                         <div class="home-leader-badge" data-i18n="title-mayor">Municipal Mayor</div>
-                        <h3>Hon. Philip A. Dacayo</h3>
+                        <h3 data-i18n="home-hon-philip-a-dacayo">Hon. Philip A. Dacayo</h3>
                         <div class="home-leader-contacts">
-                            <a href="mailto:mayor@solano.gov.ph"><i class="bi bi-envelope"></i> mayor@solano.gov.ph</a>
+                            <a href="mailto:mayor@solano.gov.ph"><i class="bi bi-envelope"></i> <span data-i18n="home-mayorsolanogovph">mayor@solano.gov.ph</span></a>
                             <a href="tel:0783265002"><i class="bi bi-telephone"></i> (078) 326-5002</a>
                         </div>
                     </div>
                     <div class="home-leader-card">
                         <div class="home-leader-badge" data-i18n="title-vice-mayor">Municipal Vice Mayor</div>
-                        <h3>Hon. Eduardo D. Tiongson</h3>
+                        <h3 data-i18n="home-hon-eduardo-d-tiongson">Hon. Eduardo D. Tiongson</h3>
                         <div class="home-leader-contacts">
-                            <a href="mailto:vicemayor@solano.gov.ph"><i class="bi bi-envelope"></i> vicemayor@solano.gov.ph</a>
+                            <a href="mailto:vicemayor@solano.gov.ph"><i class="bi bi-envelope"></i> <span data-i18n="home-vicemayorsolanogovph">vicemayor@solano.gov.ph</span></a>
                             <a href="tel:0783265003"><i class="bi bi-telephone"></i> (078) 326-5003</a>
                         </div>
                     </div>
@@ -621,7 +615,7 @@
             <div class="container">
                 <div class="home-section-header">
                     <h2 data-i18n="section-contact">Contact Information</h2>
-                    <a href="contact/" class="home-section-link">View All <i class="bi bi-arrow-right"></i></a>
+                    <a href="contact/" class="home-section-link"><i class="bi bi-arrow-right"></i> <span data-i18n="home-view-all">View All</span></a>
                 </div>
                 <div class="home-contact-v2-grid">
                     <a href="tel:0788053581" class="home-contact-v2-card">
@@ -636,7 +630,7 @@
                         <div class="home-contact-v2-icon"><i class="bi bi-envelope-fill"></i></div>
                         <div class="home-contact-v2-content">
                             <h3 data-i18n="contact-email">Email</h3>
-                            <p class="home-contact-v2-value">lgusolanonv@gmail.com</p>
+                            <p class="home-contact-v2-value" data-i18n="home-lgusolanonvgmailcom">lgusolanonv@gmail.com</p>
                             <span class="home-contact-v2-note" data-i18n="contact-response">We'll respond within 24 hours</span>
                         </div>
                     </a>
@@ -645,8 +639,27 @@
                         <div class="home-contact-v2-content">
                             <h3 data-i18n="contact-address">Address</h3>
                             <p class="home-contact-v2-value" data-i18n="contact-municipal-hall">Municipal Hall</p>
-                            <span class="home-contact-v2-note">Solano, Nueva Vizcaya 3708</span>
+                            <span class="home-contact-v2-note" data-i18n="home-solano-nueva-vizcaya-3708">Solano, Nueva Vizcaya 3708</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solano Quiz CTA -->
+        <section class="quiz-cta-section" aria-label="Solano Quiz">
+            <div class="container">
+                <div class="quiz-cta-inner">
+                    <div class="quiz-cta-animation" aria-hidden="true">
+                        <dotlottie-player src="assets/animation/ramonloganjr-exam.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    </div>
+                    <div class="quiz-cta-content">
+                        <h2 class="quiz-cta-heading" data-i18n="home-solano-quiz">Solano Quiz</h2>
+                        <p class="quiz-cta-subtitle" data-i18n="home-how-well-do-you-know-solano-nueva-vizcaya">How well do you know Solano, Nueva Vizcaya?</p>
+                        <p class="quiz-cta-description" data-i18n="home-evaluate-your-familiarity-with-the-municipalitys">Evaluate your familiarity with the municipality's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Nueva Vizcaya's most prominent localities.</p>
+                        <a href="https://quiz.bettersolano.org/" class="quiz-cta-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-play-circle-fill" aria-hidden="true"></i> <span data-i18n="home-take-the-quiz">Take the Quiz</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -658,7 +671,7 @@
             <div class="footer-main-new">
                 <div class="footer-brand">
                     <img src="assets/images/logo/better-solano-logo-white.svg" alt="Better Solano logo" class="footer-logo">
-                    <p class="footer-tagline">Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.</p>
+                    <p class="footer-tagline" data-i18n="home-empowering-the-people-of-solano-with-transparent">Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.</p>
                     <div class="footer-social-new">
                         <a href="https://www.facebook.com/bettersolano.org" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                         <a href="https://www.linkedin.com/company/bettersolano/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
@@ -666,26 +679,27 @@
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="home-quick-links">Quick Links</h4>
                     <ul class="footer-links-new">
-                        <li><a href="sitemap/">Sitemap</a></li>
-                        <li><a href="https://solano.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf" target="_blank" rel="noopener noreferrer">Citizen's Charter</a></li>
-                        <li><a href="terms/">Terms of Use</a></li>
-                        <li><a href="privacy/">Privacy Policy</a></li>
-                        <li><a href="accessibility/">Accessibility</a></li>
+                        <li><a href="https://quiz.bettersolano.org/" target="_blank" rel="noopener noreferrer" data-i18n="home-solano-quiz">Solano Quiz</a></li>
+                        <li><a href="sitemap/" data-i18n="home-sitemap">Sitemap</a></li>
+                        <li><a href="https://solano.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf" target="_blank" rel="noopener noreferrer" data-i18n="home-citizens-charter">Citizen's Charter</a></li>
+                        <li><a href="terms/" data-i18n="home-terms-of-use">Terms of Use</a></li>
+                        <li><a href="privacy/" data-i18n="home-privacy-policy">Privacy Policy</a></li>
+                        <li><a href="accessibility/" data-i18n="home-accessibility">Accessibility</a></li>
                         <li><a href="faq/">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Resources</h4>
+                    <h4 data-i18n="home-resources">Resources</h4>
                     <ul class="footer-links-new">
-                        <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer">Open Data Philippines</a></li>
-                        <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer">Freedom of Information</a></li>
-                        <li><a href="https://solano.gov.ph/" target="_blank" rel="noopener noreferrer">Official LGU Solano Portal</a></li>
-                        <li><a href="https://sangguniangbayan.solano.gov.ph/" target="_blank" rel="noopener noreferrer">Sangguniang Bayan</a></li>
-                        <li><a href="https://www.facebook.com/OfficialLguSolanoFanpage/" target="_blank" rel="noopener noreferrer">LGU Solano Facebook</a></li>
-                        <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer">BLGF Portal</a></li>
-                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer">CMCI DTI Portal</a></li>
+                        <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer" data-i18n="home-open-data-philippines">Open Data Philippines</a></li>
+                        <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="home-freedom-of-information">Freedom of Information</a></li>
+                        <li><a href="https://solano.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="home-official-lgu-solano-portal">Official LGU Solano Portal</a></li>
+                        <li><a href="https://sangguniangbayan.solano.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="home-sangguniang-bayan">Sangguniang Bayan</a></li>
+                        <li><a href="https://www.facebook.com/OfficialLguSolanoFanpage/" target="_blank" rel="noopener noreferrer" data-i18n="home-lgu-solano-facebook">LGU Solano Facebook</a></li>
+                        <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="home-blgf-portal">BLGF Portal</a></li>
+                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="home-cmci-dti-portal">CMCI DTI Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -702,7 +716,9 @@
             </div>
             <div class="footer-bottom-new">
                 <div class="footer-copyright">
-                    <span class="footer-copyright-text"><span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0</span><span class="footer-disclaimer">All public information sourced from official government portals.</span></span>
+                    <span class="footer-copyright-text">&copy; 2026 BetterSolano.org</span>
+                    <span class="footer-copyright-license">MIT | CC BY 4.0</span>
+                    <span class="footer-copyright-disclaimer">All public information sourced from official government portals.</span>
                     <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.1.14</span>
                 </div>
             </div>

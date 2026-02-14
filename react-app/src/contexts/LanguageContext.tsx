@@ -270,6 +270,106 @@ const translations: Record<string, Record<string, string>> = {
     "env-waste-desc": "Waste collection schedules by barangay",
     "env-recycling": "Recycling Program",
     "env-recycling-desc": "Segregation and recycling initiatives",
+
+    // Header Dropdown Items
+    "dropdown-certificates": "Certificates",
+    "dropdown-business": "Business",
+    "dropdown-tax-payments": "Tax Payments",
+    "dropdown-social-services": "Social Services",
+    "dropdown-health": "Health",
+    "dropdown-agriculture": "Agriculture",
+    "dropdown-infrastructure": "Infrastructure",
+    "dropdown-education": "Education",
+    "dropdown-public-safety": "Public Safety",
+    "dropdown-environment": "Environment",
+    "dropdown-ordinance-framework": "Ordinance Framework",
+    "dropdown-resolution-framework": "Resolution Framework",
+
+    // Homepage - Hero
+    "hero-browse-services": "Browse Services",
+    "hero-contact-us": "Contact Us",
+    "hero-search-placeholder": "e.g., birth certificate, business permit",
+    "hero-popular": "Popular:",
+    "hero-birth-certificate": "Birth Certificate",
+    "hero-business-permit": "Business Permit",
+    "hero-real-property-tax": "Real Property Tax",
+
+    // Homepage - Popular Services
+    "popular-services-subtitle": "Quick access to frequently requested municipal services",
+    "popular-browse-directory": "Browse complete directory",
+
+    // Homepage - Stats
+    "stats-at-a-glance": "Solano at a Glance",
+    "stats-view-statistics": "View Statistics",
+    "stats-population-label": "Population",
+    "stats-population-source": "2024 Census",
+    "stats-barangays-label": "Barangays",
+    "stats-barangays-source": "Administrative Units",
+    "stats-municipality-label": "Municipality",
+    "stats-municipality-source": "Income Classification",
+    "stats-land-area-label": "Land Area",
+    "stats-land-area-source": "Total Municipal Area",
+
+    // Homepage - Weather & Map
+    "weather-map-title": "Weather and Map of Solano",
+    "weather-mainly-clear": "Mainly clear",
+    "weather-location": "Solano, Nueva Vizcaya",
+
+    // Homepage - History
+    "history-title": "Brief History of Solano",
+    "history-1760": "The original name of the town was Bintauan, then a Gaddang settlement that is now a barangay of Villaverde.",
+    "history-1767": "The town was formally founded by Father Alejandro Vidal, a Dominican priest who led a Spanish mission.",
+    "history-1768": "Named Lungabang, from the Gaddang word for cave, lungab. Later changed to Lumabang by the Spaniards.",
+    "history-1851": "Governor General Antonio Urbiztondo declared Lumabang a barrio of Bayombong for insufficient inhabitants and revenue.",
+    "history-1853": "The first Ilocanos arrived, brought by Don Diego Lumicao, a former gobernadorcillo.",
+    "history-1889": "Renamed Solano in honor of Governor General Ramon Solano y Llanderal. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.",
+    "history-1957": "The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as Villaverde. Solano's land area was reduced to 13,980 hectares.",
+    "history-once-largest-title": "Once the Largest",
+    "history-once-largest-desc": "Solano was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.",
+    "history-urban-planning-title": "Urban Planning",
+    "history-urban-planning-desc": "The 1889 redevelopment created a grid of 100 square blocks, each with an aggregate area of one hectare, with streets running north-south and east-west.",
+
+    // Homepage - News
+    "news-announcement": "Announcement",
+    "news-project": "Project",
+    "news-advisory": "Advisory",
+    "news-business-permit-title": "Business Permit Renewal 2025",
+    "news-business-permit-desc": "Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged.",
+    "news-market-title": "New Public Market Wing Opens",
+    "news-market-desc": "The renovated wing of the Solano Public Market is now open to vendors and the public.",
+    "news-power-title": "Scheduled Power Interruption",
+    "news-power-desc": "Maintenance scheduled for Barangay Osmeña on Dec 1, 8:00 AM - 5:00 PM.",
+
+    // Homepage - Quiz CTA
+    "quiz-title": "Solano Quiz",
+    "quiz-subtitle": "How well do you know Solano, Nueva Vizcaya?",
+    "quiz-description": "Evaluate your familiarity with the municipality's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Nueva Vizcaya's most prominent localities.",
+    "quiz-take": "Take the Quiz",
+
+    // Footer
+    "footer-tagline": "Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.",
+    "footer-quick-links": "Quick Links",
+    "footer-resources": "Resources",
+    "footer-solano-quiz": "Solano Quiz",
+    "footer-sitemap": "Sitemap",
+    "footer-citizens-charter": "Citizen's Charter",
+    "footer-terms": "Terms of Use",
+    "footer-privacy": "Privacy Policy",
+    "footer-accessibility": "Accessibility",
+    "footer-faq": "FAQ",
+    "footer-open-data": "Open Data Philippines",
+    "footer-foi": "Freedom of Information",
+    "footer-lgu-portal": "Official LGU Solano Portal",
+    "footer-sb": "Sangguniang Bayan",
+    "footer-lgu-facebook": "LGU Solano Facebook",
+    "footer-blgf": "BLGF Portal",
+    "footer-cmci": "CMCI DTI Portal",
+    "footer-cost": "Cost to the People of Solano =",
+    "footer-volunteer": "Volunteer with us",
+    "footer-contribute": "Contribute code with us",
+    "footer-copyright-text": "BetterSolano.org",
+    "footer-copyright-disclaimer": "All public information sourced from official government portals.",
+    "footer-skip-to-main": "Skip to main content",
   },
   fil: {
     // Navigation - Filipino
@@ -537,6 +637,106 @@ const translations: Record<string, Record<string, string>> = {
     "env-waste-desc": "Mga iskedyul ng pangongolekta ng basura ayon sa barangay",
     "env-recycling": "Programa sa Recycling",
     "env-recycling-desc": "Segregasyon at mga inisyatiba sa recycling",
+
+    // Header Dropdown Items
+    "dropdown-certificates": "Mga Sertipiko",
+    "dropdown-business": "Negosyo",
+    "dropdown-tax-payments": "Pagbabayad ng Buwis",
+    "dropdown-social-services": "Serbisyong Panlipunan",
+    "dropdown-health": "Kalusugan",
+    "dropdown-agriculture": "Agrikultura",
+    "dropdown-infrastructure": "Imprastraktura",
+    "dropdown-education": "Edukasyon",
+    "dropdown-public-safety": "Kaligtasang Pampubliko",
+    "dropdown-environment": "Kapaligiran",
+    "dropdown-ordinance-framework": "Balangkas ng Ordinansa",
+    "dropdown-resolution-framework": "Balangkas ng Resolusyon",
+
+    // Homepage - Hero
+    "hero-browse-services": "Tingnan ang mga Serbisyo",
+    "hero-contact-us": "Makipag-ugnayan",
+    "hero-search-placeholder": "hal., birth certificate, business permit",
+    "hero-popular": "Sikat:",
+    "hero-birth-certificate": "Birth Certificate",
+    "hero-business-permit": "Permit sa Negosyo",
+    "hero-real-property-tax": "Buwis sa Ari-arian",
+
+    // Homepage - Popular Services
+    "popular-services-subtitle": "Mabilis na access sa mga madalas na hinihinging serbisyo ng munisipalidad",
+    "popular-browse-directory": "Tingnan ang kumpletong direktoryo",
+
+    // Homepage - Stats
+    "stats-at-a-glance": "Isang Tingin sa Solano",
+    "stats-view-statistics": "Tingnan ang Estadistika",
+    "stats-population-label": "Populasyon",
+    "stats-population-source": "2024 Senso",
+    "stats-barangays-label": "Mga Barangay",
+    "stats-barangays-source": "Mga Yunit Administratibo",
+    "stats-municipality-label": "Munisipalidad",
+    "stats-municipality-source": "Klasipikasyon ng Kita",
+    "stats-land-area-label": "Lawak ng Lupa",
+    "stats-land-area-source": "Kabuuang Lawak ng Munisipalidad",
+
+    // Homepage - Weather & Map
+    "weather-map-title": "Panahon at Mapa ng Solano",
+    "weather-mainly-clear": "Halos maaliwalas",
+    "weather-location": "Solano, Nueva Vizcaya",
+
+    // Homepage - History
+    "history-title": "Maikling Kasaysayan ng Solano",
+    "history-1760": "Ang orihinal na pangalan ng bayan ay Bintauan, isang pamayanan ng Gaddang na ngayon ay barangay ng Villaverde.",
+    "history-1767": "Ang bayan ay pormal na itinatag ni Padre Alejandro Vidal, isang paring Dominikano na namuno sa isang misyong Espanyol.",
+    "history-1768": "Pinangalanang Lungabang, mula sa salitang Gaddang na lungab na nangangahulugang kuweba. Kalaunan ay binago ng mga Espanyol sa Lumabang.",
+    "history-1851": "Idineklara ni Gobernador Heneral Antonio Urbiztondo ang Lumabang bilang baryo ng Bayombong dahil sa kakulangan ng mga naninirahan at kita.",
+    "history-1853": "Dumating ang mga unang Ilocano, dinala ni Don Diego Lumicao, isang dating gobernadorcillo.",
+    "history-1889": "Pinalitan ang pangalan ng Solano bilang parangal kay Gobernador Heneral Ramon Solano y Llanderal. Ang bayan ay muling binuo ni Padre Juan Villaverde na may 14 na magkakahanay na malapad na kalye, bawat isa ay 20 metro ang lapad, na bumubuo ng 100 parisukat na bloke.",
+    "history-1957": "Ang mga baryo ng Ibung at Bintawan ay pinaghiwalay upang bumuo ng bayan ng Ibung, na kalaunan ay pinalitan ng pangalang Villaverde. Ang lawak ng lupa ng Solano ay nabawasan sa 13,980 ektarya.",
+    "history-once-largest-title": "Dating Pinakamalaki",
+    "history-once-largest-desc": "Ang Solano ang pinakamalaking munisipalidad sa probinsya hanggang sa pinaghiwalay ang Caliat at Bintawan upang maging Quezon at Villaverde.",
+    "history-urban-planning-title": "Pagpaplano ng Lungsod",
+    "history-urban-planning-desc": "Ang muling pagbuo noong 1889 ay lumikha ng grid na may 100 parisukat na bloke, bawat isa ay may kabuuang lawak na isang ektarya, na may mga kalye na patungo sa hilaga-timog at silangan-kanluran.",
+
+    // Homepage - News
+    "news-announcement": "Anunsyo",
+    "news-project": "Proyekto",
+    "news-advisory": "Abiso",
+    "news-business-permit-title": "Pag-renew ng Permit sa Negosyo 2025",
+    "news-business-permit-desc": "Ang deadline para sa pag-renew ng permit sa negosyo ay Enero 20, 2025. Hinihikayat ang maagang pag-renew.",
+    "news-market-title": "Bagong Wing ng Pampublikong Palengke Bukas Na",
+    "news-market-desc": "Ang na-renovate na wing ng Pampublikong Palengke ng Solano ay bukas na sa mga nagtitinda at publiko.",
+    "news-power-title": "Nakaiskedyul na Pagkaputol ng Kuryente",
+    "news-power-desc": "Maintenance na nakaiskedyul para sa Barangay Osmeña sa Dis 1, 8:00 AM - 5:00 PM.",
+
+    // Homepage - Quiz CTA
+    "quiz-title": "Solano Quiz",
+    "quiz-subtitle": "Gaano mo kakilala ang Solano, Nueva Vizcaya?",
+    "quiz-description": "Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng munisipalidad sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokalidad ng Nueva Vizcaya.",
+    "quiz-take": "Subukin ang Quiz",
+
+    // Footer
+    "footer-tagline": "Pagbibigay-kapangyarihan sa mga tao ng Solano na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng LGU Solano.",
+    "footer-quick-links": "Mga Mabilisang Link",
+    "footer-resources": "Mga Mapagkukunan",
+    "footer-solano-quiz": "Solano Quiz",
+    "footer-sitemap": "Mapa ng Site",
+    "footer-citizens-charter": "Citizen's Charter",
+    "footer-terms": "Mga Tuntunin ng Paggamit",
+    "footer-privacy": "Patakaran sa Privacy",
+    "footer-accessibility": "Aksesibilidad",
+    "footer-faq": "FAQ",
+    "footer-open-data": "Open Data Philippines",
+    "footer-foi": "Kalayaan sa Impormasyon",
+    "footer-lgu-portal": "Opisyal na Portal ng LGU Solano",
+    "footer-sb": "Sangguniang Bayan",
+    "footer-lgu-facebook": "LGU Solano Facebook",
+    "footer-blgf": "BLGF Portal",
+    "footer-cmci": "CMCI DTI Portal",
+    "footer-cost": "Gastos sa mga Tao ng Solano =",
+    "footer-volunteer": "Mag-volunteer sa amin",
+    "footer-contribute": "Mag-ambag ng code sa amin",
+    "footer-copyright-text": "BetterSolano.org",
+    "footer-copyright-disclaimer": "Lahat ng pampublikong impormasyon ay mula sa mga opisyal na portal ng pamahalaan.",
+    "footer-skip-to-main": "Lumaktaw sa pangunahing nilalaman",
   },
   ilo: {
     // Navigation - Ilocano
@@ -804,6 +1004,106 @@ const translations: Record<string, Record<string, string>> = {
     "env-waste-desc": "Dagiti iskedyul ti panangurnong ti basura segun iti barangay",
     "env-recycling": "Programa ti Recycling",
     "env-recycling-desc": "Segregasion ken dagiti inisyatiba ti recycling",
+
+    // Header Dropdown Items
+    "dropdown-certificates": "Dagiti Sertipiko",
+    "dropdown-business": "Negosio",
+    "dropdown-tax-payments": "Panagbayad ti Buwis",
+    "dropdown-social-services": "Serbisio Sosyal",
+    "dropdown-health": "Salun-at",
+    "dropdown-agriculture": "Agrikultura",
+    "dropdown-infrastructure": "Imprastraktura",
+    "dropdown-education": "Edukasion",
+    "dropdown-public-safety": "Kaligtasan Pampubliko",
+    "dropdown-environment": "Aglawlaw",
+    "dropdown-ordinance-framework": "Balangkas ti Ordinansa",
+    "dropdown-resolution-framework": "Balangkas ti Resolusion",
+
+    // Homepage - Hero
+    "hero-browse-services": "Kitaen dagiti Serbisio",
+    "hero-contact-us": "Kontaken",
+    "hero-search-placeholder": "kas pagarigan, birth certificate, business permit",
+    "hero-popular": "Popular:",
+    "hero-birth-certificate": "Birth Certificate",
+    "hero-business-permit": "Permit ti Negosio",
+    "hero-real-property-tax": "Buwis ti Kukua",
+
+    // Homepage - Popular Services
+    "popular-services-subtitle": "Napartak a panag-akses kadagiti masansan a makiddaw a serbisio ti munisipalidad",
+    "popular-browse-directory": "Kitaen ti kompleto a direktorio",
+
+    // Homepage - Stats
+    "stats-at-a-glance": "Maysa a Panagkita iti Solano",
+    "stats-view-statistics": "Kitaen ti Estadistika",
+    "stats-population-label": "Populasion",
+    "stats-population-source": "2024 a Senso",
+    "stats-barangays-label": "Dagiti Barangay",
+    "stats-barangays-source": "Dagiti Yunit Administratibo",
+    "stats-municipality-label": "Munisipalidad",
+    "stats-municipality-source": "Klasipikasion ti Sapul",
+    "stats-land-area-label": "Kalawa ti Daga",
+    "stats-land-area-source": "Dagup a Kalawa ti Munisipalidad",
+
+    // Homepage - Weather & Map
+    "weather-map-title": "Tiempo ken Mapa ti Solano",
+    "weather-mainly-clear": "Kaaduan a nalawag",
+    "weather-location": "Solano, Nueva Vizcaya",
+
+    // Homepage - History
+    "history-title": "Ababa a Pakasaritaan ti Solano",
+    "history-1760": "Ti orihinal a nagan ti ili ket Bintauan, maysa a pagnaedanan ti Gaddang a ita ket barangay ti Villaverde.",
+    "history-1767": "Ti ili ket pormal a naipasdek babaen ni Padre Alejandro Vidal, maysa a padi a Dominikano a nangidaulo iti misyon nga Espanyol.",
+    "history-1768": "Napanaganan iti Lungabang, manipud iti sao a Gaddang a lungab a kaipapananna ket rukib. Nabaliwan dagiti Espanyol iti Lumabang.",
+    "history-1851": "Indeklara ni Gobernador Heneral Antonio Urbiztondo ti Lumabang a kas baryo ti Bayombong gapu iti kaawan dagiti agnanaed ken sapul.",
+    "history-1853": "Dimteng dagiti umuna nga Ilocano, inyeg ni Don Diego Lumicao, maysa a dati a gobernadorcillo.",
+    "history-1889": "Nabaliwan ti nagan iti Solano tapno padayawan ni Gobernador Heneral Ramon Solano y Llanderal. Ti ili ket naipasayaat manen babaen ni Padre Juan Villaverde nga addaan 14 a magkakahanay a nalawa a kalsada, tunggal maysa ket 20 metro ti kalawa na, a mangbukel iti 100 a kuadrado a bloke.",
+    "history-1957": "Dagiti baryo ti Ibung ken Bintawan ket naisina tapno mangbukel iti ili ti Ibung, a nabaliwan ti nagan iti Villaverde. Ti kalawa ti daga ti Solano ket nabassitan iti 13,980 ektarya.",
+    "history-once-largest-title": "Idi Kadakkelan",
+    "history-once-largest-desc": "Ti Solano ti kadakkelan a munisipalidad iti probinsia agingga a naisina ti Caliat ken Bintawan tapno agbalin a Quezon ken Villaverde.",
+    "history-urban-planning-title": "Panagplano ti Ili",
+    "history-urban-planning-desc": "Ti panagpasayaat idi 1889 ket nangaramid iti grid a 100 a kuadrado a bloke, tunggal maysa ket addaan dagup a kalawa a maysa nga ektarya, nga addaan kadagiti kalsada a mapan iti amianan-abagatan ken daya-laud.",
+
+    // Homepage - News
+    "news-announcement": "Pakaammo",
+    "news-project": "Proyekto",
+    "news-advisory": "Abiso",
+    "news-business-permit-title": "Panag-renew ti Permit ti Negosio 2025",
+    "news-business-permit-desc": "Ti deadline para iti panag-renew ti permit ti negosio ket Enero 20, 2025. Maparegta ti nasapa a panag-renew.",
+    "news-market-title": "Baro a Wing ti Pampubliko a Tiendaan Nalukat",
+    "news-market-desc": "Ti na-renovate a wing ti Pampubliko a Tiendaan ti Solano ket nalukat kadagiti aglaklako ken publiko.",
+    "news-power-title": "Naiskedyul a Pannakaputol ti Kuryente",
+    "news-power-desc": "Maintenance a naiskedyul para iti Barangay Osmeña iti Dis 1, 8:00 AM - 5:00 PM.",
+
+    // Homepage - Quiz CTA
+    "quiz-title": "Solano Quiz",
+    "quiz-subtitle": "Kasano ti pannakaammom iti Solano, Nueva Vizcaya?",
+    "quiz-description": "Evaluaren ti pannakaammom iti tawid, kultural a pagbigbigan, ken heograpiko a kapatgan ti munisipalidad babaen ti maysa nga interactive a panagsubok ti pannakaammo a naidisinio tapno ipakita ti maysa kadagiti kalatakan a lokalidad ti Nueva Vizcaya.",
+    "quiz-take": "Subokan ti Quiz",
+
+    // Footer
+    "footer-tagline": "Panangted ti bileg kadagiti umili ti Solano nga addaan ti transparente a panag-akses kadagiti serbisio, programa, ken pampubliko a pondo ti LGU Solano.",
+    "footer-quick-links": "Dagiti Napartak a Silpo",
+    "footer-resources": "Dagiti Rekurso",
+    "footer-solano-quiz": "Solano Quiz",
+    "footer-sitemap": "Mapa ti Site",
+    "footer-citizens-charter": "Citizen's Charter",
+    "footer-terms": "Dagiti Kondision ti Panagusar",
+    "footer-privacy": "Pagannurotan ti Pagkapribado",
+    "footer-accessibility": "Aksesibilidad",
+    "footer-faq": "FAQ",
+    "footer-open-data": "Open Data Philippines",
+    "footer-foi": "Wayawaya ti Impormasion",
+    "footer-lgu-portal": "Opisial a Portal ti LGU Solano",
+    "footer-sb": "Sangguniang Bayan",
+    "footer-lgu-facebook": "LGU Solano Facebook",
+    "footer-blgf": "BLGF Portal",
+    "footer-cmci": "CMCI DTI Portal",
+    "footer-cost": "Gastos kadagiti Umili ti Solano =",
+    "footer-volunteer": "Ag-volunteer kadakami",
+    "footer-contribute": "Ag-ambag ti code kadakami",
+    "footer-copyright-text": "BetterSolano.org",
+    "footer-copyright-disclaimer": "Amin a pampubliko nga impormasion ket nagtaud kadagiti opisial a portal ti gobierno.",
+    "footer-skip-to-main": "Lumaktaw iti kangrunaan a linaon",
   }
 };
 

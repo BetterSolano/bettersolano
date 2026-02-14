@@ -79,8 +79,11 @@ Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 | **Legislative Documents** | Searchable database of ordinances and resolutions from Sangguniang Bayan |
 | **Municipal Statistics** | Demographics, economic data, and competitive index rankings |
 | **Appointment Services** | Online appointment scheduling integration with the Mayor's Office (OASYS), featuring branded Lottie animation |
+| **Solano Quiz** | Interactive quiz about Solano history and culture, linked from homepage CTA and footer across all pages |
 | **Real-time Information** | Live weather updates, currency exchange rates, and Philippine time |
-| **Multi-language Support** | Available in English, Filipino, and Ilocano with full translation coverage |
+| **Multi-language Support** | Full i18n coverage in English, Filipino, and Ilocano (5,546 keys per language with perfect parity) |
+| **Clean URLs** | SEO-friendly URLs without `.html` extensions, powered by Apache mod_rewrite |
+| **Brief History of Solano** | Interactive timeline (1760–1957) with fully translated cards in all three languages |
 | **Mobile Navigation** | Responsive menu with GPU-accelerated open/close transitions, body scroll lock, animation guard against rapid toggles, debounced resize handling, touch-safe hover scoping, click-outside-to-close, and focus trap |
 | **Accessibility** | WCAG 2.1 compliant with skip links, ARIA labels, keyboard navigation, and semantic HTML |
 | **SEO Optimized** | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap |
@@ -164,11 +167,11 @@ npm run build
 
 2. **Output location**
    - Minified files are generated in the `dist/` folder
-   - Original size: ~17MB → Minified: ~1.8MB (90% reduction)
+   - Original size: ~17MB → Minified: ~3.9MB
 
 3. **Deploy to server**
    - Upload contents of `dist/` to your web server's `public_html` directory
-   - Ensure `.htaccess` is included for clean URLs and security headers
+   - Ensure `.htaccess` is included for clean URLs, CSP headers, and security
 
 ### File Permissions (cPanel)
 
@@ -177,22 +180,51 @@ npm run build
 | Files | rw-r--r-- | 644 |
 | Directories | rwxr-xr-x | 755 |
 
+## Multi-language Support (i18n)
+
+The site supports three languages with full translation coverage:
+
+| Language | Code | Status |
+|----------|------|--------|
+| English | `en` | Complete (5,546 keys) |
+| Filipino | `fil` | Complete (5,546 keys) |
+| Ilocano | `ilo` | Complete (5,546 keys) |
+
+The static site uses a `TranslationEngine` in `assets/js/translations.js` with `data-i18n` attributes on HTML elements. The React version uses a `LanguageContext` provider with a `t()` function. Both systems support fallback to English for any missing keys.
+
+## Three-Version Architecture
+
+The project maintains three synchronized versions:
+
+| Version | Location | Purpose |
+|---------|----------|---------|
+| **Static Legacy** | Root HTML files | Source of truth for all 52 pages |
+| **React + TypeScript** | `react-app/` | Modern component-based homepage |
+| **Production Dist** | `dist/` | Minified build for cPanel deployment |
+
+All CSS, images, animations, and translations are kept in sync across all three versions. The build script (`build.sh`) generates the dist from the static legacy source.
+
 ## Project Structure
 
 ```
 bettersolano/
 ├── assets/
 │   ├── css/              # Stylesheets (9 files)
-│   ├── js/               # JavaScript modules (17 files)
+│   ├── js/               # JavaScript modules (18 files)
 │   ├── images/           # Images, icons, banners, partner logos
-│   ├── animation/        # Lottie JSON animation files
-│   └── fonts/            # Web fonts
+│   └── animation/        # Lottie JSON animation files
 ├── data/                 # JSON data files
 │   ├── officials.json    # Government officials data
 │   ├── services.json     # Municipal services data
 │   ├── news.json         # News and announcements
 │   ├── ordinances.json   # Legislative ordinances
 │   └── resolutions.json  # Legislative resolutions
+├── react-app/            # React + TypeScript version
+│   ├── src/
+│   │   ├── app/          # Next.js app router (layout, page)
+│   │   ├── components/   # React components (Header, Footer)
+│   │   └── contexts/     # LanguageContext (i18n provider)
+│   └── public/           # Static assets (synced with root assets/)
 ├── services/             # Service category pages (11 pages)
 ├── service-details/      # Individual service pages (22 pages)
 ├── government/           # Government directory pages
@@ -202,10 +234,11 @@ bettersolano/
 ├── news/                 # News and announcements page
 ├── contact/              # Contact information page
 ├── faq/                  # Frequently asked questions
-├── scripts/              # Build and version scripts
-├── dist/                 # Production build output
+├── sitemap/              # HTML sitemap page
+├── scripts/              # Build, version, and translation scripts
+├── dist/                 # Production build output (gitignored)
 ├── index.html            # Homepage
-├── .htaccess             # Apache configuration
+├── .htaccess             # Apache configuration (CSP, rewrites, caching)
 ├── sitemap.xml           # XML sitemap (SEO)
 ├── robots.txt            # Search engine directives
 ├── version.json          # Version tracking
@@ -214,6 +247,42 @@ bettersolano/
 ├── package.json          # Node.js configuration
 └── README.md             # Project documentation
 ```
+
+## Recent Changes
+
+### Content & Features
+- Added Solano Quiz CTA section on homepage with branded Lottie animation (brand blue `#0032A0`)
+- Added Solano Quiz link to footer Quick Links across all 51 HTML pages and React Footer
+- Added Brief History of Solano interactive timeline section on homepage (1760–1957)
+- Added quiz entry to HTML sitemap page
+- Added Abakada education tools CTA on services/education page with local SVG logo
+
+### Internationalization (i18n)
+- Upgraded translation engine to 5,546 keys per language with perfect en/fil/ilo parity
+- Fixed Brief History timeline cards — full paragraph translations now applied via `data-i18n` on `<p>` elements (previously only proper nouns inside `<strong>` tags were translated, leaving surrounding English text intact)
+- Corrected Filipino translations: proper religious title "Padre" (not "Ama"), fully translated historical paragraphs (no half-English)
+- Corrected Ilocano translations: proper Ilocano vocabulary ("Ababa a Pakasaritaan" not Filipino "Maikling Kasaysayan", "Dimteng" not "Dumating", "Ili" not "Lungsod"), fully translated paragraphs
+- Added 54 translation keys for Solano Quiz footer link across all page contexts
+
+### Footer & Copyright
+- Standardized copyright across all 51 HTML files and React Footer: three styled spans (`footer-copyright-text`, `footer-copyright-license`, `footer-copyright-disclaimer`)
+- Updated copyright year to 2026, name to "BetterSolano.org"
+- Footer copyright uses `flex-wrap: wrap; gap: 6px` layout with version badge right-aligned via `margin-left: auto`
+- Removed trailing period after "BetterSolano.org" from all pages and all 3 translation languages
+
+### Clean URLs
+- Removed `.html` extensions from 621 navigation links across 48 HTML files
+- Apache `.htaccess` rewrite rules handle clean URL resolution on cPanel
+
+### Build & Deployment
+- Updated `build.sh` rsync excludes to filter out dev artifacts (`.backup`, `.md`, `package*.json`, `scripts/`, `docs/`, etc.)
+- Production dist: 52 HTML pages, 106 total files, 3.9MB, zero dev artifacts
+- Updated CSP headers: added `worker-src 'self' blob:`, `blob:` to `connect-src`, CDN domains to `connect-src` for dotlottie-player and Bootstrap Icons compatibility
+
+### Cross-Version Sync
+- All CSS files synced between legacy and React: `footer.css`, `style.css`, `responsive.css`, `accessibility.css`
+- All image and animation assets synced between legacy and React
+- React LanguageContext updated with matching translation keys for homepage sections
 
 ## Contributing
 

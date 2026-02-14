@@ -128,16 +128,16 @@ export default function Header() {
             <li className={`has-dropdown ${openDropdown === 0 ? 'dropdown-open' : ''}`}>
               <Link href="/services" aria-haspopup="true" aria-expanded={openDropdown === 0} onClick={(e) => toggleDropdown(0, e)}>{t('nav-services')}</Link>
               <ul className="dropdown-menu">
-                <li><Link href="/services/certificates">Certificates</Link></li>
-                <li><Link href="/services/business">Business</Link></li>
-                <li><Link href="/services/tax-payments">Tax Payments</Link></li>
-                <li><Link href="/services/social-services">Social Services</Link></li>
-                <li><Link href="/services/health">Health</Link></li>
-                <li><Link href="/services/agriculture">Agriculture</Link></li>
-                <li><Link href="/services/infrastructure">Infrastructure</Link></li>
-                <li><Link href="/services/education">Education</Link></li>
-                <li><Link href="/services/public-safety">Public Safety</Link></li>
-                <li><Link href="/services/environment">Environment</Link></li>
+                <li><Link href="/services/certificates">{t('dropdown-certificates')}</Link></li>
+                <li><Link href="/services/business">{t('dropdown-business')}</Link></li>
+                <li><Link href="/services/tax-payments">{t('dropdown-tax-payments')}</Link></li>
+                <li><Link href="/services/social-services">{t('dropdown-social-services')}</Link></li>
+                <li><Link href="/services/health">{t('dropdown-health')}</Link></li>
+                <li><Link href="/services/agriculture">{t('dropdown-agriculture')}</Link></li>
+                <li><Link href="/services/infrastructure">{t('dropdown-infrastructure')}</Link></li>
+                <li><Link href="/services/education">{t('dropdown-education')}</Link></li>
+                <li><Link href="/services/public-safety">{t('dropdown-public-safety')}</Link></li>
+                <li><Link href="/services/environment">{t('dropdown-environment')}</Link></li>
               </ul>
             </li>
             <li><Link href="/government">{t('nav-government')}</Link></li>
@@ -145,8 +145,8 @@ export default function Header() {
             <li className={`has-dropdown ${openDropdown === 1 ? 'dropdown-open' : ''}`}>
               <Link href="/legislative" aria-haspopup="true" aria-expanded={openDropdown === 1} onClick={(e) => toggleDropdown(1, e)}>{t('nav-legislative')}</Link>
               <ul className="dropdown-menu">
-                <li><Link href="/legislative/ordinance-framework">Ordinance Framework</Link></li>
-                <li><Link href="/legislative/resolution-framework">Resolution Framework</Link></li>
+                <li><Link href="/legislative/ordinance-framework">{t('dropdown-ordinance-framework')}</Link></li>
+                <li><Link href="/legislative/resolution-framework">{t('dropdown-resolution-framework')}</Link></li>
               </ul>
             </li>
             <li><Link href="/budget">{t('nav-transparency')}</Link></li>

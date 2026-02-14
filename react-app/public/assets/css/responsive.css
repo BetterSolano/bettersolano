@@ -50,17 +50,21 @@
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease, visibility 0s linear 0.3s;
         opacity: 0;
+        visibility: hidden;
         padding-top: 0;
         border-top: 1px solid transparent;
         margin-top: 0;
+        will-change: max-height, opacity;
     }
 
     .main-nav.active {
         max-height: 80vh;
         overflow-y: auto;
         opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease, visibility 0s linear 0s;
         padding-top: var(--spacing-sm);
         border-top-color: var(--color-bg-alt);
         margin-top: var(--spacing-sm);

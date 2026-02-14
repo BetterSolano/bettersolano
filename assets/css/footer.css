@@ -160,10 +160,27 @@ ter Columns */
 .footer-copyright {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
     width: 100%;
     font-size: 0.8125rem;
     color: rgba(255,255,255,0.5);
+}
+
+.footer-copyright-text {
+    color: rgba(255,255,255,0.6);
+}
+
+.footer-copyright-license {
+    color: rgba(255,255,255,0.45);
+}
+
+.footer-copyright-disclaimer {
+    color: rgba(255,255,255,0.4);
+}
+
+.footer-copyright .footer-version {
+    margin-left: auto;
 }
 
 .footer-copyright a {
@@ -286,15 +303,13 @@ ter Columns */
     
     .footer-copyright {
         flex-direction: column;
-        gap: 8px;
+        gap: 4px;
         align-items: center;
+        text-align: center;
     }
 
-    .footer-copyright-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
+    .footer-copyright .footer-version {
+        margin-left: 0;
     }
 
     .footer-bottom-new {

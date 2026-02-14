@@ -17,7 +17,27 @@ mkdir -p dist
 
 # Copy all files first
 echo "Copying files..."
-rsync -av --exclude='node_modules' --exclude='dist' --exclude='.git' --exclude='backup-restore-point-*' --exclude='package*.json' --exclude='build.sh' --exclude='.vscode' --exclude='react-app' . dist/
+rsync -av \
+    --exclude='node_modules' \
+    --exclude='dist' \
+    --exclude='.git' \
+    --exclude='.vscode' \
+    --exclude='.DS_Store' \
+    --exclude='react-app' \
+    --exclude='backup-restore-point-*' \
+    --exclude='package*.json' \
+    --exclude='build.sh' \
+    --exclude='babel.config.json' \
+    --exclude='serve.py' \
+    --exclude='scripts' \
+    --exclude='docs' \
+    --exclude='*.backup' \
+    --exclude='*.md' \
+    --exclude='.lighthouserc.json' \
+    --exclude='.github' \
+    --exclude='.gitignore' \
+    --exclude='validate-translations.js' \
+    . dist/
 
 # Minify HTML files
 echo "Minifying HTML..."
