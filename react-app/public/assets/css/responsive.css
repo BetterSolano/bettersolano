@@ -131,6 +131,15 @@
     background-color: var(--color-bg-alt);
   }
 
+  .main-nav a:focus {
+    outline: none;
+  }
+
+  .main-nav a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: -2px;
+  }
+
   /* Mobile dropdown: inline, no absolute positioning */
   .main-nav .has-dropdown {
     position: static;
@@ -557,6 +566,16 @@
   cursor: pointer;
   padding: 0.5rem;
   line-height: 1;
+}
+
+.mobile-menu-toggle:focus {
+  outline: none;
+}
+
+.mobile-menu-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+  border-radius: 4px;
 }
 
 @media (max-width: 1024px) {
