@@ -124,6 +124,7 @@
     padding: 12px 16px;
     border-radius: 6px;
     transition: background-color 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .main-nav a:hover,
@@ -149,6 +150,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .main-nav .has-dropdown > a::after {

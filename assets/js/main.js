@@ -276,13 +276,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.classList.add('active');
       toggleBtn.innerHTML = '<i class="bi bi-x-lg" aria-hidden="true"></i>';
       lockBodyScroll();
-      // Focus first menu item after transition
-      var firstLink = nav.querySelector('a');
-      if (firstLink) {
-        setTimeout(function () {
-          firstLink.focus();
-        }, 100);
-      }
       setTimeout(function () {
         isAnimating = false;
       }, 320);
@@ -314,6 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!link) return;
       // If it's a dropdown trigger, don't close menu (handled by dropdown init)
       if (link.getAttribute('aria-haspopup') === 'true') return;
+      if (link.parentElement && link.parentElement.classList.contains('has-dropdown') && link.parentElement.querySelector('.dropdown-menu')) return;
       closeMobileMenu();
     });
 
@@ -364,10 +358,18 @@ document.addEventListener('DOMContentLoaded', () => {
     var dropdownItems = document.querySelectorAll('.has-dropdown');
 
     dropdownItems.forEach(function (item) {
-      var trigger = item.querySelector('a[aria-haspopup]');
+      var trigger = item.querySelector('a[aria-haspopup]') || item.querySelector(':scope > a');
       var menu = item.querySelector('.dropdown-menu');
 
       if (!trigger || !menu) return;
+
+      // Ensure ARIA attributes are present for accessibility
+      if (!trigger.hasAttribute('aria-haspopup')) {
+        trigger.setAttribute('aria-haspopup', 'true');
+      }
+      if (!trigger.hasAttribute('aria-expanded')) {
+        trigger.setAttribute('aria-expanded', 'false');
+      }
 
       var menuLinks = menu.querySelectorAll('a');
 
@@ -395,6 +397,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isMobileNav()) return;
         e.preventDefault();
         e.stopPropagation();
+        if (item.classList.contains('dropdown-open')) {
+          closeDropdown();
+        } else {
+          openDropdown();
+        }
+      });
+
+      // iOS Safari: ensure touch events trigger dropdown reliably
+      trigger.addEventListener('touchend', function (e) {
+        if (!isMobileNav()) return;
+        e.preventDefault();
         if (item.classList.contains('dropdown-open')) {
           closeDropdown();
         } else {
