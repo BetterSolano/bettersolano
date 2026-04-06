@@ -28,14 +28,14 @@ Contributors who prefer React and TypeScript may now work on the `react-typescri
 
 ## Version Comparison
 
-| Aspect | Static HTML (main) | React + TypeScript |
-|--------|-------------------|-------------------|
-| Technology | HTML5, CSS3, Vanilla JS | Next.js 14, React 18, TypeScript |
-| Build Required | No | Yes (npm) |
-| Type Safety | No | Yes |
-| Component Reuse | Manual | Built-in |
-| Learning Curve | Lower | Moderate |
-| Status | Stable | Active Development |
+| Aspect          | Static HTML (main)      | React + TypeScript               |
+| --------------- | ----------------------- | -------------------------------- |
+| Technology      | HTML5, CSS3, Vanilla JS | Next.js 14, React 18, TypeScript |
+| Build Required  | No                      | Yes (npm)                        |
+| Type Safety     | No                      | Yes                              |
+| Component Reuse | Manual                  | Built-in                         |
+| Learning Curve  | Lower                   | Moderate                         |
+| Status          | Stable                  | Active Development               |
 
 ## Getting Started with React Version
 
@@ -50,11 +50,11 @@ See [MIGRATION.md](../../MIGRATION.md) for detailed setup instructions and contr
 
 ## Timeline
 
-| Phase | Timeframe | Description |
-|-------|-----------|-------------|
-| Current | Now | Parallel maintenance of both versions |
-| Evaluation | 3-6 months | Assess community adoption and feedback |
-| Decision | TBD | Determine long-term direction based on contributor preference |
+| Phase      | Timeframe  | Description                                                   |
+| ---------- | ---------- | ------------------------------------------------------------- |
+| Current    | Now        | Parallel maintenance of both versions                         |
+| Evaluation | 3-6 months | Assess community adoption and feedback                        |
+| Decision   | TBD        | Determine long-term direction based on contributor preference |
 
 ## Providing Feedback
 
@@ -66,8 +66,7 @@ We welcome feedback on both versions. Please:
 
 ## Acknowledgments
 
-Thank you to all contributors who have helped build BetterSolano.org. Your continued participation, regardless of which version you prefer, is valued and appreciated. Shout out to Gat. @jasontorres for the support!
----
+## Thank you to all contributors who have helped build BetterSolano.org. Your continued participation, regardless of which version you prefer, is valued and appreciated. Shout out to Gat. @jasontorres for the support!
 
 Ramon Logan Jr.
-BetterSolano.org 
+BetterSolano.org

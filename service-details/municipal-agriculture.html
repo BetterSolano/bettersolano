@@ -1,563 +1,1477 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Municipal Agriculture Office - Farm registration, certifications, rice program, corn program, livestock, fishery, and agricultural services in Solano, Nueva Vizcaya.">
-    <meta name="author" content="Ramon Logan Jr.">
-    <meta name="keywords" content="Municipal Agriculture Solano, RSBSA, farm registration, rice program, corn program, livestock, fishery, agricultural services, Nueva Vizcaya">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://bettersolano.org/service-details/municipal-agriculture">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bettersolano.org/service-details/municipal-agriculture">
-    <meta property="og:title" content="Municipal Agriculture Office | BetterSolano.org">
-    <meta property="og:description" content="Farm registration, certifications, and agricultural services in Solano, Nueva Vizcaya.">
-    <meta property="og:image" content="https://bettersolano.org/assets/images/banners/opengraph.png">
-    <meta name="twitter:card" content="summary_large_image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Municipal Agriculture Office - Farm registration, certifications, rice program, corn program, livestock, fishery, and agricultural services in Solano, Nueva Vizcaya."
+    />
+    <meta name="author" content="Ramon Logan Jr." />
+    <meta
+      name="keywords"
+      content="Municipal Agriculture Solano, RSBSA, farm registration, rice program, corn program, livestock, fishery, agricultural services, Nueva Vizcaya"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bettersolano.org/service-details/municipal-agriculture" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://bettersolano.org/service-details/municipal-agriculture"
+    />
+    <meta property="og:title" content="Municipal Agriculture Office | BetterSolano.org" />
+    <meta
+      property="og:description"
+      content="Farm registration, certifications, and agricultural services in Solano, Nueva Vizcaya."
+    />
+    <meta
+      property="og:image"
+      content="https://bettersolano.org/assets/images/banners/opengraph.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Municipal Agriculture Office | BetterSolano.org</title>
-    <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
-    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="dns-prefetch" href="https://unpkg.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/accessibility.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/accessibility.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
     <style>
-        .mao-section { padding: 40px 0; }
-        .mao-section.alt-bg { background: var(--color-bg-alt); }
-        .section-header { margin-bottom: 20px; }
-        .section-header h2 { font-size: 1.125rem; color: var(--color-text); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
-        .section-header h2 i { color: var(--color-primary); font-size: 1rem; }
-        .section-header p { color: var(--color-text-light); font-size: 0.8125rem; margin: 0; }
-        .quick-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
-        .stat-card { background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 12px; text-align: center; }
-        .stat-card i { font-size: 1rem; color: var(--color-primary); margin-bottom: 4px; }
-        .stat-card h4 { font-size: 0.625rem; color: var(--color-text-light); margin-bottom: 2px; font-weight: 500; text-transform: uppercase; }
-        .stat-card p { font-size: 0.8125rem; font-weight: 600; color: var(--color-text); margin: 0; }
-        .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-        .service-card { background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 14px; transition: all 0.2s ease; }
-        .service-card:hover { border-color: var(--color-primary); box-shadow: 0 2px 10px rgba(0,50,160,0.08); }
-        .service-card h4 { font-size: 0.8125rem; font-weight: 600; color: var(--color-text); margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
-        .service-card h4 i { color: var(--color-primary); font-size: 0.875rem; }
-        .service-card p { font-size: 0.6875rem; color: var(--color-text-light); margin-bottom: 6px; line-height: 1.4; }
-        .service-card .meta { display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.625rem; }
-        .service-card .meta span { background: rgba(0,50,160,0.06); color: var(--color-primary); padding: 2px 6px; border-radius: 4px; font-weight: 500; }
-        .req-box { background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 8px; padding: 14px; }
-        .req-box h4 { font-size: 0.8125rem; font-weight: 600; color: var(--color-text); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
-        .req-box h4 i { color: var(--color-primary); }
-        .req-list { list-style: none; padding: 0; margin: 0; }
-        .req-list li { font-size: 0.75rem; color: var(--color-text); padding: 4px 0; display: flex; align-items: flex-start; gap: 6px; }
-        .req-list li i { color: var(--color-primary); font-size: 0.625rem; margin-top: 3px; flex-shrink: 0; }
-        .program-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; justify-content: center; }
-        .program-tab { padding: 8px 16px; background: white; border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; font-size: 0.75rem; font-weight: 600; color: var(--color-text); cursor: pointer; transition: all 0.2s ease; }
-        .program-tab:hover { border-color: var(--color-primary); }
-        .program-tab.active { background: var(--color-primary); border-color: var(--color-primary); color: white; }
-        .program-content { display: none; }
-        .program-content.active { display: block; }
-        @media (max-width: 992px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 768px) { .quick-stats { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 575px) { .service-grid, .quick-stats { grid-template-columns: 1fr; } .program-tabs { flex-direction: column; } .program-tab { text-align: center; } }
+      .mao-section {
+        padding: 40px 0;
+      }
+      .mao-section.alt-bg {
+        background: var(--color-bg-alt);
+      }
+      .section-header {
+        margin-bottom: 20px;
+      }
+      .section-header h2 {
+        font-size: 1.125rem;
+        color: var(--color-text);
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .section-header h2 i {
+        color: var(--color-primary);
+        font-size: 1rem;
+      }
+      .section-header p {
+        color: var(--color-text-light);
+        font-size: 0.8125rem;
+        margin: 0;
+      }
+      .quick-stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .stat-card {
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        padding: 12px;
+        text-align: center;
+      }
+      .stat-card i {
+        font-size: 1rem;
+        color: var(--color-primary);
+        margin-bottom: 4px;
+      }
+      .stat-card h4 {
+        font-size: 0.625rem;
+        color: var(--color-text-light);
+        margin-bottom: 2px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .stat-card p {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin: 0;
+      }
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .service-card {
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        padding: 14px;
+        transition: all 0.2s ease;
+      }
+      .service-card:hover {
+        border-color: var(--color-primary);
+        box-shadow: 0 2px 10px rgba(0, 50, 160, 0.08);
+      }
+      .service-card h4 {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .service-card h4 i {
+        color: var(--color-primary);
+        font-size: 0.875rem;
+      }
+      .service-card p {
+        font-size: 0.6875rem;
+        color: var(--color-text-light);
+        margin-bottom: 6px;
+        line-height: 1.4;
+      }
+      .service-card .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        font-size: 0.625rem;
+      }
+      .service-card .meta span {
+        background: rgba(0, 50, 160, 0.06);
+        color: var(--color-primary);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-weight: 500;
+      }
+      .req-box {
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        padding: 14px;
+      }
+      .req-box h4 {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .req-box h4 i {
+        color: var(--color-primary);
+      }
+      .req-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .req-list li {
+        font-size: 0.75rem;
+        color: var(--color-text);
+        padding: 4px 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      .req-list li i {
+        color: var(--color-primary);
+        font-size: 0.625rem;
+        margin-top: 3px;
+        flex-shrink: 0;
+      }
+      .program-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+        justify-content: center;
+      }
+      .program-tab {
+        padding: 8px 16px;
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--color-text);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .program-tab:hover {
+        border-color: var(--color-primary);
+      }
+      .program-tab.active {
+        background: var(--color-primary);
+        border-color: var(--color-primary);
+        color: white;
+      }
+      .program-content {
+        display: none;
+      }
+      .program-content.active {
+        display: block;
+      }
+      @media (max-width: 992px) {
+        .service-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 768px) {
+        .quick-stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 575px) {
+        .service-grid,
+        .quick-stats {
+          grid-template-columns: 1fr;
+        }
+        .program-tabs {
+          flex-direction: column;
+        }
+        .program-tab {
+          text-align: center;
+        }
+      }
     </style>
-</head>
-<body>
-    <a href="#main-content" class="skip-link" data-i18n="magri-skip-to-main-content">Skip to main content</a>
-    <div class="hotline-bar"><div class="container"><div class="hotline-inner"><div class="hotline-items">
-        <a href="tel:09274008033" class="hotline-item"><i class="bi bi-shield-fill"></i><span>Police: 0927 400 8033</span></a>
-        <a href="tel:09162840885" class="hotline-item"><i class="bi bi-heart-fill"></i><span>MSWDO: 0916 284 0885</span></a>
-        <a href="tel:09360620305" class="hotline-item"><i class="bi bi-fire"></i><span>Fire: 0936 062 0305</span></a>
-        <a href="tel:0906188086" class="hotline-item"><i class="bi bi-building"></i><span>DILG: 0906 188 086</span></a>
-        <a href="tel:09263833744" class="hotline-item"><i class="bi bi-exclamation-triangle-fill"></i><span>MDRRMO: 0926 383 3744</span></a>
-        <a href="tel:09068195569" class="hotline-item"><i class="bi bi-truck"></i><span>R2TMC: 0906 819 5569</span></a>
-    </div></div></div></div>
-    <header class="site-header"><div class="container header-inner">
-        <div class="logo-container"><a href="../"><img src="../assets/images/logo/better-solano-logo.svg" alt="Better Solano Logo" class="logo-img"></a></div>
-        <nav class="main-nav" aria-label="Main Navigation"><ul>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link" data-i18n="magri-skip-to-main-content"
+      >Skip to main content</a
+    >
+    <div class="hotline-bar">
+      <div class="container">
+        <div class="hotline-inner">
+          <div class="hotline-items">
+            <a href="tel:09274008033" class="hotline-item"
+              ><i class="bi bi-shield-fill"></i><span>Police: 0927 400 8033</span></a
+            >
+            <a href="tel:09162840885" class="hotline-item"
+              ><i class="bi bi-heart-fill"></i><span>MSWDO: 0916 284 0885</span></a
+            >
+            <a href="tel:09360620305" class="hotline-item"
+              ><i class="bi bi-fire"></i><span>Fire: 0936 062 0305</span></a
+            >
+            <a href="tel:0906188086" class="hotline-item"
+              ><i class="bi bi-building"></i><span>DILG: 0906 188 086</span></a
+            >
+            <a href="tel:09263833744" class="hotline-item"
+              ><i class="bi bi-exclamation-triangle-fill"></i><span>MDRRMO: 0926 383 3744</span></a
+            >
+            <a href="tel:09068195569" class="hotline-item"
+              ><i class="bi bi-truck"></i><span>R2TMC: 0906 819 5569</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo-container">
+          <a href="../"
+            ><img
+              src="../assets/images/logo/better-solano-logo.svg"
+              alt="Better Solano Logo"
+              class="logo-img"
+          /></a>
+        </div>
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul>
             <li><a href="../" data-i18n="magri-home">Home</a></li>
             <li class="has-dropdown">
-                <a href="../services/" class="active" data-i18n="magri-services">Services</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../services/certificates" data-i18n="magri-certificates">Certificates</a></li>
-                    <li><a href="../services/business" data-i18n="magri-business">Business</a></li>
-                    <li><a href="../services/tax-payments" data-i18n="magri-tax-payments">Tax Payments</a></li>
-                    <li><a href="../services/social-services" data-i18n="magri-social-services">Social Services</a></li>
-                    <li><a href="../services/health" data-i18n="magri-health">Health</a></li>
-                    <li><a href="../services/agriculture" data-i18n="magri-agriculture">Agriculture</a></li>
-                    <li><a href="../services/infrastructure" data-i18n="magri-infrastructure">Infrastructure</a></li>
-                    <li><a href="../services/education" data-i18n="magri-education">Education</a></li>
-                    <li><a href="../services/public-safety" data-i18n="magri-public-safety">Public Safety</a></li>
-                    <li><a href="../services/environment" data-i18n="magri-environment">Environment</a></li>
-                </ul>
+              <a href="../services/" class="active" data-i18n="magri-services">Services</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../services/certificates" data-i18n="magri-certificates">Certificates</a>
+                </li>
+                <li><a href="../services/business" data-i18n="magri-business">Business</a></li>
+                <li>
+                  <a href="../services/tax-payments" data-i18n="magri-tax-payments">Tax Payments</a>
+                </li>
+                <li>
+                  <a href="../services/social-services" data-i18n="magri-social-services"
+                    >Social Services</a
+                  >
+                </li>
+                <li><a href="../services/health" data-i18n="magri-health">Health</a></li>
+                <li>
+                  <a href="../services/agriculture" data-i18n="magri-agriculture">Agriculture</a>
+                </li>
+                <li>
+                  <a href="../services/infrastructure" data-i18n="magri-infrastructure"
+                    >Infrastructure</a
+                  >
+                </li>
+                <li><a href="../services/education" data-i18n="magri-education">Education</a></li>
+                <li>
+                  <a href="../services/public-safety" data-i18n="magri-public-safety"
+                    >Public Safety</a
+                  >
+                </li>
+                <li>
+                  <a href="../services/environment" data-i18n="magri-environment">Environment</a>
+                </li>
+              </ul>
             </li>
             <li><a href="../government/" data-i18n="magri-government">Government</a></li>
             <li><a href="../statistics/" data-i18n="magri-statistics">Statistics</a></li>
-            <li class="has-dropdown"><a href="../legislative/" data-i18n="magri-legislative">Legislative</a><ul class="dropdown-menu">
-                <li><a href="../legislative/ordinance-framework" data-i18n="magri-ordinance-framework">Ordinance Framework</a></li>
-                <li><a href="../legislative/resolution-framework" data-i18n="magri-resolution-framework">Resolution Framework</a></li>
-            </ul></li>
+            <li class="has-dropdown">
+              <a href="../legislative/" data-i18n="magri-legislative">Legislative</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../legislative/ordinance-framework" data-i18n="magri-ordinance-framework"
+                    >Ordinance Framework</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../legislative/resolution-framework"
+                    data-i18n="magri-resolution-framework"
+                    >Resolution Framework</a
+                  >
+                </li>
+              </ul>
+            </li>
             <li><a href="../budget/" data-i18n="magri-transparency">Transparency</a></li>
             <li><a href="../contact/" data-i18n="magri-contact">Contact</a></li>
-        </ul></nav>
-        <div class="header-actions"><div class="lang-selector">
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-selector">
             <button class="btn btn-secondary btn-sm lang-btn" data-lang="en">EN</button>
             <button class="btn btn-secondary btn-sm lang-btn" data-lang="fil">FIL</button>
             <button class="btn btn-secondary btn-sm lang-btn" data-lang="ilo">ILO</button>
-        </div></div>
-    </div></header>
-    <div class="info-bar" role="complementary"><div class="container"><div class="info-bar-inner">
-        <div class="info-bar-item info-bar-rates"><i class="bi bi-currency-exchange"></i><span class="rate-rotator"><span class="rate-display">1 USD = ₱ --</span></span></div>
-        <div class="info-bar-item info-bar-weather"><i class="bi bi-thermometer-half"></i><span class="weather-location">Solano</span><span class="weather-temp">--°C</span></div>
-        <div class="info-bar-item info-bar-datetime"><i class="bi bi-calendar3"></i><span class="date-value">--- --, ----</span><span class="datetime-separator">•</span><i class="bi bi-clock"></i><span class="time-value">--:-- --</span><span class="time-label">PHT</span></div>
-    </div></div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="info-bar" role="complementary">
+      <div class="container">
+        <div class="info-bar-inner">
+          <div class="info-bar-item info-bar-rates">
+            <i class="bi bi-currency-exchange"></i
+            ><span class="rate-rotator"><span class="rate-display">1 USD = ₱ --</span></span>
+          </div>
+          <div class="info-bar-item info-bar-weather">
+            <i class="bi bi-thermometer-half"></i><span class="weather-location">Solano</span
+            ><span class="weather-temp">--°C</span>
+          </div>
+          <div class="info-bar-item info-bar-datetime">
+            <i class="bi bi-calendar3"></i><span class="date-value">--- --, ----</span
+            ><span class="datetime-separator">•</span><i class="bi bi-clock"></i
+            ><span class="time-value">--:-- --</span><span class="time-label">PHT</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <main id="main-content">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../" data-i18n="magri-home">Home</a><span>/</span>
+          <a href="../services/" data-i18n="magri-services">Services</a><span>/</span>
+          <a href="../services/agriculture" data-i18n="magri-agriculture">Agriculture</a
+          ><span>/</span>
+          <span aria-current="page">Municipal Agriculture Office</span>
+        </nav>
+      </div>
+
+      <section class="page-header">
         <div class="container">
-            <nav class="breadcrumbs" aria-label="Breadcrumb">
-                <a href="../" data-i18n="magri-home">Home</a><span>/</span>
-                <a href="../services/" data-i18n="magri-services">Services</a><span>/</span>
-                <a href="../services/agriculture" data-i18n="magri-agriculture">Agriculture</a><span>/</span>
-                <span aria-current="page">Municipal Agriculture Office</span>
-            </nav>
+          <div class="page-header-content">
+            <span class="page-header-badge"
+              ><i class="bi bi-tree"></i>
+              <span data-i18n="magri-agriculture">Agriculture</span></span
+            >
+            <h1 data-i18n="magri-municipal-agriculture-office">Municipal Agriculture Office</h1>
+            <p
+              class="page-header-desc"
+              data-i18n="magri-farm-registration-certifications-and-agricultural"
+            >
+              Farm registration, certifications, and agricultural programs for Solano farmers
+            </p>
+          </div>
         </div>
+      </section>
 
-        <section class="page-header">
-            <div class="container">
-                <div class="page-header-content">
-                    <span class="page-header-badge"><i class="bi bi-tree"></i> <span data-i18n="magri-agriculture">Agriculture</span></span>
-                    <h1 data-i18n="magri-municipal-agriculture-office">Municipal Agriculture Office</h1>
-                    <p class="page-header-desc" data-i18n="magri-farm-registration-certifications-and-agricultural">Farm registration, certifications, and agricultural programs for Solano farmers</p>
-                </div>
+      <!-- Quick Stats -->
+      <section class="mao-section">
+        <div class="container">
+          <div class="quick-stats">
+            <div class="stat-card">
+              <i class="bi bi-building"></i>
+              <h4 data-i18n="magri-office">Office</h4>
+              <p data-i18n="magri-mun-agriculture">Mun. Agriculture</p>
             </div>
-        </section>
-
-        <!-- Quick Stats -->
-        <section class="mao-section">
-            <div class="container">
-                <div class="quick-stats">
-                    <div class="stat-card"><i class="bi bi-building"></i><h4 data-i18n="magri-office">Office</h4><p data-i18n="magri-mun-agriculture">Mun. Agriculture</p></div>
-                    <div class="stat-card"><i class="bi bi-geo-alt"></i><h4 data-i18n="magri-location">Location</h4><p data-i18n="magri-municipal-hall">Municipal Hall</p></div>
-                    <div class="stat-card"><i class="bi bi-clock"></i><h4 data-i18n="magri-hours">Hours</h4><p data-i18n="magri-8am-5pm">8AM - 5PM</p></div>
-                    <div class="stat-card"><i class="bi bi-calendar-check"></i><h4 data-i18n="magri-days">Days</h4><p>Monday - Friday</p></div>
-                </div>
+            <div class="stat-card">
+              <i class="bi bi-geo-alt"></i>
+              <h4 data-i18n="magri-location">Location</h4>
+              <p data-i18n="magri-municipal-hall">Municipal Hall</p>
             </div>
-        </section>
-
-        <!-- Program Tabs -->
-        <section class="mao-section alt-bg">
-            <div class="container">
-                <div class="section-header" style="text-align: center;">
-                    <h2 style="justify-content: center;"><i class="bi bi-grid-3x3-gap"></i> <span data-i18n="magri-agricultural-programs-services">Agricultural Programs & Services</span></h2>
-                    <p data-i18n="magri-select-a-program-category-to-view-details">Select a program category to view details</p>
-                </div>
-                <div class="program-tabs">
-                    <button type="button" class="program-tab active" data-tab="rsbsa" data-i18n="magri-rsbsa-registration">RSBSA Registration</button>
-                    <button type="button" class="program-tab" data-tab="certifications" data-i18n="magri-certifications">Certifications</button>
-                    <button type="button" class="program-tab" data-tab="rice" data-i18n="magri-rice-program">Rice Program</button>
-                    <button type="button" class="program-tab" data-tab="corn" data-i18n="magri-corn-program">Corn Program</button>
-                    <button type="button" class="program-tab" data-tab="livestock" data-i18n="magri-livestock">Livestock</button>
-                    <button type="button" class="program-tab" data-tab="fishery" data-i18n="magri-fishery">Fishery</button>
-                    <button type="button" class="program-tab" data-tab="organic" data-i18n="magri-organic-agriculture">Organic Agriculture</button>
-                </div>
-
-                <!-- RSBSA Registration -->
-                <div class="program-content active" id="rsbsa">
-                    <div class="section-header">
-                        <h2><i class="bi bi-person-badge"></i> <span data-i18n="magri-rsbsa-registration-farm-registration">RSBSA Registration (Farm Registration)</span></h2>
-                        <p data-i18n="magri-registry-system-for-basic-sectors-in-agriculture">Registry System for Basic Sectors in Agriculture - Official farmer registration for government programs</p>
-                    </div>
-                    <div class="grid grid-2" style="gap: 14px; margin-bottom: 20px;">
-                        <div class="req-box">
-                            <h4><i class="bi bi-file-earmark-text"></i> <span data-i18n="magri-requirements-for-new-registration">Requirements for New Registration</span></h4>
-                            <ul class="req-list">
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-valid-id-any-governmentissued-id">Valid ID (any government-issued ID)</span></li>
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-barangay-certification">Barangay Certification</span></li>
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-land-title-tax-declaration-lease-contract">Land Title / Tax Declaration / Lease Contract</span></li>
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-1x1-or-2x2-id-photo">1x1 or 2x2 ID Photo</span></li>
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-sketch-of-farm-location">Sketch of Farm Location</span></li>
-                            </ul>
-                        </div>
-                        <div class="req-box">
-                            <h4><i class="bi bi-arrow-repeat"></i> <span data-i18n="magri-requirements-for-updaterenewal">Requirements for Update/Renewal</span></h4>
-                            <ul class="req-list">
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-old-rsbsa-form-reference-number">Old RSBSA Form / Reference Number</span></li>
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-valid-id">Valid ID</span></li>
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-updated-land-documents-if-changed">Updated Land Documents (if changed)</span></li>
-                                <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-recent-1x1-or-2x2-photo">Recent 1x1 or 2x2 Photo</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="service-grid">
-                        <div class="service-card">
-                            <h4><i class="bi bi-cash-stack"></i> <span data-i18n="magri-fee">Fee</span></h4>
-                            <p data-i18n="magri-free-of-charge-for-all-farmers">Free of charge for all farmers</p>
-                            <div class="meta"><span data-i18n="magri-no-payment-required">No Payment Required</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-clock-history"></i> <span data-i18n="magri-processing-time">Processing Time</span></h4>
-                            <p data-i18n="magri-same-day-registration-upon-complete-submission">Same day registration upon complete submission</p>
-                            <div class="meta"><span data-i18n="magri-1530-minutes">15-30 Minutes</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-award"></i> <span data-i18n="magri-benefits">Benefits</span></h4>
-                            <p data-i18n="magri-access-to-government-subsidies-insurance-and">Access to government subsidies, insurance, and agricultural programs</p>
-                            <div class="meta"><span>RCEF</span><span>PCIC</span><span data-i18n="magri-da-programs">DA Programs</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certifications -->
-                <div class="program-content" id="certifications">
-                    <div class="section-header">
-                        <h2><i class="bi bi-file-earmark-check"></i> <span data-i18n="magri-agricultural-certifications">Agricultural Certifications</span></h2>
-                        <p data-i18n="magri-official-certifications-issued-by-the-municipal">Official certifications issued by the Municipal Agriculture Office</p>
-                    </div>
-                    <div class="service-grid">
-                        <div class="service-card">
-                            <h4><i class="bi bi-patch-check"></i> <span data-i18n="magri-farmer-certification">Farmer Certification</span></h4>
-                            <p data-i18n="magri-certification-that-individual-is-a-registered">Certification that individual is a registered farmer in Solano</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-same-day">Same Day</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-geo"></i> <span data-i18n="magri-farm-location-certification">Farm Location Certification</span></h4>
-                            <p data-i18n="magri-certification-of-farm-location-and-area-cultivated">Certification of farm location and area cultivated</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-same-day">Same Day</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-flower1"></i> <span data-i18n="magri-crop-certification">Crop Certification</span></h4>
-                            <p data-i18n="magri-certification-of-crops-planted-and-production-data">Certification of crops planted and production data</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-same-day">Same Day</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-droplet"></i> <span data-i18n="magri-calamity-certification">Calamity Certification</span></h4>
-                            <p data-i18n="magri-certification-for-crop-damage-due-to-natural">Certification for crop damage due to natural calamities</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-after-validation">After Validation</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-truck"></i> <span data-i18n="magri-transport-permit">Transport Permit</span></h4>
-                            <p data-i18n="magri-permit-for-transporting-agricultural-products">Permit for transporting agricultural products</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-same-day">Same Day</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-clipboard-data"></i> <span data-i18n="magri-production-data-certification">Production Data Certification</span></h4>
-                            <p data-i18n="magri-official-production-records-for-loan-and">Official production records for loan and insurance purposes</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-12-days">1-2 Days</span></div>
-                        </div>
-                    </div>
-                    <div class="req-box" style="margin-top: 14px;">
-                        <h4><i class="bi bi-info-circle"></i> <span data-i18n="magri-general-requirements-for-certifications">General Requirements for Certifications</span></h4>
-                        <ul class="req-list">
-                            <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-valid-id">Valid ID</span></li>
-                            <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-rsbsa-registration-if-applicable">RSBSA Registration (if applicable)</span></li>
-                            <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-barangay-certification">Barangay Certification</span></li>
-                            <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="magri-purpose-of-certification">Purpose of Certification</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Rice Program -->
-                <div class="program-content" id="rice">
-                    <div class="section-header">
-                        <h2><i class="bi bi-moisture"></i> <span data-i18n="magri-rice-program">Rice Program</span></h2>
-                        <p data-i18n="magri-support-programs-for-rice-farmers-under-the-rice">Support programs for rice farmers under the Rice Competitiveness Enhancement Fund (RCEF)</p>
-                    </div>
-                    <div class="service-grid">
-                        <div class="service-card">
-                            <h4><i class="bi bi-flower2"></i> <span data-i18n="magri-certified-seeds-distribution">Certified Seeds Distribution</span></h4>
-                            <p data-i18n="magri-free-certified-inbred-rice-seeds-for-registered">Free certified inbred rice seeds for registered farmers</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-seasonal">Seasonal</span><span>RCEF</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-gear"></i> <span data-i18n="magri-farm-machinery-services">Farm Machinery Services</span></h4>
-                            <p data-i18n="magri-access-to-tractors-harvesters-and-other-farm">Access to tractors, harvesters, and other farm equipment</p>
-                            <div class="meta"><span data-i18n="magri-subsidized">Subsidized</span><span data-i18n="magri-by-schedule">By Schedule</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-mortarboard"></i> <span data-i18n="magri-farmers-field-school">Farmers Field School</span></h4>
-                            <p data-i18n="magri-training-on-modern-rice-farming-techniques-and">Training on modern rice farming techniques and technologies</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-scheduled">Scheduled</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-cash-coin"></i> <span data-i18n="magri-credit-assistance">Credit Assistance</span></h4>
-                            <p data-i18n="magri-loan-facilitation-for-rice-production-through">Loan facilitation for rice production through partner institutions</p>
-                            <div class="meta"><span data-i18n="magri-low-interest">Low Interest</span><span>ACPC</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-shield-check"></i> <span data-i18n="magri-crop-insurance-pcic">Crop Insurance (PCIC)</span></h4>
-                            <p data-i18n="magri-insurance-coverage-for-rice-crops-against-natural">Insurance coverage for rice crops against natural calamities</p>
-                            <div class="meta"><span data-i18n="magri-subsidized">Subsidized</span><span data-i18n="magri-per-cropping">Per Cropping</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-box-seam"></i> <span data-i18n="magri-postharvest-facilities">Post-Harvest Facilities</span></h4>
-                            <p data-i18n="magri-access-to-drying-facilities-and-storage-warehouses">Access to drying facilities and storage warehouses</p>
-                            <div class="meta"><span data-i18n="magri-freesubsidized">Free/Subsidized</span><span data-i18n="magri-available">Available</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Corn Program -->
-                <div class="program-content" id="corn">
-                    <div class="section-header">
-                        <h2><i class="bi bi-tree"></i> <span data-i18n="magri-corn-program">Corn Program</span></h2>
-                        <p data-i18n="magri-support-programs-for-corn-farmers-in-solano">Support programs for corn farmers in Solano</p>
-                    </div>
-                    <div class="service-grid">
-                        <div class="service-card">
-                            <h4><i class="bi bi-flower3"></i> <span data-i18n="magri-corn-seeds-distribution">Corn Seeds Distribution</span></h4>
-                            <p data-i18n="magri-distribution-of-certified-corn-seeds-opv-and">Distribution of certified corn seeds (OPV and hybrid varieties)</p>
-                            <div class="meta"><span data-i18n="magri-freesubsidized">Free/Subsidized</span><span data-i18n="magri-seasonal">Seasonal</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-droplet-half"></i> <span data-i18n="magri-fertilizer-support">Fertilizer Support</span></h4>
-                            <p data-i18n="magri-subsidized-fertilizer-for-corn-production">Subsidized fertilizer for corn production</p>
-                            <div class="meta"><span data-i18n="magri-subsidized">Subsidized</span><span data-i18n="magri-per-cropping">Per Cropping</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-gear-wide-connected"></i> <span data-i18n="magri-mechanization-support">Mechanization Support</span></h4>
-                            <p data-i18n="magri-access-to-corn-planters-shellers-and-other">Access to corn planters, shellers, and other equipment</p>
-                            <div class="meta"><span data-i18n="magri-subsidized">Subsidized</span><span data-i18n="magri-by-schedule">By Schedule</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-book"></i> <span data-i18n="magri-technical-assistance">Technical Assistance</span></h4>
-                            <p data-i18n="magri-onsite-technical-support-and-farm-visits">On-site technical support and farm visits</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-on-request">On Request</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-shield-check"></i> <span data-i18n="magri-crop-insurance">Crop Insurance</span></h4>
-                            <p data-i18n="magri-pcic-insurance-coverage-for-corn-crops">PCIC insurance coverage for corn crops</p>
-                            <div class="meta"><span data-i18n="magri-subsidized">Subsidized</span><span data-i18n="magri-per-cropping">Per Cropping</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-graph-up-arrow"></i> <span data-i18n="magri-market-linkage">Market Linkage</span></h4>
-                            <p data-i18n="magri-connection-to-buyers-and-market-information">Connection to buyers and market information</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-ongoing">Ongoing</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Livestock -->
-                <div class="program-content" id="livestock">
-                    <div class="section-header">
-                        <h2><i class="bi bi-piggy-bank"></i> <span data-i18n="magri-livestock-program">Livestock Program</span></h2>
-                        <p data-i18n="magri-support-services-for-livestock-and-poultry-raisers">Support services for livestock and poultry raisers</p>
-                    </div>
-                    <div class="service-grid">
-                        <div class="service-card">
-                            <h4><i class="bi bi-heart-pulse"></i> <span data-i18n="magri-animal-health-services">Animal Health Services</span></h4>
-                            <p data-i18n="magri-vaccination-deworming-and-veterinary-consultations">Vaccination, deworming, and veterinary consultations</p>
-                            <div class="meta"><span data-i18n="magri-freesubsidized">Free/Subsidized</span><span data-i18n="magri-scheduled">Scheduled</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-gender-ambiguous"></i> <span data-i18n="magri-artificial-insemination">Artificial Insemination</span></h4>
-                            <p data-i18n="magri-ai-services-for-cattle-and-swine-breeding">AI services for cattle and swine breeding improvement</p>
-                            <div class="meta"><span data-i18n="magri-subsidized">Subsidized</span><span data-i18n="magri-on-request">On Request</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-egg"></i> <span data-i18n="magri-dispersal-program">Dispersal Program</span></h4>
-                            <p data-i18n="magri-distribution-of-livestock-swine-goats-poultry-to">Distribution of livestock (swine, goats, poultry) to qualified farmers</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-by-application">By Application</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-clipboard2-pulse"></i> <span data-i18n="magri-disease-surveillance">Disease Surveillance</span></h4>
-                            <p>Monitoring and prevention of animal diseases (ASF, AI, etc.)</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-ongoing">Ongoing</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-mortarboard"></i> <span data-i18n="magri-livestock-training">Livestock Training</span></h4>
-                            <p data-i18n="magri-training-on-proper-animal-husbandry-and-management">Training on proper animal husbandry and management</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-scheduled">Scheduled</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-file-medical"></i> <span data-i18n="magri-livestock-registration">Livestock Registration</span></h4>
-                            <p data-i18n="magri-registration-of-livestock-for-monitoring-and">Registration of livestock for monitoring and program eligibility</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-same-day">Same Day</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Fishery -->
-                <div class="program-content" id="fishery">
-                    <div class="section-header">
-                        <h2><i class="bi bi-water"></i> <span data-i18n="magri-fishery-program">Fishery Program</span></h2>
-                        <p data-i18n="magri-support-services-for-fisherfolk-and-aquaculture">Support services for fisherfolk and aquaculture operators</p>
-                    </div>
-                    <div class="service-grid">
-                        <div class="service-card">
-                            <h4><i class="bi bi-droplet"></i> <span data-i18n="magri-fingerlings-distribution">Fingerlings Distribution</span></h4>
-                            <p data-i18n="magri-distribution-of-tilapia-carp-and-other-fingerlings">Distribution of tilapia, carp, and other fingerlings</p>
-                            <div class="meta"><span data-i18n="magri-freesubsidized">Free/Subsidized</span><span data-i18n="magri-seasonal">Seasonal</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-box"></i> <span data-i18n="magri-aquaculture-inputs">Aquaculture Inputs</span></h4>
-                            <p data-i18n="magri-fish-feeds-and-pond-supplies-support">Fish feeds and pond supplies support</p>
-                            <div class="meta"><span data-i18n="magri-subsidized">Subsidized</span><span data-i18n="magri-by-application">By Application</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-tools"></i> <span data-i18n="magri-fishing-equipment">Fishing Equipment</span></h4>
-                            <p data-i18n="magri-distribution-of-fishing-gear-and-equipment">Distribution of fishing gear and equipment</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-by-application">By Application</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-book"></i> <span data-i18n="magri-technical-training">Technical Training</span></h4>
-                            <p data-i18n="magri-training-on-fish-culture-and-pond-management">Training on fish culture and pond management</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-scheduled">Scheduled</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-person-badge"></i> <span data-i18n="magri-fisherfolk-registration">Fisherfolk Registration</span></h4>
-                            <p data-i18n="magri-registration-in-the-fisherfolk-registry-fishr">Registration in the Fisherfolk Registry (FishR)</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-same-day">Same Day</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-shield"></i> <span data-i18n="magri-fishery-insurance">Fishery Insurance</span></h4>
-                            <p data-i18n="magri-insurance-coverage-for-aquaculture-operations">Insurance coverage for aquaculture operations</p>
-                            <div class="meta"><span data-i18n="magri-subsidized">Subsidized</span><span>PCIC</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Organic Agriculture -->
-                <div class="program-content" id="organic">
-                    <div class="section-header">
-                        <h2><i class="bi bi-leaf"></i> <span data-i18n="magri-organic-agriculture-program">Organic Agriculture Program</span></h2>
-                        <p data-i18n="magri-support-for-organic-farming-practices-and">Support for organic farming practices and certification</p>
-                    </div>
-                    <div class="service-grid">
-                        <div class="service-card">
-                            <h4><i class="bi bi-recycle"></i> <span data-i18n="magri-organic-inputs">Organic Inputs</span></h4>
-                            <p>Distribution of organic fertilizers and bio-pesticides</p>
-                            <div class="meta"><span data-i18n="magri-freesubsidized">Free/Subsidized</span><span data-i18n="magri-available">Available</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-patch-check"></i> <span data-i18n="magri-organic-certification-assistance">Organic Certification Assistance</span></h4>
-                            <p data-i18n="magri-support-for-pgs-and-thirdparty-organic">Support for PGS and third-party organic certification</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-by-application">By Application</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-mortarboard"></i> <span data-i18n="magri-organic-farming-training">Organic Farming Training</span></h4>
-                            <p data-i18n="magri-training-on-organic-production-methods-and">Training on organic production methods and composting</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-scheduled">Scheduled</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-shop"></i> <span data-i18n="magri-market-access">Market Access</span></h4>
-                            <p data-i18n="magri-linkage-to-organic-markets-and-buyers">Linkage to organic markets and buyers</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-ongoing">Ongoing</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-flower1"></i> <span data-i18n="magri-organic-seeds">Organic Seeds</span></h4>
-                            <p data-i18n="magri-distribution-of-organic-and-heirloom-seeds">Distribution of organic and heirloom seeds</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-seasonal">Seasonal</span></div>
-                        </div>
-                        <div class="service-card">
-                            <h4><i class="bi bi-people"></i> <span data-i18n="magri-farmers-organization">Farmers Organization</span></h4>
-                            <p data-i18n="magri-support-for-organic-farmers-groups-and">Support for organic farmers' groups and cooperatives</p>
-                            <div class="meta"><span data-i18n="magri-free">Free</span><span data-i18n="magri-ongoing">Ongoing</span></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat-card">
+              <i class="bi bi-clock"></i>
+              <h4 data-i18n="magri-hours">Hours</h4>
+              <p data-i18n="magri-8am-5pm">8AM - 5PM</p>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="mao-section">
-            <div class="container">
-                <div class="grid grid-2" style="gap: 14px;">
-                    <div class="req-box">
-                        <h4><i class="bi bi-building"></i> <span data-i18n="magri-office-information">Office Information</span></h4>
-                        <ul class="req-list">
-                            <li><i class="bi bi-geo-alt"></i> <span data-i18n="magri-municipal-agriculture-office-municipal-hall">Municipal Agriculture Office, Municipal Hall, Solano, Nueva Vizcaya</span></li>
-                            <li><i class="bi bi-clock"></i> Monday - Friday: 8:00 AM - 5:00 PM</li>
-                            <li><i class="bi bi-telephone"></i> (078) 326-5001</li>
-                        </ul>
-                    </div>
-                    <div class="req-box">
-                        <h4><i class="bi bi-info-circle"></i> <span data-i18n="magri-important-notes">Important Notes</span></h4>
-                        <ul class="req-list">
-                            <li><i class="bi bi-check-circle"></i> All services require valid ID and RSBSA registration</li>
-                            <li><i class="bi bi-check-circle"></i> Program availability subject to budget allocation</li>
-                            <li><i class="bi bi-check-circle"></i> Priority given to small-scale farmers</li>
-                            <li><i class="bi bi-check-circle"></i> Bring supporting documents for faster processing</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="stat-card">
+              <i class="bi bi-calendar-check"></i>
+              <h4 data-i18n="magri-days">Days</h4>
+              <p>Monday - Friday</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Program Tabs -->
+      <section class="mao-section alt-bg">
+        <div class="container">
+          <div class="section-header" style="text-align: center">
+            <h2 style="justify-content: center">
+              <i class="bi bi-grid-3x3-gap"></i>
+              <span data-i18n="magri-agricultural-programs-services"
+                >Agricultural Programs & Services</span
+              >
+            </h2>
+            <p data-i18n="magri-select-a-program-category-to-view-details">
+              Select a program category to view details
+            </p>
+          </div>
+          <div class="program-tabs">
+            <button
+              type="button"
+              class="program-tab active"
+              data-tab="rsbsa"
+              data-i18n="magri-rsbsa-registration"
+            >
+              RSBSA Registration
+            </button>
+            <button
+              type="button"
+              class="program-tab"
+              data-tab="certifications"
+              data-i18n="magri-certifications"
+            >
+              Certifications
+            </button>
+            <button
+              type="button"
+              class="program-tab"
+              data-tab="rice"
+              data-i18n="magri-rice-program"
+            >
+              Rice Program
+            </button>
+            <button
+              type="button"
+              class="program-tab"
+              data-tab="corn"
+              data-i18n="magri-corn-program"
+            >
+              Corn Program
+            </button>
+            <button
+              type="button"
+              class="program-tab"
+              data-tab="livestock"
+              data-i18n="magri-livestock"
+            >
+              Livestock
+            </button>
+            <button type="button" class="program-tab" data-tab="fishery" data-i18n="magri-fishery">
+              Fishery
+            </button>
+            <button
+              type="button"
+              class="program-tab"
+              data-tab="organic"
+              data-i18n="magri-organic-agriculture"
+            >
+              Organic Agriculture
+            </button>
+          </div>
+
+          <!-- RSBSA Registration -->
+          <div class="program-content active" id="rsbsa">
+            <div class="section-header">
+              <h2>
+                <i class="bi bi-person-badge"></i>
+                <span data-i18n="magri-rsbsa-registration-farm-registration"
+                  >RSBSA Registration (Farm Registration)</span
+                >
+              </h2>
+              <p data-i18n="magri-registry-system-for-basic-sectors-in-agriculture">
+                Registry System for Basic Sectors in Agriculture - Official farmer registration for
+                government programs
+              </p>
+            </div>
+            <div class="grid grid-2" style="gap: 14px; margin-bottom: 20px">
+              <div class="req-box">
+                <h4>
+                  <i class="bi bi-file-earmark-text"></i>
+                  <span data-i18n="magri-requirements-for-new-registration"
+                    >Requirements for New Registration</span
+                  >
+                </h4>
+                <ul class="req-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-valid-id-any-governmentissued-id"
+                      >Valid ID (any government-issued ID)</span
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-barangay-certification">Barangay Certification</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-land-title-tax-declaration-lease-contract"
+                      >Land Title / Tax Declaration / Lease Contract</span
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-1x1-or-2x2-id-photo">1x1 or 2x2 ID Photo</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-sketch-of-farm-location">Sketch of Farm Location</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="req-box">
+                <h4>
+                  <i class="bi bi-arrow-repeat"></i>
+                  <span data-i18n="magri-requirements-for-updaterenewal"
+                    >Requirements for Update/Renewal</span
+                  >
+                </h4>
+                <ul class="req-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-old-rsbsa-form-reference-number"
+                      >Old RSBSA Form / Reference Number</span
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-valid-id">Valid ID</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-updated-land-documents-if-changed"
+                      >Updated Land Documents (if changed)</span
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="magri-recent-1x1-or-2x2-photo">Recent 1x1 or 2x2 Photo</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="service-grid">
+              <div class="service-card">
+                <h4><i class="bi bi-cash-stack"></i> <span data-i18n="magri-fee">Fee</span></h4>
+                <p data-i18n="magri-free-of-charge-for-all-farmers">
+                  Free of charge for all farmers
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-no-payment-required">No Payment Required</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-clock-history"></i>
+                  <span data-i18n="magri-processing-time">Processing Time</span>
+                </h4>
+                <p data-i18n="magri-same-day-registration-upon-complete-submission">
+                  Same day registration upon complete submission
+                </p>
+                <div class="meta"><span data-i18n="magri-1530-minutes">15-30 Minutes</span></div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-award"></i> <span data-i18n="magri-benefits">Benefits</span>
+                </h4>
+                <p data-i18n="magri-access-to-government-subsidies-insurance-and">
+                  Access to government subsidies, insurance, and agricultural programs
+                </p>
+                <div class="meta">
+                  <span>RCEF</span><span>PCIC</span
+                  ><span data-i18n="magri-da-programs">DA Programs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="program-content" id="certifications">
+            <div class="section-header">
+              <h2>
+                <i class="bi bi-file-earmark-check"></i>
+                <span data-i18n="magri-agricultural-certifications"
+                  >Agricultural Certifications</span
+                >
+              </h2>
+              <p data-i18n="magri-official-certifications-issued-by-the-municipal">
+                Official certifications issued by the Municipal Agriculture Office
+              </p>
+            </div>
+            <div class="service-grid">
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-patch-check"></i>
+                  <span data-i18n="magri-farmer-certification">Farmer Certification</span>
+                </h4>
+                <p data-i18n="magri-certification-that-individual-is-a-registered">
+                  Certification that individual is a registered farmer in Solano
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-same-day">Same Day</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-geo"></i>
+                  <span data-i18n="magri-farm-location-certification"
+                    >Farm Location Certification</span
+                  >
+                </h4>
+                <p data-i18n="magri-certification-of-farm-location-and-area-cultivated">
+                  Certification of farm location and area cultivated
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-same-day">Same Day</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-flower1"></i>
+                  <span data-i18n="magri-crop-certification">Crop Certification</span>
+                </h4>
+                <p data-i18n="magri-certification-of-crops-planted-and-production-data">
+                  Certification of crops planted and production data
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-same-day">Same Day</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-droplet"></i>
+                  <span data-i18n="magri-calamity-certification">Calamity Certification</span>
+                </h4>
+                <p data-i18n="magri-certification-for-crop-damage-due-to-natural">
+                  Certification for crop damage due to natural calamities
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-after-validation">After Validation</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-truck"></i>
+                  <span data-i18n="magri-transport-permit">Transport Permit</span>
+                </h4>
+                <p data-i18n="magri-permit-for-transporting-agricultural-products">
+                  Permit for transporting agricultural products
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-same-day">Same Day</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-clipboard-data"></i>
+                  <span data-i18n="magri-production-data-certification"
+                    >Production Data Certification</span
+                  >
+                </h4>
+                <p data-i18n="magri-official-production-records-for-loan-and">
+                  Official production records for loan and insurance purposes
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-12-days">1-2 Days</span>
+                </div>
+              </div>
+            </div>
+            <div class="req-box" style="margin-top: 14px">
+              <h4>
+                <i class="bi bi-info-circle"></i>
+                <span data-i18n="magri-general-requirements-for-certifications"
+                  >General Requirements for Certifications</span
+                >
+              </h4>
+              <ul class="req-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span data-i18n="magri-valid-id">Valid ID</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span data-i18n="magri-rsbsa-registration-if-applicable"
+                    >RSBSA Registration (if applicable)</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span data-i18n="magri-barangay-certification">Barangay Certification</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span data-i18n="magri-purpose-of-certification">Purpose of Certification</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Rice Program -->
+          <div class="program-content" id="rice">
+            <div class="section-header">
+              <h2>
+                <i class="bi bi-moisture"></i>
+                <span data-i18n="magri-rice-program">Rice Program</span>
+              </h2>
+              <p data-i18n="magri-support-programs-for-rice-farmers-under-the-rice">
+                Support programs for rice farmers under the Rice Competitiveness Enhancement Fund
+                (RCEF)
+              </p>
+            </div>
+            <div class="service-grid">
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-flower2"></i>
+                  <span data-i18n="magri-certified-seeds-distribution"
+                    >Certified Seeds Distribution</span
+                  >
+                </h4>
+                <p data-i18n="magri-free-certified-inbred-rice-seeds-for-registered">
+                  Free certified inbred rice seeds for registered farmers
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-seasonal">Seasonal</span><span>RCEF</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-gear"></i>
+                  <span data-i18n="magri-farm-machinery-services">Farm Machinery Services</span>
+                </h4>
+                <p data-i18n="magri-access-to-tractors-harvesters-and-other-farm">
+                  Access to tractors, harvesters, and other farm equipment
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-subsidized">Subsidized</span
+                  ><span data-i18n="magri-by-schedule">By Schedule</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-mortarboard"></i>
+                  <span data-i18n="magri-farmers-field-school">Farmers Field School</span>
+                </h4>
+                <p data-i18n="magri-training-on-modern-rice-farming-techniques-and">
+                  Training on modern rice farming techniques and technologies
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-scheduled">Scheduled</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-cash-coin"></i>
+                  <span data-i18n="magri-credit-assistance">Credit Assistance</span>
+                </h4>
+                <p data-i18n="magri-loan-facilitation-for-rice-production-through">
+                  Loan facilitation for rice production through partner institutions
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-low-interest">Low Interest</span><span>ACPC</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-shield-check"></i>
+                  <span data-i18n="magri-crop-insurance-pcic">Crop Insurance (PCIC)</span>
+                </h4>
+                <p data-i18n="magri-insurance-coverage-for-rice-crops-against-natural">
+                  Insurance coverage for rice crops against natural calamities
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-subsidized">Subsidized</span
+                  ><span data-i18n="magri-per-cropping">Per Cropping</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-box-seam"></i>
+                  <span data-i18n="magri-postharvest-facilities">Post-Harvest Facilities</span>
+                </h4>
+                <p data-i18n="magri-access-to-drying-facilities-and-storage-warehouses">
+                  Access to drying facilities and storage warehouses
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-freesubsidized">Free/Subsidized</span
+                  ><span data-i18n="magri-available">Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corn Program -->
+          <div class="program-content" id="corn">
+            <div class="section-header">
+              <h2>
+                <i class="bi bi-tree"></i> <span data-i18n="magri-corn-program">Corn Program</span>
+              </h2>
+              <p data-i18n="magri-support-programs-for-corn-farmers-in-solano">
+                Support programs for corn farmers in Solano
+              </p>
+            </div>
+            <div class="service-grid">
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-flower3"></i>
+                  <span data-i18n="magri-corn-seeds-distribution">Corn Seeds Distribution</span>
+                </h4>
+                <p data-i18n="magri-distribution-of-certified-corn-seeds-opv-and">
+                  Distribution of certified corn seeds (OPV and hybrid varieties)
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-freesubsidized">Free/Subsidized</span
+                  ><span data-i18n="magri-seasonal">Seasonal</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-droplet-half"></i>
+                  <span data-i18n="magri-fertilizer-support">Fertilizer Support</span>
+                </h4>
+                <p data-i18n="magri-subsidized-fertilizer-for-corn-production">
+                  Subsidized fertilizer for corn production
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-subsidized">Subsidized</span
+                  ><span data-i18n="magri-per-cropping">Per Cropping</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-gear-wide-connected"></i>
+                  <span data-i18n="magri-mechanization-support">Mechanization Support</span>
+                </h4>
+                <p data-i18n="magri-access-to-corn-planters-shellers-and-other">
+                  Access to corn planters, shellers, and other equipment
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-subsidized">Subsidized</span
+                  ><span data-i18n="magri-by-schedule">By Schedule</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-book"></i>
+                  <span data-i18n="magri-technical-assistance">Technical Assistance</span>
+                </h4>
+                <p data-i18n="magri-onsite-technical-support-and-farm-visits">
+                  On-site technical support and farm visits
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-on-request">On Request</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-shield-check"></i>
+                  <span data-i18n="magri-crop-insurance">Crop Insurance</span>
+                </h4>
+                <p data-i18n="magri-pcic-insurance-coverage-for-corn-crops">
+                  PCIC insurance coverage for corn crops
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-subsidized">Subsidized</span
+                  ><span data-i18n="magri-per-cropping">Per Cropping</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <span data-i18n="magri-market-linkage">Market Linkage</span>
+                </h4>
+                <p data-i18n="magri-connection-to-buyers-and-market-information">
+                  Connection to buyers and market information
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-ongoing">Ongoing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Livestock -->
+          <div class="program-content" id="livestock">
+            <div class="section-header">
+              <h2>
+                <i class="bi bi-piggy-bank"></i>
+                <span data-i18n="magri-livestock-program">Livestock Program</span>
+              </h2>
+              <p data-i18n="magri-support-services-for-livestock-and-poultry-raisers">
+                Support services for livestock and poultry raisers
+              </p>
+            </div>
+            <div class="service-grid">
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-heart-pulse"></i>
+                  <span data-i18n="magri-animal-health-services">Animal Health Services</span>
+                </h4>
+                <p data-i18n="magri-vaccination-deworming-and-veterinary-consultations">
+                  Vaccination, deworming, and veterinary consultations
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-freesubsidized">Free/Subsidized</span
+                  ><span data-i18n="magri-scheduled">Scheduled</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-gender-ambiguous"></i>
+                  <span data-i18n="magri-artificial-insemination">Artificial Insemination</span>
+                </h4>
+                <p data-i18n="magri-ai-services-for-cattle-and-swine-breeding">
+                  AI services for cattle and swine breeding improvement
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-subsidized">Subsidized</span
+                  ><span data-i18n="magri-on-request">On Request</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-egg"></i>
+                  <span data-i18n="magri-dispersal-program">Dispersal Program</span>
+                </h4>
+                <p data-i18n="magri-distribution-of-livestock-swine-goats-poultry-to">
+                  Distribution of livestock (swine, goats, poultry) to qualified farmers
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-by-application">By Application</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-clipboard2-pulse"></i>
+                  <span data-i18n="magri-disease-surveillance">Disease Surveillance</span>
+                </h4>
+                <p>Monitoring and prevention of animal diseases (ASF, AI, etc.)</p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-ongoing">Ongoing</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-mortarboard"></i>
+                  <span data-i18n="magri-livestock-training">Livestock Training</span>
+                </h4>
+                <p data-i18n="magri-training-on-proper-animal-husbandry-and-management">
+                  Training on proper animal husbandry and management
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-scheduled">Scheduled</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-file-medical"></i>
+                  <span data-i18n="magri-livestock-registration">Livestock Registration</span>
+                </h4>
+                <p data-i18n="magri-registration-of-livestock-for-monitoring-and">
+                  Registration of livestock for monitoring and program eligibility
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-same-day">Same Day</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fishery -->
+          <div class="program-content" id="fishery">
+            <div class="section-header">
+              <h2>
+                <i class="bi bi-water"></i>
+                <span data-i18n="magri-fishery-program">Fishery Program</span>
+              </h2>
+              <p data-i18n="magri-support-services-for-fisherfolk-and-aquaculture">
+                Support services for fisherfolk and aquaculture operators
+              </p>
+            </div>
+            <div class="service-grid">
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-droplet"></i>
+                  <span data-i18n="magri-fingerlings-distribution">Fingerlings Distribution</span>
+                </h4>
+                <p data-i18n="magri-distribution-of-tilapia-carp-and-other-fingerlings">
+                  Distribution of tilapia, carp, and other fingerlings
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-freesubsidized">Free/Subsidized</span
+                  ><span data-i18n="magri-seasonal">Seasonal</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-box"></i>
+                  <span data-i18n="magri-aquaculture-inputs">Aquaculture Inputs</span>
+                </h4>
+                <p data-i18n="magri-fish-feeds-and-pond-supplies-support">
+                  Fish feeds and pond supplies support
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-subsidized">Subsidized</span
+                  ><span data-i18n="magri-by-application">By Application</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-tools"></i>
+                  <span data-i18n="magri-fishing-equipment">Fishing Equipment</span>
+                </h4>
+                <p data-i18n="magri-distribution-of-fishing-gear-and-equipment">
+                  Distribution of fishing gear and equipment
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-by-application">By Application</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-book"></i>
+                  <span data-i18n="magri-technical-training">Technical Training</span>
+                </h4>
+                <p data-i18n="magri-training-on-fish-culture-and-pond-management">
+                  Training on fish culture and pond management
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-scheduled">Scheduled</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-person-badge"></i>
+                  <span data-i18n="magri-fisherfolk-registration">Fisherfolk Registration</span>
+                </h4>
+                <p data-i18n="magri-registration-in-the-fisherfolk-registry-fishr">
+                  Registration in the Fisherfolk Registry (FishR)
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-same-day">Same Day</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-shield"></i>
+                  <span data-i18n="magri-fishery-insurance">Fishery Insurance</span>
+                </h4>
+                <p data-i18n="magri-insurance-coverage-for-aquaculture-operations">
+                  Insurance coverage for aquaculture operations
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-subsidized">Subsidized</span><span>PCIC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Organic Agriculture -->
+          <div class="program-content" id="organic">
+            <div class="section-header">
+              <h2>
+                <i class="bi bi-leaf"></i>
+                <span data-i18n="magri-organic-agriculture-program"
+                  >Organic Agriculture Program</span
+                >
+              </h2>
+              <p data-i18n="magri-support-for-organic-farming-practices-and">
+                Support for organic farming practices and certification
+              </p>
+            </div>
+            <div class="service-grid">
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-recycle"></i>
+                  <span data-i18n="magri-organic-inputs">Organic Inputs</span>
+                </h4>
+                <p>Distribution of organic fertilizers and bio-pesticides</p>
+                <div class="meta">
+                  <span data-i18n="magri-freesubsidized">Free/Subsidized</span
+                  ><span data-i18n="magri-available">Available</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-patch-check"></i>
+                  <span data-i18n="magri-organic-certification-assistance"
+                    >Organic Certification Assistance</span
+                  >
+                </h4>
+                <p data-i18n="magri-support-for-pgs-and-thirdparty-organic">
+                  Support for PGS and third-party organic certification
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-by-application">By Application</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-mortarboard"></i>
+                  <span data-i18n="magri-organic-farming-training">Organic Farming Training</span>
+                </h4>
+                <p data-i18n="magri-training-on-organic-production-methods-and">
+                  Training on organic production methods and composting
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-scheduled">Scheduled</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-shop"></i>
+                  <span data-i18n="magri-market-access">Market Access</span>
+                </h4>
+                <p data-i18n="magri-linkage-to-organic-markets-and-buyers">
+                  Linkage to organic markets and buyers
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-ongoing">Ongoing</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-flower1"></i>
+                  <span data-i18n="magri-organic-seeds">Organic Seeds</span>
+                </h4>
+                <p data-i18n="magri-distribution-of-organic-and-heirloom-seeds">
+                  Distribution of organic and heirloom seeds
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-seasonal">Seasonal</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <h4>
+                  <i class="bi bi-people"></i>
+                  <span data-i18n="magri-farmers-organization">Farmers Organization</span>
+                </h4>
+                <p data-i18n="magri-support-for-organic-farmers-groups-and">
+                  Support for organic farmers' groups and cooperatives
+                </p>
+                <div class="meta">
+                  <span data-i18n="magri-free">Free</span
+                  ><span data-i18n="magri-ongoing">Ongoing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="mao-section">
+        <div class="container">
+          <div class="grid grid-2" style="gap: 14px">
+            <div class="req-box">
+              <h4>
+                <i class="bi bi-building"></i>
+                <span data-i18n="magri-office-information">Office Information</span>
+              </h4>
+              <ul class="req-list">
+                <li>
+                  <i class="bi bi-geo-alt"></i>
+                  <span data-i18n="magri-municipal-agriculture-office-municipal-hall"
+                    >Municipal Agriculture Office, Municipal Hall, Solano, Nueva Vizcaya</span
+                  >
+                </li>
+                <li><i class="bi bi-clock"></i> Monday - Friday: 8:00 AM - 5:00 PM</li>
+                <li><i class="bi bi-telephone"></i> (078) 326-5001</li>
+              </ul>
+            </div>
+            <div class="req-box">
+              <h4>
+                <i class="bi bi-info-circle"></i>
+                <span data-i18n="magri-important-notes">Important Notes</span>
+              </h4>
+              <ul class="req-list">
+                <li>
+                  <i class="bi bi-check-circle"></i> All services require valid ID and RSBSA
+                  registration
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Program availability subject to budget
+                  allocation
+                </li>
+                <li><i class="bi bi-check-circle"></i> Priority given to small-scale farmers</li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Bring supporting documents for faster
+                  processing
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-main-new">
-                <div class="footer-brand">
-                    <img src="../assets/images/logo/better-solano-logo-white.svg" alt="Better Solano logo" class="footer-logo">
-                    <p class="footer-tagline" data-i18n="magri-empowering-the-people-of-solano-with-transparent">Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.</p>
-                    <div class="footer-social-new">
-                        <a href="https://www.facebook.com/bettersolano.org" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/company/bettersolano/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://discord.com/invite/qeSu7RJkjQ" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="bi bi-discord"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4 data-i18n="magri-quick-links">Quick Links</h4>
-                    <ul class="footer-links-new">
-                        <li><a href="https://quiz.bettersolano.org/" target="_blank" rel="noopener noreferrer" data-i18n="magri-solano-quiz">Solano Quiz</a></li>
-                        <li><a href="../sitemap/" data-i18n="magri-sitemap">Sitemap</a></li>
-                        <li><a href="https://solano.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf" target="_blank" rel="noopener noreferrer" data-i18n="magri-citizens-charter">Citizen's Charter</a></li>
-                        <li><a href="../terms/" data-i18n="magri-terms-of-use">Terms of Use</a></li>
-                        <li><a href="../privacy/" data-i18n="magri-privacy-policy">Privacy Policy</a></li>
-                        <li><a href="../accessibility/" data-i18n="magri-accessibility">Accessibility</a></li>
-                        <li><a href="../faq/">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4 data-i18n="magri-resources">Resources</h4>
-                    <ul class="footer-links-new">
-                        <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer" data-i18n="magri-open-data-philippines">Open Data Philippines</a></li>
-                        <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="magri-freedom-of-information">Freedom of Information</a></li>
-                        <li><a href="https://solano.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="magri-official-lgu-solano-portal">Official LGU Solano Portal</a></li>
-                        <li><a href="https://sangguniangbayan.solano.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="magri-sangguniang-bayan">Sangguniang Bayan</a></li>
-                        <li><a href="https://www.facebook.com/OfficialLguSolanoFanpage/" target="_blank" rel="noopener noreferrer" data-i18n="magri-lgu-solano-facebook">LGU Solano Facebook</a></li>
-                        <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="magri-blgf-portal">BLGF Portal</a></li>
-                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="magri-cmci-dti-portal">CMCI DTI Portal</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <div class="footer-cost" role="status">Cost to the People of Solano = <span class="footer-cost-value">₱0</span></div>
-                    <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> <span data-i18n="magri-volunteer-with-us">Volunteer with us</span></a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> <span data-i18n="magri-contribute-code-with-us">Contribute code with us</span></a>
-                    <div class="footer-partners">
-                        <a href="https://abakada.org" target="_blank" rel="noopener noreferrer" aria-label="Abakada.org"><img src="../assets/images/logo/abakada-footer.svg" alt="Abakada.org" class="footer-partner-logo" width="120" height="28" loading="lazy"></a>
-                        <a href="https://bettergov.ph" target="_blank" rel="noopener noreferrer" aria-label="BetterGov.ph"><img src="../assets/images/logo/bettergov-footer.svg" alt="BetterGov.ph" class="footer-partner-logo" width="120" height="28" loading="lazy"></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-main-new">
+          <div class="footer-brand">
+            <img
+              src="../assets/images/logo/better-solano-logo-white.svg"
+              alt="Better Solano logo"
+              class="footer-logo"
+            />
+            <p
+              class="footer-tagline"
+              data-i18n="magri-empowering-the-people-of-solano-with-transparent"
+            >
+              Empowering the people of Solano with transparent access to the services, programs, and
+              public funds of LGU Solano.
+            </p>
+            <div class="footer-social-new">
+              <a
+                href="https://www.facebook.com/bettersolano.org"
+                class="footer-social-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/bettersolano/"
+                class="footer-social-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://discord.com/invite/qeSu7RJkjQ"
+                class="footer-social-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+                ><i class="bi bi-discord"></i
+              ></a>
             </div>
-            <div class="footer-bottom-new">
-                <div class="footer-copyright">
-                    <span class="footer-copyright-text">&copy; 2026 BetterSolano.org</span>
-                    <span class="footer-copyright-license">MIT | CC BY 4.0</span>
-                    <span class="footer-copyright-disclaimer">All public information sourced from official government portals.</span>
-                    <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.1.14</span>
-                </div>
+          </div>
+          <div class="footer-column">
+            <h4 data-i18n="magri-quick-links">Quick Links</h4>
+            <ul class="footer-links-new">
+              <li>
+                <a
+                  href="https://quiz.bettersolano.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-solano-quiz"
+                  >Solano Quiz</a
+                >
+              </li>
+              <li><a href="../sitemap/" data-i18n="magri-sitemap">Sitemap</a></li>
+              <li>
+                <a
+                  href="https://solano.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-citizens-charter"
+                  >Citizen's Charter</a
+                >
+              </li>
+              <li><a href="../terms/" data-i18n="magri-terms-of-use">Terms of Use</a></li>
+              <li><a href="../privacy/" data-i18n="magri-privacy-policy">Privacy Policy</a></li>
+              <li><a href="../accessibility/" data-i18n="magri-accessibility">Accessibility</a></li>
+              <li><a href="../faq/">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 data-i18n="magri-resources">Resources</h4>
+            <ul class="footer-links-new">
+              <li>
+                <a
+                  href="https://data.gov.ph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-open-data-philippines"
+                  >Open Data Philippines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.foi.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-freedom-of-information"
+                  >Freedom of Information</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://solano.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-official-lgu-solano-portal"
+                  >Official LGU Solano Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sangguniangbayan.solano.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-sangguniang-bayan"
+                  >Sangguniang Bayan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/OfficialLguSolanoFanpage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-lgu-solano-facebook"
+                  >LGU Solano Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blgf.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-blgf-portal"
+                  >BLGF Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cmci.dti.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="magri-cmci-dti-portal"
+                  >CMCI DTI Portal</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <div class="footer-cost" role="status">
+              Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
             </div>
+            <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"
+              ><i class="bi bi-envelope-heart"></i>
+              <span data-i18n="magri-volunteer-with-us">Volunteer with us</span></a
+            >
+            <a
+              href="https://github.com/BetterSolano/bettersolano"
+              class="footer-contribute"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-github"></i>
+              <span data-i18n="magri-contribute-code-with-us">Contribute code with us</span></a
+            >
+            <div class="footer-partners">
+              <a
+                href="https://abakada.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abakada.org"
+                ><img
+                  src="../assets/images/logo/abakada-footer.svg"
+                  alt="Abakada.org"
+                  class="footer-partner-logo"
+                  width="120"
+                  height="28"
+                  loading="lazy"
+              /></a>
+              <a
+                href="https://bettergov.ph"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="BetterGov.ph"
+                ><img
+                  src="../assets/images/logo/bettergov-footer.svg"
+                  alt="BetterGov.ph"
+                  class="footer-partner-logo"
+                  width="120"
+                  height="28"
+                  loading="lazy"
+              /></a>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom-new">
+          <div class="footer-copyright">
+            <span class="footer-copyright-text">&copy; 2026 BetterSolano.org</span>
+            <span class="footer-copyright-license">MIT | CC BY 4.0</span>
+            <span class="footer-copyright-disclaimer"
+              >All public information sourced from official government portals.</span
+            >
+            <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.1.15</span>
+          </div>
+        </div>
+      </div>
     </footer>
     <script defer src="../assets/js/translations.js"></script>
     <script defer src="../assets/js/info-bar.js"></script>
     <script defer src="../assets/js/main.js"></script>
     <script defer src="../assets/js/version.js"></script>
     <script>
-        // Tab functionality
-        document.querySelectorAll('.program-tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                document.querySelectorAll('.program-tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.program-content').forEach(c => c.classList.remove('active'));
-                tab.classList.add('active');
-                document.getElementById(tab.dataset.tab).classList.add('active');
-            });
+      // Tab functionality
+      document.querySelectorAll('.program-tab').forEach((tab) => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.program-tab').forEach((t) => t.classList.remove('active'));
+          document
+            .querySelectorAll('.program-content')
+            .forEach((c) => c.classList.remove('active'));
+          tab.classList.add('active');
+          document.getElementById(tab.dataset.tab).classList.add('active');
         });
+      });
     </script>
-</body>
+  </body>
 </html>

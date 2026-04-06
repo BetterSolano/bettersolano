@@ -1,155 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1a5f2a">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0032a0" />
     <title>Offline - BetterSolano.org</title>
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f7f5;
-            color: #1a1a1a;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem 1rem;
-        }
-        .skip-link {
-            position: absolute;
-            top: -100%;
-            left: 0;
-            padding: 0.5rem 1rem;
-            background: #1a5f2a;
-            color: #fff;
-            z-index: 100;
-        }
-        .skip-link:focus { top: 0; }
-        .container {
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-        }
-        .logo {
-            width: 180px;
-            height: auto;
-            margin-bottom: 1.5rem;
-        }
-        h1 {
-            font-size: 1.5rem;
-            color: #1a5f2a;
-            margin-bottom: 0.5rem;
-        }
-        .subtitle {
-            color: #555;
-            margin-bottom: 2rem;
-            line-height: 1.5;
-        }
-        .hotlines {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            text-align: left;
-        }
-        .hotlines h2 {
-            font-size: 1.1rem;
-            color: #1a5f2a;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        .hotline-list {
-            list-style: none;
-        }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family:
+          'Inter',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        background: #f5f7f5;
+        color: #1a1a1a;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+      .skip-link {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        padding: 0.5rem 1rem;
+        background: #0032a0;
+        color: #fff;
+        z-index: 100;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+      .container {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+      }
+      .logo {
+        width: 180px;
+        height: auto;
+        margin-bottom: 1.5rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+        color: #0032a0;
+        margin-bottom: 0.5rem;
+      }
+      .subtitle {
+        color: #555;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+      }
+      .hotlines {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+      .hotlines h2 {
+        font-size: 1.1rem;
+        color: #0032a0;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .hotline-list {
+        list-style: none;
+      }
+      .hotline-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid #eee;
+      }
+      .hotline-list li:last-child {
+        border-bottom: none;
+      }
+      .hotline-label {
+        font-weight: 600;
+        color: #333;
+      }
+      .hotline-number {
+        color: #0032a0;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .hotline-number:focus {
+        outline: 2px solid #0032a0;
+        outline-offset: 2px;
+      }
+      .retry-btn {
+        display: inline-block;
+        background: #0032a0;
+        color: #fff;
+        border: none;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .retry-btn:hover {
+        background: #002170;
+      }
+      .retry-btn:focus {
+        outline: 2px solid #0032a0;
+        outline-offset: 2px;
+      }
+      @media (max-width: 480px) {
         .hotline-list li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.6rem 0;
-            border-bottom: 1px solid #eee;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.25rem;
         }
-        .hotline-list li:last-child { border-bottom: none; }
-        .hotline-label { font-weight: 600; color: #333; }
-        .hotline-number {
-            color: #1a5f2a;
-            font-weight: 600;
-            text-decoration: none;
-        }
-        .hotline-number:focus {
-            outline: 2px solid #1a5f2a;
-            outline-offset: 2px;
-        }
-        .retry-btn {
-            display: inline-block;
-            background: #1a5f2a;
-            color: #fff;
-            border: none;
-            padding: 0.75rem 2rem;
-            font-size: 1rem;
-            border-radius: 6px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .retry-btn:hover { background: #155023; }
-        .retry-btn:focus {
-            outline: 2px solid #1a5f2a;
-            outline-offset: 2px;
-        }
-        @media (max-width: 480px) {
-            .hotline-list li { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
-        }
+      }
     </style>
-</head>
-<body>
-    <a href="#main-content" class="skip-link" data-i18n="offline-skip-to-main-content">Skip to main content</a>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link" data-i18n="offline-skip-to-main-content"
+      >Skip to main content</a
+    >
 
     <main id="main-content" class="container" role="main">
-        <svg class="logo" viewBox="0 0 200 60" aria-label="BetterSolano" role="img">
-            <rect width="200" height="60" rx="8" fill="#1a5f2a"/>
-            <text x="100" y="36" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="700">BetterSolano</text>
-        </svg>
+      <svg class="logo" viewBox="0 0 200 60" aria-label="BetterSolano" role="img">
+        <rect width="200" height="60" rx="8" fill="#0032a0" />
+        <text
+          x="100"
+          y="36"
+          text-anchor="middle"
+          fill="#ffffff"
+          font-family="Inter, sans-serif"
+          font-size="18"
+          font-weight="700"
+        >
+          BetterSolano
+        </text>
+      </svg>
 
-        <h1 data-i18n="offline-you-are-currently-offline">You are currently offline</h1>
-        <p class="subtitle" data-i18n="offline-some-pages-may-not-be-available-right-now">Some pages may not be available right now. Emergency hotlines are listed below for your convenience.</p>
+      <h1 data-i18n="offline-you-are-currently-offline">You are currently offline</h1>
+      <p class="subtitle" data-i18n="offline-some-pages-may-not-be-available-right-now">
+        Some pages may not be available right now. Emergency hotlines are listed below for your
+        convenience.
+      </p>
 
-        <div class="hotlines">
-            <h2 data-i18n="offline-emergency-hotlines-solano-nueva-vizcaya">Emergency Hotlines - Solano, Nueva Vizcaya</h2>
-            <ul class="hotline-list" aria-label="Emergency contact numbers">
-                <li>
-                    <span class="hotline-label" data-i18n="offline-police-pnp">Police (PNP)</span>
-                    <a href="tel:09274008033" class="hotline-number">0927 400 8033</a>
-                </li>
-                <li>
-                    <span class="hotline-label">MSWDO</span>
-                    <a href="tel:09162840885" class="hotline-number">0916 284 0885</a>
-                </li>
-                <li>
-                    <span class="hotline-label" data-i18n="offline-fire-bfp">Fire (BFP)</span>
-                    <a href="tel:09360620305" class="hotline-number">0936 062 0305</a>
-                </li>
-                <li>
-                    <span class="hotline-label">DILG</span>
-                    <a href="tel:0906188086" class="hotline-number">0906 188 086</a>
-                </li>
-                <li>
-                    <span class="hotline-label">MDRRMO</span>
-                    <a href="tel:09263833744" class="hotline-number">0926 383 3744</a>
-                </li>
-                <li>
-                    <span class="hotline-label" data-i18n="offline-r2tmc">R2TMC</span>
-                    <a href="tel:09068195569" class="hotline-number">0906 819 5569</a>
-                </li>
-                <li>
-                    <span class="hotline-label" data-i18n="offline-municipal-hall">Municipal Hall</span>
-                    <a href="tel:0788053581" class="hotline-number">(078) 805-3581</a>
-                </li>
-            </ul>
-        </div>
+      <div class="hotlines">
+        <h2 data-i18n="offline-emergency-hotlines-solano-nueva-vizcaya">
+          Emergency Hotlines - Solano, Nueva Vizcaya
+        </h2>
+        <ul class="hotline-list" aria-label="Emergency contact numbers">
+          <li>
+            <span class="hotline-label" data-i18n="offline-police-pnp">Police (PNP)</span>
+            <a href="tel:09274008033" class="hotline-number">0927 400 8033</a>
+          </li>
+          <li>
+            <span class="hotline-label">MSWDO</span>
+            <a href="tel:09162840885" class="hotline-number">0916 284 0885</a>
+          </li>
+          <li>
+            <span class="hotline-label" data-i18n="offline-fire-bfp">Fire (BFP)</span>
+            <a href="tel:09360620305" class="hotline-number">0936 062 0305</a>
+          </li>
+          <li>
+            <span class="hotline-label">DILG</span>
+            <a href="tel:0906188086" class="hotline-number">0906 188 086</a>
+          </li>
+          <li>
+            <span class="hotline-label">MDRRMO</span>
+            <a href="tel:09263833744" class="hotline-number">0926 383 3744</a>
+          </li>
+          <li>
+            <span class="hotline-label" data-i18n="offline-r2tmc">R2TMC</span>
+            <a href="tel:09068195569" class="hotline-number">0906 819 5569</a>
+          </li>
+          <li>
+            <span class="hotline-label" data-i18n="offline-municipal-hall">Municipal Hall</span>
+            <a href="tel:0788053581" class="hotline-number">(078) 805-3581</a>
+          </li>
+        </ul>
+      </div>
 
-        <button class="retry-btn" onclick="window.location.reload()">Try Again</button>
+      <button class="retry-btn" onclick="window.location.reload()">Try Again</button>
     </main>
-</body>
+  </body>
 </html>

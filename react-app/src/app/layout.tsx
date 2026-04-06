@@ -7,7 +7,7 @@ import Footer from '@/components/layout/Footer';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 
 export const viewport: Viewport = {
-  themeColor: '#1a5f2a',
+  themeColor: '#0032a0',
 };
 
 export const metadata: Metadata = {
@@ -22,10 +22,22 @@ export const metadata: Metadata = {
     siteName: 'BetterSolano.org',
     title: 'BetterSolano.org | Official Portal',
     description: 'Empowering the people of Solano with transparent access to services.',
-    images: [{ url: 'https://bettersolano.org/assets/images/banners/opengraph.png', width: 1200, height: 630 }],
+    images: [
+      {
+        url: 'https://bettersolano.org/assets/images/banners/opengraph.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   twitter: { card: 'summary_large_image' },
   icons: { icon: '/assets/images/logo/favicon.svg', apple: '/assets/images/logo/favicon.svg' },
+  manifest: '/manifest.webmanifest',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'BetterSolano',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -34,8 +46,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
         <link rel="stylesheet" href="/assets/css/responsive.css" />
@@ -44,14 +62,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <LanguageProvider>
-          <a href="#main-content" className="skip-link">Skip to main content</a>
+          <a href="#main-content" className="skip-link">
+            Skip to main content
+          </a>
           <HotlineBar />
           <Header />
           <InfoBar />
           <main id="main-content">{children}</main>
           <Footer />
         </LanguageProvider>
-        <Script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" strategy="lazyOnload" />
+        <Script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

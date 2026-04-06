@@ -6,10 +6,10 @@ Thank you for your interest in contributing to BetterSolano.org! This civic-tech
 
 BetterSolano.org has two versions. Choose based on your preference:
 
-| Version | Branch | Best For |
-|---------|--------|----------|
-| Static HTML | `main` | Quick fixes, content updates, contributors new to web development |
-| React + TypeScript | `react-typescript` | New features, complex UI, contributors familiar with React |
+| Version            | Branch             | Best For                                                          |
+| ------------------ | ------------------ | ----------------------------------------------------------------- |
+| Static HTML        | `main`             | Quick fixes, content updates, contributors new to web development |
+| React + TypeScript | `react-typescript` | New features, complex UI, contributors familiar with React        |
 
 Both versions are actively maintained and contributions to either are welcome.
 
@@ -112,44 +112,49 @@ Types:
 
 ## Contribution Areas
 
-| Area | Description |
-|------|-------------|
-| Bug Fixes | Fix reported issues |
-| Features | Implement new functionality |
-| Content | Update municipal service information |
-| Translations | Translate to Filipino or Ilocano |
-| Design | Improve UI/UX and accessibility |
-| Data | Verify and update statistics |
-| Documentation | Improve guides and comments |
-| API Integration | Connect real-time data sources |
-| Data Visualization | Enhance charts and graphs |
+| Area               | Description                          |
+| ------------------ | ------------------------------------ |
+| Bug Fixes          | Fix reported issues                  |
+| Features           | Implement new functionality          |
+| Content            | Update municipal service information |
+| Translations       | Translate to Filipino or Ilocano     |
+| Design             | Improve UI/UX and accessibility      |
+| Data               | Verify and update statistics         |
+| Documentation      | Improve guides and comments          |
+| API Integration    | Connect real-time data sources       |
+| Data Visualization | Enhance charts and graphs            |
 
 ## Code Guidelines
 
 ### HTML
+
 - Use semantic HTML5 elements
 - Include proper ARIA labels for accessibility
 - Validate HTML before submitting
 
 ### CSS
+
 - Follow existing naming conventions
 - Use CSS custom properties (variables)
 - Ensure responsive design
 - Test on mobile devices
 
 ### JavaScript
+
 - Keep vanilla JS (no frameworks unless approved)
 - Use meaningful variable and function names
 - Add comments for complex logic
 - Avoid global variables
 
 ### Accessibility
+
 - Maintain WCAG 2.1 compliance
 - Include alt text for images
 - Ensure keyboard navigation works
 - Test with screen readers if possible
 
 ### Data Accuracy
+
 - Only use data from official government sources
 - Include source attribution
 - Verify information before submitting

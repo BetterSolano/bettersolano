@@ -6,9 +6,9 @@ This document provides guidance for contributors migrating from the static HTML 
 
 BetterSolano.org now has two versions:
 
-| Version | Branch | Status | Technology |
-|---------|--------|--------|------------|
-| Static HTML | `main` | Stable (Legacy) | HTML5, CSS3, Vanilla JavaScript |
+| Version            | Branch             | Status             | Technology                       |
+| ------------------ | ------------------ | ------------------ | -------------------------------- |
+| Static HTML        | `main`             | Stable (Legacy)    | HTML5, CSS3, Vanilla JavaScript  |
 | React + TypeScript | `react-typescript` | Active Development | Next.js 14, React 18, TypeScript |
 
 ## Version Comparison
@@ -18,6 +18,7 @@ BetterSolano.org now has two versions:
 **Location:** Root directory (`/`)
 
 **Characteristics:**
+
 - Pure HTML5 with semantic markup
 - Vanilla CSS with custom properties
 - Vanilla JavaScript (ES6+)
@@ -25,6 +26,7 @@ BetterSolano.org now has two versions:
 - Direct file serving
 
 **Best for:**
+
 - Simple content updates
 - Quick fixes
 - Contributors unfamiliar with React
@@ -34,6 +36,7 @@ BetterSolano.org now has two versions:
 **Location:** `/react-app/` directory
 
 **Characteristics:**
+
 - Next.js 14 with App Router
 - TypeScript for type safety
 - React 18 with Server Components
@@ -41,6 +44,7 @@ BetterSolano.org now has two versions:
 - Built-in routing and SSR
 
 **Best for:**
+
 - New feature development
 - Complex UI interactions
 - Long-term maintenance
@@ -50,11 +54,11 @@ BetterSolano.org now has two versions:
 
 ### Prerequisites
 
-| Requirement | Version |
-|-------------|---------|
-| Node.js | v18 or higher |
-| npm | v9 or higher |
-| Git | Latest |
+| Requirement | Version       |
+| ----------- | ------------- |
+| Node.js     | v18 or higher |
+| npm         | v9 or higher  |
+| Git         | Latest        |
 
 ### Setup
 
@@ -116,25 +120,27 @@ bettersolano/
 
 This table shows which static HTML files correspond to which React components:
 
-| Static HTML | React Component | Location |
-|-------------|-----------------|----------|
-| `index.html` | `page.tsx` | `src/app/page.tsx` |
-| `services/index.html` | `page.tsx` | `src/app/services/page.tsx` |
-| `government/index.html` | `page.tsx` | `src/app/government/page.tsx` |
-| `budget/index.html` | `page.tsx` | `src/app/budget/page.tsx` |
-| `statistics/index.html` | `page.tsx` | `src/app/statistics/page.tsx` |
-| `contact/index.html` | `page.tsx` | `src/app/contact/page.tsx` |
+| Static HTML             | React Component | Location                      |
+| ----------------------- | --------------- | ----------------------------- |
+| `index.html`            | `page.tsx`      | `src/app/page.tsx`            |
+| `services/index.html`   | `page.tsx`      | `src/app/services/page.tsx`   |
+| `government/index.html` | `page.tsx`      | `src/app/government/page.tsx` |
+| `budget/index.html`     | `page.tsx`      | `src/app/budget/page.tsx`     |
+| `statistics/index.html` | `page.tsx`      | `src/app/statistics/page.tsx` |
+| `contact/index.html`    | `page.tsx`      | `src/app/contact/page.tsx`    |
 
 ## Key Differences
 
 ### Routing
 
 **Static HTML:** File-based with `.html` extensions
+
 ```
 /services/business.html
 ```
 
 **React:** Next.js App Router (folder-based)
+
 ```
 /services/business (maps to src/app/services/business/page.tsx)
 ```
@@ -159,13 +165,13 @@ Both versions share the same CSS files from `public/assets/css/`. The React vers
 
 ### Code Style
 
-| Guideline | Description |
-|-----------|-------------|
-| TypeScript | Use strict typing; avoid `any` |
-| Components | Functional components with hooks |
-| Naming | PascalCase for components, camelCase for functions |
-| Files | One component per file; name matches component |
-| Imports | Use absolute imports with `@/` prefix |
+| Guideline  | Description                                        |
+| ---------- | -------------------------------------------------- |
+| TypeScript | Use strict typing; avoid `any`                     |
+| Components | Functional components with hooks                   |
+| Naming     | PascalCase for components, camelCase for functions |
+| Files      | One component per file; name matches component     |
+| Imports    | Use absolute imports with `@/` prefix              |
 
 ### Creating a New Page
 
@@ -175,6 +181,7 @@ Both versions share the same CSS files from `public/assets/css/`. The React vers
 4. Add any client interactivity with `'use client'` directive
 
 Example:
+
 ```typescript
 // src/app/new-page/page.tsx
 export default function NewPage() {
@@ -193,6 +200,7 @@ export default function NewPage() {
 3. Include TypeScript interface for props
 
 Example:
+
 ```typescript
 // src/components/ExampleCard.tsx
 interface ExampleCardProps {
@@ -212,12 +220,12 @@ export default function ExampleCard({ title, description }: ExampleCardProps) {
 
 ## Transition Timeline
 
-| Phase | Timeframe | Action |
-|-------|-----------|--------|
-| Phase 1 | Current | Both versions maintained in parallel |
-| Phase 2 | 3 months | React version becomes primary for new features |
-| Phase 3 | 6 months | Evaluate community adoption |
-| Phase 4 | TBD | Static HTML moved to `legacy` branch |
+| Phase   | Timeframe | Action                                         |
+| ------- | --------- | ---------------------------------------------- |
+| Phase 1 | Current   | Both versions maintained in parallel           |
+| Phase 2 | 3 months  | React version becomes primary for new features |
+| Phase 3 | 6 months  | Evaluate community adoption                    |
+| Phase 4 | TBD       | Static HTML moved to `legacy` branch           |
 
 ## Questions and Support
 

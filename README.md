@@ -2,7 +2,7 @@
 
 A civic-tech initiative providing transparent access to municipal services, programs, and public funds of LGU Solano, Nueva Vizcaya, Philippines.
 
-![Version](https://img.shields.io/badge/version-1.1.14-green)
+![Version](https://img.shields.io/badge/version-1.1.15-green)
 ![License](https://img.shields.io/badge/license-MIT%20%7C%20CC%20BY%204.0-blue)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
@@ -15,9 +15,9 @@ A civic-tech initiative providing transparent access to municipal services, prog
 
 A **React + TypeScript** version of BetterSolano.org is now available for contributors who prefer modern tooling and component-based architecture.
 
-| Version | Branch | Status | Documentation |
-|---------|--------|--------|---------------|
-| Static HTML | `main` | Stable | This README |
+| Version            | Branch             | Status             | Documentation                |
+| ------------------ | ------------------ | ------------------ | ---------------------------- |
+| Static HTML        | `main`             | Stable             | This README                  |
 | React + TypeScript | `react-typescript` | Active Development | [MIGRATION.md](MIGRATION.md) |
 
 Both versions are actively maintained. New contributors may choose either version based on their preference. For migration guidance, see [MIGRATION.md](MIGRATION.md).
@@ -47,47 +47,52 @@ Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 
 ## Technology Stack
 
-| Category | Technologies |
-|----------|-------------|
-| **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
-| **Styling** | Custom CSS, CSS Variables, Flexbox, CSS Grid, Responsive Design |
-| **Icons** | Bootstrap Icons (CDN) |
-| **Fonts** | Google Fonts (Inter) |
-| **Maps** | Leaflet.js, OpenStreetMap |
-| **Charts** | Chart.js (Canvas-based) |
-| **Animations** | Lottie (dotlottie-player web component) |
-| **Data Format** | JSON |
-| **APIs** | Open-Meteo (Weather), ExchangeRate API (Currency) |
-| **Build Tools** | Node.js, npm, Bash, Babel (@babel/preset-env) |
-| **Minification** | html-minifier-terser, clean-css-cli, terser |
-| **Version Control** | Git, GitHub |
-| **Server** | Apache (.htaccess), mod_rewrite, mod_deflate |
-| **Hosting** | cPanel (Production), Python HTTP Server (Development) |
-| **SEO** | Open Graph, Twitter Cards, XML Sitemap, robots.txt |
-| **Security** | HTTPS, CSP Headers, HSTS, X-Frame-Options |
-| **Analytics** | Google Analytics (gtag.js) |
-| **Accessibility** | WCAG 2.1, ARIA, Semantic HTML |
-| **Performance** | GZIP Compression, Browser Caching, Asset Minification |
+| Category            | Technologies                                                           |
+| ------------------- | ---------------------------------------------------------------------- |
+| **Frontend**        | HTML5, CSS3, JavaScript (ES6+)                                         |
+| **Styling**         | Custom CSS, CSS Variables, Flexbox, CSS Grid, Responsive Design        |
+| **Icons**           | Bootstrap Icons (CDN)                                                  |
+| **Fonts**           | Google Fonts (Inter)                                                   |
+| **Maps**            | Leaflet.js, OpenStreetMap                                              |
+| **Charts**          | Chart.js (Canvas-based)                                                |
+| **Animations**      | Lottie (dotlottie-player web component)                                |
+| **Data Format**     | JSON                                                                   |
+| **APIs**            | Open-Meteo (Weather), ExchangeRate API (Currency)                      |
+| **Build Tools**     | Node.js, npm, Bash, Babel (@babel/preset-env)                          |
+| **Minification**    | html-minifier-terser, clean-css-cli, terser                            |
+| **Code Formatting** | Prettier (auto-format on commit via git pre-commit hook)               |
+| **Version Control** | Git, GitHub                                                            |
+| **Server**          | Apache (.htaccess), mod_rewrite, mod_deflate                           |
+| **Hosting**         | cPanel (Production), Python HTTP Server (Development)                  |
+| **PWA**             | Service Worker (versioned caching), Web App Manifest, offline fallback |
+| **SEO**             | Open Graph, Twitter Cards, XML Sitemap, robots.txt                     |
+| **Security**        | HTTPS, CSP Headers, HSTS, X-Frame-Options                              |
+| **Analytics**       | Google Analytics (gtag.js)                                             |
+| **Accessibility**   | WCAG 2.1, ARIA, Semantic HTML                                          |
+| **Performance**     | GZIP Compression, Browser Caching, Asset Minification                  |
 
 ## Key Features
 
-| Feature | Description |
-|---------|-------------|
-| **Municipal Services Directory** | Comprehensive guide to all LGU services with requirements, fees, and processing times |
-| **Government Officials** | Directory of elected officials and department heads with contact information |
-| **Budget Transparency** | Financial reports, income/expenditure breakdowns, and infrastructure projects |
-| **Legislative Documents** | Searchable database of ordinances and resolutions from Sangguniang Bayan |
-| **Municipal Statistics** | Demographics, economic data, and competitive index rankings |
-| **Appointment Services** | Online appointment scheduling integration with the Mayor's Office (OASYS), featuring branded Lottie animation |
-| **Solano Quiz** | Interactive quiz about Solano history and culture, linked from homepage CTA and footer across all pages |
-| **Real-time Information** | Live weather updates, currency exchange rates, and Philippine time |
-| **Multi-language Support** | Full i18n coverage in English, Filipino, and Ilocano (5,546 keys per language with perfect parity) |
-| **Clean URLs** | SEO-friendly URLs without `.html` extensions, powered by Apache mod_rewrite |
-| **Brief History of Solano** | Interactive timeline (1760–1957) with fully translated cards in all three languages |
-| **Mobile Navigation** | Responsive menu with GPU-accelerated open/close transitions, body scroll lock, animation guard against rapid toggles, debounced resize handling, touch-safe hover scoping, click-outside-to-close, and focus trap |
-| **Accessibility** | WCAG 2.1 compliant with skip links, ARIA labels, keyboard navigation, and semantic HTML |
-| **SEO Optimized** | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap |
-| **Performance** | 90%+ size reduction through minification, GZIP compression, Babel transpilation, and browser caching |
+| Feature                          | Description                                                                                                                                                                                                       |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Municipal Services Directory** | Comprehensive guide to all LGU services with requirements, fees, and processing times                                                                                                                             |
+| **Government Officials**         | Directory of elected officials and department heads with contact information                                                                                                                                      |
+| **Budget Transparency**          | Financial reports, income/expenditure breakdowns, and infrastructure projects                                                                                                                                     |
+| **Legislative Documents**        | Searchable database of ordinances and resolutions from Sangguniang Bayan                                                                                                                                          |
+| **Municipal Statistics**         | Demographics, economic data, and competitive index rankings                                                                                                                                                       |
+| **Appointment Services**         | Online appointment scheduling integration with the Mayor's Office (OASYS), featuring branded Lottie animation                                                                                                     |
+| **Solano Quiz**                  | Interactive quiz about Solano history and culture, linked from homepage CTA and footer across all pages                                                                                                           |
+| **Real-time Information**        | Live weather updates, currency exchange rates, and Philippine time                                                                                                                                                |
+| **Emergency Hotline Marquee**    | Clickable scrolling marquee for emergency contacts on tablet and mobile viewports, with pause-on-hover/focus accessibility                                                                                        |
+| **Progressive Web App**          | Installable PWA with versioned service worker caching (static + runtime), offline fallback page with emergency hotlines, push notification foundation, and SW update banner                                       |
+| **Auto Version Management**      | Dynamic version display from `version.json`, auto-bumped on every git commit via pre-commit hook, synced across all 51+ HTML files, `package.json`, and React app                                                 |
+| **Multi-language Support**       | Full i18n coverage in English, Filipino, and Ilocano (5,546 keys per language with perfect parity)                                                                                                                |
+| **Clean URLs**                   | SEO-friendly URLs without `.html` extensions, powered by Apache mod_rewrite                                                                                                                                       |
+| **Brief History of Solano**      | Interactive timeline (1760–1957) with fully translated cards in all three languages                                                                                                                               |
+| **Mobile Navigation**            | Responsive menu with GPU-accelerated open/close transitions, body scroll lock, animation guard against rapid toggles, debounced resize handling, touch-safe hover scoping, click-outside-to-close, and focus trap |
+| **Accessibility**                | WCAG 2.1 compliant with skip links, ARIA labels, keyboard navigation, and semantic HTML                                                                                                                           |
+| **SEO Optimized**                | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap                                                                                                                                            |
+| **Performance**                  | 90%+ size reduction through minification, GZIP compression, Babel transpilation, and browser caching                                                                                                              |
 
 ## Quick Start
 
@@ -101,8 +106,8 @@ cd bettersolano
 # Install dependencies
 npm install
 
-# Start development server
-npm run dev
+# Start development server (with clean URL support)
+py serve.py --port 8000 --directory .
 
 # Open in browser
 # http://localhost:8000
@@ -112,27 +117,30 @@ npm run dev
 
 ### Prerequisites
 
-| Requirement | Version | Purpose |
-|-------------|---------|---------|
-| Node.js | v16+ | Build tools and package management |
-| npm | v8+ | Dependency management |
-| Python 3 | v3.x | Local development server |
-| Git | Latest | Version control |
+| Requirement | Version | Purpose                            |
+| ----------- | ------- | ---------------------------------- |
+| Node.js     | v16+    | Build tools and package management |
+| npm         | v8+     | Dependency management              |
+| Python 3    | v3.x    | Local development server           |
+| Git         | Latest  | Version control                    |
 
 ### Setup Steps
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/BetterSolano/bettersolano.git
 cd bettersolano
 ```
 
 2. **Install dependencies**
+
 ```bash
 npm install
 ```
 
 3. **Start the development server**
+
 ```bash
 npm run dev
 ```
@@ -145,22 +153,25 @@ npm run dev
 
 ### Development Commands
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start local development server (port 8000) |
-| `npm run build` | Build minified production files to `dist/` (auto-bumps patch version) |
-| `npm run build -- --no-bump` | Build without incrementing the version number |
-| `npm run build:minor` | Bump minor version and build |
-| `npm run build:major` | Bump major version and build |
-| `npm run serve:dist` | Serve production build (port 8080) |
-| `npm run version:check` | Display current version |
-| `npm run version:patch` | Bump patch version only |
-| `npm run version:minor` | Bump minor version only |
-| `npm run version:major` | Bump major version only |
+| Command                      | Description                                                           |
+| ---------------------------- | --------------------------------------------------------------------- |
+| `npm run dev`                | Start local development server (port 8000)                            |
+| `npm run build`              | Build minified production files to `dist/` (auto-bumps patch version) |
+| `npm run build -- --no-bump` | Build without incrementing the version number                         |
+| `npm run build:minor`        | Bump minor version and build                                          |
+| `npm run build:major`        | Bump major version and build                                          |
+| `npm run serve:dist`         | Serve production build (port 8080)                                    |
+| `npm run version:check`      | Display current version                                               |
+| `npm run version:patch`      | Bump patch version only                                               |
+| `npm run version:minor`      | Bump minor version only                                               |
+| `npm run version:major`      | Bump major version only                                               |
+| `npm run format`             | Format all files with Prettier                                        |
+| `npm run format:check`       | Check formatting without writing changes                              |
 
 ### Production Deployment
 
 1. **Build production files**
+
 ```bash
 npm run build
 ```
@@ -175,20 +186,20 @@ npm run build
 
 ### File Permissions (cPanel)
 
-| Type | Permission | Numeric |
-|------|------------|---------|
-| Files | rw-r--r-- | 644 |
-| Directories | rwxr-xr-x | 755 |
+| Type        | Permission | Numeric |
+| ----------- | ---------- | ------- |
+| Files       | rw-r--r--  | 644     |
+| Directories | rwxr-xr-x  | 755     |
 
 ## Multi-language Support (i18n)
 
 The site supports three languages with full translation coverage:
 
-| Language | Code | Status |
-|----------|------|--------|
-| English | `en` | Complete (5,546 keys) |
+| Language | Code  | Status                |
+| -------- | ----- | --------------------- |
+| English  | `en`  | Complete (5,546 keys) |
 | Filipino | `fil` | Complete (5,546 keys) |
-| Ilocano | `ilo` | Complete (5,546 keys) |
+| Ilocano  | `ilo` | Complete (5,546 keys) |
 
 The static site uses a `TranslationEngine` in `assets/js/translations.js` with `data-i18n` attributes on HTML elements. The React version uses a `LanguageContext` provider with a `t()` function. Both systems support fallback to English for any missing keys.
 
@@ -196,11 +207,11 @@ The static site uses a `TranslationEngine` in `assets/js/translations.js` with `
 
 The project maintains three synchronized versions:
 
-| Version | Location | Purpose |
-|---------|----------|---------|
-| **Static Legacy** | Root HTML files | Source of truth for all 52 pages |
-| **React + TypeScript** | `react-app/` | Modern component-based homepage |
-| **Production Dist** | `dist/` | Minified build for cPanel deployment |
+| Version                | Location        | Purpose                              |
+| ---------------------- | --------------- | ------------------------------------ |
+| **Static Legacy**      | Root HTML files | Source of truth for all 52 pages     |
+| **React + TypeScript** | `react-app/`    | Modern component-based homepage      |
+| **Production Dist**    | `dist/`         | Minified build for cPanel deployment |
 
 All CSS, images, animations, and translations are kept in sync across all three versions. The build script (`build.sh`) generates the dist from the static legacy source.
 
@@ -222,9 +233,9 @@ bettersolano/
 ├── react-app/            # React + TypeScript version
 │   ├── src/
 │   │   ├── app/          # Next.js app router (layout, page)
-│   │   ├── components/   # React components (Header, Footer)
+│   │   ├── components/   # React components (Header, Footer, HotlineBar, InfoBar, SearchAutocomplete)
 │   │   └── contexts/     # LanguageContext (i18n provider)
-│   └── public/           # Static assets (synced with root assets/)
+│   └── public/           # Static assets, manifest, version.json (synced with root)
 ├── services/             # Service category pages (11 pages)
 ├── service-details/      # Individual service pages (22 pages)
 ├── government/           # Government directory pages
@@ -236,12 +247,17 @@ bettersolano/
 ├── faq/                  # Frequently asked questions
 ├── sitemap/              # HTML sitemap page
 ├── scripts/              # Build, version, and translation scripts
+│   └── bump-version.js   # Cross-platform Node.js version bump script
 ├── dist/                 # Production build output (gitignored)
 ├── index.html            # Homepage
+├── sw.js                 # Service worker (versioned caching, offline support)
+├── manifest.webmanifest  # PWA web app manifest
+├── offline.html          # Offline fallback page with emergency hotlines
+├── serve.py              # Local dev server with clean URL rewriting
 ├── .htaccess             # Apache configuration (CSP, rewrites, caching)
-├── sitemap.xml           # XML sitemap (SEO)
-├── robots.txt            # Search engine directives
-├── version.json          # Version tracking
+├── .prettierrc           # Prettier code formatting configuration
+├── .prettierignore       # Prettier ignore patterns
+├── version.json          # Version tracking (auto-bumped on commit)
 ├── build.sh              # Build automation script
 ├── babel.config.json     # Babel transpilation configuration
 ├── package.json          # Node.js configuration
@@ -250,7 +266,57 @@ bettersolano/
 
 ## Recent Changes
 
+### v1.1.15 — Header, PWA, Version Automation & Code Quality
+
+#### Responsive Header & Hotline Marquee
+
+- Standardized header vertical spacing (padding, min-height, logo size) across desktop (12px/48px), tablet (10px/40px), mobile (8px/36px), and small mobile (6px/32px) breakpoints
+- Raised tablet breakpoint from 991px to 1024px to properly capture iPad Pro portrait (1024px) and iPad Air landscape
+- Converted emergency hotline bar into a clickable scrolling marquee on all tablet and mobile viewports (≤1024px) with pause-on-hover/focus for accessibility
+- Centered hamburger menu icon between logo and language toggle on tablet viewports using flexbox ordering (logo → hamburger → lang toggle)
+- Tablet footer: left-aligned BetterSolano logo, tagline, and social icons to match the visual hierarchy of the brand column
+
+#### Progressive Web App (PWA)
+
+- Rewrote `sw.js` with dual-cache architecture: `STATIC_CACHE` (precached app shell) and `RUNTIME_CACHE` (dynamic content, 80-item FIFO, 7-day TTL)
+- Navigation uses network-first with offline fallback; static assets use stale-while-revalidate; data/API uses network-first with cache fallback
+- Added push notification and background sync foundations
+- Enhanced SW registration with 30-minute update polling and non-intrusive refresh banner on new version activation
+- Upgraded `manifest.webmanifest` with maskable icons, app shortcuts (Services, Contact, Government, Transparency), and `orientation: any`
+- Added iOS PWA meta tags (`apple-mobile-web-app-capable`, `apple-mobile-web-app-status-bar-style`, `apple-mobile-web-app-title`)
+- Fixed theme-color from old green (#1a5f2a) to brand blue (#0032a0) across all files
+- Updated offline fallback page colors to match brand
+
+#### Automatic Version Management
+
+- Created cross-platform `scripts/bump-version.js` (Node.js) replacing the bash-only `version.sh` for Windows compatibility
+- Version bump updates `version.json`, `package.json`, all 51+ HTML files, and syncs to `react-app/public/version.json`
+- Git pre-commit hook auto-bumps patch version on every commit (skips version-only commits to prevent loops)
+- Footer version displayed dynamically at runtime via `version.js` fetching from `version.json`
+
+#### React App Sync
+
+- Created `HotlineBar.tsx` component with tablet/mobile marquee matching static site behavior
+- Created `InfoBar.tsx` component with live exchange rates, weather, and Philippine time
+- Created `SearchAutocomplete.tsx` component with service search dropdown
+- Updated `Footer.tsx` to dynamically fetch version from `/version.json` instead of hardcoded value
+- Updated `Header.tsx` breakpoint from 991px to 1024px, fixed ARIA attribute string values
+- Updated `layout.tsx` with corrected theme-color, manifest link, and Apple PWA meta tags
+- Synced `manifest.webmanifest`, `version.json`, and SW update banner CSS to react-app
+
+#### Code Quality & Tooling
+
+- Installed Prettier as dev dependency with project-wide configuration (`.prettierrc`, `.prettierignore`)
+- Formatted entire codebase (120+ files) for consistent code style
+- Git pre-commit hook auto-formats staged files with Prettier before each commit
+- Fixed `privacy/index.html` malformed HTML (duplicate `</body></html>` closing tags)
+- Resolved all npm vulnerabilities: upgraded `@lhci/cli` to ^0.15.1, added `tmp` override to 0.2.5 (0 vulnerabilities)
+- Added `npm run format` and `npm run format:check` scripts
+
+### Previous Changes
+
 ### Content & Features
+
 - Added Solano Quiz CTA section on homepage with branded Lottie animation (brand blue `#0032A0`)
 - Added Solano Quiz link to footer Quick Links across all 51 HTML pages and React Footer
 - Added Brief History of Solano interactive timeline section on homepage (1760–1957)
@@ -258,6 +324,7 @@ bettersolano/
 - Added Abakada education tools CTA on services/education page with local SVG logo
 
 ### Internationalization (i18n)
+
 - Upgraded translation engine to 5,546 keys per language with perfect en/fil/ilo parity
 - Fixed Brief History timeline cards — full paragraph translations now applied via `data-i18n` on `<p>` elements (previously only proper nouns inside `<strong>` tags were translated, leaving surrounding English text intact)
 - Corrected Filipino translations: proper religious title "Padre" (not "Ama"), fully translated historical paragraphs (no half-English)
@@ -265,21 +332,25 @@ bettersolano/
 - Added 54 translation keys for Solano Quiz footer link across all page contexts
 
 ### Footer & Copyright
+
 - Standardized copyright across all 51 HTML files and React Footer: three styled spans (`footer-copyright-text`, `footer-copyright-license`, `footer-copyright-disclaimer`)
 - Updated copyright year to 2026, name to "BetterSolano.org"
 - Footer copyright uses `flex-wrap: wrap; gap: 6px` layout with version badge right-aligned via `margin-left: auto`
 - Removed trailing period after "BetterSolano.org" from all pages and all 3 translation languages
 
 ### Clean URLs
+
 - Removed `.html` extensions from 621 navigation links across 48 HTML files
 - Apache `.htaccess` rewrite rules handle clean URL resolution on cPanel
 
 ### Build & Deployment
+
 - Updated `build.sh` rsync excludes to filter out dev artifacts (`.backup`, `.md`, `package*.json`, `scripts/`, `docs/`, etc.)
 - Production dist: 52 HTML pages, 106 total files, 3.9MB, zero dev artifacts
 - Updated CSP headers: added `worker-src 'self' blob:`, `blob:` to `connect-src`, CDN domains to `connect-src` for dotlottie-player and Bootstrap Icons compatibility
 
 ### Cross-Version Sync
+
 - All CSS files synced between legacy and React: `footer.css`, `style.css`, `responsive.css`, `accessibility.css`
 - All image and animation assets synced between legacy and React
 - React LanguageContext updated with matching translation keys for homepage sections
@@ -309,65 +380,66 @@ We welcome contributions from everyone! Whether you're a developer, designer, da
 
 ### Contribution Areas
 
-| Area | Description |
-|------|-------------|
-| **Bug Fixes** | Report issues or submit fixes for existing bugs |
-| **Features** | Propose or implement new functionality |
-| **Content** | Update service information, add missing municipal data |
-| **Translations** | Help translate content to Filipino or Ilocano |
-| **Design** | Improve UI/UX, accessibility, and visual consistency |
-| **Data** | Verify and update municipal statistics and records |
-| **Documentation** | Enhance README, code comments, and guides |
-| **API Integration** | Propose or implement API connections for real-time data feeds |
-| **Data Visualization** | Enhance charts, graphs, and interactive presentations |
+| Area                   | Description                                                   |
+| ---------------------- | ------------------------------------------------------------- |
+| **Bug Fixes**          | Report issues or submit fixes for existing bugs               |
+| **Features**           | Propose or implement new functionality                        |
+| **Content**            | Update service information, add missing municipal data        |
+| **Translations**       | Help translate content to Filipino or Ilocano                 |
+| **Design**             | Improve UI/UX, accessibility, and visual consistency          |
+| **Data**               | Verify and update municipal statistics and records            |
+| **Documentation**      | Enhance README, code comments, and guides                     |
+| **API Integration**    | Propose or implement API connections for real-time data feeds |
+| **Data Visualization** | Enhance charts, graphs, and interactive presentations         |
 
 ### Code Style Guidelines
 
-| Guideline | Description |
-|-----------|-------------|
-| **HTML** | Use semantic HTML5 elements; validate before committing |
-| **CSS** | Follow BEM naming conventions; use CSS custom properties |
-| **JavaScript** | Keep vanilla JS unless proposing framework for data visualization |
-| **Naming** | Use meaningful, descriptive variable and function names |
-| **Comments** | Add comments for complex logic and non-obvious implementations |
-| **Accessibility** | Ensure WCAG 2.1 compliance (alt text, ARIA, keyboard navigation) |
-| **Performance** | Optimize images; minimize DOM manipulation |
-| **Testing** | Test on Chrome, Firefox, Safari, Edge; test mobile responsiveness |
-| **Validation** | Validate HTML/CSS before pull requests |
+| Guideline         | Description                                                              |
+| ----------------- | ------------------------------------------------------------------------ |
+| **Formatting**    | Prettier auto-formats on commit; run `npm run format` to format manually |
+| **HTML**          | Use semantic HTML5 elements; validate before committing                  |
+| **CSS**           | Follow BEM naming conventions; use CSS custom properties                 |
+| **JavaScript**    | Keep vanilla JS unless proposing framework for data visualization        |
+| **Naming**        | Use meaningful, descriptive variable and function names                  |
+| **Comments**      | Add comments for complex logic and non-obvious implementations           |
+| **Accessibility** | Ensure WCAG 2.1 compliance (alt text, ARIA, keyboard navigation)         |
+| **Performance**   | Optimize images; minimize DOM manipulation                               |
+| **Testing**       | Test on Chrome, Firefox, Safari, Edge; test mobile responsiveness        |
+| **Validation**    | Validate HTML/CSS before pull requests                                   |
 
 ## Data Sources
 
 All public information is sourced from official government portals:
 
-| Source | URL | Data Type |
-|--------|-----|-----------|
-| LGU Solano Official Website | [solano.gov.ph](https://solano.gov.ph/) | Services, Officials |
-| Sangguniang Bayan ng Solano | [sangguniangbayan.solano.gov.ph](https://sangguniangbayan.solano.gov.ph/) | Ordinances, Resolutions |
-| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/) | Budget, Financial Reports |
-| Philippine Statistics Authority | [psa.gov.ph](https://psa.gov.ph/) | Demographics, Census |
-| DTI CMCI Portal | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/) | Competitive Index |
+| Source                             | URL                                                                       | Data Type                 |
+| ---------------------------------- | ------------------------------------------------------------------------- | ------------------------- |
+| LGU Solano Official Website        | [solano.gov.ph](https://solano.gov.ph/)                                   | Services, Officials       |
+| Sangguniang Bayan ng Solano        | [sangguniangbayan.solano.gov.ph](https://sangguniangbayan.solano.gov.ph/) | Ordinances, Resolutions   |
+| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/)                                       | Budget, Financial Reports |
+| Philippine Statistics Authority    | [psa.gov.ph](https://psa.gov.ph/)                                         | Demographics, Census      |
+| DTI CMCI Portal                    | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/)                               | Competitive Index         |
 
 ## License
 
 This project is dual-licensed:
 
-| License | Applies To | Details |
-|---------|------------|---------|
-| MIT License | Source Code | Free to use, modify, and distribute |
-| CC BY 4.0 | Content | Attribution required for content reuse |
+| License     | Applies To  | Details                                |
+| ----------- | ----------- | -------------------------------------- |
+| MIT License | Source Code | Free to use, modify, and distribute    |
+| CC BY 4.0   | Content     | Attribution required for content reuse |
 
 See [LICENSE](LICENSE) for full details.
 
 ## Contact
 
-| Channel | Link |
-|---------|------|
-| Website | [bettersolano.org](https://bettersolano.org) |
-| Email | volunteer@bettersolano.org |
-| Facebook | [@bettersolano.org](https://www.facebook.com/bettersolano.org) |
-| LinkedIn | [BetterSolano](https://www.linkedin.com/company/bettersolano/) |
-| Discord | [Join Community](https://discord.com/invite/qeSu7RJkjQ) |
-| GitHub | [BetterSolano/bettersolano](https://github.com/BetterSolano/bettersolano) |
+| Channel  | Link                                                                      |
+| -------- | ------------------------------------------------------------------------- |
+| Website  | [bettersolano.org](https://bettersolano.org)                              |
+| Email    | volunteer@bettersolano.org                                                |
+| Facebook | [@bettersolano.org](https://www.facebook.com/bettersolano.org)            |
+| LinkedIn | [BetterSolano](https://www.linkedin.com/company/bettersolano/)            |
+| Discord  | [Join Community](https://discord.com/invite/qeSu7RJkjQ)                   |
+| GitHub   | [BetterSolano/bettersolano](https://github.com/BetterSolano/bettersolano) |
 
 ## Acknowledgments
 
@@ -384,4 +456,4 @@ Made for the people of Solano, Nueva Vizcaya
 
 ## Developer
 
-[Ramon Logan Jr.](https://ramonloganjr.com/) is a UAE-based full-stack developer and IT professional specializing in web development, design, cloud services, and cybersecurity. He is the developer behind BetterSolano.org and the founder of the small cloud-based solutions initiative, [HelloPinas.com](https://hellopinas.com). Ramon actively contributes to civic-tech efforts like [BetterGov.ph](https://bettergov.ph) and is an individual participant in the [OpenJS Foundation](https://openjsf.org/).
+[Ramon Logan Jr.](https://ramonloganjr.com/) is a UAE-based full-stack developer and IT professional specializing in web development, design, cloud services, and cybersecurity. He is the developer behind BetterSolano.org, [Abakada.org](https://abakada.org), and the founder of the small cloud-based solutions initiative, [HelloPinas.com](https://hellopinas.com). Ramon actively contributes to civic-tech efforts like [BetterGov.ph](https://bettergov.ph) and is an individual participant in the [OpenJS Foundation](https://openjsf.org/).

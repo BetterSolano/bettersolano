@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 function isMobileNav(): boolean {
-  return typeof window !== 'undefined' && window.matchMedia('(max-width: 991px)').matches;
+  return typeof window !== 'undefined' && window.matchMedia('(max-width: 1024px)').matches;
 }
 
 export default function Header() {
@@ -38,13 +38,15 @@ export default function Header() {
     setMobileMenuOpen(false);
     setOpenDropdown(null);
     unlockBodyScroll();
-    setTimeout(() => { isAnimatingRef.current = false; }, 320);
+    setTimeout(() => {
+      isAnimatingRef.current = false;
+    }, 320);
   }, [unlockBodyScroll]);
 
   const toggleDropdown = useCallback((index: number, e: React.MouseEvent) => {
     if (isMobileNav()) {
       e.preventDefault();
-      setOpenDropdown(prev => prev === index ? null : index);
+      setOpenDropdown((prev) => (prev === index ? null : index));
     }
   }, []);
 
@@ -67,8 +69,10 @@ export default function Header() {
     function handleClickOutside(e: MouseEvent) {
       const target = e.target as Node;
       if (
-        navRef.current && !navRef.current.contains(target) &&
-        toggleRef.current && !toggleRef.current.contains(target)
+        navRef.current &&
+        !navRef.current.contains(target) &&
+        toggleRef.current &&
+        !toggleRef.current.contains(target)
       ) {
         closeMenu();
       }
@@ -118,39 +122,101 @@ export default function Header() {
       <div className="container header-inner">
         <div className="logo-container">
           <Link href="/">
-            <img src="/assets/images/logo/better-solano-logo.svg" alt="Better Solano Logo" className="logo-img" />
+            <img
+              src="/assets/images/logo/better-solano-logo.svg"
+              alt="Better Solano Logo"
+              className="logo-img"
+            />
           </Link>
         </div>
 
-        <nav ref={navRef} className={`main-nav ${mobileMenuOpen ? 'active' : ''}`} aria-label="Main Navigation">
+        <nav
+          ref={navRef}
+          className={`main-nav ${mobileMenuOpen ? 'active' : ''}`}
+          aria-label="Main Navigation"
+        >
           <ul>
-            <li><Link href="/" className={pathname === '/' ? 'active' : ''}>{t('nav-home')}</Link></li>
+            <li>
+              <Link href="/" className={pathname === '/' ? 'active' : ''}>
+                {t('nav-home')}
+              </Link>
+            </li>
             <li className={`has-dropdown ${openDropdown === 0 ? 'dropdown-open' : ''}`}>
-              <Link href="/services" aria-haspopup="true" aria-expanded={openDropdown === 0} onClick={(e) => toggleDropdown(0, e)}>{t('nav-services')}</Link>
+              <Link
+                href="/services"
+                aria-haspopup="true"
+                aria-expanded={openDropdown === 0 ? 'true' : 'false'}
+                onClick={(e) => toggleDropdown(0, e)}
+              >
+                {t('nav-services')}
+              </Link>
               <ul className="dropdown-menu">
-                <li><Link href="/services/certificates">{t('dropdown-certificates')}</Link></li>
-                <li><Link href="/services/business">{t('dropdown-business')}</Link></li>
-                <li><Link href="/services/tax-payments">{t('dropdown-tax-payments')}</Link></li>
-                <li><Link href="/services/social-services">{t('dropdown-social-services')}</Link></li>
-                <li><Link href="/services/health">{t('dropdown-health')}</Link></li>
-                <li><Link href="/services/agriculture">{t('dropdown-agriculture')}</Link></li>
-                <li><Link href="/services/infrastructure">{t('dropdown-infrastructure')}</Link></li>
-                <li><Link href="/services/education">{t('dropdown-education')}</Link></li>
-                <li><Link href="/services/public-safety">{t('dropdown-public-safety')}</Link></li>
-                <li><Link href="/services/environment">{t('dropdown-environment')}</Link></li>
+                <li>
+                  <Link href="/services/certificates">{t('dropdown-certificates')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/business">{t('dropdown-business')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/tax-payments">{t('dropdown-tax-payments')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/social-services">{t('dropdown-social-services')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/health">{t('dropdown-health')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/agriculture">{t('dropdown-agriculture')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/infrastructure">{t('dropdown-infrastructure')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/education">{t('dropdown-education')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/public-safety">{t('dropdown-public-safety')}</Link>
+                </li>
+                <li>
+                  <Link href="/services/environment">{t('dropdown-environment')}</Link>
+                </li>
               </ul>
             </li>
-            <li><Link href="/government">{t('nav-government')}</Link></li>
-            <li><Link href="/statistics">{t('nav-statistics')}</Link></li>
+            <li>
+              <Link href="/government">{t('nav-government')}</Link>
+            </li>
+            <li>
+              <Link href="/statistics">{t('nav-statistics')}</Link>
+            </li>
             <li className={`has-dropdown ${openDropdown === 1 ? 'dropdown-open' : ''}`}>
-              <Link href="/legislative" aria-haspopup="true" aria-expanded={openDropdown === 1} onClick={(e) => toggleDropdown(1, e)}>{t('nav-legislative')}</Link>
+              <Link
+                href="/legislative"
+                aria-haspopup="true"
+                aria-expanded={openDropdown === 1 ? 'true' : 'false'}
+                onClick={(e) => toggleDropdown(1, e)}
+              >
+                {t('nav-legislative')}
+              </Link>
               <ul className="dropdown-menu">
-                <li><Link href="/legislative/ordinance-framework">{t('dropdown-ordinance-framework')}</Link></li>
-                <li><Link href="/legislative/resolution-framework">{t('dropdown-resolution-framework')}</Link></li>
+                <li>
+                  <Link href="/legislative/ordinance-framework">
+                    {t('dropdown-ordinance-framework')}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/legislative/resolution-framework">
+                    {t('dropdown-resolution-framework')}
+                  </Link>
+                </li>
               </ul>
             </li>
-            <li><Link href="/budget">{t('nav-transparency')}</Link></li>
-            <li><Link href="/contact">{t('nav-contact')}</Link></li>
+            <li>
+              <Link href="/budget">{t('nav-transparency')}</Link>
+            </li>
+            <li>
+              <Link href="/contact">{t('nav-contact')}</Link>
+            </li>
           </ul>
         </nav>
 
@@ -195,11 +261,13 @@ export default function Header() {
               isAnimatingRef.current = true;
               setMobileMenuOpen(true);
               lockBodyScroll();
-              setTimeout(() => { isAnimatingRef.current = false; }, 320);
+              setTimeout(() => {
+                isAnimatingRef.current = false;
+              }, 320);
             }
           }}
           aria-label="Toggle Navigation"
-          aria-expanded={mobileMenuOpen}
+          aria-expanded={mobileMenuOpen ? 'true' : 'false'}
         >
           <i className={`bi ${mobileMenuOpen ? 'bi-x-lg' : 'bi-list'}`} aria-hidden="true"></i>
         </button>
