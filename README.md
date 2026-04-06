@@ -64,7 +64,7 @@ Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 | **Version Control** | Git, GitHub                                                            |
 | **Server**          | Apache (.htaccess), mod_rewrite, mod_deflate                           |
 | **Hosting**         | cPanel (Production), Python HTTP Server (Development)                  |
-| **PWA**             | Service Worker (versioned caching), Web App Manifest, offline fallback |
+| **PWA**             | Service Worker (versioned caching, install prompt, seamless updates), Web App Manifest, offline fallback |
 | **SEO**             | Open Graph, Twitter Cards, XML Sitemap, robots.txt                     |
 | **Security**        | HTTPS, CSP Headers, HSTS, X-Frame-Options                              |
 | **Analytics**       | Google Analytics (gtag.js)                                             |
@@ -84,7 +84,7 @@ Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 | **Solano Quiz**                  | Interactive quiz about Solano history and culture, linked from homepage CTA and footer across all pages                                                                                                           |
 | **Real-time Information**        | Live weather updates, currency exchange rates, and Philippine time                                                                                                                                                |
 | **Emergency Hotline Marquee**    | Clickable scrolling marquee for emergency contacts on tablet and mobile viewports, with pause-on-hover/focus accessibility                                                                                        |
-| **Progressive Web App**          | Installable PWA with versioned service worker caching (static + runtime), offline fallback page with emergency hotlines, push notification foundation, and SW update banner                                       |
+| **Progressive Web App**          | Installable PWA with "Install App" prompt, seamless auto-updates via skipWaiting (no manual refresh), versioned service worker caching (static + runtime), offline fallback page with emergency hotlines, push notification foundation |
 | **Auto Version Management**      | Dynamic version display from `version.json`, auto-bumped on every git commit via pre-commit hook, synced across all 51+ HTML files, `package.json`, and React app                                                 |
 | **Multi-language Support**       | Full i18n coverage in English, Filipino, and Ilocano (5,546 keys per language with perfect parity)                                                                                                                |
 | **Clean URLs**                   | SEO-friendly URLs without `.html` extensions, powered by Apache mod_rewrite                                                                                                                                       |
@@ -233,7 +233,7 @@ bettersolano/
 ├── react-app/            # React + TypeScript version
 │   ├── src/
 │   │   ├── app/          # Next.js app router (layout, page)
-│   │   ├── components/   # React components (Header, Footer, HotlineBar, InfoBar, SearchAutocomplete)
+│   │   ├── components/   # React components (Header, Footer, HotlineBar, InfoBar, SearchAutocomplete, PWAManager)
 │   │   └── contexts/     # LanguageContext (i18n provider)
 │   └── public/           # Static assets, manifest, version.json (synced with root)
 ├── services/             # Service category pages (11 pages)
@@ -268,6 +268,24 @@ bettersolano/
 
 ### v1.1.15 — Header, PWA, Version Automation & Code Quality
 
+#### PWA Install Prompt & Seamless Updates
+
+- Added "Install App" prompt banner using the `beforeinstallprompt` API with Install/Dismiss buttons, respecting standalone mode and session dismissal
+- Replaced manual-refresh update flow with seamless `skipWaiting` + `controllerchange` auto-reload pattern
+- Service worker now accepts `SKIP_WAITING` message from clients to activate waiting worker on demand
+- Install banner goes full-width (no border-radius, no margins) on mobile viewports (<=575px) with slide-up animation
+- Created `PWAManager.tsx` React component handling both install prompt and SW update lifecycle
+- Added `.pwa-install-banner` CSS styles to both static and React versions
+
+#### Footer Mobile Alignment
+
+- Added `text-align: center` for `.footer-tagline` in the <=575px mobile breakpoint, overriding the tablet `text-align: left` rule
+- Synced footer CSS fix to React version
+
+#### CI/CD Cleanup
+
+- Removed CodeQL Advanced workflow (`.github/workflows/codeql.yml`) as it is no longer required
+
 #### Responsive Header & Hotline Marquee
 
 - Standardized header vertical spacing (padding, min-height, logo size) across desktop (12px/48px), tablet (10px/40px), mobile (8px/36px), and small mobile (6px/32px) breakpoints
@@ -299,10 +317,11 @@ bettersolano/
 - Created `HotlineBar.tsx` component with tablet/mobile marquee matching static site behavior
 - Created `InfoBar.tsx` component with live exchange rates, weather, and Philippine time
 - Created `SearchAutocomplete.tsx` component with service search dropdown
+- Created `PWAManager.tsx` component handling install prompt and seamless SW updates
 - Updated `Footer.tsx` to dynamically fetch version from `/version.json` instead of hardcoded value
 - Updated `Header.tsx` breakpoint from 991px to 1024px, fixed ARIA attribute string values
-- Updated `layout.tsx` with corrected theme-color, manifest link, and Apple PWA meta tags
-- Synced `manifest.webmanifest`, `version.json`, and SW update banner CSS to react-app
+- Updated `layout.tsx` with corrected theme-color, manifest link, Apple PWA meta tags, and PWAManager integration
+- Synced `manifest.webmanifest`, `version.json`, `sw.js`, and all CSS to react-app
 
 #### Code Quality & Tooling
 

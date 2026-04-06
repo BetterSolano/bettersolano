@@ -295,6 +295,10 @@ ter Columns */
     margin-right: auto;
   }
 
+  .footer-tagline {
+    text-align: center;
+  }
+
   .footer-column {
     text-align: center;
     display: flex;

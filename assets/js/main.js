@@ -1,34 +1,72 @@
 /* Better Solano - Main JavaScript */
 
-// Register Service Worker with update detection
+// ─── PWA Install Prompt ─────────────────────────────────────────────────────
+var deferredInstallPrompt = null;
+
+window.addEventListener('beforeinstallprompt', function (e) {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  showInstallBanner();
+});
+
+function showInstallBanner() {
+  // Don't show if already installed or dismissed recently
+  if (window.matchMedia('(display-mode: standalone)').matches) return;
+  if (navigator.standalone) return;
+  if (sessionStorage.getItem('pwa-install-dismissed')) return;
+
+  var existing = document.querySelector('.pwa-install-banner');
+  if (existing) return;
+
+  var banner = document.createElement('div');
+  banner.className = 'pwa-install-banner';
+  banner.setAttribute('role', 'alert');
+  banner.setAttribute('aria-live', 'polite');
+  banner.innerHTML =
+    '<div class="pwa-install-content">' +
+    '<i class="bi bi-download" aria-hidden="true"></i>' +
+    '<span>Install BetterSolano for quick access to services.</span>' +
+    '</div>' +
+    '<div class="pwa-install-actions">' +
+    '<button class="pwa-install-btn" aria-label="Install BetterSolano app">Install</button>' +
+    '<button class="pwa-install-dismiss" aria-label="Dismiss install prompt">&times;</button>' +
+    '</div>';
+
+  document.body.appendChild(banner);
+
+  banner.querySelector('.pwa-install-btn').addEventListener('click', function () {
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    deferredInstallPrompt.userChoice.then(function () {
+      deferredInstallPrompt = null;
+      banner.remove();
+    });
+  });
+
+  banner.querySelector('.pwa-install-dismiss').addEventListener('click', function () {
+    sessionStorage.setItem('pwa-install-dismissed', '1');
+    banner.remove();
+  });
+}
+
+// ─── Register Service Worker with seamless updates ──────────────────────────
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
     navigator.serviceWorker
       .register('/sw.js')
       .then(function (reg) {
         // Check for updates every 30 minutes
-        setInterval(
-          function () {
-            reg.update();
-          },
-          30 * 60 * 1000
-        );
+        setInterval(function () {
+          reg.update();
+        }, 30 * 60 * 1000);
 
         reg.addEventListener('updatefound', function () {
           var newWorker = reg.installing;
           if (!newWorker) return;
           newWorker.addEventListener('statechange', function () {
-            if (newWorker.state === 'activated' && navigator.serviceWorker.controller) {
-              // New SW activated — show unobtrusive refresh prompt
-              var banner = document.createElement('div');
-              banner.setAttribute('role', 'alert');
-              banner.setAttribute('aria-live', 'polite');
-              banner.className = 'sw-update-banner';
-              banner.innerHTML =
-                '<span>A new version is available.</span>' +
-                '<button onclick="window.location.reload()" aria-label="Refresh to update">Refresh</button>' +
-                '<button onclick="this.parentElement.remove()" aria-label="Dismiss update notice">&times;</button>';
-              document.body.appendChild(banner);
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              // New SW installed and waiting — show update banner
+              showUpdateBanner(newWorker);
             }
           });
         });
@@ -36,6 +74,39 @@ if ('serviceWorker' in navigator) {
       .catch(function (err) {
         console.warn('SW registration failed:', err);
       });
+
+    // When a new SW takes over, reload seamlessly
+    var refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (refreshing) return;
+      refreshing = true;
+      window.location.reload();
+    });
+  });
+}
+
+function showUpdateBanner(worker) {
+  var existing = document.querySelector('.sw-update-banner');
+  if (existing) existing.remove();
+
+  var banner = document.createElement('div');
+  banner.setAttribute('role', 'alert');
+  banner.setAttribute('aria-live', 'polite');
+  banner.className = 'sw-update-banner';
+  banner.innerHTML =
+    '<span>A new version is available.</span>' +
+    '<button class="sw-update-btn" aria-label="Update now">Update</button>' +
+    '<button class="sw-update-dismiss" aria-label="Dismiss update notice">&times;</button>';
+
+  document.body.appendChild(banner);
+
+  banner.querySelector('.sw-update-btn').addEventListener('click', function () {
+    worker.postMessage({ type: 'SKIP_WAITING' });
+    banner.remove();
+  });
+
+  banner.querySelector('.sw-update-dismiss').addEventListener('click', function () {
+    banner.remove();
   });
 }
 

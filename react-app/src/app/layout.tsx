@@ -4,6 +4,7 @@ import HotlineBar from '@/components/layout/HotlineBar';
 import Header from '@/components/layout/Header';
 import InfoBar from '@/components/layout/InfoBar';
 import Footer from '@/components/layout/Footer';
+import PWAManager from '@/components/PWAManager';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 
 export const viewport: Viewport = {
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <InfoBar />
           <main id="main-content">{children}</main>
           <Footer />
+          <PWAManager />
         </LanguageProvider>
         <Script
           src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
