@@ -1,0 +1,31 @@
+{
+  "news": [
+    {
+      "id": "business-permit-renewal-2025",
+      "title": "Business Permit Renewal 2025",
+      "date": "2025-11-28",
+      "category": "Announcement",
+      "badge": "info",
+      "summary": "Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged to avoid penalties.",
+      "url": null
+    },
+    {
+      "id": "new-public-market-wing",
+      "title": "New Public Market Wing Opens",
+      "date": "2025-11-15",
+      "category": "Project",
+      "badge": "success",
+      "summary": "The renovated wing of the Solano Public Market is now open to vendors and the public.",
+      "url": null
+    },
+    {
+      "id": "scheduled-power-interruption",
+      "title": "Scheduled Power Interruption",
+      "date": "2025-11-10",
+      "category": "Advisory",
+      "badge": "warning",
+      "summary": "Maintenance scheduled for Barangay Osme\u00f1a on Dec 1, 8:00 AM - 5:00 PM.",
+      "url": null
+    }
+  ]
+}

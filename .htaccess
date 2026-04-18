@@ -49,7 +49,7 @@
     
     # Content Security Policy
     # Allows: self, Google Fonts, Bootstrap Icons CDN, Leaflet, Google Analytics, Open-Meteo API
-    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https: blob:; connect-src 'self' https://api.open-meteo.com https://api.exchangerate.host https://open.er-api.com https://www.google-analytics.com https://tile.openstreetmap.org; frame-src 'self' https://www.openstreetmap.org https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https: blob:; connect-src 'self' blob: https://api.open-meteo.com https://api.exchangerate.host https://open.er-api.com https://www.google-analytics.com https://tile.openstreetmap.org https://unpkg.com https://cdn.jsdelivr.net; frame-src 'self' https://www.openstreetmap.org https://www.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';"
     
     # Strict Transport Security (HSTS) - Enable after confirming HTTPS works
     # Tells browsers to only use HTTPS for 1 year
@@ -156,6 +156,12 @@ AddDefaultCharset UTF-8
     <FilesMatch "\.(json)$">
         Header set Cache-Control "public, max-age=86400, must-revalidate"
     </FilesMatch>
+
+    # Service Worker - never cache
+    <FilesMatch "sw\.js$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Service-Worker-Allowed "/"
+    </FilesMatch>
 </IfModule>
 
 # ============================================
@@ -200,7 +206,7 @@ AddDefaultCharset UTF-8
 </FilesMatch>
 
 # Protect data directory (allow JSON for AJAX)
-<FilesMatch "^(officials|ordinances|resolutions|services|competitive-index)\.json$">
+<FilesMatch "^(officials|ordinances|resolutions|services|competitive-index|dpwh-projects|news|demographics|fiscal_transparency)\.json$">
     Order allow,deny
     Allow from all
 </FilesMatch>

@@ -1,0 +1,7 @@
+node_modules
+dist
+package-lock.json
+*.min.js
+*.min.css
+react-app/.next
+react-app/node_modules

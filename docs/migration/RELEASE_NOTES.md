@@ -10,15 +10,15 @@ This release introduces a React + TypeScript version of BetterSolano.org, provid
 
 ## Technology Stack
 
-| Component | Technology |
-|-----------|------------|
-| Framework | Next.js 14 (App Router) |
-| Language | TypeScript |
-| UI Library | React 18 |
-| Styling | CSS (shared with static version) |
-| Icons | Bootstrap Icons |
-| Charts | Chart.js with react-chartjs-2 |
-| State | React Context API |
+| Component  | Technology                       |
+| ---------- | -------------------------------- |
+| Framework  | Next.js 14 (App Router)          |
+| Language   | TypeScript                       |
+| UI Library | React 18                         |
+| Styling    | CSS (shared with static version) |
+| Icons      | Bootstrap Icons                  |
+| Charts     | Chart.js with react-chartjs-2    |
+| State      | React Context API                |
 
 ## Features
 
@@ -35,13 +35,13 @@ All features from the static HTML version are available:
 
 ## New Capabilities
 
-| Feature | Description |
-|---------|-------------|
-| Type Safety | TypeScript catches errors at compile time |
+| Feature                | Description                                 |
+| ---------------------- | ------------------------------------------- |
+| Type Safety            | TypeScript catches errors at compile time   |
 | Component Architecture | Reusable components reduce code duplication |
-| Server-Side Rendering | Improved SEO and initial page load |
-| Hot Module Replacement | Faster development iteration |
-| Modern Routing | File-based routing with Next.js App Router |
+| Server-Side Rendering  | Improved SEO and initial page load          |
+| Hot Module Replacement | Faster development iteration                |
+| Modern Routing         | File-based routing with Next.js App Router  |
 
 ## Installation
 
@@ -54,8 +54,8 @@ npm run dev
 
 ## Documentation
 
-- [MIGRATION.md](../MIGRATION.md) - Migration guide for contributors
-- [CONTRIBUTING.md](../CONTRIBUTING.md) - Contribution guidelines
+- [MIGRATION.md](../../MIGRATION.md) - Migration guide for contributors
+- [CONTRIBUTING.md](../../CONTRIBUTING.md) - Contribution guidelines
 
 ## Compatibility
 
@@ -63,12 +63,12 @@ The React version produces the same visual output as the static HTML version. CS
 
 ## Known Differences
 
-| Aspect | Static HTML | React Version |
-|--------|-------------|---------------|
-| URL Extensions | `.html` | No extension |
-| Build Required | No | Yes |
+| Aspect             | Static HTML | React Version      |
+| ------------------ | ----------- | ------------------ |
+| URL Extensions     | `.html`     | No extension       |
+| Build Required     | No          | Yes                |
 | Development Server | Python HTTP | Next.js dev server |
-| Default Port | 8000 | 3000 |
+| Default Port       | 8000        | 3000               |
 
 ## Feedback
 
@@ -85,4 +85,4 @@ Thank you to all contributors who helped develop this version.
 ---
 
 Ramon Logan Jr.
-BetterSolano.org 
+BetterSolano.org

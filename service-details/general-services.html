@@ -1,1001 +1,1329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8777S9SP9X"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
       gtag('config', 'G-8777S9SP9X');
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Municipal General Services Office in Solano, Nueva Vizcaya. Vehicle and equipment rental, property management, procurement services, and general administrative support.">
-    <meta name="author" content="Ramon Logan Jr.">
-    <meta name="keywords" content="general services Solano, vehicle rental, equipment rental, procurement, property management, GSO, municipal services, Solano Nueva Vizcaya">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://bettersolano.org/service-details/general-services">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bettersolano.org/service-details/general-services">
-    <meta property="og:title" content="Municipal General Services Office | BetterSolano.org">
-    <meta property="og:description" content="General Services Office in Solano. Vehicle rental, equipment services, and procurement.">
-    <meta property="og:image" content="https://bettersolano.org/assets/images/banners/opengraph.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:secure_url" content="https://bettersolano.org/assets/images/banners/opengraph.png">
-    <meta property="og:locale" content="en_PH">
-    <meta property="og:site_name" content="BetterSolano.org">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://bettersolano.org/service-details/general-services">
-    <meta name="twitter:title" content="Municipal General Services Office | BetterSolano.org">
-    <meta name="twitter:description" content="General Services Office in Solano. Vehicle rental, equipment services, and procurement.">
-    <meta name="twitter:image" content="https://bettersolano.org/assets/images/banners/opengraph.png">
-    <title>Municipal General Services Office | BetterSolano.org</title>
-    
-    <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg">
-    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="dns-prefetch" href="https://unpkg.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/accessibility.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    
-    <style>
-        .gso-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            justify-content: center;
-            margin-bottom: var(--spacing-lg);
-            padding: var(--spacing-md);
-            background: var(--color-white);
-            border-radius: 12px;
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .gso-nav-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 10px 16px;
-            background: var(--color-bg-alt);
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--color-text);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-decoration: none;
-        }
-        
-        .gso-nav-btn:hover, .gso-nav-btn.active {
-            background: var(--color-primary);
-            color: white;
-            border-color: var(--color-primary);
-            text-decoration: none;
-        }
-        
-        .service-section {
-            scroll-margin-top: 120px;
-            margin-bottom: var(--spacing-xl);
-        }
-        
-        .section-header-card {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-md);
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-            padding: var(--spacing-md) var(--spacing-lg);
-            border-radius: 12px;
-            margin-bottom: var(--spacing-md);
-            color: white;
-        }
-        
-        .section-header-card.vehicles { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
-        .section-header-card.equipment { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
-        .section-header-card.personnel { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
-        .section-header-card.procurement { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
-        
-        .section-header-icon {
-            width: 56px;
-            height: 56px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-        
-        .section-header-content h2 {
-            color: white;
-            font-size: 1.375rem;
-            margin: 0 0 4px 0;
-        }
-        
-        .section-header-content p {
-            color: rgba(255,255,255,0.9);
-            font-size: 0.875rem;
-            margin: 0;
-        }
-        
-        .service-detail-card {
-            background: var(--color-white);
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-        
-        .service-detail-body {
-            padding: var(--spacing-lg);
-        }
-        
-        .vehicle-table, .equipment-table, .personnel-table, .process-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: var(--spacing-md);
-            font-size: 0.875rem;
-        }
-        
-        .vehicle-table th, .vehicle-table td,
-        .equipment-table th, .equipment-table td,
-        .personnel-table th, .personnel-table td,
-        .process-table th, .process-table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-            vertical-align: top;
-        }
-        
-        .vehicle-table th, .equipment-table th, .personnel-table th, .process-table th {
-            background: var(--color-bg-alt);
-            font-weight: 600;
-            color: var(--color-text);
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .vehicle-table tr:hover, .equipment-table tr:hover, .personnel-table tr:hover, .process-table tr:hover {
-            background: var(--color-bg-alt);
-        }
-        
-        .rate-badge {
-            display: inline-block;
-            padding: 4px 10px;
-            background: #dcfce7;
-            color: #166534;
-            border-radius: 4px;
-            font-size: 0.8125rem;
-            font-weight: 600;
-        }
-        
-        .time-badge {
-            display: inline-block;
-            padding: 4px 10px;
-            background: #dbeafe;
-            color: #1e40af;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-        
-        .step-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 24px;
-            height: 24px;
-            background: var(--color-primary);
-            color: white;
-            border-radius: 50%;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-right: 8px;
-        }
-        
-        .person-badge {
-            display: block;
-            font-size: 0.8125rem;
-            color: var(--color-text);
-            font-weight: 600;
-        }
-        
-        .person-title {
-            display: block;
-            font-size: 0.75rem;
-            color: var(--color-text-light);
-        }
-        
-        .gso-layout {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: var(--spacing-xl);
-            align-items: start;
-        }
-        
-        @media (max-width: 991px) {
-            .gso-layout {
-                grid-template-columns: 1fr;
-            }
-            
-            .vehicle-table, .equipment-table, .personnel-table, .process-table {
-                display: block;
-                overflow-x: auto;
-            }
-        }
-        
-        .contact-sidebar {
-            background: var(--color-white);
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: var(--spacing-lg);
-            position: sticky;
-            top: 100px;
-        }
-        
-        .contact-sidebar h3 {
-            font-size: 1.125rem;
-            margin: 0 0 var(--spacing-md) 0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .contact-sidebar h3 i {
-            color: var(--color-primary);
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            padding: 12px 0;
-            border-bottom: 1px solid #f3f4f6;
-        }
-        
-        .contact-item:last-child {
-            border-bottom: none;
-        }
-        
-        .contact-item i {
-            color: var(--color-primary);
-            font-size: 1.125rem;
-            margin-top: 2px;
-        }
-        
-        .contact-item-content {
-            flex: 1;
-        }
-        
-        .contact-item-content strong {
-            display: block;
-            font-size: 0.875rem;
-            color: var(--color-text);
-            margin-bottom: 2px;
-        }
-        
-        .contact-item-content span, .contact-item-content a {
-            font-size: 0.8125rem;
-            color: var(--color-text-light);
-        }
-        
-        .quick-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--spacing-md);
-            margin-bottom: var(--spacing-lg);
-        }
-        
-        @media (max-width: 768px) {
-            .quick-stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        .quick-stat-card {
-            background: var(--color-white);
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
-            padding: var(--spacing-md);
-            text-align: center;
-        }
-        
-        .quick-stat-card i {
-            font-size: 2rem;
-            color: var(--color-primary);
-            margin-bottom: 8px;
-        }
-        
-        .quick-stat-card h4 {
-            font-size: 0.75rem;
-            color: var(--color-text-light);
-            text-transform: uppercase;
-            margin: 0 0 4px 0;
-        }
-        
-        .quick-stat-card p {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--color-text);
-            margin: 0;
-        }
-        
-        .related-services {
-            margin-top: var(--spacing-lg);
-            padding-top: var(--spacing-md);
-            border-top: 1px solid #e5e7eb;
-        }
-        
-        .related-services h4 {
-            font-size: 0.9375rem;
-            margin-bottom: var(--spacing-sm);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .related-services h4 i {
-            color: var(--color-primary);
-        }
-        
-        .related-services ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            font-size: 0.8125rem;
-        }
-        
-        .related-services li {
-            margin-bottom: 8px;
-        }
-        
-        .related-services a {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: var(--color-primary);
-        }
-    </style>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Municipal General Services Office in Solano, Nueva Vizcaya. Vehicle and equipment rental, property management, procurement services, and general administrative support."
+    />
+    <meta name="author" content="Ramon Logan Jr." />
+    <meta
+      name="keywords"
+      content="general services Solano, vehicle rental, equipment rental, procurement, property management, GSO, municipal services, Solano Nueva Vizcaya"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bettersolano.org/service-details/general-services" />
 
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bettersolano.org/service-details/general-services" />
+    <meta property="og:title" content="Municipal General Services Office | BetterSolano.org" />
+    <meta
+      property="og:description"
+      content="General Services Office in Solano. Vehicle rental, equipment services, and procurement."
+    />
+    <meta
+      property="og:image"
+      content="https://bettersolano.org/assets/images/banners/opengraph.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:image:secure_url"
+      content="https://bettersolano.org/assets/images/banners/opengraph.png"
+    />
+    <meta property="og:locale" content="en_PH" />
+    <meta property="og:site_name" content="BetterSolano.org" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://bettersolano.org/service-details/general-services" />
+    <meta name="twitter:title" content="Municipal General Services Office | BetterSolano.org" />
+    <meta
+      name="twitter:description"
+      content="General Services Office in Solano. Vehicle rental, equipment services, and procurement."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bettersolano.org/assets/images/banners/opengraph.png"
+    />
+    <title>Municipal General Services Office | BetterSolano.org</title>
+
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/accessibility.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+
+    <style>
+      .gso-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: var(--spacing-lg);
+        padding: var(--spacing-md);
+        background: var(--color-white);
+        border-radius: 12px;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .gso-nav-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 16px;
+        background: var(--color-bg-alt);
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--color-text);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-decoration: none;
+      }
+
+      .gso-nav-btn:hover,
+      .gso-nav-btn.active {
+        background: var(--color-primary);
+        color: white;
+        border-color: var(--color-primary);
+        text-decoration: none;
+      }
+
+      .service-section {
+        scroll-margin-top: 120px;
+        margin-bottom: var(--spacing-xl);
+      }
+
+      .section-header-card {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+        padding: var(--spacing-md) var(--spacing-lg);
+        border-radius: 12px;
+        margin-bottom: var(--spacing-md);
+        color: white;
+      }
+
+      .section-header-card.vehicles {
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      }
+      .section-header-card.equipment {
+        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      }
+      .section-header-card.personnel {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      }
+      .section-header-card.procurement {
+        background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+      }
+
+      .section-header-icon {
+        width: 56px;
+        height: 56px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      .section-header-content h2 {
+        color: white;
+        font-size: 1.375rem;
+        margin: 0 0 4px 0;
+      }
+
+      .section-header-content p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.875rem;
+        margin: 0;
+      }
+
+      .service-detail-card {
+        background: var(--color-white);
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .service-detail-body {
+        padding: var(--spacing-lg);
+      }
+
+      .vehicle-table,
+      .equipment-table,
+      .personnel-table,
+      .process-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: var(--spacing-md);
+        font-size: 0.875rem;
+      }
+
+      .vehicle-table th,
+      .vehicle-table td,
+      .equipment-table th,
+      .equipment-table td,
+      .personnel-table th,
+      .personnel-table td,
+      .process-table th,
+      .process-table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #e5e7eb;
+        vertical-align: top;
+      }
+
+      .vehicle-table th,
+      .equipment-table th,
+      .personnel-table th,
+      .process-table th {
+        background: var(--color-bg-alt);
+        font-weight: 600;
+        color: var(--color-text);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .vehicle-table tr:hover,
+      .equipment-table tr:hover,
+      .personnel-table tr:hover,
+      .process-table tr:hover {
+        background: var(--color-bg-alt);
+      }
+
+      .rate-badge {
+        display: inline-block;
+        padding: 4px 10px;
+        background: #dcfce7;
+        color: #166534;
+        border-radius: 4px;
+        font-size: 0.8125rem;
+        font-weight: 600;
+      }
+
+      .time-badge {
+        display: inline-block;
+        padding: 4px 10px;
+        background: #dbeafe;
+        color: #1e40af;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+
+      .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background: var(--color-primary);
+        color: white;
+        border-radius: 50%;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-right: 8px;
+      }
+
+      .person-badge {
+        display: block;
+        font-size: 0.8125rem;
+        color: var(--color-text);
+        font-weight: 600;
+      }
+
+      .person-title {
+        display: block;
+        font-size: 0.75rem;
+        color: var(--color-text-light);
+      }
+
+      .gso-layout {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: var(--spacing-xl);
+        align-items: start;
+      }
+
+      @media (max-width: 991px) {
+        .gso-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .vehicle-table,
+        .equipment-table,
+        .personnel-table,
+        .process-table {
+          display: block;
+          overflow-x: auto;
+        }
+      }
+
+      .contact-sidebar {
+        background: var(--color-white);
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: var(--spacing-lg);
+        position: sticky;
+        top: 100px;
+      }
+
+      .contact-sidebar h3 {
+        font-size: 1.125rem;
+        margin: 0 0 var(--spacing-md) 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .contact-sidebar h3 i {
+        color: var(--color-primary);
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f3f4f6;
+      }
+
+      .contact-item:last-child {
+        border-bottom: none;
+      }
+
+      .contact-item i {
+        color: var(--color-primary);
+        font-size: 1.125rem;
+        margin-top: 2px;
+      }
+
+      .contact-item-content {
+        flex: 1;
+      }
+
+      .contact-item-content strong {
+        display: block;
+        font-size: 0.875rem;
+        color: var(--color-text);
+        margin-bottom: 2px;
+      }
+
+      .contact-item-content span,
+      .contact-item-content a {
+        font-size: 0.8125rem;
+        color: var(--color-text-light);
+      }
+
+      .quick-stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
+      }
+
+      @media (max-width: 768px) {
+        .quick-stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .quick-stat-card {
+        background: var(--color-white);
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: var(--spacing-md);
+        text-align: center;
+      }
+
+      .quick-stat-card i {
+        font-size: 2rem;
+        color: var(--color-primary);
+        margin-bottom: 8px;
+      }
+
+      .quick-stat-card h4 {
+        font-size: 0.75rem;
+        color: var(--color-text-light);
+        text-transform: uppercase;
+        margin: 0 0 4px 0;
+      }
+
+      .quick-stat-card p {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin: 0;
+      }
+
+      .related-services {
+        margin-top: var(--spacing-lg);
+        padding-top: var(--spacing-md);
+        border-top: 1px solid #e5e7eb;
+      }
+
+      .related-services h4 {
+        font-size: 0.9375rem;
+        margin-bottom: var(--spacing-sm);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .related-services h4 i {
+        color: var(--color-primary);
+      }
+
+      .related-services ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0.8125rem;
+      }
+
+      .related-services li {
+        margin-bottom: 8px;
+      }
+
+      .related-services a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--color-primary);
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link" data-i18n="gs-skip-to-main-content"
+      >Skip to main content</a
+    >
 
     <!-- Hotline Bar -->
     <div class="hotline-bar">
-        <div class="container">
-            <div class="hotline-inner">
-                <div class="hotline-items">
-                    <a href="tel:09274008033" class="hotline-item">
-                        <i class="bi bi-shield-fill"></i>
-                        <span>Police: 0927 400 8033</span>
-                    </a>
-                    <a href="tel:09162840885" class="hotline-item">
-                        <i class="bi bi-heart-fill"></i>
-                        <span>MSWDO: 0916 284 0885</span>
-                    </a>
-                    <a href="tel:09360620305" class="hotline-item">
-                        <i class="bi bi-fire"></i>
-                        <span>Fire: 0936 062 0305</span>
-                    </a>
-                    <a href="tel:0906188086" class="hotline-item">
-                        <i class="bi bi-building"></i>
-                        <span>DILG: 0906 188 086</span>
-                    </a>
-                    <a href="tel:09263833744" class="hotline-item">
-                        <i class="bi bi-exclamation-triangle-fill"></i>
-                        <span>MDRRMO: 0926 383 3744</span>
-                    </a>
-                    <a href="tel:09068195569" class="hotline-item">
-                        <i class="bi bi-truck"></i>
-                        <span>R2TMC: 0906 819 5569</span>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="hotline-inner">
+          <div class="hotline-items">
+            <a href="tel:09274008033" class="hotline-item">
+              <i class="bi bi-shield-fill"></i>
+              <span>Police: 0927 400 8033</span>
+            </a>
+            <a href="tel:09162840885" class="hotline-item">
+              <i class="bi bi-heart-fill"></i>
+              <span>MSWDO: 0916 284 0885</span>
+            </a>
+            <a href="tel:09360620305" class="hotline-item">
+              <i class="bi bi-fire"></i>
+              <span>Fire: 0936 062 0305</span>
+            </a>
+            <a href="tel:0906188086" class="hotline-item">
+              <i class="bi bi-building"></i>
+              <span>DILG: 0906 188 086</span>
+            </a>
+            <a href="tel:09263833744" class="hotline-item">
+              <i class="bi bi-exclamation-triangle-fill"></i>
+              <span>MDRRMO: 0926 383 3744</span>
+            </a>
+            <a href="tel:09068195569" class="hotline-item">
+              <i class="bi bi-truck"></i>
+              <span>R2TMC: 0906 819 5569</span>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Header -->
     <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo-container">
-                <a href="../"><img src="../assets/images/logo/better-solano-logo.svg" alt="Municipality of Solano Logo" class="logo-img"></a>
-            </div>
-            <nav class="main-nav" aria-label="Main Navigation">
-                <ul>
-                    <li><a href="../" data-i18n="nav-home">Home</a></li>
-                    <li class="has-dropdown">
-                        <a href="../services/" class="active" data-i18n="nav-services">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../services/certificates.html">Certificates</a></li>
-                            <li><a href="../services/business.html">Business</a></li>
-                            <li><a href="../services/tax-payments.html">Tax Payments</a></li>
-                            <li><a href="../services/social-services.html">Social Services</a></li>
-                            <li><a href="../services/health.html">Health</a></li>
-                            <li><a href="../services/agriculture.html">Agriculture</a></li>
-                            <li><a href="../services/infrastructure.html">Infrastructure</a></li>
-                            <li><a href="../services/education.html">Education</a></li>
-                            <li><a href="../services/public-safety.html">Public Safety</a></li>
-                            <li><a href="../services/environment.html">Environment</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../government/" data-i18n="nav-government">Government</a></li>
-                    <li><a href="../statistics/" data-i18n="nav-statistics">Statistics</a></li>
-                    <li class="has-dropdown">
-                        <a href="../legislative/" data-i18n="nav-legislative">Legislative</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../legislative/ordinance-framework.html">Ordinance Framework</a></li>
-                            <li><a href="../legislative/resolution-framework.html">Resolution Framework</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../budget/" data-i18n="nav-transparency">Transparency</a></li>
-                    <li><a href="../contact/" data-i18n="nav-contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="lang-selector">
-                    <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="en">EN</button>
-                    <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="fil">FIL</button>
-                    <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="ilo">ILO</button>
-                </div>
-            </div>
+      <div class="container header-inner">
+        <div class="logo-container">
+          <a href="../"
+            ><img
+              src="../assets/images/logo/better-solano-logo.svg"
+              alt="Municipality of Solano Logo"
+              class="logo-img"
+          /></a>
         </div>
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul>
+            <li><a href="../" data-i18n="nav-home">Home</a></li>
+            <li class="has-dropdown">
+              <a href="../services/" class="active" data-i18n="nav-services" aria-haspopup="true" aria-expanded="false">Services</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../services/certificates" data-i18n="gs-certificates">Certificates</a>
+                </li>
+                <li><a href="../services/business" data-i18n="gs-business">Business</a></li>
+                <li>
+                  <a href="../services/tax-payments" data-i18n="gs-tax-payments">Tax Payments</a>
+                </li>
+                <li>
+                  <a href="../services/social-services" data-i18n="gs-social-services"
+                    >Social Services</a
+                  >
+                </li>
+                <li><a href="../services/health" data-i18n="gs-health">Health</a></li>
+                <li>
+                  <a href="../services/agriculture" data-i18n="gs-agriculture">Agriculture</a>
+                </li>
+                <li>
+                  <a href="../services/infrastructure" data-i18n="gs-infrastructure"
+                    >Infrastructure</a
+                  >
+                </li>
+                <li><a href="../services/education" data-i18n="gs-education">Education</a></li>
+                <li>
+                  <a href="../services/public-safety" data-i18n="gs-public-safety">Public Safety</a>
+                </li>
+                <li>
+                  <a href="../services/environment" data-i18n="gs-environment">Environment</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../government/" data-i18n="nav-government">Government</a></li>
+            <li><a href="../statistics/" data-i18n="nav-statistics">Statistics</a></li>
+            <li class="has-dropdown">
+              <a href="../legislative/" data-i18n="nav-legislative" aria-haspopup="true" aria-expanded="false">Legislative</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../legislative/ordinance-framework" data-i18n="gs-ordinance-framework"
+                    >Ordinance Framework</a
+                  >
+                </li>
+                <li>
+                  <a href="../legislative/resolution-framework" data-i18n="gs-resolution-framework"
+                    >Resolution Framework</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="../budget/" data-i18n="nav-transparency">Transparency</a></li>
+            <li><a href="../contact/" data-i18n="nav-contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-selector">
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="en">
+              EN
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="fil">
+              FIL
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="ilo">
+              ILO
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Real-Time Info Bar -->
     <div class="info-bar" role="complementary" aria-label="Real-time information">
-        <div class="container">
-            <div class="info-bar-inner">
-                <div class="info-bar-item info-bar-rates" aria-label="Exchange rates">
-                    <i class="bi bi-currency-exchange"></i>
-                    <span class="rate-rotator">
-                        <span class="rate-display">1 USD = ₱ --</span>
-                    </span>
-                </div>
-                <div class="info-bar-item info-bar-weather" aria-label="Current weather in Solano">
-                    <i class="bi bi-thermometer-half"></i>
-                    <span class="weather-location">Solano</span>
-                    <span class="weather-temp">--°C</span>
-                </div>
-                <div class="info-bar-item info-bar-datetime" aria-label="Philippine Date and Time">
-                    <i class="bi bi-calendar3"></i>
-                    <span class="date-value">--- --, ----</span>
-                    <span class="datetime-separator">•</span>
-                    <i class="bi bi-clock"></i>
-                    <span class="time-value">--:-- --</span>
-                    <span class="time-label">PHT</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="info-bar-inner">
+          <div class="info-bar-item info-bar-rates" aria-label="Exchange rates">
+            <i class="bi bi-currency-exchange"></i>
+            <span class="rate-rotator">
+              <span class="rate-display">1 USD = ₱ --</span>
+            </span>
+          </div>
+          <div class="info-bar-item info-bar-weather" aria-label="Current weather in Solano">
+            <i class="bi bi-thermometer-half"></i>
+            <span class="weather-location">Solano</span>
+            <span class="weather-temp">--°C</span>
+          </div>
+          <div class="info-bar-item info-bar-datetime" aria-label="Philippine Date and Time">
+            <i class="bi bi-calendar3"></i>
+            <span class="date-value">--- --, ----</span>
+            <span class="datetime-separator">•</span>
+            <i class="bi bi-clock"></i>
+            <span class="time-value">--:-- --</span>
+            <span class="time-label">PHT</span>
+          </div>
         </div>
+      </div>
     </div>
 
     <main id="main-content">
-        <!-- Breadcrumbs -->
+      <!-- Breadcrumbs -->
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../" data-i18n="gs-home">Home</a>
+          <span>/</span>
+          <a href="../services/" data-i18n="gs-services">Services</a>
+          <span>/</span>
+          <span aria-current="page">General Services Office</span>
+        </nav>
+      </div>
+
+      <!-- Page Header -->
+      <section class="page-header">
         <div class="container">
-            <nav class="breadcrumbs" aria-label="Breadcrumb">
-                <a href="../">Home</a>
-                <span>/</span>
-                <a href="../services/">Services</a>
-                <span>/</span>
-                <span aria-current="page">General Services Office</span>
-            </nav>
+          <div class="page-header-content">
+            <span class="page-header-badge"
+              ><i class="bi bi-gear-wide-connected"></i>
+              <span data-i18n="gs-general-services-office">General Services Office</span></span
+            >
+            <h1 data-i18n="gs-municipal-general-services-office">
+              Municipal General Services Office
+            </h1>
+            <p
+              class="page-header-desc"
+              data-i18n="gs-vehicle-and-equipment-rental-property-management"
+            >
+              Vehicle and equipment rental, property management, and procurement services
+            </p>
+          </div>
         </div>
+      </section>
 
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
-                <div class="page-header-content">
-                    <span class="page-header-badge"><i class="bi bi-gear-wide-connected"></i> General Services Office</span>
-                    <h1>Municipal General Services Office</h1>
-                    <p class="page-header-desc">Vehicle and equipment rental, property management, and procurement services</p>
-                </div>
+      <!-- Quick Stats -->
+      <section class="section">
+        <div class="container">
+          <div class="quick-stats">
+            <div class="quick-stat-card">
+              <i class="bi bi-truck"></i>
+              <h4 data-i18n="gs-vehicles">Vehicles</h4>
+              <p data-i18n="gs-multiple-units">Multiple Units</p>
             </div>
-        </section>
-
-        <!-- Quick Stats -->
-        <section class="section">
-            <div class="container">
-                <div class="quick-stats">
-                    <div class="quick-stat-card">
-                        <i class="bi bi-truck"></i>
-                        <h4>Vehicles</h4>
-                        <p>Multiple Units</p>
-                    </div>
-                    <div class="quick-stat-card">
-                        <i class="bi bi-clock"></i>
-                        <h4>Office Hours</h4>
-                        <p>8AM - 5PM</p>
-                    </div>
-                    <div class="quick-stat-card">
-                        <i class="bi bi-calendar-check"></i>
-                        <h4>Availability</h4>
-                        <p>Mon - Fri</p>
-                    </div>
-                    <div class="quick-stat-card">
-                        <i class="bi bi-telephone"></i>
-                        <h4>Hotline</h4>
-                        <p>(078) 326-5000</p>
-                    </div>
-                </div>
-
-                <!-- Quick Navigation -->
-                <nav class="gso-nav" aria-label="GSO Services Navigation">
-                    <a href="#vehicles" class="gso-nav-btn"><i class="bi bi-truck"></i> Vehicle Rental</a>
-                    <a href="#equipment" class="gso-nav-btn"><i class="bi bi-tools"></i> Equipment</a>
-                    <a href="#personnel" class="gso-nav-btn"><i class="bi bi-people"></i> Personnel</a>
-                    <a href="#procurement" class="gso-nav-btn"><i class="bi bi-cart-check"></i> Procurement</a>
-                </nav>
+            <div class="quick-stat-card">
+              <i class="bi bi-clock"></i>
+              <h4 data-i18n="gs-office-hours">Office Hours</h4>
+              <p data-i18n="gs-8am-5pm">8AM - 5PM</p>
             </div>
-        </section>
-
-        <!-- Main Content -->
-        <section class="section">
-            <div class="container">
-                <div class="gso-layout">
-                    <div class="gso-main">
-
-                        <!-- Vehicle Rental Services -->
-                        <div class="service-section" id="vehicles">
-                            <div class="section-header-card vehicles">
-                                <div class="section-header-icon"><i class="bi bi-truck"></i></div>
-                                <div class="section-header-content">
-                                    <h2>Vehicle Rental Services</h2>
-                                    <p>Municipal vehicles available for official use and public rental</p>
-                                </div>
-                            </div>
-                            <div class="service-detail-card">
-                                <div class="service-detail-body">
-                                    <h3>About Vehicle Rental</h3>
-                                    <p>The Municipal General Services Office manages and maintains municipal vehicles available for official government use and rental services for constituents with valid purposes.</p>
-                                    
-                                    <h4>Available Vehicles</h4>
-                                    <table class="vehicle-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Vehicle Type</th>
-                                                <th>Plate Number</th>
-                                                <th>Rental Rate</th>
-                                                <th>Driver</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Dump Truck</td>
-                                                <td>Government Plate</td>
-                                                <td><span class="rate-badge">₱2,500/day</span></td>
-                                                <td>Assigned Driver</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Backhoe Loader</td>
-                                                <td>Government Plate</td>
-                                                <td><span class="rate-badge">₱3,500/day</span></td>
-                                                <td>Assigned Operator</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Service Vehicle (Van)</td>
-                                                <td>Government Plate</td>
-                                                <td><span class="rate-badge">₱1,500/day</span></td>
-                                                <td>Assigned Driver</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ambulance</td>
-                                                <td>Government Plate</td>
-                                                <td><span class="rate-badge">Free (Emergency)</span></td>
-                                                <td>EMT/Driver</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Motorcycle</td>
-                                                <td>Government Plate</td>
-                                                <td><span class="rate-badge">₱500/day</span></td>
-                                                <td>Self-drive</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                    <h4>Rental Process</h4>
-                                    <table class="process-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Step</th>
-                                                <th>Requirements</th>
-                                                <th>Time</th>
-                                                <th>Person Responsible</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><span class="step-number">1</span> Submit Request Letter</td>
-                                                <td>Request letter addressed to the Municipal Mayor stating purpose and date of use</td>
-                                                <td><span class="time-badge">5 mins</span></td>
-                                                <td>
-                                                    <span class="person-badge">GSO Staff</span>
-                                                    <span class="person-title">Receiving Clerk</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">2</span> Approval of Request</td>
-                                                <td>Wait for approval from the Mayor's Office</td>
-                                                <td><span class="time-badge">1-2 days</span></td>
-                                                <td>
-                                                    <span class="person-badge">Mayor's Office</span>
-                                                    <span class="person-title">Executive Assistant</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">3</span> Pay Rental Fee</td>
-                                                <td>Order of Payment from GSO</td>
-                                                <td><span class="time-badge">10 mins</span></td>
-                                                <td>
-                                                    <span class="person-badge">Municipal Treasurer</span>
-                                                    <span class="person-title">Collection Officer</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">4</span> Get Trip Ticket</td>
-                                                <td>Official Receipt, Approved Request</td>
-                                                <td><span class="time-badge">5 mins</span></td>
-                                                <td>
-                                                    <span class="person-badge">GSO Head</span>
-                                                    <span class="person-title">General Services Officer</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Equipment Services -->
-                        <div class="service-section" id="equipment">
-                            <div class="section-header-card equipment">
-                                <div class="section-header-icon"><i class="bi bi-tools"></i></div>
-                                <div class="section-header-content">
-                                    <h2>Heavy Equipment Services</h2>
-                                    <p>Construction and agricultural equipment for municipal projects</p>
-                                </div>
-                            </div>
-                            <div class="service-detail-card">
-                                <div class="service-detail-body">
-                                    <h3>Available Equipment</h3>
-                                    <table class="equipment-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Equipment</th>
-                                                <th>Capacity/Specs</th>
-                                                <th>Rental Rate</th>
-                                                <th>Operator</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Road Grader</td>
-                                                <td>Heavy Duty</td>
-                                                <td><span class="rate-badge">₱4,000/day</span></td>
-                                                <td>Assigned Operator</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Road Roller</td>
-                                                <td>Compactor</td>
-                                                <td><span class="rate-badge">₱3,000/day</span></td>
-                                                <td>Assigned Operator</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Water Truck</td>
-                                                <td>5,000 Liters</td>
-                                                <td><span class="rate-badge">₱2,000/day</span></td>
-                                                <td>Assigned Driver</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Generator Set</td>
-                                                <td>Various KVA</td>
-                                                <td><span class="rate-badge">₱1,500/day</span></td>
-                                                <td>Self-operate</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Grass Cutter</td>
-                                                <td>Industrial</td>
-                                                <td><span class="rate-badge">₱300/day</span></td>
-                                                <td>Self-operate</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                    <h4>Note:</h4>
-                                    <p>Equipment rental is subject to availability and approval. Priority is given to municipal projects and barangay requests. Fuel costs are shouldered by the requesting party.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Personnel -->
-                        <div class="service-section" id="personnel">
-                            <div class="section-header-card personnel">
-                                <div class="section-header-icon"><i class="bi bi-people"></i></div>
-                                <div class="section-header-content">
-                                    <h2>GSO Personnel</h2>
-                                    <p>Office staff and service personnel</p>
-                                </div>
-                            </div>
-                            <div class="service-detail-card">
-                                <div class="service-detail-body">
-                                    <h3>Office Personnel</h3>
-                                    <table class="personnel-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Designation</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><strong>GSO Head</strong></td>
-                                                <td>General Services Officer</td>
-                                                <td>Department Head</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Administrative Staff</td>
-                                                <td>Administrative Aide</td>
-                                                <td>Records/Clerical</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Property Custodian</td>
-                                                <td>Administrative Aide</td>
-                                                <td>Property Management</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                    <h4>Drivers and Operators</h4>
-                                    <table class="personnel-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Position</th>
-                                                <th>Assignment</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Heavy Equipment Operator</td>
-                                                <td>Backhoe, Grader, Roller</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Dump Truck Driver</td>
-                                                <td>Dump Truck Operations</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Light Vehicle Driver</td>
-                                                <td>Service Vehicles, Vans</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ambulance Driver/EMT</td>
-                                                <td>Emergency Medical Services</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Procurement Services -->
-                        <div class="service-section" id="procurement">
-                            <div class="section-header-card procurement">
-                                <div class="section-header-icon"><i class="bi bi-cart-check"></i></div>
-                                <div class="section-header-content">
-                                    <h2>Procurement Services</h2>
-                                    <p>Processing of purchase requests and supplier accreditation</p>
-                                </div>
-                            </div>
-                            <div class="service-detail-card">
-                                <div class="service-detail-body">
-                                    <h3>About Procurement</h3>
-                                    <p>The GSO assists in the procurement process for municipal supplies, equipment, and services in accordance with RA 9184 (Government Procurement Reform Act).</p>
-                                    
-                                    <h4>Procurement Process</h4>
-                                    <table class="process-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Step</th>
-                                                <th>Activity</th>
-                                                <th>Time Frame</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><span class="step-number">1</span></td>
-                                                <td>Submission of Purchase Request (PR) from requesting office</td>
-                                                <td><span class="time-badge">1 day</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">2</span></td>
-                                                <td>Review and certification of availability of funds</td>
-                                                <td><span class="time-badge">1-2 days</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">3</span></td>
-                                                <td>Canvass/Request for Quotation from suppliers</td>
-                                                <td><span class="time-badge">3-5 days</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">4</span></td>
-                                                <td>Abstract of Quotations and Award</td>
-                                                <td><span class="time-badge">1-2 days</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">5</span></td>
-                                                <td>Issuance of Purchase Order (PO)</td>
-                                                <td><span class="time-badge">1 day</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">6</span></td>
-                                                <td>Delivery and Inspection</td>
-                                                <td><span class="time-badge">Varies</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="step-number">7</span></td>
-                                                <td>Payment Processing</td>
-                                                <td><span class="time-badge">3-5 days</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                    <h4>Supplier Accreditation Requirements</h4>
-                                    <ul style="margin: var(--spacing-md) 0; padding-left: 20px;">
-                                        <li>Business Permit</li>
-                                        <li>DTI/SEC Registration</li>
-                                        <li>BIR Registration</li>
-                                        <li>PhilGEPS Registration</li>
-                                        <li>Mayor's Permit</li>
-                                        <li>Tax Clearance</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Sidebar -->
-                    <aside class="contact-sidebar">
-                        <h3><i class="bi bi-building"></i> General Services Office</h3>
-                        
-                        <div class="contact-item">
-                            <i class="bi bi-person-badge"></i>
-                            <div class="contact-item-content">
-                                <strong>General Services Officer</strong>
-                                <span>GSO Head</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="bi bi-geo-alt"></i>
-                            <div class="contact-item-content">
-                                <strong>Location</strong>
-                                <span>Municipal Hall, Ground Floor<br>Solano, Nueva Vizcaya 3708</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="bi bi-telephone"></i>
-                            <div class="contact-item-content">
-                                <strong>Phone</strong>
-                                <a href="tel:0783265000">(078) 326-5000</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="bi bi-envelope"></i>
-                            <div class="contact-item-content">
-                                <strong>Email</strong>
-                                <a href="mailto:gso@solano.gov.ph">gso@solano.gov.ph</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="bi bi-clock"></i>
-                            <div class="contact-item-content">
-                                <strong>Office Hours</strong>
-                                <span>Monday - Friday<br>8:00 AM - 5:00 PM</span>
-                            </div>
-                        </div>
-
-                        <div class="related-services">
-                            <h4><i class="bi bi-link-45deg"></i> Related Services</h4>
-                            <ul>
-                                <li>
-                                    <a href="municipal-engineering.html">
-                                        Municipal Engineering
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="municipal-accounting.html">
-                                        Municipal Accounting
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../government/">
-                                        Government Offices
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-                </div>
+            <div class="quick-stat-card">
+              <i class="bi bi-calendar-check"></i>
+              <h4 data-i18n="gs-availability">Availability</h4>
+              <p>Mon - Fri</p>
             </div>
-        </section>
+            <div class="quick-stat-card">
+              <i class="bi bi-telephone"></i>
+              <h4 data-i18n="gs-hotline">Hotline</h4>
+              <p>(078) 326-5000</p>
+            </div>
+          </div>
+
+          <!-- Quick Navigation -->
+          <nav class="gso-nav" aria-label="GSO Services Navigation">
+            <a href="#vehicles" class="gso-nav-btn"
+              ><i class="bi bi-truck"></i>
+              <span data-i18n="gs-vehicle-rental">Vehicle Rental</span></a
+            >
+            <a href="#equipment" class="gso-nav-btn"
+              ><i class="bi bi-tools"></i> <span data-i18n="gs-equipment">Equipment</span></a
+            >
+            <a href="#personnel" class="gso-nav-btn"
+              ><i class="bi bi-people"></i> <span data-i18n="gs-personnel">Personnel</span></a
+            >
+            <a href="#procurement" class="gso-nav-btn"
+              ><i class="bi bi-cart-check"></i>
+              <span data-i18n="gs-procurement">Procurement</span></a
+            >
+          </nav>
+        </div>
+      </section>
+
+      <!-- Main Content -->
+      <section class="section">
+        <div class="container">
+          <div class="gso-layout">
+            <div class="gso-main">
+              <!-- Vehicle Rental Services -->
+              <div class="service-section" id="vehicles">
+                <div class="section-header-card vehicles">
+                  <div class="section-header-icon"><i class="bi bi-truck"></i></div>
+                  <div class="section-header-content">
+                    <h2 data-i18n="gs-vehicle-rental-services">Vehicle Rental Services</h2>
+                    <p data-i18n="gs-municipal-vehicles-available-for-official-use-and">
+                      Municipal vehicles available for official use and public rental
+                    </p>
+                  </div>
+                </div>
+                <div class="service-detail-card">
+                  <div class="service-detail-body">
+                    <h3 data-i18n="gs-about-vehicle-rental">About Vehicle Rental</h3>
+                    <p data-i18n="gs-the-municipal-general-services-office-manages-and">
+                      The Municipal General Services Office manages and maintains municipal vehicles
+                      available for official government use and rental services for constituents
+                      with valid purposes.
+                    </p>
+
+                    <h4 data-i18n="gs-available-vehicles">Available Vehicles</h4>
+                    <table class="vehicle-table">
+                      <thead>
+                        <tr>
+                          <th data-i18n="gs-vehicle-type">Vehicle Type</th>
+                          <th data-i18n="gs-plate-number">Plate Number</th>
+                          <th data-i18n="gs-rental-rate">Rental Rate</th>
+                          <th data-i18n="gs-driver">Driver</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-i18n="gs-dump-truck">Dump Truck</td>
+                          <td data-i18n="gs-government-plate">Government Plate</td>
+                          <td><span class="rate-badge">₱2,500/day</span></td>
+                          <td data-i18n="gs-assigned-driver">Assigned Driver</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-backhoe-loader">Backhoe Loader</td>
+                          <td data-i18n="gs-government-plate">Government Plate</td>
+                          <td><span class="rate-badge">₱3,500/day</span></td>
+                          <td data-i18n="gs-assigned-operator">Assigned Operator</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-service-vehicle-van">Service Vehicle (Van)</td>
+                          <td data-i18n="gs-government-plate">Government Plate</td>
+                          <td><span class="rate-badge">₱1,500/day</span></td>
+                          <td data-i18n="gs-assigned-driver">Assigned Driver</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-ambulance">Ambulance</td>
+                          <td data-i18n="gs-government-plate">Government Plate</td>
+                          <td>
+                            <span class="rate-badge" data-i18n="gs-free-emergency"
+                              >Free (Emergency)</span
+                            >
+                          </td>
+                          <td data-i18n="gs-emtdriver">EMT/Driver</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-motorcycle">Motorcycle</td>
+                          <td data-i18n="gs-government-plate">Government Plate</td>
+                          <td><span class="rate-badge">₱500/day</span></td>
+                          <td data-i18n="gs-selfdrive">Self-drive</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h4 data-i18n="gs-rental-process">Rental Process</h4>
+                    <table class="process-table">
+                      <thead>
+                        <tr>
+                          <th data-i18n="gs-step">Step</th>
+                          <th data-i18n="gs-requirements">Requirements</th>
+                          <th data-i18n="gs-time">Time</th>
+                          <th data-i18n="gs-person-responsible">Person Responsible</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="step-number">1</span> Submit Request Letter</td>
+                          <td data-i18n="gs-request-letter-addressed-to-the-municipal-mayor">
+                            Request letter addressed to the Municipal Mayor stating purpose and date
+                            of use
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-5-mins">5 mins</span></td>
+                          <td>
+                            <span class="person-badge" data-i18n="gs-gso-staff">GSO Staff</span>
+                            <span class="person-title" data-i18n="gs-receiving-clerk"
+                              >Receiving Clerk</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">2</span> Approval of Request</td>
+                          <td data-i18n="gs-wait-for-approval-from-the-mayors-office">
+                            Wait for approval from the Mayor's Office
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-12-days">1-2 days</span></td>
+                          <td>
+                            <span class="person-badge" data-i18n="gs-mayors-office"
+                              >Mayor's Office</span
+                            >
+                            <span class="person-title" data-i18n="gs-executive-assistant"
+                              >Executive Assistant</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">3</span> Pay Rental Fee</td>
+                          <td data-i18n="gs-order-of-payment-from-gso">
+                            Order of Payment from GSO
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-10-mins">10 mins</span></td>
+                          <td>
+                            <span class="person-badge" data-i18n="gs-municipal-treasurer"
+                              >Municipal Treasurer</span
+                            >
+                            <span class="person-title" data-i18n="gs-collection-officer"
+                              >Collection Officer</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">4</span> Get Trip Ticket</td>
+                          <td data-i18n="gs-official-receipt-approved-request">
+                            Official Receipt, Approved Request
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-5-mins">5 mins</span></td>
+                          <td>
+                            <span class="person-badge" data-i18n="gs-gso-head">GSO Head</span>
+                            <span class="person-title" data-i18n="gs-general-services-officer"
+                              >General Services Officer</span
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Equipment Services -->
+              <div class="service-section" id="equipment">
+                <div class="section-header-card equipment">
+                  <div class="section-header-icon"><i class="bi bi-tools"></i></div>
+                  <div class="section-header-content">
+                    <h2 data-i18n="gs-heavy-equipment-services">Heavy Equipment Services</h2>
+                    <p data-i18n="gs-construction-and-agricultural-equipment-for">
+                      Construction and agricultural equipment for municipal projects
+                    </p>
+                  </div>
+                </div>
+                <div class="service-detail-card">
+                  <div class="service-detail-body">
+                    <h3 data-i18n="gs-available-equipment">Available Equipment</h3>
+                    <table class="equipment-table">
+                      <thead>
+                        <tr>
+                          <th data-i18n="gs-equipment">Equipment</th>
+                          <th data-i18n="gs-capacityspecs">Capacity/Specs</th>
+                          <th data-i18n="gs-rental-rate">Rental Rate</th>
+                          <th data-i18n="gs-operator">Operator</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-i18n="gs-road-grader">Road Grader</td>
+                          <td data-i18n="gs-heavy-duty">Heavy Duty</td>
+                          <td><span class="rate-badge">₱4,000/day</span></td>
+                          <td data-i18n="gs-assigned-operator">Assigned Operator</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-road-roller">Road Roller</td>
+                          <td data-i18n="gs-compactor">Compactor</td>
+                          <td><span class="rate-badge">₱3,000/day</span></td>
+                          <td data-i18n="gs-assigned-operator">Assigned Operator</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-water-truck">Water Truck</td>
+                          <td data-i18n="gs-5000-liters">5,000 Liters</td>
+                          <td><span class="rate-badge">₱2,000/day</span></td>
+                          <td data-i18n="gs-assigned-driver">Assigned Driver</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-generator-set">Generator Set</td>
+                          <td data-i18n="gs-various-kva">Various KVA</td>
+                          <td><span class="rate-badge">₱1,500/day</span></td>
+                          <td data-i18n="gs-selfoperate">Self-operate</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-grass-cutter">Grass Cutter</td>
+                          <td data-i18n="gs-industrial">Industrial</td>
+                          <td><span class="rate-badge">₱300/day</span></td>
+                          <td data-i18n="gs-selfoperate">Self-operate</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h4 data-i18n="gs-note">Note:</h4>
+                    <p data-i18n="gs-equipment-rental-is-subject-to-availability-and">
+                      Equipment rental is subject to availability and approval. Priority is given to
+                      municipal projects and barangay requests. Fuel costs are shouldered by the
+                      requesting party.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Personnel -->
+              <div class="service-section" id="personnel">
+                <div class="section-header-card personnel">
+                  <div class="section-header-icon"><i class="bi bi-people"></i></div>
+                  <div class="section-header-content">
+                    <h2 data-i18n="gs-gso-personnel">GSO Personnel</h2>
+                    <p data-i18n="gs-office-staff-and-service-personnel">
+                      Office staff and service personnel
+                    </p>
+                  </div>
+                </div>
+                <div class="service-detail-card">
+                  <div class="service-detail-body">
+                    <h3 data-i18n="gs-office-personnel">Office Personnel</h3>
+                    <table class="personnel-table">
+                      <thead>
+                        <tr>
+                          <th data-i18n="gs-name">Name</th>
+                          <th data-i18n="gs-position">Position</th>
+                          <th data-i18n="gs-designation">Designation</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong data-i18n="gs-gso-head">GSO Head</strong></td>
+                          <td data-i18n="gs-general-services-officer">General Services Officer</td>
+                          <td data-i18n="gs-department-head">Department Head</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-administrative-staff">Administrative Staff</td>
+                          <td data-i18n="gs-administrative-aide">Administrative Aide</td>
+                          <td data-i18n="gs-recordsclerical">Records/Clerical</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-property-custodian">Property Custodian</td>
+                          <td data-i18n="gs-administrative-aide">Administrative Aide</td>
+                          <td data-i18n="gs-property-management">Property Management</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h4 data-i18n="gs-drivers-and-operators">Drivers and Operators</h4>
+                    <table class="personnel-table">
+                      <thead>
+                        <tr>
+                          <th data-i18n="gs-position">Position</th>
+                          <th data-i18n="gs-assignment">Assignment</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-i18n="gs-heavy-equipment-operator">Heavy Equipment Operator</td>
+                          <td data-i18n="gs-backhoe-grader-roller">Backhoe, Grader, Roller</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-dump-truck-driver">Dump Truck Driver</td>
+                          <td data-i18n="gs-dump-truck-operations">Dump Truck Operations</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-light-vehicle-driver">Light Vehicle Driver</td>
+                          <td data-i18n="gs-service-vehicles-vans">Service Vehicles, Vans</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="gs-ambulance-driveremt">Ambulance Driver/EMT</td>
+                          <td data-i18n="gs-emergency-medical-services">
+                            Emergency Medical Services
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Procurement Services -->
+              <div class="service-section" id="procurement">
+                <div class="section-header-card procurement">
+                  <div class="section-header-icon"><i class="bi bi-cart-check"></i></div>
+                  <div class="section-header-content">
+                    <h2 data-i18n="gs-procurement-services">Procurement Services</h2>
+                    <p data-i18n="gs-processing-of-purchase-requests-and-supplier">
+                      Processing of purchase requests and supplier accreditation
+                    </p>
+                  </div>
+                </div>
+                <div class="service-detail-card">
+                  <div class="service-detail-body">
+                    <h3 data-i18n="gs-about-procurement">About Procurement</h3>
+                    <p data-i18n="gs-the-gso-assists-in-the-procurement-process-for">
+                      The GSO assists in the procurement process for municipal supplies, equipment,
+                      and services in accordance with RA 9184 (Government Procurement Reform Act).
+                    </p>
+
+                    <h4 data-i18n="gs-procurement-process">Procurement Process</h4>
+                    <table class="process-table">
+                      <thead>
+                        <tr>
+                          <th data-i18n="gs-step">Step</th>
+                          <th data-i18n="gs-activity">Activity</th>
+                          <th data-i18n="gs-time-frame">Time Frame</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="step-number">1</span></td>
+                          <td data-i18n="gs-submission-of-purchase-request-pr-from-requesting">
+                            Submission of Purchase Request (PR) from requesting office
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-1-day">1 day</span></td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">2</span></td>
+                          <td data-i18n="gs-review-and-certification-of-availability-of-funds">
+                            Review and certification of availability of funds
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-12-days">1-2 days</span></td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">3</span></td>
+                          <td data-i18n="gs-canvassrequest-for-quotation-from-suppliers">
+                            Canvass/Request for Quotation from suppliers
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-35-days">3-5 days</span></td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">4</span></td>
+                          <td data-i18n="gs-abstract-of-quotations-and-award">
+                            Abstract of Quotations and Award
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-12-days">1-2 days</span></td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">5</span></td>
+                          <td data-i18n="gs-issuance-of-purchase-order-po">
+                            Issuance of Purchase Order (PO)
+                          </td>
+                          <td><span class="time-badge" data-i18n="gs-1-day">1 day</span></td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">6</span></td>
+                          <td data-i18n="gs-delivery-and-inspection">Delivery and Inspection</td>
+                          <td><span class="time-badge" data-i18n="gs-varies">Varies</span></td>
+                        </tr>
+                        <tr>
+                          <td><span class="step-number">7</span></td>
+                          <td data-i18n="gs-payment-processing">Payment Processing</td>
+                          <td><span class="time-badge" data-i18n="gs-35-days">3-5 days</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h4 data-i18n="gs-supplier-accreditation-requirements">
+                      Supplier Accreditation Requirements
+                    </h4>
+                    <ul style="margin: var(--spacing-md) 0; padding-left: 20px">
+                      <li data-i18n="gs-business-permit">Business Permit</li>
+                      <li data-i18n="gs-dtisec-registration">DTI/SEC Registration</li>
+                      <li data-i18n="gs-bir-registration">BIR Registration</li>
+                      <li data-i18n="gs-philgeps-registration">PhilGEPS Registration</li>
+                      <li data-i18n="gs-mayors-permit">Mayor's Permit</li>
+                      <li data-i18n="gs-tax-clearance">Tax Clearance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="contact-sidebar">
+              <h3>
+                <i class="bi bi-building"></i>
+                <span data-i18n="gs-general-services-office">General Services Office</span>
+              </h3>
+
+              <div class="contact-item">
+                <i class="bi bi-person-badge"></i>
+                <div class="contact-item-content">
+                  <strong data-i18n="gs-general-services-officer">General Services Officer</strong>
+                  <span data-i18n="gs-gso-head">GSO Head</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="bi bi-geo-alt"></i>
+                <div class="contact-item-content">
+                  <strong data-i18n="gs-location">Location</strong>
+                  <span data-i18n="gs-municipal-hall-ground-floor-solano-nueva-vizcaya"
+                    >Municipal Hall, Ground Floor<br />Solano, Nueva Vizcaya 3708</span
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="bi bi-telephone"></i>
+                <div class="contact-item-content">
+                  <strong data-i18n="gs-phone">Phone</strong>
+                  <a href="tel:0783265000">(078) 326-5000</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="bi bi-envelope"></i>
+                <div class="contact-item-content">
+                  <strong data-i18n="gs-email">Email</strong>
+                  <a href="mailto:gso@solano.gov.ph" data-i18n="gs-gsosolanogovph"
+                    >gso@solano.gov.ph</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="bi bi-clock"></i>
+                <div class="contact-item-content">
+                  <strong data-i18n="gs-office-hours">Office Hours</strong>
+                  <span>Monday - Friday<br />8:00 AM - 5:00 PM</span>
+                </div>
+              </div>
+
+              <div class="related-services">
+                <h4>
+                  <i class="bi bi-link-45deg"></i>
+                  <span data-i18n="gs-related-services">Related Services</span>
+                </h4>
+                <ul>
+                  <li>
+                    <a href="municipal-engineering" data-i18n="gs-municipal-engineering">
+                      Municipal Engineering
+                    </a>
+                  </li>
+                  <li>
+                    <a href="municipal-accounting" data-i18n="gs-municipal-accounting">
+                      Municipal Accounting
+                    </a>
+                  </li>
+                  <li>
+                    <a href="../government/" data-i18n="gs-government-offices">
+                      Government Offices
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer no-margin-top">
-        <div class="container">
-            <div class="footer-main-new">
-                <div class="footer-brand">
-                    <img src="../assets/images/logo/better-solano-logo-white.svg" alt="Better Solano logo" class="footer-logo">
-                    <p class="footer-tagline">Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.</p>
-                    <div class="footer-social-new">
-                        <a href="https://www.facebook.com/bettersolano.org" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/company/bettersolano/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://discord.com/invite/qeSu7RJkjQ" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="bi bi-discord"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links-new">
-                        <li><a href="../sitemap/">Sitemap</a></li>
-                        <li><a href="https://solano.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf" target="_blank" rel="noopener noreferrer">Citizen's Charter</a></li>
-                        <li><a href="../terms/">Terms of Use</a></li>
-                        <li><a href="../privacy/">Privacy Policy</a></li>
-                        <li><a href="../accessibility/">Accessibility</a></li>
-                        <li><a href="../faq/">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul class="footer-links-new">
-                        <li><a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer">Open Data Philippines</a></li>
-                        <li><a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer">Freedom of Information</a></li>
-                        <li><a href="https://solano.gov.ph/" target="_blank" rel="noopener noreferrer">Official LGU Solano Portal</a></li>
-                        <li><a href="https://sangguniangbayan.solano.gov.ph/" target="_blank" rel="noopener noreferrer">Sangguniang Bayan</a></li>
-                        <li><a href="https://www.facebook.com/OfficialLguSolanoFanpage/" target="_blank" rel="noopener noreferrer">LGU Solano Facebook</a></li>
-                        <li><a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer">BLGF Portal</a></li>
-                        <li><a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer">CMCI DTI Portal</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <div class="footer-cost" role="status" aria-label="Cost to the People of Solano: Zero Pesos">
-                        Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
-                    </div>
-                    <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"><i class="bi bi-envelope-heart"></i> Volunteer with us</a>
-                    <a href="https://github.com/BetterSolano/bettersolano" class="footer-contribute" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute code with us</a>
-                </div>
+      <div class="container">
+        <div class="footer-main-new">
+          <div class="footer-brand">
+            <img
+              src="../assets/images/logo/better-solano-logo-white.svg"
+              alt="Better Solano logo"
+              class="footer-logo"
+            />
+            <p
+              class="footer-tagline"
+              data-i18n="gs-empowering-the-people-of-solano-with-transparent"
+            >
+              Empowering the people of Solano with transparent access to the services, programs, and
+              public funds of LGU Solano.
+            </p>
+            <div class="footer-social-new">
+              <a
+                href="https://www.facebook.com/bettersolano.org"
+                class="footer-social-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/bettersolano/"
+                class="footer-social-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://discord.com/invite/qeSu7RJkjQ"
+                class="footer-social-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+                ><i class="bi bi-discord"></i
+              ></a>
             </div>
-            <div class="footer-bottom-new">
-                <div class="footer-copyright">
-                    <span>&copy; <span id="copyright-year">2025</span> Better Solano. MIT | CC BY 4.0 All public information sourced from official government portals.</span>
-                    <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.1.12</span>
-                </div>
+          </div>
+          <div class="footer-column">
+            <h4 data-i18n="gs-quick-links">Quick Links</h4>
+            <ul class="footer-links-new">
+              <li>
+                <a
+                  href="https://quiz.bettersolano.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gensvc-solano-quiz"
+                  >Solano Quiz</a
+                >
+              </li>
+              <li><a href="../sitemap/" data-i18n="gs-sitemap">Sitemap</a></li>
+              <li>
+                <a
+                  href="https://solano.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gs-citizens-charter"
+                  >Citizen's Charter</a
+                >
+              </li>
+              <li><a href="../terms/" data-i18n="gs-terms-of-use">Terms of Use</a></li>
+              <li><a href="../privacy/" data-i18n="gs-privacy-policy">Privacy Policy</a></li>
+              <li><a href="../accessibility/" data-i18n="gs-accessibility">Accessibility</a></li>
+              <li><a href="../faq/">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 data-i18n="gs-resources">Resources</h4>
+            <ul class="footer-links-new">
+              <li>
+                <a
+                  href="https://data.gov.ph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gs-open-data-philippines"
+                  >Open Data Philippines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.foi.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gs-freedom-of-information"
+                  >Freedom of Information</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://solano.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gs-official-lgu-solano-portal"
+                  >Official LGU Solano Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sangguniangbayan.solano.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gs-sangguniang-bayan"
+                  >Sangguniang Bayan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/OfficialLguSolanoFanpage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gs-lgu-solano-facebook"
+                  >LGU Solano Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blgf.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gs-blgf-portal"
+                  >BLGF Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cmci.dti.gov.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="gs-cmci-dti-portal"
+                  >CMCI DTI Portal</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <div
+              class="footer-cost"
+              role="status"
+              aria-label="Cost to the People of Solano: Zero Pesos"
+            >
+              Cost to the People of Solano = <span class="footer-cost-value">₱0</span>
             </div>
+            <a href="mailto:volunteer@bettersolano.org" class="footer-contribute"
+              ><i class="bi bi-envelope-heart"></i>
+              <span data-i18n="gs-volunteer-with-us">Volunteer with us</span></a
+            >
+            <a
+              href="https://github.com/BetterSolano/bettersolano"
+              class="footer-contribute"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-github"></i>
+              <span data-i18n="gs-contribute-code-with-us">Contribute code with us</span></a
+            >
+            <div class="footer-partners">
+              <a
+                href="https://abakada.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abakada.org"
+                ><img
+                  src="../assets/images/logo/abakada-footer.svg"
+                  alt="Abakada.org"
+                  class="footer-partner-logo"
+                  width="120"
+                  height="28"
+                  loading="lazy"
+              /></a>
+              <a
+                href="https://bettergov.ph"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="BetterGov.ph"
+                ><img
+                  src="../assets/images/logo/bettergov-footer.svg"
+                  alt="BetterGov.ph"
+                  class="footer-partner-logo"
+                  width="120"
+                  height="28"
+                  loading="lazy"
+              /></a>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom-new">
+          <div class="footer-copyright">
+            <span class="footer-copyright-text">&copy; 2026 BetterSolano.org</span>
+            <span class="footer-copyright-license">MIT | CC BY 4.0</span>
+            <span class="footer-copyright-disclaimer"
+              >All public information sourced from official government portals.</span
+            >
+            <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.1.15</span>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script defer src="../assets/js/translations.js"></script>
     <script defer src="../assets/js/info-bar.js"></script>
     <script defer src="../assets/js/main.js"></script>
     <script defer src="../assets/js/version.js"></script>
-</body>
-
+  </body>
 </html>

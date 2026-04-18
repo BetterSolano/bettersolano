@@ -1,6 +1,6 @@
 {
   "name": "bs-web",
-  "version": "1.1.12",
+  "version": "1.1.15",
   "description": "BetterSolano.org - Official Portal for LGU Solano",
   "scripts": {
     "dev": "python3 -m http.server 8000",
@@ -9,10 +9,13 @@
     "build:minor": "bash scripts/version.sh minor && bash build.sh --no-bump",
     "serve": "python3 -m http.server 8000",
     "serve:dist": "cd dist && python3 -m http.server 8080",
-    "version:major": "bash scripts/version.sh major",
-    "version:minor": "bash scripts/version.sh minor",
-    "version:patch": "bash scripts/version.sh patch",
-    "version:check": "bash scripts/version.sh"
+    "version:major": "node scripts/bump-version.js major",
+    "version:minor": "node scripts/bump-version.js minor",
+    "version:patch": "node scripts/bump-version.js patch",
+    "version:check": "node scripts/bump-version.js",
+    "lighthouse": "lhci autorun",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "keywords": [
     "solano",
@@ -26,9 +29,14 @@
     "@babel/cli": "^7.23.9",
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
+    "@lhci/cli": "^0.15.1",
     "clean-css-cli": "^5.6.3",
     "core-js": "^3.40.0",
     "html-minifier-terser": "^7.2.0",
+    "prettier": "^3.8.1",
     "terser": "^5.44.1"
+  },
+  "overrides": {
+    "tmp": "0.2.5"
   }
 }

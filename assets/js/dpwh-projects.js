@@ -1,97 +1,103 @@
 // DPWH Projects Renderer - Progressive Loading Design
-(function() {
-    'use strict';
+(function () {
+  'use strict';
 
-    const CONFIG = {
-        initialRows: 8,
-        loadMoreRows: 8,
-        truncateLength: 80
-    };
+  const CONFIG = {
+    initialRows: 8,
+    loadMoreRows: 8,
+    truncateLength: 80,
+  };
 
-    let allProjects = [];
-    let filteredProjects = [];
-    let displayedCount = 0;
-    let currentFilter = 'all';
-    let isLoading = false;
+  let allProjects = [];
+  let filteredProjects = [];
+  let displayedCount = 0;
+  let currentFilter = 'all';
+  let isLoading = false;
 
-    async function loadDPWHProjects() {
-        const container = document.getElementById('dpwh-projects-container');
-        if (!container) return;
+  async function loadDPWHProjects() {
+    const container = document.getElementById('dpwh-projects-container');
+    if (!container) return;
 
-        try {
-            const response = await fetch('../data/dpwh-projects.json');
-            const data = await response.json();
-            allProjects = data.projects;
-            filteredProjects = [...allProjects];
-            renderSection(container, data);
-        } catch (error) {
-            console.error('Failed to load DPWH projects:', error);
-        }
+    try {
+      const response = await fetch('../data/dpwh-projects.json');
+      const data = await response.json();
+      allProjects = data.projects;
+      filteredProjects = [...allProjects];
+      renderSection(container, data);
+    } catch (error) {
+      console.error('Failed to load DPWH projects:', error);
     }
+  }
 
-    function formatCurrency(amount) {
-        return '₱' + amount.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    }
+  function formatCurrency(amount) {
+    return (
+      '₱' + amount.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+    );
+  }
 
-    function formatDate(dateStr) {
-        if (!dateStr) return '—';
-        const date = new Date(dateStr);
-        return date.toLocaleDateString('en-PH', { year: 'numeric', month: 'short', day: 'numeric' });
-    }
+  function formatDate(dateStr) {
+    if (!dateStr) return '—';
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-PH', { year: 'numeric', month: 'short', day: 'numeric' });
+  }
 
-    function truncateText(text, maxLength) {
-        if (text.length <= maxLength) return text;
-        return text.substring(0, maxLength).trim() + '…';
-    }
+  function truncateText(text, maxLength) {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength).trim() + '…';
+  }
 
-    function getCategoryClass(category) {
-        if (category.includes('Flood')) return 'flood';
-        if (category.includes('Road')) return 'roads';
-        if (category.includes('Water')) return 'water';
-        return 'buildings';
-    }
+  function getCategoryClass(category) {
+    if (category.includes('Flood')) return 'flood';
+    if (category.includes('Road')) return 'roads';
+    if (category.includes('Water')) return 'water';
+    return 'buildings';
+  }
 
-    function getCategoryLabel(category) {
-        if (category.includes('Flood')) return 'Flood Control';
-        if (category.includes('Road')) return 'Roads';
-        if (category.includes('Water')) return 'Water';
-        return 'Buildings';
-    }
+  function getCategoryLabel(category) {
+    if (category.includes('Flood')) return 'Flood Control';
+    if (category.includes('Road')) return 'Roads';
+    if (category.includes('Water')) return 'Water';
+    return 'Buildings';
+  }
 
+  function getStatusBadge(status) {
+    if (status === 100) return '<span class="dpwh-badge complete">Completed</span>';
+    return `<span class="dpwh-badge ongoing">${status.toFixed(0)}%</span>`;
+  }
 
-    function getStatusBadge(status) {
-        if (status === 100) return '<span class="dpwh-badge complete">Completed</span>';
-        return `<span class="dpwh-badge ongoing">${status.toFixed(0)}%</span>`;
-    }
+  function getCategoryCounts(projects) {
+    const counts = { all: projects.length, buildings: 0, roads: 0, flood: 0, water: 0 };
+    projects.forEach((p) => {
+      if (p.category.includes('Flood')) counts.flood++;
+      else if (p.category.includes('Road')) counts.roads++;
+      else if (p.category.includes('Water')) counts.water++;
+      else counts.buildings++;
+    });
+    return counts;
+  }
 
-    function getCategoryCounts(projects) {
-        const counts = { all: projects.length, buildings: 0, roads: 0, flood: 0, water: 0 };
-        projects.forEach(p => {
-            if (p.category.includes('Flood')) counts.flood++;
-            else if (p.category.includes('Road')) counts.roads++;
-            else if (p.category.includes('Water')) counts.water++;
-            else counts.buildings++;
-        });
-        return counts;
-    }
+  function filterProjects(filter) {
+    currentFilter = filter;
+    if (filter === 'all') return [...allProjects];
+    return allProjects.filter((p) => {
+      if (filter === 'buildings')
+        return (
+          !p.category.includes('Flood') &&
+          !p.category.includes('Road') &&
+          !p.category.includes('Water')
+        );
+      if (filter === 'roads') return p.category.includes('Road');
+      if (filter === 'flood') return p.category.includes('Flood');
+      if (filter === 'water') return p.category.includes('Water');
+      return true;
+    });
+  }
 
-    function filterProjects(filter) {
-        currentFilter = filter;
-        if (filter === 'all') return [...allProjects];
-        return allProjects.filter(p => {
-            if (filter === 'buildings') return !p.category.includes('Flood') && !p.category.includes('Road') && !p.category.includes('Water');
-            if (filter === 'roads') return p.category.includes('Road');
-            if (filter === 'flood') return p.category.includes('Flood');
-            if (filter === 'water') return p.category.includes('Water');
-            return true;
-        });
-    }
+  function renderSection(container, data) {
+    const counts = getCategoryCounts(allProjects);
+    const completedCount = allProjects.filter((p) => p.status === 100).length;
 
-    function renderSection(container, data) {
-        const counts = getCategoryCounts(allProjects);
-        const completedCount = allProjects.filter(p => p.status === 100).length;
-
-        const html = `
+    const html = `
             <div class="dpwh-summary-bar">
                 <div class="dpwh-summary-item">
                     <span class="dpwh-summary-value">${data.summary.totalProjects}</span>
@@ -138,20 +144,19 @@
             </div>
         `;
 
-        container.innerHTML = html;
-        displayedCount = 0;
-        loadMoreRows();
-        attachEventListeners();
-    }
+    container.innerHTML = html;
+    displayedCount = 0;
+    loadMoreRows();
+    attachEventListeners();
+  }
 
+  function renderRows(projects, startIndex, count) {
+    const endIndex = Math.min(startIndex + count, projects.length);
+    let html = '';
 
-    function renderRows(projects, startIndex, count) {
-        const endIndex = Math.min(startIndex + count, projects.length);
-        let html = '';
-
-        for (let i = startIndex; i < endIndex; i++) {
-            const p = projects[i];
-            html += `
+    for (let i = startIndex; i < endIndex; i++) {
+      const p = projects[i];
+      html += `
                 <tr class="dpwh-row" tabindex="0">
                     <td class="col-desc">
                         <div class="dpwh-desc-wrap">
@@ -170,112 +175,119 @@
                     <td class="col-date">${formatDate(p.completionDate)}</td>
                 </tr>
             `;
-        }
-        return html;
+    }
+    return html;
+  }
+
+  function loadMoreRows() {
+    if (isLoading) return;
+
+    const tbody = document.getElementById('dpwh-table-body');
+    const loadMoreEl = document.getElementById('dpwh-load-more');
+    if (!tbody || !loadMoreEl) return;
+
+    const remaining = filteredProjects.length - displayedCount;
+    if (remaining <= 0) {
+      loadMoreEl.innerHTML = '';
+      return;
     }
 
-    function loadMoreRows() {
-        if (isLoading) return;
-        
-        const tbody = document.getElementById('dpwh-table-body');
-        const loadMoreEl = document.getElementById('dpwh-load-more');
-        if (!tbody || !loadMoreEl) return;
+    isLoading = true;
+    const rowsToLoad = displayedCount === 0 ? CONFIG.initialRows : CONFIG.loadMoreRows;
 
-        const remaining = filteredProjects.length - displayedCount;
-        if (remaining <= 0) {
-            loadMoreEl.innerHTML = '';
-            return;
-        }
-
-        isLoading = true;
-        const rowsToLoad = displayedCount === 0 ? CONFIG.initialRows : CONFIG.loadMoreRows;
-        
-        // Show skeleton loader
-        if (displayedCount > 0) {
-            loadMoreEl.innerHTML = '<div class="dpwh-skeleton-row"></div>'.repeat(Math.min(rowsToLoad, remaining));
-        }
-
-        // Simulate slight delay for smooth UX
-        setTimeout(() => {
-            const newRows = renderRows(filteredProjects, displayedCount, rowsToLoad);
-            tbody.insertAdjacentHTML('beforeend', newRows);
-            displayedCount += rowsToLoad;
-            isLoading = false;
-            updateLoadMoreButton();
-        }, displayedCount === 0 ? 0 : 150);
+    // Show skeleton loader
+    if (displayedCount > 0) {
+      loadMoreEl.innerHTML = '<div class="dpwh-skeleton-row"></div>'.repeat(
+        Math.min(rowsToLoad, remaining)
+      );
     }
 
-    function updateLoadMoreButton() {
-        const loadMoreEl = document.getElementById('dpwh-load-more');
-        if (!loadMoreEl) return;
+    // Simulate slight delay for smooth UX
+    setTimeout(
+      () => {
+        const newRows = renderRows(filteredProjects, displayedCount, rowsToLoad);
+        tbody.insertAdjacentHTML('beforeend', newRows);
+        displayedCount += rowsToLoad;
+        isLoading = false;
+        updateLoadMoreButton();
+      },
+      displayedCount === 0 ? 0 : 150
+    );
+  }
 
-        const remaining = filteredProjects.length - displayedCount;
-        if (remaining <= 0) {
-            loadMoreEl.innerHTML = `<span class="dpwh-end-msg">Showing all ${filteredProjects.length} projects</span>`;
-        } else {
-            loadMoreEl.innerHTML = `
+  function updateLoadMoreButton() {
+    const loadMoreEl = document.getElementById('dpwh-load-more');
+    if (!loadMoreEl) return;
+
+    const remaining = filteredProjects.length - displayedCount;
+    if (remaining <= 0) {
+      loadMoreEl.innerHTML = `<span class="dpwh-end-msg">Showing all ${filteredProjects.length} projects</span>`;
+    } else {
+      loadMoreEl.innerHTML = `
                 <button class="dpwh-load-btn" id="dpwh-load-btn">
                     Load More <span class="dpwh-remaining">(${remaining} remaining)</span>
                 </button>
             `;
-            document.getElementById('dpwh-load-btn').addEventListener('click', loadMoreRows);
+      document.getElementById('dpwh-load-btn').addEventListener('click', loadMoreRows);
+    }
+  }
+
+  function handleFilterChange(filter) {
+    // Update active tab
+    document.querySelectorAll('.dpwh-tab').forEach((tab) => {
+      const isActive = tab.dataset.filter === filter;
+      tab.classList.toggle('active', isActive);
+      tab.setAttribute('aria-selected', isActive);
+    });
+
+    // Filter and reset
+    filteredProjects = filterProjects(filter);
+    displayedCount = 0;
+
+    const tbody = document.getElementById('dpwh-table-body');
+    if (tbody) tbody.innerHTML = '';
+
+    loadMoreRows();
+  }
+
+  function attachEventListeners() {
+    // Filter tabs
+    document.querySelectorAll('.dpwh-tab').forEach((tab) => {
+      tab.addEventListener('click', () => handleFilterChange(tab.dataset.filter));
+    });
+
+    // Keyboard navigation for rows
+    document.querySelectorAll('.dpwh-row').forEach((row) => {
+      row.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          row.classList.toggle('expanded');
         }
+      });
+    });
+
+    // Intersection Observer for lazy loading
+    const loadMoreEl = document.getElementById('dpwh-load-more');
+    if (loadMoreEl && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting && !isLoading) {
+            const remaining = filteredProjects.length - displayedCount;
+            if (remaining > 0) {
+              loadMoreRows();
+            }
+          }
+        },
+        { rootMargin: '100px' }
+      );
+      observer.observe(loadMoreEl);
     }
+  }
 
-
-    function handleFilterChange(filter) {
-        // Update active tab
-        document.querySelectorAll('.dpwh-tab').forEach(tab => {
-            const isActive = tab.dataset.filter === filter;
-            tab.classList.toggle('active', isActive);
-            tab.setAttribute('aria-selected', isActive);
-        });
-
-        // Filter and reset
-        filteredProjects = filterProjects(filter);
-        displayedCount = 0;
-        
-        const tbody = document.getElementById('dpwh-table-body');
-        if (tbody) tbody.innerHTML = '';
-        
-        loadMoreRows();
-    }
-
-    function attachEventListeners() {
-        // Filter tabs
-        document.querySelectorAll('.dpwh-tab').forEach(tab => {
-            tab.addEventListener('click', () => handleFilterChange(tab.dataset.filter));
-        });
-
-        // Keyboard navigation for rows
-        document.querySelectorAll('.dpwh-row').forEach(row => {
-            row.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    row.classList.toggle('expanded');
-                }
-            });
-        });
-
-        // Intersection Observer for lazy loading
-        const loadMoreEl = document.getElementById('dpwh-load-more');
-        if (loadMoreEl && 'IntersectionObserver' in window) {
-            const observer = new IntersectionObserver((entries) => {
-                if (entries[0].isIntersecting && !isLoading) {
-                    const remaining = filteredProjects.length - displayedCount;
-                    if (remaining > 0) {
-                        loadMoreRows();
-                    }
-                }
-            }, { rootMargin: '100px' });
-            observer.observe(loadMoreEl);
-        }
-    }
-
-    // Initialize
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadDPWHProjects);
-    } else {
-        loadDPWHProjects();
-    }
+  // Initialize
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadDPWHProjects);
+  } else {
+    loadDPWHProjects();
+  }
 })();

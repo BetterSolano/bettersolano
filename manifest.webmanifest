@@ -1,0 +1,60 @@
+{
+  "name": "BetterSolano.org - LGU Solano Portal",
+  "short_name": "BetterSolano",
+  "description": "Access government services, emergency hotlines, and transparency data for Solano, Nueva Vizcaya.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#0032a0",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["government", "utilities"],
+  "icons": [
+    {
+      "src": "/assets/images/logo/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logo/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/images/logo/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "url": "/services/?source=pwa",
+      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Contact & Hotlines",
+      "short_name": "Contact",
+      "url": "/contact/?source=pwa",
+      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Government",
+      "short_name": "Government",
+      "url": "/government/?source=pwa",
+      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Transparency",
+      "short_name": "Budget",
+      "url": "/budget/?source=pwa",
+      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+    }
+  ],
+  "prefer_related_applications": false
+}

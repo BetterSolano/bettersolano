@@ -3,7 +3,7 @@
 ## Supported Versions
 
 | Version | Supported |
-|---------|-----------|
+| ------- | --------- |
 | 1.1.x   | Yes       |
 | < 1.1   | No        |
 
@@ -18,6 +18,7 @@ We take security seriously at BetterSolano.org. If you discover a security vulne
 Instead, please email: **volunteer@bettersolano.org**
 
 Include in your report:
+
 - Description of the vulnerability
 - Steps to reproduce
 - Potential impact
@@ -25,18 +26,19 @@ Include in your report:
 
 ### Response Timeline
 
-| Action | Timeframe |
-|--------|-----------|
-| Acknowledgment | Within 48 hours |
-| Initial Assessment | Within 7 days |
-| Resolution Target | Within 30 days |
-| Public Disclosure | After fix is deployed |
+| Action             | Timeframe             |
+| ------------------ | --------------------- |
+| Acknowledgment     | Within 48 hours       |
+| Initial Assessment | Within 7 days         |
+| Resolution Target  | Within 30 days        |
+| Public Disclosure  | After fix is deployed |
 
 ## Security Measures
 
 ### Current Implementations
 
 **Server Security:**
+
 - HTTPS enforced via .htaccess
 - HTTP Strict Transport Security (HSTS)
 - Content Security Policy (CSP) headers
@@ -45,6 +47,7 @@ Include in your report:
 - Referrer-Policy for privacy
 
 **Application Security:**
+
 - No user authentication or data collection
 - No database or server-side processing
 - Static site with client-side rendering only
@@ -52,18 +55,19 @@ Include in your report:
 - No cookies or local storage for sensitive data
 
 **Data Security:**
+
 - All data sourced from public government portals
 - No personal identifiable information (PII) stored
 - No user input forms that store data
 
 ### Third-Party Services
 
-| Service | Purpose | Data Shared |
-|---------|---------|-------------|
+| Service          | Purpose          | Data Shared          |
+| ---------------- | ---------------- | -------------------- |
 | Google Analytics | Usage statistics | Anonymous page views |
-| Open-Meteo API | Weather data | Location (Solano) |
-| ExchangeRate API | Currency rates | None |
-| OpenStreetMap | Map tiles | None |
+| Open-Meteo API   | Weather data     | Location (Solano)    |
+| ExchangeRate API | Currency rates   | None                 |
+| OpenStreetMap    | Map tiles        | None                 |
 
 ## Best Practices for Contributors
 
@@ -84,6 +88,7 @@ This security policy covers:
 - Associated build tools and scripts
 
 Out of scope:
+
 - Third-party services (Google Analytics, APIs)
 - User's local environment
 - Social media accounts

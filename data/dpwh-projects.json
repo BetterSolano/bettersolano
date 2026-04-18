@@ -70,7 +70,7 @@
       "category": "Buildings and Facilities",
       "contractor": "E S De Guzman Construction",
       "contractorId": "17494",
-      "cost": 19800000.00,
+      "cost": 19800000.0,
       "status": 100,
       "completionDate": "2019-11-21"
     },
@@ -103,7 +103,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Jovic Construction and Supply",
       "contractorId": "35703",
-      "cost": 2985000.00,
+      "cost": 2985000.0,
       "status": 100,
       "completionDate": "2018-04-20"
     },
@@ -126,7 +126,7 @@
       "category": "Buildings and Facilities",
       "contractor": "E S De Guzman Construction",
       "contractorId": "17494",
-      "cost": 1898820.00,
+      "cost": 1898820.0,
       "status": 100,
       "completionDate": "2017-12-04"
     },
@@ -137,7 +137,7 @@
       "category": "Buildings and Facilities",
       "contractor": "G.M. Pajarillaga Construction & Supply",
       "contractorId": "21760",
-      "cost": 1900266.50,
+      "cost": 1900266.5,
       "status": 100,
       "completionDate": "2017-07-11"
     },
@@ -170,7 +170,7 @@
       "category": "Buildings and Facilities",
       "contractor": "E.M. Bayatan Construction",
       "contractorId": "21332",
-      "cost": 1930500.00,
+      "cost": 1930500.0,
       "status": 100,
       "completionDate": "2017-05-02"
     },
@@ -181,7 +181,7 @@
       "category": "Buildings and Facilities",
       "contractor": "E S De Guzman Construction",
       "contractorId": "17494",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2019-11-29"
     },
@@ -193,7 +193,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Aces Construction Materials Trading",
       "contractorId": "46890",
-      "cost": 4950000.00,
+      "cost": 4950000.0,
       "status": 100,
       "completionDate": "2023-01-28"
     },
@@ -215,7 +215,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Framada Construction and Material Supplies",
       "contractorId": "45435",
-      "cost": 5220000.00,
+      "cost": 5220000.0,
       "status": 100,
       "completionDate": "2020-01-31"
     },
@@ -237,7 +237,7 @@
       "category": "Buildings and Facilities",
       "contractor": "N-J Construction",
       "contractorId": "43941",
-      "cost": 1078000.00,
+      "cost": 1078000.0,
       "status": 100,
       "completionDate": "2020-12-11"
     },
@@ -248,7 +248,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Denisse-John Construction and Supplies",
       "contractorId": "37550",
-      "cost": 1960000.00,
+      "cost": 1960000.0,
       "status": 100,
       "completionDate": "2021-01-24"
     },
@@ -260,7 +260,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Mt. Land Construction",
       "contractorId": "48738",
-      "cost": 2970000.00,
+      "cost": 2970000.0,
       "status": 100,
       "completionDate": "2023-08-17"
     },
@@ -271,7 +271,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Virile Construction and Supply",
       "contractorId": "34081",
-      "cost": 1188000.00,
+      "cost": 1188000.0,
       "status": 100,
       "completionDate": "2019-08-09"
     },
@@ -293,7 +293,7 @@
       "category": "Roads",
       "contractor": "Eric Van P. Sesbreno Construction",
       "contractorId": "26243",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2016-03-21"
     },
@@ -304,7 +304,7 @@
       "category": "Roads",
       "contractor": "Eric Van P. Sesbreno Construction",
       "contractorId": "26243",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2018-03-30"
     },
@@ -315,7 +315,7 @@
       "category": "Roads",
       "contractor": "G.M. Pajarillaga Construction & Supply",
       "contractorId": "21760",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2016-07-21"
     },
@@ -327,7 +327,7 @@
       "category": "Roads",
       "contractor": "G.M. Pajarillaga Construction & Supply",
       "contractorId": "21760",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2016-08-05"
     },
@@ -338,7 +338,7 @@
       "category": "Roads",
       "contractor": "Edwin Erwin Sison Construction",
       "contractorId": "20162",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2016-08-01"
     },
@@ -349,7 +349,7 @@
       "category": "Roads",
       "contractor": "Eric Van P. Sesbreno Construction",
       "contractorId": "26243",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2016-03-22"
     },
@@ -360,7 +360,7 @@
       "category": "Roads",
       "contractor": "Dricholiu Construction",
       "contractorId": "65421",
-      "cost": 11940000.00,
+      "cost": 11940000.0,
       "status": 100,
       "completionDate": "2022-11-13"
     },
@@ -382,7 +382,7 @@
       "category": "Roads",
       "contractor": "Q.C.D. Construction and Supply",
       "contractorId": "37537",
-      "cost": 4950000.00,
+      "cost": 4950000.0,
       "status": 100,
       "completionDate": "2021-09-11"
     },
@@ -394,7 +394,7 @@
       "category": "Roads",
       "contractor": "Q.C.D. Construction and Supply",
       "contractorId": "37537",
-      "cost": 4948811.50,
+      "cost": 4948811.5,
       "status": 100,
       "completionDate": "2021-04-29"
     },
@@ -427,7 +427,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Triple P Construction",
       "contractorId": "31616",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2019-09-01"
     },
@@ -461,7 +461,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Mighty Construction & Supply",
       "contractorId": "34278",
-      "cost": 4950000.00,
+      "cost": 4950000.0,
       "status": 100,
       "completionDate": "2019-11-06"
     },
@@ -472,7 +472,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Reasons Construction & Supplies",
       "contractorId": "63034",
-      "cost": 1950000.00,
+      "cost": 1950000.0,
       "status": 100,
       "completionDate": "2020-12-17"
     },
@@ -483,7 +483,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Aces Construction Materials Trading",
       "contractorId": "46890",
-      "cost": 5950000.00,
+      "cost": 5950000.0,
       "status": 100,
       "completionDate": "2023-10-07"
     },
@@ -494,7 +494,7 @@
       "category": "Buildings and Facilities",
       "contractor": "JDTS Const. Corporation",
       "contractorId": "39430",
-      "cost": 2475000.00,
+      "cost": 2475000.0,
       "status": 100,
       "completionDate": "2019-11-01"
     },
@@ -505,7 +505,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Mighty Construction & Supply",
       "contractorId": "34278",
-      "cost": 4950000.00,
+      "cost": 4950000.0,
       "status": 100,
       "completionDate": "2019-11-01"
     },
@@ -516,7 +516,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Reasons Construction & Supplies",
       "contractorId": "63034",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2022-06-14"
     },
@@ -528,7 +528,7 @@
       "category": "Buildings and Facilities",
       "contractor": "John-Jann Const. and Supplies Corp.",
       "contractorId": "47191",
-      "cost": 8800000.00,
+      "cost": 8800000.0,
       "status": 100,
       "completionDate": "2022-06-08"
     },
@@ -539,7 +539,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Aces Construction Materials Trading",
       "contractorId": "46890",
-      "cost": 4950000.00,
+      "cost": 4950000.0,
       "status": 100,
       "completionDate": "2021-09-26"
     },
@@ -561,7 +561,7 @@
       "category": "Buildings and Facilities",
       "contractor": "4Kids Builders and Construction Supply",
       "contractorId": "41980",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2021-08-23"
     },
@@ -572,7 +572,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Aces Construction Materials Trading",
       "contractorId": "46890",
-      "cost": 4950000.00,
+      "cost": 4950000.0,
       "status": 100,
       "completionDate": "2021-04-28"
     },
@@ -583,7 +583,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Denisse-John Construction and Supplies",
       "contractorId": "37550",
-      "cost": 1980000.00,
+      "cost": 1980000.0,
       "status": 100,
       "completionDate": "2019-08-25"
     },
@@ -595,7 +595,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Monte Construction & Supply",
       "contractorId": "19474",
-      "cost": 2858800.00,
+      "cost": 2858800.0,
       "status": 100,
       "completionDate": "2018-07-18"
     },
@@ -606,7 +606,7 @@
       "category": "Water Supply",
       "contractor": "Mighty Construction & Supply",
       "contractorId": "34278",
-      "cost": 9800000.00,
+      "cost": 9800000.0,
       "status": 100,
       "completionDate": "2024-03-08"
     },
@@ -617,7 +617,7 @@
       "category": "Buildings and Facilities",
       "contractor": "E.M. Bayatan Construction",
       "contractorId": "21332",
-      "cost": 4950000.00,
+      "cost": 4950000.0,
       "status": 100,
       "completionDate": "2022-05-29"
     },
@@ -639,7 +639,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Aces Construction Materials Trading",
       "contractorId": "46890",
-      "cost": 4900000.00,
+      "cost": 4900000.0,
       "status": 100,
       "completionDate": "2021-04-26"
     },
@@ -662,7 +662,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Aces Construction Materials Trading",
       "contractorId": "46890",
-      "cost": 4950000.00,
+      "cost": 4950000.0,
       "status": 100,
       "completionDate": "2023-11-10"
     },
@@ -684,7 +684,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Mighty Construction & Supply",
       "contractorId": "34278",
-      "cost": 1188000.00,
+      "cost": 1188000.0,
       "status": 100,
       "completionDate": "2019-08-08"
     },
@@ -695,7 +695,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Tamrhey Construction",
       "contractorId": "53202",
-      "cost": 5361050.00,
+      "cost": 5361050.0,
       "status": 84.66,
       "completionDate": null
     },
@@ -706,7 +706,7 @@
       "category": "Buildings and Facilities",
       "contractor": "Regal Design & Construction",
       "contractorId": "63400",
-      "cost": 1485000.00,
+      "cost": 1485000.0,
       "status": 100,
       "completionDate": "2019-09-30"
     }
