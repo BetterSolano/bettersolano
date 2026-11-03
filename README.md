@@ -45,6 +45,18 @@ BetterSolano.org is a volunteer-driven, open-source project that empowers the pe
 
 Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 
+## Transparency Portal
+
+The [BetterSolano Transparency Portal](https://transparency-portal.bettersolano.org/) is a companion website that shows the people of Solano what the national budget sets aside for projects in Solano, Nueva Vizcaya. For FY 2027, it compares what the National Expenditure Program (NEP) and House Bill 10858 give each project whose title names "Solano, Nueva Vizcaya", with every figure linked to the page of its source document. It also lists the programs and projects that name Solano in the enacted budgets of 2020 to 2026.
+
+The portal is [BetterGov.ph](https://bettergov.ph)'s open-source [Transparency Portal](https://github.com/bettergovph/transparency-portal), configured for Solano. It has no backend or database: figures are loaded in the browser directly from the public [BetterGov.ph Budget API](https://budget.bettergov.ph/docs). The portal is maintained in its own repository and is not part of this repository's build or deployment package.
+
+| Resource    | Link                                                                                    |
+| ----------- | --------------------------------------------------------------------------------------- |
+| Website     | [transparency-portal.bettersolano.org](https://transparency-portal.bettersolano.org/)   |
+| Source Code | [BetterSolano/transparency-portal](https://github.com/BetterSolano/transparency-portal) |
+| License     | MIT                                                                                     |
+
 ## Technology Stack
 
 | Category            | Technologies                                                           |
