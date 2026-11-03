@@ -1259,3 +1259,245 @@
     font-size: 0.75rem;
   }
 }
+
+/* Transparency Portal CTA */
+
+/* Shared button - used in the hero and the closing CTA card */
+.portal-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: white;
+  color: var(--color-primary);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.portal-cta-btn i {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.portal-cta-btn:hover {
+  background: #f0f5ff;
+  color: var(--color-primary);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.portal-cta-btn:hover i {
+  transform: translate(2px, -2px);
+}
+
+/* Global a:focus-visible adds a translucent tint and 2px radius, and its ring
+   disappears on the blue backgrounds - keep the button solid with a white ring */
+.portal-cta-btn:focus-visible {
+  background: white;
+  border-radius: 12px;
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+
+.portal-cta-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.trans-hero-cta-v2 {
+  margin-top: 24px;
+}
+
+.trans-hero-cta-v2 .portal-cta-btn {
+  padding: 12px 24px;
+  font-size: 0.9375rem;
+}
+
+/* Closing CTA Card */
+.portal-cta-section {
+  padding: 64px 0;
+  background: white;
+}
+
+.portal-cta-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 56px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 2px rgba(0, 33, 112, 0.08),
+    0 16px 40px rgba(0, 50, 160, 0.18);
+}
+
+.portal-cta-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 75%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 75%);
+  pointer-events: none;
+}
+
+.portal-cta-content,
+.portal-cta-action {
+  position: relative;
+  z-index: 1;
+}
+
+.portal-cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.portal-cta-content h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: white;
+  margin: 0 0 10px;
+}
+
+.portal-cta-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 580px;
+  margin: 0 0 20px;
+}
+
+.portal-cta-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin: 0;
+}
+
+.portal-cta-points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+}
+
+.portal-cta-points i {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+.portal-cta-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.portal-cta-domain {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.portal-cta-domain i {
+  font-size: 0.6875rem;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 991px) {
+  .portal-cta-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px;
+  }
+
+  .portal-cta-action {
+    align-items: flex-start;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 575px) {
+  .portal-cta-section {
+    padding: 48px 0;
+  }
+
+  .portal-cta-card {
+    gap: 28px;
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
+
+  .portal-cta-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .portal-cta-content p {
+    font-size: 0.9375rem;
+  }
+
+  .portal-cta-points {
+    flex-direction: column;
+  }
+
+  .portal-cta-action {
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .portal-cta-action .portal-cta-btn {
+    white-space: normal;
+  }
+
+  .portal-cta-domain {
+    justify-content: center;
+  }
+}
+
+/* High contrast - primary/secondary tokens remap to yellow/white, so the gradient
+   would lose contrast against the white text */
+body.high-contrast .portal-cta-card {
+  background: #000000;
+  border: 2px solid #ffff00;
+  box-shadow: none;
+}
+
+body.high-contrast .portal-cta-card::before {
+  display: none;
+}
+
+body.high-contrast .portal-cta-btn {
+  background: #000000;
+  color: #ffff00;
+  border: 2px solid #ffff00;
+  box-shadow: none;
+}
