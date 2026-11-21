@@ -34,7 +34,7 @@
     "@babel/cli": "^7.23.9",
     "@babel/core": "^7.29.6",
     "@babel/preset-env": "^7.23.9",
-    "@lhci/cli": "^0.15.1",
+    "@lhci/cli": "^0.16.1",
     "@playwright/test": "^1.61.0",
     "clean-css-cli": "^5.6.3",
     "core-js": "^3.40.0",
